@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gear Rental — Peak Pursuit</title>
+  <meta name="description" content="Rent professional trekking and mountaineering gear in Kathmandu. Sleeping bags, boots, crampons, ice axes, down jackets and more.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .page-hero {
+      height: 45vh; min-height: 340px;
+      background-image: url('images/yak_shrine.JPG');
+      background-size: cover; background-position: center 40%;
+      position: relative; display: flex; align-items: flex-end;
+      padding: 0 2rem 4rem;
+    }
+    .page-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(7,21,38,0.92) 0%, rgba(7,21,38,0.35) 70%, transparent 100%); }
+    .page-hero-content { position:relative; z-index:2; color:var(--white); max-width:1200px; margin:0 auto; width:100%; padding-top:72px; }
+
+    .gear-category { margin-bottom: 4rem; }
+    .gear-category-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--border-dark);
+    }
+    .gear-category-icon { font-size: 2rem; }
+    .gear-category-title { font-size: 1.3rem; color: var(--navy); }
+    .gear-category-count { background: var(--cream); padding: 0.2rem 0.6rem; border-radius: 100px; font-size: 0.75rem; color: var(--stone); font-weight: 600; }
+
+    .gear-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+    .gear-card-full {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 2px solid var(--border-dark);
+      transition: all var(--transition);
+      display: flex; flex-direction: column;
+    }
+    .gear-card-full:hover { border-color: var(--amber); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+    .gear-card-top {
+      background: var(--cream);
+      padding: 2rem;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3.5rem;
+      min-height: 120px;
+    }
+    .gear-card-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
+    .gear-card-name { font-weight: 700; font-size: 1.05rem; color: var(--navy); margin-bottom: 0.4rem; }
+    .gear-card-desc { font-size: 0.82rem; color: var(--stone); line-height: 1.5; margin-bottom: 1rem; flex: 1; }
+    .gear-card-specs { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 1rem; }
+    .gear-spec-row { display: flex; justify-content: space-between; font-size: 0.78rem; padding: 0.25rem 0; border-bottom: 1px solid var(--border-dark); }
+    .gear-spec-key { color: var(--stone); }
+    .gear-spec-val { font-weight: 600; color: var(--stone-dark); }
+    .gear-card-price-row { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+    .gear-day-price { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--amber); }
+    .gear-day-label { font-size: 0.75rem; color: var(--stone); }
+    .gear-add-btn {
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: all var(--transition);
+    }
+    .gear-add-btn:hover { background: var(--amber); }
+    .gear-add-btn.added { background: #059669; }
+
+    .gear-filter { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .gear-filter-btn {
+      padding: 0.5rem 1.25rem;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 2px solid var(--border-dark);
+      background: var(--white);
+      color: var(--stone);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .gear-filter-btn.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+    .rental-cart {
+      position: fixed;
+      bottom: 2rem; right: 2rem;
+      background: var(--midnight);
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.75rem;
+      box-shadow: var(--shadow-xl);
+      z-index: 500;
+      display: flex; align-items: center; gap: 1.25rem;
+      transition: all var(--transition);
+      transform: translateY(200%);
+      opacity: 0;
+    }
+    .rental-cart.visible { transform: translateY(0); opacity: 1; }
+    .cart-count {
+      width: 28px; height: 28px;
+      background: var(--amber);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.85rem;
+    }
+
+    .how-it-works {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+    .how-step {
+      text-align: center;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      border: 1px solid var(--border-dark);
+    }
+    .how-step-num {
+      width: 48px; height: 48px;
+      background: var(--amber);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.3rem; font-weight: 700;
+      margin: 0 auto 1rem;
+    }
+    .how-step-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .how-step-title { font-weight: 700; margin-bottom: 0.4rem; color: var(--navy); }
+    .how-step-desc { font-size: 0.83rem; color: var(--stone); line-height: 1.5; }
+
+    @media (max-width: 768px) {
+      .how-it-works { grid-template-columns: 1fr 1fr; }
+      .gear-cards { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+      .rental-cart { right: 1rem; left: 1rem; bottom: 1rem; }
+    }
+    @media (max-width: 480px) {
+      .how-it-works { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">Peak<span>Pursuit</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="treks.html">Treks</a></li>
+    <li><a href="prepare.html">Prepare</a></li>
+    <li><a href="gear.html" style="color:var(--amber-light)">Gear Rental</a></li>
+    <li><a href="index.html#testimonials">Stories</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="book.html" class="nav-cta">Book a Trek</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="eyebrow" style="color:var(--amber-light);margin-bottom:0.5rem">Kathmandu Pickup · Post-Trek Return</div>
+    <h1 class="display-lg" style="color:var(--white);margin-bottom:0.5rem">Gear Rental</h1>
+    <p style="color:rgba(255,255,255,0.7);font-size:1.05rem">Professional mountain gear · No shipping fees · Save your luggage allowance</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--snow)">
+  <div class="container">
+
+    <!-- How It Works -->
+    <div class="section-header centered reveal" style="margin-bottom:2.5rem">
+      <div class="eyebrow">Simple Process</div>
+      <h2 class="display-sm" style="color:var(--navy);margin:0.5rem 0">How Gear Rental Works</h2>
+    </div>
+    <div class="how-it-works reveal">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <div class="how-step-icon">🛒</div>
+        <div class="how-step-title">Select Your Gear</div>
+        <div class="how-step-desc">Choose items during booking or add them here. We'll have everything ready for your Kathmandu arrival.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <div class="how-step-icon">✈️</div>
+        <div class="how-step-title">Pick Up in Kathmandu</div>
+        <div class="how-step-desc">Your guide brings rental gear to your Thamel hotel the evening before the Lukla flight. No extra trips needed.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <div class="how-step-icon">🏔️</div>
+        <div class="how-step-title">Trek with Confidence</div>
+        <div class="how-step-desc">All gear is professional grade, properly maintained, and sanitized. If anything fails, we replace it.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">4</div>
+        <div class="how-step-icon">🔄</div>
+        <div class="how-step-title">Return After Your Trek</div>
+        <div class="how-step-desc">Return all gear to your guide on your last day in Kathmandu. Simple, no hassle, no shipping.</div>
+      </div>
+    </div>
+
+    <div class="info-box info-box-amber reveal" style="margin-bottom:3rem">
+      <div class="info-box-title">Pro Tip: Travel Light, Trek Right</div>
+      Most trekkers from outside Asia pay $50–$150 in extra baggage fees for bulky gear they only use once. Renting in Kathmandu saves money, saves luggage space, and you get tried-and-tested gear that's known to work at altitude. The quality of rental gear available in Thamel is excellent — most is the same brand gear sold in Western stores.
+    </div>
+
+    <!-- Gear Filter -->
+    <div class="gear-filter reveal">
+      <span class="filter-label" style="font-size:0.82rem;font-weight:700;color:var(--stone);align-self:center">Filter:</span>
+      <button class="gear-filter-btn active" onclick="filterGear('all',this)">All Gear</button>
+      <button class="gear-filter-btn" onclick="filterGear('clothing',this)">Clothing</button>
+      <button class="gear-filter-btn" onclick="filterGear('footwear',this)">Footwear</button>
+      <button class="gear-filter-btn" onclick="filterGear('pack',this)">Packs & Sleep</button>
+      <button class="gear-filter-btn" onclick="filterGear('technical',this)">Technical</button>
+      <button class="gear-filter-btn" onclick="filterGear('accessories',this)">Accessories</button>
+    </div>
+
+    <!-- Clothing -->
+    <div class="gear-category reveal" data-category="clothing" id="cat-clothing">
+      <div class="gear-category-header">
+        <span class="gear-category-icon">🧥</span>
+        <h3 class="gear-category-title">Clothing & Insulation</h3>
+        <span class="gear-category-count">4 items</span>
+      </div>
+      <div class="gear-cards">
+        <div class="gear-card-full">
+          <div class="gear-card-top">🧥</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Expedition Down Jacket</div>
+            <div class="gear-card-desc">800-fill-power down jacket rated to -20°C. Essential above 4,000m. Packs small. Brands: The North Face, Arc'teryx, Mountain Hardwear.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Temperature</span><span class="gear-spec-val">-20°C</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Fill Power</span><span class="gear-spec-val">800-fill</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Sizes</span><span class="gear-spec-val">XS–3XL</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$3<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Down Jacket','$3/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🌧️</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Waterproof Shell Jacket</div>
+            <div class="gear-card-desc">Gore-Tex or equivalent 3-layer waterproof breathable shell. Essential for wind and rain. Packable design.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Material</span><span class="gear-spec-val">Gore-Tex / 3L</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Water Column</span><span class="gear-spec-val">20,000mm</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Sizes</span><span class="gear-spec-val">S–XXL</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$2.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Shell Jacket','$2.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🧤</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Expedition Gloves (Set)</div>
+            <div class="gear-card-desc">Outer waterproof shell + inner fleece liner system. Keeps hands warm and dexterous for trekking poles and camera use.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">System</span><span class="gear-spec-val">3-layer shell + liner</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Rating</span><span class="gear-spec-val">-15°C</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Expedition Gloves','$1.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🎽</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Fleece Mid-Layer</div>
+            <div class="gear-card-desc">Polartec 200-weight fleece for warmth-to-weight ratio. Ideal mid-layer between base layer and down jacket.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Material</span><span class="gear-spec-val">Polartec 200</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Sizes</span><span class="gear-spec-val">XS–XXL</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$2<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Fleece Mid-Layer','$2/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footwear -->
+    <div class="gear-category reveal" data-category="footwear" id="cat-footwear">
+      <div class="gear-category-header">
+        <span class="gear-category-icon">🥾</span>
+        <h3 class="gear-category-title">Footwear & Gaiters</h3>
+        <span class="gear-category-count">3 items</span>
+      </div>
+      <div class="gear-cards">
+        <div class="gear-card-full">
+          <div class="gear-card-top">🥾</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Waterproof Trekking Boots</div>
+            <div class="gear-card-desc">Insulated waterproof mid-high trekking boots. Compatible with standard crampons. Broken in and ready to wear. Brands: Salomon, Scarpa, La Sportiva.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Sizes</span><span class="gear-spec-val">EU 35–47</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Insulation</span><span class="gear-spec-val">200g Thinsulate</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Crampon Compatible</span><span class="gear-spec-val">Yes</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$4<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Trekking Boots','$4/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🏔️</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Double Mountaineering Boots</div>
+            <div class="gear-card-desc">Required for peak climbing (6,000m+). Plastic outer shell with removable insulating inner boot. Rated to -40°C. Crampon-ready step-in rand.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Rating</span><span class="gear-spec-val">-40°C</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">For</span><span class="gear-spec-val">6,000m+ climbing</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Crampon</span><span class="gear-spec-val">Step-in compatible</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$6<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Double Boots','$6/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🧦</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Waterproof Gaiters (High)</div>
+            <div class="gear-card-desc">High waterproof gaiters for snow and wet terrain. Attaches to crampon bail ring. Essential for pass crossings in spring/winter.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Height</span><span class="gear-spec-val">40cm (high)</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Material</span><span class="gear-spec-val">Cordura / Neoprene</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'High Gaiters','$1.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Packs & Sleep -->
+    <div class="gear-category reveal" data-category="pack" id="cat-pack">
+      <div class="gear-category-header">
+        <span class="gear-category-icon">🎒</span>
+        <h3 class="gear-category-title">Packs, Bags & Sleep Systems</h3>
+        <span class="gear-category-count">4 items</span>
+      </div>
+      <div class="gear-cards">
+        <div class="gear-card-full">
+          <div class="gear-card-top">🛌</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Sleeping Bag (-15°C)</div>
+            <div class="gear-card-desc">Down or synthetic sleeping bag rated to -15°C comfort. Sufficient for teahouse cold nights above 5,000m. Comes with stuff sack.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Comfort Rating</span><span class="gear-spec-val">-15°C</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Fill</span><span class="gear-spec-val">Down / Synthetic</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$2.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Sleeping Bag (-15°C)','$2.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">❄️</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Sleeping Bag (-25°C Expedition)</div>
+            <div class="gear-card-desc">Required for high camp nights on peak climbs (Island Peak, Mera, Lobuche). Heavy-duty 4-season expedition bag.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Comfort Rating</span><span class="gear-spec-val">-25°C</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">For</span><span class="gear-spec-val">High camp / 6,000m+</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$4<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Expedition Sleeping Bag','$4/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🎒</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Daypack (30L) with Rain Cover</div>
+            <div class="gear-card-desc">Lightweight 30L trekking daypack with integrated rain cover, hydration bladder sleeve, and trekking pole attachment points.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Volume</span><span class="gear-spec-val">30L</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Weight</span><span class="gear-spec-val">~900g</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$3<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Daypack 30L','$3/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">💼</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Porter Duffel Bag (60L)</div>
+            <div class="gear-card-desc">Durable duffel for your main kit carried by the porter (max 15kg). Waterproof and lockable.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Volume</span><span class="gear-spec-val">60L</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Max Load</span><span class="gear-spec-val">15kg</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Porter Duffel','$1.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical -->
+    <div class="gear-category reveal" data-category="technical" id="cat-technical">
+      <div class="gear-category-header">
+        <span class="gear-category-icon">⛏️</span>
+        <h3 class="gear-category-title">Technical Mountaineering Gear</h3>
+        <span class="gear-category-count">7 items · Required for peak climbing & pass crossings</span>
+      </div>
+      <div class="info-box info-box-amber" style="margin-bottom:1.5rem">
+        <div class="info-box-title">When You Need Technical Gear</div>
+        Crampons and ice axe are required for: Three High Passes (Cho La crossing), Lobuche Peak, Island Peak, Mera Peak. Recommended for: Cho La Pass, Kongma La in winter/spring, any off-trail glacier travel.
+      </div>
+      <div class="gear-cards">
+        <div class="gear-card-full">
+          <div class="gear-card-top">🧊</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Crampons (12-Point)</div>
+            <div class="gear-card-desc">Steel 12-point crampons for glacier and ice travel. Step-in or strap binding options. Fits most trekking boots (compatible with your rental boots).</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Points</span><span class="gear-spec-val">12-point steel</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Binding</span><span class="gear-spec-val">Strap or step-in</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$2<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Crampons','$2/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🪝</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Ice Axe (50–65cm)</div>
+            <div class="gear-card-desc">Classic walking-length ice axe for self-arrest on steep snow slopes. Essential for any technical mountain travel.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Length</span><span class="gear-spec-val">50–65cm</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Material</span><span class="gear-spec-val">Aluminum / Steel</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$2<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Ice Axe','$2/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">⛑️</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Climbing Harness</div>
+            <div class="gear-card-desc">Adjustable sit harness for fixed rope travel and rappelling on technical peaks. UIAA certified.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Certification</span><span class="gear-spec-val">UIAA / CE</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Sizes</span><span class="gear-spec-val">S–XL</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Climbing Harness','$1.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🪖</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Climbing Helmet</div>
+            <div class="gear-card-desc">CE/UIAA certified climbing helmet for rockfall and ice protection on technical peaks. Lightweight foam shell with ventilation.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Weight</span><span class="gear-spec-val">~350g</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Certification</span><span class="gear-spec-val">CE / UIAA</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Climbing Helmet','$1.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🧗</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Jumar / Ascender</div>
+            <div class="gear-card-desc">Hand-held rope clamp for ascending fixed ropes on peak climbs. Right or left hand versions. Required for Island Peak, Lobuche.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">For</span><span class="gear-spec-val">Fixed rope travel</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Jumar / Ascender','$1/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🔗</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Carabiner Set (4× Locking)</div>
+            <div class="gear-card-desc">4 locking HMS carabiners for clipping into fixed ropes, building anchors, and general mountaineering use.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Quantity</span><span class="gear-spec-val">4× locking</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Gate</span><span class="gear-spec-val">Screw-lock</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per set</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Carabiner Set','$1/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🌡️</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Portable Pulse Oximeter</div>
+            <div class="gear-card-desc">Fingertip pulse oximeter to monitor blood oxygen saturation (SpO₂) at altitude. A critical safety tool above 4,000m. Your guide carries one — rent a second for personal monitoring.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Reads</span><span class="gear-spec-val">SpO₂ + Heart Rate</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per device</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Pulse Oximeter','$1/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accessories -->
+    <div class="gear-category reveal" data-category="accessories" id="cat-accessories">
+      <div class="gear-category-header">
+        <span class="gear-category-icon">🔦</span>
+        <h3 class="gear-category-title">Accessories & Navigation</h3>
+        <span class="gear-category-count">5 items</span>
+      </div>
+      <div class="gear-cards">
+        <div class="gear-card-full">
+          <div class="gear-card-top">🕶️</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Glacier Sunglasses</div>
+            <div class="gear-card-desc">Category 4 UV400 glacier glasses with side shields. Mandatory above 4,000m on snow — UV radiation is 2–3× stronger than at sea level. Snow blindness is a real risk.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Filter</span><span class="gear-spec-val">Category 4 / UV400</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Side Shields</span><span class="gear-spec-val">Yes</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Glacier Glasses','$1.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🪄</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Trekking Poles (Pair)</div>
+            <div class="gear-card-desc">Lightweight collapsible carbon or aluminum trekking poles. Shock absorbing. Reduces knee strain by 20–30% on descents. Highly recommended for all trekkers.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Material</span><span class="gear-spec-val">Carbon / Aluminum</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Adjustment</span><span class="gear-spec-val">Collapsible</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1.50<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per pair</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Trekking Poles','$1.50/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🔦</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Headlamp (400+ lumens)</div>
+            <div class="gear-card-desc">High-lumen headlamp for pre-dawn Kalapathar summit and teahouse evenings. Waterproof. Includes spare batteries.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Lumens</span><span class="gear-spec-val">400+</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Battery Life</span><span class="gear-spec-val">200 hrs (low)</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$1<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per person</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Headlamp','$1/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">🔋</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Solar Power Bank (20,000mAh)</div>
+            <div class="gear-card-desc">High-capacity solar charging power bank. Charging points are scarce above Namche (typically NPR 200/hour). Keep your devices alive for emergency communication.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Capacity</span><span class="gear-spec-val">20,000mAh</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">Solar Panel</span><span class="gear-spec-val">Yes (backup)</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$2<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per device</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Solar Power Bank','$2/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card-full">
+          <div class="gear-card-top">📻</div>
+          <div class="gear-card-body">
+            <div class="gear-card-name">Walkie-Talkie (pair)</div>
+            <div class="gear-card-desc">Two-way radios for group communication on large treks where members may separate (technical peaks, Three High Passes). Range 5km line-of-sight.</div>
+            <div class="gear-card-specs">
+              <div class="gear-spec-row"><span class="gear-spec-key">Range</span><span class="gear-spec-val">5km (clear)</span></div>
+              <div class="gear-spec-row"><span class="gear-spec-key">For</span><span class="gear-spec-val">Peak climbing groups</span></div>
+            </div>
+            <div class="gear-card-price-row">
+              <div><div class="gear-day-price">$3<span style="font-size:0.85rem;font-weight:500">/day</span></div><div class="gear-day-label">per pair</div></div>
+              <button class="gear-add-btn" onclick="addToCart(this,'Walkie-Talkie Pair','$3/day')">+ Add to Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div style="background:var(--midnight);border-radius:var(--radius-xl);padding:3rem;text-align:center;color:white" class="reveal">
+      <h3 style="font-size:1.6rem;margin-bottom:0.75rem">Bundle Gear with Your Booking</h3>
+      <p style="color:rgba(255,255,255,0.65);margin-bottom:2rem">Add gear during the booking process for the best experience — we'll have everything ready in Kathmandu when you arrive.</p>
+      <a href="book.html" class="btn btn-primary btn-lg">Book a Trek + Add Gear</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Floating Cart -->
+<div class="rental-cart" id="rentalCart">
+  <div class="cart-count" id="cartCount">0</div>
+  <div>
+    <div style="font-weight:700;font-size:0.9rem" id="cartText">0 items selected</div>
+    <div style="font-size:0.75rem;color:rgba(255,255,255,0.5)">Click to view or add to booking</div>
+  </div>
+  <a href="book.html" class="btn btn-primary btn-sm">Book + Add Gear</a>
+</div>
+
+<footer class="footer" style="padding:2.5rem 2rem">
+  <div class="container">
+    <div class="footer-bottom" style="border:none;padding:0">
+      <a href="index.html" class="footer-logo" style="font-size:1.3rem">Peak<span>Pursuit</span></a>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap;color:rgba(255,255,255,0.5);font-size:0.85rem">
+        <a href="index.html">Home</a><a href="treks.html">Treks</a><a href="prepare.html">Prepare</a><a href="book.html">Book</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let cartItems = [];
+
+  function addToCart(btn, name, price) {
+    if (btn.classList.contains('added')) {
+      btn.classList.remove('added'); btn.textContent = '+ Add to Booking';
+      cartItems = cartItems.filter(i => i !== name);
+    } else {
+      btn.classList.add('added'); btn.textContent = '✓ Added';
+      cartItems.push(name);
+    }
+    const count = cartItems.length;
+    document.getElementById('cartCount').textContent = count;
+    document.getElementById('cartText').textContent = `${count} item${count !== 1 ? 's' : ''} selected`;
+    document.getElementById('rentalCart').classList.toggle('visible', count > 0);
+  }
+
+  function filterGear(cat, btn) {
+    document.querySelectorAll('.gear-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.gear-category').forEach(c => {
+      c.style.display = (cat === 'all' || c.dataset.category === cat) ? 'block' : 'none';
+    });
+  }
+
+  const observer = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && (x.target.classList.add('visible'), observer.unobserve(x.target))), {threshold:0.08});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "peak-pursuit",
+  "version": "1.0.0",
+  "description": "Peak Pursuit — Everest region trekking company website",
+  "scripts": {
+    "start": "npx serve . --listen 3000 --no-clipboard",
+    "dev": "npx browser-sync start --server --files '**/*.html, css/**/*.css, images/**/*' --port 3000 --open"
+  },
+  "keywords": ["trekking", "nepal", "everest"],
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treks — Peak Pursuit Trekking</title>
+  <meta name="description" content="Explore all treks in Nepal's Everest region.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .page-hero {
+      height: 55vh; min-height: 400px;
+      background-image: url('images/above_clouds.jpeg');
+      background-size: cover;
+      background-position: center 35%;
+      position: relative;
+      display: flex; align-items: flex-end;
+      padding: 0 2rem 4rem;
+    }
+    .page-hero::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(7,21,38,0.92) 0%, rgba(7,21,38,0.3) 70%, transparent 100%);
+    }
+    .page-hero-content {
+      position: relative; z-index: 2;
+      color: var(--white);
+      max-width: 1200px; margin: 0 auto; width: 100%;
+      padding-top: 72px;
+    }
+    .difficulty-legend {
+      display: flex; flex-wrap: wrap; gap: 1.5rem;
+      padding: 2rem;
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      margin-bottom: 3rem;
+      border: 1px solid var(--border-dark);
+    }
+    .legend-item { display: flex; align-items: center; gap: 0.75rem; }
+    .legend-icon { font-size: 1.5rem; }
+    .legend-text { font-size: 0.88rem; }
+    .legend-label { font-weight: 700; }
+    .legend-desc { color: var(--stone); }
+
+    .trek-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem; }
+    .trek-full-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex; flex-direction: column;
+      border: 1px solid var(--border-dark);
+    }
+    .trek-full-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); }
+    .trek-img-wrap { position: relative; height: 240px; overflow: hidden; }
+    .trek-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .trek-full-card:hover .trek-img-wrap img { transform: scale(1.06); }
+    .trek-img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(7,21,38,0.7) 0%, transparent 60%);
+    }
+    .trek-img-badges {
+      position: absolute; top: 1rem; left: 1rem; right: 1rem;
+      display: flex; justify-content: space-between; align-items: flex-start;
+    }
+    .trek-price-badge {
+      background: var(--amber);
+      color: var(--white);
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-weight: 700; font-size: 0.9rem;
+    }
+    .trek-season-badge {
+      background: rgba(7,21,38,0.7);
+      backdrop-filter: blur(4px);
+      color: var(--white);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .trek-body { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
+    .trek-title-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.6rem; }
+    .trek-title { font-size: 1.3rem; color: var(--navy); }
+    .trek-elevation {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--amber);
+      white-space: nowrap;
+    }
+    .trek-tagline { font-size: 0.88rem; color: var(--stone); line-height: 1.6; margin-bottom: 1.25rem; flex: 1; }
+    .trek-specs {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem; margin-bottom: 1.25rem;
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 1rem;
+    }
+    .trek-spec { text-align: center; }
+    .trek-spec-val { font-weight: 700; font-size: 0.95rem; color: var(--navy); }
+    .trek-spec-key { font-size: 0.72rem; color: var(--stone); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+    .trek-highlights { margin-bottom: 1.25rem; }
+    .trek-highlight { font-size: 0.82rem; color: var(--stone-dark); display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.2rem 0; }
+    .trek-highlight::before { content: '→'; color: var(--amber); flex-shrink: 0; font-weight: 700; }
+    .trek-actions { display: flex; gap: 0.75rem; }
+
+    /* Detail Modal */
+    .trek-modal-img { width: 100%; height: 280px; object-fit: cover; }
+    .trek-modal-body { padding: 0 2rem 2rem; }
+    .trek-detail-specs {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .trek-detail-spec { text-align: center; }
+    .trek-detail-spec-val { font-weight: 700; font-size: 1.05rem; color: var(--navy); }
+    .trek-detail-spec-key { font-size: 0.75rem; color: var(--stone); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+    .section-mini-title {
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.12em; color: var(--amber); margin-bottom: 0.75rem;
+    }
+
+    .filter-bar {
+      display: flex; gap: 0.75rem; flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      padding: 1.25rem;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 72px;
+      z-index: 100;
+    }
+    .filter-label { font-size: 0.82rem; font-weight: 700; color: var(--stone); align-self: center; white-space: nowrap; }
+    .filter-chip {
+      padding: 0.45rem 1rem;
+      border-radius: 100px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 2px solid var(--border-dark);
+      background: var(--white);
+      color: var(--stone);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .filter-chip.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+    .filter-chip:hover:not(.active) { border-color: var(--stone); color: var(--stone-dark); }
+
+    @media (max-width: 768px) {
+      .trek-detail-specs { grid-template-columns: repeat(2, 1fr); }
+      .trek-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">Peak<span>Pursuit</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="treks.html" style="color:var(--amber-light)">Treks</a></li>
+    <li><a href="prepare.html">Prepare</a></li>
+    <li><a href="gear.html">Gear Rental</a></li>
+    <li><a href="index.html#testimonials">Stories</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="book.html" class="nav-cta">Book a Trek</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="eyebrow" style="color:var(--amber-light);margin-bottom:0.5rem">Khumbu Himalaya, Nepal</div>
+    <h1 class="display-lg" style="color:var(--white);margin-bottom:0.5rem">All Treks</h1>
+    <p style="color:rgba(255,255,255,0.7);font-size:1.05rem">14 routes across the Everest region</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Difficulty Legend -->
+    <div class="difficulty-legend reveal">
+      <div class="legend-item">
+        <span class="difficulty-badge diff-green" style="white-space:nowrap;font-size:0.8rem"><span class="diff-icon">●</span> Green</span>
+        <div class="legend-text">
+          <div class="legend-label">Green Circle — Easy</div>
+          <div class="legend-desc">Suitable for fit beginners. Moderate elevation, gentle terrain.</div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <span class="difficulty-badge diff-blue" style="white-space:nowrap;font-size:0.8rem"><span class="diff-icon">■</span> Blue</span>
+        <div class="legend-text">
+          <div class="legend-label">Blue Square — Intermediate</div>
+          <div class="legend-desc">Regular hiking experience needed. Some steep sections, higher altitude.</div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <span class="difficulty-badge diff-black" style="white-space:nowrap;font-size:0.8rem"><span class="diff-icon">◆</span> Black</span>
+        <div class="legend-text">
+          <div class="legend-label">Black Diamond — Difficult</div>
+          <div class="legend-desc">Strong fitness required. Multi-day high altitude, challenging terrain.</div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <span class="difficulty-badge diff-double-black" style="white-space:nowrap;font-size:0.8rem"><span class="diff-icon">◆◆</span> Expert</span>
+        <div class="legend-text">
+          <div class="legend-label">Double Black Diamond — Expert</div>
+          <div class="legend-desc">Technical climbing, crampon use, ice axe, prior expedition experience.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-chip active" onclick="filterTreks('all',this)">All Treks</button>
+      <button class="filter-chip" onclick="filterTreks('green',this)">● Green Circle</button>
+      <button class="filter-chip" onclick="filterTreks('blue',this)">■ Blue Square</button>
+      <button class="filter-chip" onclick="filterTreks('black',this)">◆ Black Diamond</button>
+      <button class="filter-chip" onclick="filterTreks('double',this)">◆◆ Double Black</button>
+      <button class="filter-chip" onclick="filterTreks('cultural',this)">Cultural</button>
+      <button class="filter-chip" onclick="filterTreks('peak',this)">Peak Climbing</button>
+    </div>
+
+    <!-- Trek Grid -->
+    <div class="trek-grid" id="trekGrid">
+
+      <!-- 1. Namche Bazaar Cultural Trek -->
+      <div class="trek-full-card reveal" data-diff="green" data-tags="cultural green">
+        <div class="trek-img-wrap">
+          <img src="images/trek_namche.jpg" alt="Namche Bazaar Cultural Trek">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-green"><span class="diff-icon">●</span> Green Circle</span>
+            <span class="trek-price-badge">From $690</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Year-Round</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Namche Bazaar Cultural Walk</h3>
+            <div class="trek-elevation">3,440m</div>
+          </div>
+          <p class="trek-tagline">The gateway to Everest — explore the bustling Sherpa capital, visit the Everest Museum, hike to Khumjung, and acclimatize in comfort.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">5</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">3,440m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Lodge</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Sherpa culture & Namche Saturday market</div>
+            <div class="trek-highlight">Everest view from Syangboche ridge</div>
+            <div class="trek-highlight">Monastery visits at Tengboche & Khumjung</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('namche')">Full Details</button>
+            <a href="book.html?trek=namche" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Ama Dablam BC -->
+      <div class="trek-full-card reveal" data-diff="blue" data-tags="blue">
+        <div class="trek-img-wrap">
+          <img src="images/trek_amadablam.jpg" alt="Ama Dablam Base Camp">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-blue"><span class="diff-icon">■</span> Blue Square</span>
+            <span class="trek-price-badge">From $1,290</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Oct–Nov · Mar–May</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Ama Dablam Base Camp</h3>
+            <div class="trek-elevation">4,600m</div>
+          </div>
+          <p class="trek-tagline">Trek to the foot of one of the world's most photogenic mountains — the "matterhorn of the Himalayas." A classic route through Sherpa villages.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">10</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">4,600m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Teahouse</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Close-up views of Ama Dablam's dramatic south face</div>
+            <div class="trek-highlight">Tengboche Monastery — highest monastery in Nepal</div>
+            <div class="trek-highlight">Chhukung Valley sunrise over Lhotse and Nuptse</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('amadablam')">Full Details</button>
+            <a href="book.html?trek=amadablam" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Gokyo Lakes -->
+      <div class="trek-full-card reveal" data-diff="blue" data-tags="blue">
+        <div class="trek-img-wrap">
+          <img src="images/trek_gokyo.jpg" alt="Gokyo Lakes Trek">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-blue"><span class="diff-icon">■</span> Blue Square</span>
+            <span class="trek-price-badge">From $1,490</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Oct–Nov · Mar–May</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Gokyo Lakes Trek</h3>
+            <div class="trek-elevation">4,790m</div>
+          </div>
+          <p class="trek-tagline">A serene alternative to the EBC trail — turquoise sacred lakes at altitude, a glacier hike, and the iconic summit of Gokyo Ri with panoramic Everest views.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">13</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">4,790m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Teahouse</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Six sacred Gokyo Lakes & Ngozumpa Glacier</div>
+            <div class="trek-highlight">Summit Gokyo Ri (5,357m) for 360° Everest panorama</div>
+            <div class="trek-highlight">Less crowded, more wildlife than EBC route</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('gokyo')">Full Details</button>
+            <a href="book.html?trek=gokyo" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Everest Base Camp -->
+      <div class="trek-full-card reveal" data-diff="black" data-tags="black">
+        <div class="trek-img-wrap">
+          <img src="images/trek_ebc.jpg" alt="Everest Base Camp Trek">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-black"><span class="diff-icon">◆</span> Black Diamond</span>
+            <span class="trek-price-badge">From $1,890</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Oct–Nov · Mar–May</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Everest Base Camp</h3>
+            <div class="trek-elevation">5,364m</div>
+          </div>
+          <p class="trek-tagline">The world's most legendary trek. Stand at the foot of the world's highest mountain, feel the thin air at 5,364m, and look up at the Khumbu Icefall.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">14</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">5,364m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Teahouse</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Reach legendary Everest Base Camp at 5,364m</div>
+            <div class="trek-highlight">Summit Kalapathar (5,545m) for best Everest sunrise</div>
+            <div class="trek-highlight">Fly into Lukla — one of the world's most dramatic airports</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('ebc')">Full Details</button>
+            <a href="book.html?trek=ebc" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Kalapathar & EBC -->
+      <div class="trek-full-card reveal" data-diff="black" data-tags="black">
+        <div class="trek-img-wrap">
+          <img src="images/kalapathar.jpeg" alt="Kalapathar Summit">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-black"><span class="diff-icon">◆</span> Black Diamond</span>
+            <span class="trek-price-badge">From $1,790</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Full Moon Specials</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Kalapathar Sunrise Summit</h3>
+            <div class="trek-elevation">5,545m</div>
+          </div>
+          <p class="trek-tagline">Hike before dawn to summit Kalapathar (Black Rock) at 5,545m for the world's most dramatic sunrise view directly over Everest. Bucket-list moment.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">13</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">5,545m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Teahouse</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Best unobstructed view of Everest summit from ground level</div>
+            <div class="trek-highlight">Also visits Everest Base Camp on the same route</div>
+            <div class="trek-highlight">Full moon night hike option (seasonal)</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('kalapathar')">Full Details</button>
+            <a href="book.html?trek=kalapathar" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Renjo La Pass -->
+      <div class="trek-full-card reveal" data-diff="black" data-tags="black">
+        <div class="trek-img-wrap">
+          <img src="images/trek_renjola.jpg" alt="Renjo La Pass Trek">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-black"><span class="diff-icon">◆</span> Black Diamond</span>
+            <span class="trek-price-badge">From $1,690</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Oct–Nov · Mar–May</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Renjo La Pass & Gokyo</h3>
+            <div class="trek-elevation">5,360m</div>
+          </div>
+          <p class="trek-tagline">Cross the dramatic Renjo La pass at 5,360m with sweeping views of the Everest massif, then descend to the sacred Gokyo Lakes.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">15</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">5,360m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Teahouse</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Renjo La summit — stunning views of Everest & Cho Oyu</div>
+            <div class="trek-highlight">Gokyo Lakes and Gokyo Ri summit</div>
+            <div class="trek-highlight">Less-traveled route with fewer trekkers</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('renjola')">Full Details</button>
+            <a href="book.html?trek=renjola" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Jiri to EBC Classic -->
+      <div class="trek-full-card reveal" data-diff="black" data-tags="black">
+        <div class="trek-img-wrap">
+          <img src="images/hiking_down_at_sunset.jpeg" alt="Jiri to EBC Classic Route">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-black"><span class="diff-icon">◆</span> Black Diamond</span>
+            <span class="trek-price-badge">From $2,290</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Oct–Nov · Mar–May</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Jiri to EBC — Classic Route</h3>
+            <div class="trek-elevation">5,364m</div>
+          </div>
+          <p class="trek-tagline">Walk the same path Hillary & Tenzing walked. Start from Jiri as the original expeditions did — a 3-week journey through remote Nepal before the crowds begin.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">22</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">5,364m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Teahouse</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">The original 1953 expedition approach route</div>
+            <div class="trek-highlight">Remote villages, terraced farms, cultural immersion</div>
+            <div class="trek-highlight">Superb acclimatization — 7+ days before Khumbu entry</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('jiri')">Full Details</button>
+            <a href="book.html?trek=jiri" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Chhukung Ri -->
+      <div class="trek-full-card reveal" data-diff="black" data-tags="black">
+        <div class="trek-img-wrap">
+          <img src="images/trek_chhukungri.jpg" alt="Chhukung Ri">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-black"><span class="diff-icon">◆</span> Black Diamond</span>
+            <span class="trek-price-badge">From $1,990</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Oct–Nov · Mar–May</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Chhukung Ri Summit</h3>
+            <div class="trek-elevation">5,550m</div>
+          </div>
+          <p class="trek-tagline">Summit Chhukung Ri for one of the highest non-technical viewpoints in the Khumbu — Ama Dablam, Lhotse, Makalu and Island Peak all in one panorama.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">14</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">5,550m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Teahouse</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">360° views of four 8,000m+ peaks</div>
+            <div class="trek-highlight">Imja Lake glacier hike (climate-change landmark)</div>
+            <div class="trek-highlight">Option to combine with EBC route</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('chhukung')">Full Details</button>
+            <a href="book.html?trek=chhukung" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Three High Passes -->
+      <div class="trek-full-card reveal" data-diff="double" data-tags="double">
+        <div class="trek-img-wrap">
+          <img src="images/trek_3passes.jpg" alt="Three High Passes Trek">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-double-black"><span class="diff-icon">◆◆</span> Double Black</span>
+            <span class="trek-price-badge">From $2,490</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Oct · Apr–May</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Three High Passes</h3>
+            <div class="trek-elevation">5,535m</div>
+          </div>
+          <p class="trek-tagline">The ultimate Khumbu circuit. Cross Kongma La (5,535m), Cho La (5,420m), and Renjo La (5,360m) — includes EBC and Gokyo in one 20-day epic.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">20</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">5,535m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Mixed</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Three passes: Kongma La, Cho La, Renjo La</div>
+            <div class="trek-highlight">Includes Everest Base Camp & Gokyo Lakes</div>
+            <div class="trek-highlight">The most comprehensive Khumbu experience possible</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('3passes')">Full Details</button>
+            <a href="book.html?trek=3passes" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Cho La Pass -->
+      <div class="trek-full-card reveal" data-diff="double" data-tags="double">
+        <div class="trek-img-wrap">
+          <img src="images/trek_chola.jpg" alt="Cho La Pass Trek">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-double-black"><span class="diff-icon">◆◆</span> Double Black</span>
+            <span class="trek-price-badge">From $2,090</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Oct · May</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Cho La Pass & EBC</h3>
+            <div class="trek-elevation">5,420m</div>
+          </div>
+          <p class="trek-tagline">Cross the Cho La glaciated pass at 5,420m connecting the EBC route to the Gokyo valley — crampons required, spectacular high-mountain terrain.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">16</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">5,420m</div><div class="trek-spec-key">Max Alt.</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Teahouse</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Glacier crossing with crampons — an alpine experience</div>
+            <div class="trek-highlight">Combines EBC & Gokyo Lakes in one route</div>
+            <div class="trek-highlight">Spectacular ice formations on the pass</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('chola')">Full Details</button>
+            <a href="book.html?trek=chola" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. Lobuche Peak (La Bouche) -->
+      <div class="trek-full-card reveal" data-diff="double" data-tags="double peak">
+        <div class="trek-img-wrap">
+          <img src="images/trek_lobuche.jpg" alt="Lobuche Peak Climbing">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-double-black"><span class="diff-icon">◆◆</span> Double Black</span>
+            <span class="trek-price-badge">From $2,890</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Peak Climbing</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Lobuche Peak Climbing</h3>
+            <div class="trek-elevation">6,119m</div>
+          </div>
+          <p class="trek-tagline">Also known as "La Bouche" — Lobuche East (6,119m) is a classic trekking peak near EBC. Fixed ropes, basic technical climbing, and a summit above the 6,000m mark.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">18</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">6,119m</div><div class="trek-spec-key">Summit</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Camp+Lodge</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Summit above 6,000m with full EBC approach</div>
+            <div class="trek-highlight">Crampon, harness, ice axe experience required</div>
+            <div class="trek-highlight">High camp night above 5,600m</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('lobuche')">Full Details</button>
+            <a href="book.html?trek=lobuche" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. Island Peak -->
+      <div class="trek-full-card reveal" data-diff="double" data-tags="double peak">
+        <div class="trek-img-wrap">
+          <img src="images/trek_islandpeak.jpg" alt="Island Peak Climbing">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-double-black"><span class="diff-icon">◆◆</span> Double Black</span>
+            <span class="trek-price-badge">From $3,190</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Peak Climbing</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Island Peak (Imja Tse)</h3>
+            <div class="trek-elevation">6,189m</div>
+          </div>
+          <p class="trek-tagline">Nepal's most popular trekking peak — so-named because it appears as an "island" above the Chhukung glacier. Technical summit with ropes, crampons, and ice axe.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">20</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">6,189m</div><div class="trek-spec-key">Summit</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Camp+Lodge</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Summit ridge with ropes — genuine mountaineering</div>
+            <div class="trek-highlight">Sunrise from the summit over Lhotse and Makalu</div>
+            <div class="trek-highlight">Option to add EBC on the approach route</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('island')">Full Details</button>
+            <a href="book.html?trek=island" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13. Mera Peak -->
+      <div class="trek-full-card reveal" data-diff="double" data-tags="double peak">
+        <div class="trek-img-wrap">
+          <img src="images/trek_mera.jpg" alt="Mera Peak Climbing">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge diff-double-black"><span class="diff-icon">◆◆</span> Double Black</span>
+            <span class="trek-price-badge">From $3,490</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Peak Climbing</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Mera Peak</h3>
+            <div class="trek-elevation">6,476m</div>
+          </div>
+          <p class="trek-tagline">The highest trekking peak in Nepal. From the summit you can see five of the world's six highest mountains — Everest, Kangchenjunga, Cho Oyu, Lhotse, and Makalu.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">18</div><div class="trek-spec-key">Days</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">6,476m</div><div class="trek-spec-key">Summit</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Camp+Lodge</div><div class="trek-spec-key">Accommodation</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">5 of world's 6 highest peaks visible from the summit</div>
+            <div class="trek-highlight">Nepal's highest trekking peak — a true expedition</div>
+            <div class="trek-highlight">Hinku Valley approach through pristine wilderness</div>
+          </div>
+          <div class="trek-actions">
+            <button class="btn btn-dark btn-sm" style="flex:1;justify-content:center" onclick="openTrekModal('mera')">Full Details</button>
+            <a href="book.html?trek=mera" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14. Custom Bespoke Trek -->
+      <div class="trek-full-card reveal" data-diff="all" data-tags="blue black double green">
+        <div class="trek-img-wrap">
+          <img src="images/landing.JPG" alt="Custom Bespoke Everest Trek">
+          <div class="trek-img-overlay"></div>
+          <div class="trek-img-badges">
+            <span class="difficulty-badge" style="background:linear-gradient(135deg,#1E40AF,#E8722B);color:white"><span class="diff-icon">✦</span> Custom</span>
+            <span class="trek-price-badge">Ask for Quote</span>
+          </div>
+          <div style="position:absolute;bottom:1rem;left:1rem;z-index:1">
+            <span class="trek-season-badge">Any Date</span>
+          </div>
+        </div>
+        <div class="trek-body">
+          <div class="trek-title-row">
+            <h3 class="trek-title">Bespoke Everest Experience</h3>
+            <div class="trek-elevation">Custom</div>
+          </div>
+          <p class="trek-tagline">Design your dream Himalayan adventure from scratch. Private guide, custom itinerary, your pace, your objectives — anywhere in the Khumbu.</p>
+          <div class="trek-specs">
+            <div class="trek-spec"><div class="trek-spec-val">Flexible</div><div class="trek-spec-key">Duration</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Your Goal</div><div class="trek-spec-key">Altitude</div></div>
+            <div class="trek-spec"><div class="trek-spec-val">Private</div><div class="trek-spec-key">Style</div></div>
+          </div>
+          <div class="trek-highlights">
+            <div class="trek-highlight">Fully private, tailored to your goals and experience</div>
+            <div class="trek-highlight">Photography treks, family-friendly routes, solo guidance</div>
+            <div class="trek-highlight">Flexible departure dates year-round</div>
+          </div>
+          <div class="trek-actions">
+            <a href="mailto:namaste@peakpursuit.com" class="btn btn-dark btn-sm" style="flex:1;justify-content:center">Contact Us</a>
+            <a href="book.html?trek=custom" class="btn btn-primary btn-sm" style="flex:1;justify-content:center">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /trek-grid -->
+  </div>
+</section>
+
+<!-- EBC Detail Modal (example — others follow same pattern) -->
+<div class="modal-overlay" id="modal-ebc">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="eyebrow" style="margin-bottom:0.25rem">Black Diamond ◆</div>
+        <h2 style="font-size:1.6rem;color:var(--navy)">Everest Base Camp Trek</h2>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-ebc')">✕</button>
+    </div>
+    <img src="images/hike_3rd_person.jpeg" alt="EBC" class="trek-modal-img">
+    <div class="trek-modal-body">
+      <div class="trek-detail-specs">
+        <div class="trek-detail-spec"><div class="trek-detail-spec-val">14 days</div><div class="trek-detail-spec-key">Duration</div></div>
+        <div class="trek-detail-spec"><div class="trek-detail-spec-val">5,364m</div><div class="trek-detail-spec-key">Max Altitude</div></div>
+        <div class="trek-detail-spec"><div class="trek-detail-spec-val">From $1,890</div><div class="trek-detail-spec-key">Per Person</div></div>
+        <div class="trek-detail-spec"><div class="trek-detail-spec-val">Oct–Nov / Mar–May</div><div class="trek-detail-spec-key">Best Season</div></div>
+      </div>
+      <div class="section-mini-title">Sample Itinerary</div>
+      <div class="itinerary-day"><div class="itinerary-day-num">1</div><div><div class="itinerary-day-title">Fly Kathmandu → Lukla (2,860m), Trek to Phakding</div><div class="itinerary-day-detail">20-minute scenic flight to Lukla. Trek alongside the Dudh Kosi river through pine forests to Phakding.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">3–4 hrs</span><span class="itinerary-meta-chip">2,652m sleep</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">2</div><div><div class="itinerary-day-title">Phakding → Namche Bazaar (3,440m)</div><div class="itinerary-day-detail">Cross suspension bridges over roaring rivers. Steep 600m climb to Namche — the Sherpa capital with your first views of Everest.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">5–6 hrs</span><span class="itinerary-meta-chip">3,440m sleep</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">3–4</div><div><div class="itinerary-day-title">Namche Acclimatization (2 nights)</div><div class="itinerary-day-detail">Hike to Everest View Hotel (3,880m) for incredible panorama. Visit the Sherpa Museum and Saturday market. Acclimatize at altitude.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">Rest day</span><span class="itinerary-meta-chip">3,440m sleep</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">5</div><div><div class="itinerary-day-title">Namche → Tengboche Monastery (3,867m)</div><div class="itinerary-day-detail">Trek through rhododendron forests past Khumjung to Tengboche — home to the highest monastery in the world with views of Ama Dablam.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">5–6 hrs</span><span class="itinerary-meta-chip">3,867m sleep</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">6</div><div><div class="itinerary-day-title">Tengboche → Dingboche (4,410m)</div><div class="itinerary-day-detail">Pass through Pangboche village (highest permanent settlement), stone walls, and yak pastures. Big views of Ama Dablam.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">5–6 hrs</span><span class="itinerary-meta-chip">4,410m sleep</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">7–8</div><div><div class="itinerary-day-title">Dingboche Acclimatization</div><div class="itinerary-day-detail">Critical rest. Day hike to 5,100m for acclimatization. Good night for spotting phosphorescent stars in the crystal-clear air.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">Acclimatize</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">9</div><div><div class="itinerary-day-title">Dingboche → Lobuche (4,940m)</div><div class="itinerary-day-detail">Trek above the Khumbu Glacier moraine to Lobuche. Memorial chortens to lost climbers. Thin air begins to bite.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">4–5 hrs</span><span class="itinerary-meta-chip">4,940m sleep</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">10</div><div><div class="itinerary-day-title">Lobuche → Gorak Shep → Everest Base Camp (5,364m)</div><div class="itinerary-day-detail">The day you've been preparing for. Hike across the moraine to EBC — the legendary yellow and orange tents of the climbing season. Return to Gorak Shep.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">7–8 hrs total</span><span class="itinerary-meta-chip">5,140m sleep</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">11</div><div><div class="itinerary-day-title">Pre-dawn: Summit Kalapathar (5,545m)</div><div class="itinerary-day-detail">Wake at 4am. Headlamps on. Summit Kalapathar at first light for the greatest sunrise view on Earth — Everest blazing gold above the clouds. Descend to Pheriche.</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">Sunrise summit</span><span class="itinerary-meta-chip">4,288m sleep</span></div></div></div>
+      <div class="itinerary-day"><div class="itinerary-day-num">12–14</div><div><div class="itinerary-day-title">Descent: Pheriche → Namche → Lukla → Fly to Kathmandu</div><div class="itinerary-day-detail">Rapid descent through forests. Celebrations at Namche. Morning flight back to Kathmandu. Celebration dinner!</div><div class="itinerary-day-meta"><span class="itinerary-meta-chip">Celebration</span></div></div></div>
+      <div style="margin-top:2rem;display:flex;gap:0.75rem">
+        <a href="book.html?trek=ebc" class="btn btn-primary" style="flex:1;justify-content:center">Book This Trek</a>
+        <button class="btn btn-outline-amber" onclick="closeModal('modal-ebc')" style="flex:1;justify-content:center">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Generic modal for other treks (simplified) -->
+<div class="modal-overlay" id="modal-generic">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="eyebrow" id="modal-generic-diff" style="margin-bottom:0.25rem"></div>
+        <h2 id="modal-generic-title" style="font-size:1.6rem;color:var(--navy)"></h2>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-generic')">✕</button>
+    </div>
+    <img id="modal-generic-img" src="" alt="" class="trek-modal-img">
+    <div class="trek-modal-body" id="modal-generic-body"></div>
+  </div>
+</div>
+
+<footer class="footer" style="padding:3rem 2rem">
+  <div class="container">
+    <div class="footer-bottom" style="border:none;padding:0">
+      <a href="index.html" class="footer-logo" style="font-size:1.3rem">Peak<span>Pursuit</span></a>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+        <a href="index.html">Home</a>
+        <a href="prepare.html">Prepare</a>
+        <a href="gear.html">Gear</a>
+        <a href="book.html">Book</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll effect
+  window.addEventListener('scroll', () => {
+    document.querySelector('.nav').classList.add('scrolled');
+  });
+
+  // Intersection Observer
+  const observer = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && (x.target.classList.add('visible'), observer.unobserve(x.target))), {threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Filtering
+  function filterTreks(type, btn) {
+    document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.trek-full-card').forEach(card => {
+      if (type === 'all') { card.style.display = 'flex'; return; }
+      const tags = card.dataset.tags || '';
+      card.style.display = tags.includes(type) ? 'flex' : 'none';
+    });
+  }
+
+  // Trek data for generic modal
+  const treks = {
+    namche:    { title:'Namche Bazaar Cultural Walk',  diff:'Green Circle ●',    img:'images/yak_shrine.JPG',          days:'5', alt:'3,440m', price:'$690', desc:'Explore the Sherpa capital and acclimatize in comfort. Visit the Everest Museum, Saturday market, and hike to the famous Everest view.' },
+    amadablam: { title:'Ama Dablam Base Camp',         diff:'Blue Square ■',     img:'images/sunset_3_peaks.jpeg',     days:'10', alt:'4,600m', price:'$1,290', desc:'Trek to the base of the "Matterhorn of Nepal." A spectacular approach through Sherpa villages with constant views of this iconic peak.' },
+    gokyo:     { title:'Gokyo Lakes Trek',             diff:'Blue Square ■',     img:'images/above_clouds.jpeg',       days:'13', alt:'4,790m', price:'$1,490', desc:'Six sacred turquoise lakes, a glacier walk, and summit of Gokyo Ri (5,357m) for panoramic Everest views on a quieter route.' },
+    kalapathar:{ title:'Kalapathar Sunrise Summit',    diff:'Black Diamond ◆',   img:'images/kalapathar.jpeg',         days:'13', alt:'5,545m', price:'$1,790', desc:'Pre-dawn summit of Kalapathar (5,545m) — the highest non-technical viewpoint of Everest. Also includes EBC.' },
+    renjola:   { title:'Renjo La Pass & Gokyo',        diff:'Black Diamond ◆',   img:'images/sunset_3_peaks.jpeg',     days:'15', alt:'5,360m', price:'$1,690', desc:'Cross the stunning Renjo La pass at 5,360m for sweeping Everest views, then descend to the Gokyo Lakes.' },
+    jiri:      { title:'Jiri to EBC — Classic Route',  diff:'Black Diamond ◆',   img:'images/hiking_down_at_sunset.jpeg', days:'22', alt:'5,364m', price:'$2,290', desc:'The original 1953 expedition route from Jiri. Superb acclimatization, remote villages, and authentic Nepal before the crowds.' },
+    chhukung:  { title:'Chhukung Ri Summit',           diff:'Black Diamond ◆',   img:'images/above_clouds.jpeg',       days:'14', alt:'5,550m', price:'$1,990', desc:'Summit 5,550m Chhukung Ri for a 360° panorama of Ama Dablam, Lhotse, Makalu and Island Peak.' },
+    '3passes': { title:'Three High Passes',            diff:'Double Black ◆◆',   img:'images/hiking_down_at_sunset.jpeg', days:'20', alt:'5,535m', price:'$2,490', desc:'The ultimate Khumbu circuit. Cross all three high passes (Kongma La, Cho La, Renjo La) and include EBC and Gokyo Lakes.' },
+    chola:     { title:'Cho La Pass & EBC',            diff:'Double Black ◆◆',   img:'images/kalapathar.jpeg',         days:'16', alt:'5,420m', price:'$2,090', desc:'Cross the glaciated Cho La pass at 5,420m with crampons — connecting EBC to Gokyo on a spectacular route.' },
+    lobuche:   { title:'Lobuche Peak (La Bouche)',     diff:'Double Black ◆◆',   img:'images/sunset_everest.jpeg',     days:'18', alt:'6,119m', price:'$2,890', desc:'Lobuche East (6,119m) — a classic trekking peak beside EBC requiring crampons, harness, and basic technical skills.' },
+    island:    { title:'Island Peak (Imja Tse)',       diff:'Double Black ◆◆',   img:'images/hike_3rd_person.jpeg',    days:'20', alt:'6,189m', price:'$3,190', desc:"Nepal's most popular trekking peak with a technical summit ridge above 6,000m. Sunrise views of Lhotse, Makalu, and Everest." },
+    mera:      { title:'Mera Peak',                    diff:'Double Black ◆◆',   img:'images/sunset_3_peaks.jpeg',     days:'18', alt:'6,476m', price:'$3,490', desc:"Nepal's highest trekking peak. From the summit see 5 of the world's 6 highest mountains in one breathtaking panorama." },
+  };
+
+  function openTrekModal(id) {
+    if (id === 'ebc') { document.getElementById('modal-ebc').classList.add('open'); return; }
+    const t = treks[id];
+    if (!t) return;
+    document.getElementById('modal-generic-diff').textContent = t.diff;
+    document.getElementById('modal-generic-title').textContent = t.title;
+    document.getElementById('modal-generic-img').src = t.img;
+    document.getElementById('modal-generic-body').innerHTML = `
+      <div class="trek-detail-specs" style="grid-template-columns:repeat(3,1fr)">
+        <div class="trek-detail-spec"><div class="trek-detail-spec-val">${t.days} days</div><div class="trek-detail-spec-key">Duration</div></div>
+        <div class="trek-detail-spec"><div class="trek-detail-spec-val">${t.alt}</div><div class="trek-detail-spec-key">Max Altitude</div></div>
+        <div class="trek-detail-spec"><div class="trek-detail-spec-val">From ${t.price}</div><div class="trek-detail-spec-key">Per Person</div></div>
+      </div>
+      <p style="color:var(--stone);line-height:1.7;margin-bottom:1.5rem">${t.desc}</p>
+      <div class="info-box info-box-amber" style="margin-bottom:1.5rem">
+        <div class="info-box-title">Best Seasons</div>
+        October–November (autumn clear skies) and March–May (spring rhododendrons). Contact us for any-season options.
+      </div>
+      <div class="info-box" style="margin-bottom:1.5rem">
+        <div class="info-box-title">What's Included</div>
+        Experienced certified guide · Porter service · All permits (TIMS + Sagarmatha NP) · Teahouse/camp accommodation · Airport transfers · Farewell dinner in Kathmandu
+      </div>
+      <div class="info-box info-box-red" style="margin-bottom:1.5rem">
+        <div class="info-box-title">Not Included</div>
+        International flights · Nepal visa · Travel insurance (mandatory) · Personal gear · Alcoholic beverages · Tips
+      </div>
+      <div style="display:flex;gap:0.75rem">
+        <a href="book.html?trek=${id}" class="btn btn-primary" style="flex:1;justify-content:center">Book This Trek</a>
+        <a href="prepare.html" class="btn btn-outline-amber" style="flex:1;justify-content:center">Read Prep Guide</a>
+      </div>`;
+    document.getElementById('modal-generic').classList.add('open');
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('open');
+  }
+
+  // Close on overlay click
+  document.querySelectorAll('.modal-overlay').forEach(m => {
+    m.addEventListener('click', e => { if (e.target === m) m.classList.remove('open'); });
+  });
+
+  // Handle URL param
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('trek')) setTimeout(() => openTrekModal(params.get('trek')), 500);
+</script>
+</body>
+</html>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prepare for Your Trek — Peak Pursuit</title>
+  <meta name="description" content="Complete Himalayan trek preparation guide — packing lists, altitude sickness, Diamox, travel insurance, fitness training, and what to expect.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .page-hero {
+      height: 48vh; min-height: 380px;
+      background-image: url('images/hiking_down_at_sunset.jpeg');
+      background-size: cover; background-position: center 25%;
+      position: relative; display: flex; align-items: flex-end;
+      padding: 0 2rem 4rem;
+    }
+    .page-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(7,21,38,0.92) 0%, rgba(7,21,38,0.3) 70%, transparent 100%); }
+    .page-hero-content { position:relative; z-index:2; color:var(--white); max-width:1200px; margin:0 auto; width:100%; padding-top:72px; }
+
+    .prepare-layout { display:grid; grid-template-columns:260px 1fr; gap:3rem; align-items:start; }
+    .prepare-sidebar {
+      position:sticky; top:100px;
+      background:var(--white);
+      border-radius:var(--radius-lg);
+      padding:1.5rem;
+      box-shadow:var(--shadow-sm);
+      border:1px solid var(--border-dark);
+    }
+    .sidebar-title { font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--amber); margin-bottom:1rem; }
+    .sidebar-link {
+      display:flex; align-items:center; gap:0.6rem;
+      padding:0.6rem 0.75rem;
+      border-radius:var(--radius-sm);
+      font-size:0.87rem;
+      font-weight:500;
+      color:var(--stone);
+      transition:all var(--transition);
+      cursor:pointer;
+      text-decoration:none;
+    }
+    .sidebar-link:hover, .sidebar-link.active { background:rgba(232,114,43,0.1); color:var(--amber); }
+    .sidebar-link .icon { font-size:1rem; }
+
+    .section-card {
+      background:var(--white);
+      border-radius:var(--radius-xl);
+      padding:2.5rem;
+      box-shadow:var(--shadow-sm);
+      margin-bottom:2rem;
+      border:1px solid var(--border-dark);
+      scroll-margin-top:100px;
+    }
+    .section-card-title {
+      font-size:1.6rem;
+      color:var(--navy);
+      margin-bottom:0.5rem;
+      display:flex; align-items:center; gap:0.75rem;
+    }
+    .section-card-lead { color:var(--stone); line-height:1.7; margin-bottom:2rem; font-size:0.95rem; }
+
+    .ams-scale {
+      display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:1.5rem 0;
+    }
+    .ams-level {
+      border-radius:var(--radius);
+      padding:1.25rem;
+      text-align:center;
+    }
+    .ams-level-mild { background:#FEF9C3; border:2px solid #EAB308; }
+    .ams-level-moderate { background:#FEE2E2; border:2px solid #EF4444; }
+    .ams-level-severe { background:#1F2937; color:white; border:2px solid #111827; }
+    .ams-icon { font-size:2rem; margin-bottom:0.5rem; display:flex; align-items:center; justify-content:center; }
+    .ams-title { font-weight:700; font-size:0.95rem; margin-bottom:0.5rem; }
+    .ams-symptoms { font-size:0.8rem; line-height:1.5; }
+
+    .diamox-box {
+      background:linear-gradient(135deg, var(--navy), var(--blue-deep));
+      color:var(--white);
+      border-radius:var(--radius-lg);
+      padding:2rem;
+      margin:1.5rem 0;
+    }
+    .diamox-title { font-size:1.2rem; font-weight:700; margin-bottom:1rem; color:var(--amber-light); }
+    .diamox-row { display:flex; gap:1rem; flex-wrap:wrap; }
+    .diamox-stat { background:rgba(255,255,255,0.1); border-radius:var(--radius-sm); padding:1rem; flex:1; min-width:140px; }
+    .diamox-stat-val { font-weight:700; font-size:1.1rem; color:var(--amber-light); }
+    .diamox-stat-key { font-size:0.75rem; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:0.06em; }
+
+    .insurance-table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+    .insurance-table th { background:var(--navy); color:var(--white); padding:0.75rem 1rem; text-align:left; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.06em; }
+    .insurance-table td { padding:0.75rem 1rem; border-bottom:1px solid var(--border-dark); }
+    .insurance-table tr:last-child td { border:none; }
+    .insurance-table tr:nth-child(even) td { background:var(--cream); }
+    .check { color:#059669; font-weight:700; }
+    .cross { color:#EF4444; font-weight:700; }
+
+    .fitness-plan { display:flex; flex-direction:column; gap:1rem; }
+    .fitness-week {
+      border:1px solid var(--border-dark);
+      border-radius:var(--radius);
+      overflow:hidden;
+    }
+    .fitness-week-header {
+      background:var(--navy); color:var(--white);
+      padding:0.75rem 1.25rem;
+      display:flex; justify-content:space-between; align-items:center;
+      cursor:pointer;
+    }
+    .fitness-week-title { font-weight:700; font-size:0.9rem; }
+    .fitness-week-badge { font-size:0.75rem; color:var(--amber-light); }
+    .fitness-week-body { padding:1.25rem; display:none; }
+    .fitness-week-body.open { display:block; }
+    .fitness-item { display:flex; gap:0.75rem; padding:0.4rem 0; font-size:0.87rem; align-items:flex-start; }
+    .fitness-item::before { content:'✓'; color:var(--amber); font-weight:700; flex-shrink:0; }
+
+    .elevation-profile {
+      background:var(--cream);
+      border-radius:var(--radius-lg);
+      padding:2rem;
+      margin:1.5rem 0;
+    }
+
+    .day-card {
+      background:var(--cream);
+      border-radius:var(--radius);
+      padding:1.25rem;
+      margin-bottom:1rem;
+      border-left:4px solid var(--amber);
+      display:flex; gap:1rem;
+    }
+    .day-num {
+      width:36px; height:36px; background:var(--amber); color:white;
+      border-radius:50%; display:flex; align-items:center; justify-content:center;
+      font-weight:700; font-size:0.82rem; flex-shrink:0;
+    }
+    .day-title { font-weight:700; margin-bottom:0.2rem; }
+    .day-detail { font-size:0.84rem; color:var(--stone); line-height:1.5; }
+
+    .gear-item {
+      display:flex; align-items:center; gap:0.75rem;
+      padding:0.5rem;
+      border-radius:var(--radius-sm);
+      font-size:0.88rem;
+      transition:background var(--transition);
+    }
+    .gear-item:hover { background:var(--cream); }
+    .gear-check {
+      width:20px; height:20px;
+      border:2px solid var(--blue-sky);
+      border-radius:4px;
+      flex-shrink:0;
+      cursor:pointer;
+      transition:all var(--transition);
+    }
+    .gear-check.checked {
+      background:var(--blue-sky);
+      border-color:var(--blue-sky);
+    }
+    .gear-check.checked::after {
+      content:'✓'; color:white; font-size:0.7rem;
+      display:flex; align-items:center; justify-content:center;
+      height:100%; font-weight:700;
+    }
+    .gear-cat-title {
+      font-size:0.8rem; font-weight:700; text-transform:uppercase;
+      letter-spacing:0.1em; color:var(--amber);
+      padding:0.5rem 0.5rem 0;
+      margin-top:0.5rem;
+    }
+    .gear-rental-tag {
+      margin-left:auto;
+      font-size:0.7rem; font-weight:600;
+      color:var(--amber-deep);
+      background:rgba(232,114,43,0.12);
+      padding:0.15rem 0.5rem;
+      border-radius:100px;
+      white-space:nowrap;
+    }
+
+    @media (max-width:768px) {
+      .prepare-layout { grid-template-columns:1fr; }
+      .prepare-sidebar { position:static; }
+      .ams-scale { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">Peak<span>Pursuit</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="treks.html">Treks</a></li>
+    <li><a href="prepare.html" style="color:var(--amber-light)">Prepare</a></li>
+    <li><a href="gear.html">Gear Rental</a></li>
+    <li><a href="index.html#testimonials">Stories</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="book.html" class="nav-cta">Book a Trek</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- Hero -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="eyebrow" style="color:var(--amber-light);margin-bottom:0.5rem">Knowledge is Safety</div>
+    <h1 class="display-lg" style="color:var(--white);margin-bottom:0.5rem">Prepare for Your Trek</h1>
+    <p style="color:rgba(255,255,255,0.7);font-size:1.05rem">Packing lists · Altitude sickness · Travel insurance · Fitness · What to expect</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--snow)">
+  <div class="container">
+    <div class="prepare-layout">
+
+      <!-- Sidebar -->
+      <aside class="prepare-sidebar">
+        <div class="sidebar-title">In This Guide</div>
+        <a class="sidebar-link active" href="#what-to-expect">What to Expect</a>
+        <a class="sidebar-link" href="#packing">Packing Lists</a>
+        <a class="sidebar-link" href="#altitude">Altitude Sickness</a>
+        <a class="sidebar-link" href="#diamox">Diamox Guide</a>
+        <a class="sidebar-link" href="#insurance">Travel Insurance</a>
+        <a class="sidebar-link" href="#fitness">Fitness Prep</a>
+        <a class="sidebar-link" href="#visa">Nepal Visa & Permits</a>
+        <a class="sidebar-link" href="#kathmandu">Kathmandu Arrival</a>
+        <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border-dark)">
+          <a href="book.html" class="btn btn-primary btn-sm" style="width:100%;justify-content:center">Book a Trek</a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+
+        <!-- What to Expect -->
+        <div class="section-card" id="what-to-expect">
+          <h2 class="section-card-title">What to Expect</h2>
+          <p class="section-card-lead">Your Himalayan journey begins weeks before you board the plane. Here's a day-by-day breakdown of a typical Everest Base Camp experience.</p>
+
+          <div class="day-card">
+            <div class="day-num">Pre</div>
+            <div>
+              <div class="day-title">Before You Arrive — Preparation</div>
+              <div class="day-detail">Get your Nepal e-visa. Book travel insurance with helicopter evacuation cover. Start a fitness routine 12 weeks out. Consult your doctor about Diamox. Purchase or rent gear. Pack smart — teahouse porters carry max 15kg.</div>
+            </div>
+          </div>
+          <div class="day-card">
+            <div class="day-num">1</div>
+            <div>
+              <div class="day-title">Arrival in Kathmandu (1,400m)</div>
+              <div class="day-detail">Your guide meets you at Tribhuvan Airport. Transfer to hotel in Thamel. Gear check meeting — rental gear pickup if needed. Briefing dinner: route overview, permits, health check. Rest well for the Lukla flight.</div>
+            </div>
+          </div>
+          <div class="day-card">
+            <div class="day-num">2</div>
+            <div>
+              <div class="day-title">The Lukla Flight (2,860m) — World's Most Dramatic Airport</div>
+              <div class="day-detail">30-minute Twin Otter flight through mountain valleys. Lukla's sloped runway ends in a cliff — breathtaking but perfectly safe. Trek begins immediately through pine forests. You'll feel the altitude — take it slow, stay hydrated.</div>
+            </div>
+          </div>
+          <div class="day-card">
+            <div class="day-num">3–5</div>
+            <div>
+              <div class="day-title">Namche Bazaar (3,440m) — Acclimatization</div>
+              <div class="day-detail">Spend 2 nights at Namche. Crucial acclimatization period. Expect headaches, reduced appetite, vivid dreams — this is normal. Day hike to 3,880m without sleeping there. Saturday market is a highlight. WiFi, hot showers, good espresso (seriously).</div>
+            </div>
+          </div>
+          <div class="day-card">
+            <div class="day-num">6–8</div>
+            <div>
+              <div class="day-title">Into the High Khumbu (4,000–4,500m)</div>
+              <div class="day-detail">Trails thin. Yak caravans share the path. Tengboche Monastery evening prayers are unforgettable. Air gets noticeably thinner. Breathing becomes deliberate. Sleep may be disrupted — earplugs help in teahouses. Your appetite drops; eat anyway.</div>
+            </div>
+          </div>
+          <div class="day-card">
+            <div class="day-num">9–11</div>
+            <div>
+              <div class="day-title">High Camp Zone (4,500–5,364m)</div>
+              <div class="day-detail">Lobuche. Gorak Shep. Thin air, cold nights (-15°C possible), stunning silence. Your guide monitors you daily for AMS symptoms. The EBC approach crosses glacier moraine — slow, methodical, exhilarating. Base Camp itself is anticlimactic for some — but Kalapathar sunrise never disappoints.</div>
+            </div>
+          </div>
+          <div class="day-card">
+            <div class="day-num">12+</div>
+            <div>
+              <div class="day-title">Descent & Return to Kathmandu</div>
+              <div class="day-detail">Descent is fast and joyful — your body loves the thickening air. You'll notice your energy returning with every 100m of descent. Celebration in Namche. Final Lukla flight. Back in Kathmandu for a celebration dinner. You did it.</div>
+            </div>
+          </div>
+
+          <div class="info-box info-box-amber" style="margin-top:1.5rem">
+            <div class="info-box-title">The Golden Rule of Altitude</div>
+            "Walk high, sleep low." Acclimatization day hikes always go higher than your sleeping altitude. Never skip rest days. Never push through AMS symptoms. Your guide has final authority on safety decisions — trust them completely.
+          </div>
+        </div>
+
+        <!-- Packing List -->
+        <div class="section-card" id="packing">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:0.5rem">
+            <h2 class="section-card-title" style="margin:0">Packing Lists</h2>
+            <button class="btn btn-outline-amber btn-sm" onclick="window.print()">Print List</button>
+          </div>
+          <p class="section-card-lead">Click items to check them off. Items marked <span class="gear-rental-tag">Available to Rent</span> can be rented in Kathmandu — saving you baggage fees and shipping hassle.</p>
+
+          <div class="tab-nav">
+            <button class="tab-btn active" onclick="switchTab('standard')">Standard EBC</button>
+            <button class="tab-btn" onclick="switchTab('technical')">Peak Climbing Add-ons</button>
+            <button class="tab-btn" onclick="switchTab('cultural')">Cultural Trek</button>
+          </div>
+
+          <div class="tab-panel active" id="tab-standard">
+            <div class="gear-cat-title">Clothing — Layering System</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Base layer (moisture-wicking, 2×) — top & bottom</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Mid-layer fleece or softshell jacket</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Down jacket (rated to -10°C minimum) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Waterproof shell jacket (breathable, Gore-Tex recommended)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Waterproof shell pants</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Trekking pants (2 pairs, zip-off useful)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Thermal underwear (2 pairs)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Trekking socks — wool (4–5 pairs)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Liner gloves + warm insulated gloves</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Warm hat (wool/fleece) + sun hat or cap</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Balaclava or neck gaiter (above 4,500m)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Gaiters (helpful in snow)</div>
+
+            <div class="gear-cat-title">Footwear</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Waterproof trekking boots (broken in!) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Camp sandals / flip-flops</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Gaiters</div>
+
+            <div class="gear-cat-title">Pack & Sleep</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Daypack (25–35L) + rain cover <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Duffel bag for porter (max 15kg) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Sleeping bag (rated -15°C / 5°F) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Sleeping bag liner (adds warmth, good hygiene)</div>
+
+            <div class="gear-cat-title">Nutrition & Hydration</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>2× water bottles (1L each) or hydration bladder</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Water purification tablets or SteriPen</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Energy bars / gels (20+ days of snacks)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Electrolyte tablets (critical at altitude)</div>
+
+            <div class="gear-cat-title">Medical / First Aid</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div><strong>Diamox (acetazolamide)</strong> — see guide below</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Ibuprofen / paracetamol (headaches)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Imodium / rehydration salts (GI issues)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Blister kit (Compeed, moleskin)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Sunscreen SPF 50+ (UV is intense at altitude)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Lip balm with SPF</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Eye drops (dry air)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Prescription medications + extra supply</div>
+
+            <div class="gear-cat-title">Gear & Tech</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Trekking poles (highly recommended) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Headlamp + spare batteries</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Glacier sunglasses (UV400 Category 4) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Portable charger / power bank</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Camera (cold drains batteries — keep warm)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Universal power adapter</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Garmin / GPS watch (optional but useful)</div>
+
+            <div class="gear-cat-title">Documents</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Passport (valid 6+ months) — photocopy kept separate</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Nepal visa (obtained on arrival or e-visa)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Travel insurance documents (helicopter evac policy)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Emergency contact list (printed, not just digital)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>USD cash (ATMs unreliable above Namche)</div>
+          </div>
+
+          <div class="tab-panel" id="tab-technical">
+            <div class="info-box info-box-amber" style="margin-bottom:1.5rem">
+              <div class="info-box-title">Required for Peak Climbing Treks</div>
+              These additional items are required for Lobuche Peak, Island Peak, Mera Peak, and any pass crossing (Cho La, Renjo La, Kongma La).
+            </div>
+            <div class="gear-cat-title">Technical Mountaineering</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Crampons (12-point) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Ice axe <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Climbing harness <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Helmet <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Jumar / ascender <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Carabiners (4× locking) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Slings / cordage</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Double boots (for 6,000m+) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Mountaineering gaiters (waterproof, high)</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Expedition sleeping bag (-25°C) <span class="gear-rental-tag">Available to Rent</span></div>
+          </div>
+
+          <div class="tab-panel" id="tab-cultural">
+            <div class="info-box info-box-green" style="margin-bottom:1.5rem">
+              <div class="info-box-title">Cultural Treks — Lighter Packing</div>
+              For Namche cultural trek and Ama Dablam BC (below 4,600m) you can pack significantly lighter.
+            </div>
+            <div class="gear-cat-title">Lighter Essentials</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Light waterproof jacket</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Fleece mid-layer</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Light trekking boots</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>20–25L daypack</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>3-season sleeping bag (-5°C) <span class="gear-rental-tag">Available to Rent</span></div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Sunscreen & hat</div>
+            <div class="gear-item"><div class="gear-check" onclick="toggleCheck(this)"></div>Small day first aid kit</div>
+          </div>
+        </div>
+
+        <!-- Altitude Sickness -->
+        <div class="section-card" id="altitude">
+          <h2 class="section-card-title">Altitude Sickness — Know Before You Go</h2>
+          <p class="section-card-lead">Altitude sickness (acute mountain sickness / AMS) affects everyone differently. Even the fittest athletes can be struck. Understanding the symptoms and knowing when to act is the most important safety knowledge you can have.</p>
+
+          <div class="ams-scale">
+            <div class="ams-level ams-level-mild">
+              <div class="ams-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="#92400E"><rect x="4" y="14" width="4" height="6" rx="1"/><rect x="10" y="10" width="4" height="10" rx="1" opacity="0.3"/><rect x="16" y="6" width="4" height="14" rx="1" opacity="0.3"/></svg></div>
+              <div class="ams-title" style="color:#92400E">Mild AMS</div>
+              <div class="ams-symptoms" style="color:#78350F">
+                Headache · Fatigue · Dizziness · Loss of appetite · Nausea · Poor sleep<br><br>
+                <strong>Action:</strong> Rest at current altitude. Don't ascend until symptoms resolve. Take ibuprofen/paracetamol.
+              </div>
+            </div>
+            <div class="ams-level ams-level-moderate">
+              <div class="ams-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="#991B1B"><rect x="4" y="14" width="4" height="6" rx="1"/><rect x="10" y="10" width="4" height="10" rx="1"/><rect x="16" y="6" width="4" height="14" rx="1" opacity="0.3"/></svg></div>
+              <div class="ams-title" style="color:#991B1B">Moderate AMS</div>
+              <div class="ams-symptoms" style="color:#7F1D1D">
+                Severe headache · Persistent vomiting · Extreme fatigue · Shortness of breath at rest · Confusion<br><br>
+                <strong>Action:</strong> DESCEND immediately. Take Diamox. Alert your guide. Do not wait for morning.
+              </div>
+            </div>
+            <div class="ams-level ams-level-severe">
+              <div class="ams-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="var(--amber-light)"><rect x="4" y="14" width="4" height="6" rx="1"/><rect x="10" y="10" width="4" height="10" rx="1"/><rect x="16" y="6" width="4" height="14" rx="1"/></svg></div>
+              <div class="ams-title" style="color:var(--amber-light)">HACE / HAPE (Severe)</div>
+              <div class="ams-symptoms" style="color:rgba(255,255,255,0.8)">
+                Ataxia (can't walk straight) · Gurgling in chest · Blue lips · Cannot stay conscious<br><br>
+                <strong>Action:</strong> MEDICAL EMERGENCY. Descend immediately. Helicopter evacuation. Your guide activates insurance immediately.
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box" style="margin:1.5rem 0">
+            <div class="info-box-title">The Acclimatization Rule</div>
+            Above 3,000m, never ascend more than 300–500m of sleeping altitude per day. For every 1,000m gained, take one rest day. Your itinerary is built around this — do not try to rush ahead.
+          </div>
+
+          <h3 style="margin-bottom:1rem;font-size:1.1rem">Prevention Tips</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div class="info-box info-box-green">
+              <div class="info-box-title">Do</div>
+              Hydrate 3–4L of water daily · Eat even when not hungry · Rest on acclimatization days · Tell your guide any symptoms immediately · Take Diamox if prescribed · Walk slowly ("Sherpa pace")
+            </div>
+            <div class="info-box info-box-red">
+              <div class="info-box-title">Don't</div>
+              Don't push through headaches · Don't ascend with symptoms · Don't drink alcohol above 3,500m · Don't take sleeping pills (suppress breathing) · Don't hide symptoms from your guide
+            </div>
+          </div>
+        </div>
+
+        <!-- Diamox -->
+        <div class="section-card" id="diamox">
+          <h2 class="section-card-title">Diamox (Acetazolamide) — The Complete Guide</h2>
+          <p class="section-card-lead">Diamox is a carbonic anhydrase inhibitor that helps your body acclimatize by stimulating breathing. It's widely used by trekkers and is available over-the-counter in Kathmandu pharmacies.</p>
+
+          <div class="diamox-box">
+            <div class="diamox-title">Diamox at a Glance</div>
+            <div class="diamox-row">
+              <div class="diamox-stat">
+                <div class="diamox-stat-val">125–250mg</div>
+                <div class="diamox-stat-key">Typical Dose</div>
+              </div>
+              <div class="diamox-stat">
+                <div class="diamox-stat-val">Twice Daily</div>
+                <div class="diamox-stat-key">Frequency</div>
+              </div>
+              <div class="diamox-stat">
+                <div class="diamox-stat-val">24–48 hrs</div>
+                <div class="diamox-stat-key">Before Ascent</div>
+              </div>
+              <div class="diamox-stat">
+                <div class="diamox-stat-val">~$2 USD</div>
+                <div class="diamox-stat-key">Cost in Kathmandu</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0">
+            <div class="info-box info-box-green">
+              <div class="info-box-title">Who Should Consider Diamox</div>
+              • History of altitude sickness<br>
+              • Fast ascent itinerary (14 days to EBC)<br>
+              • Individual susceptibility (genetics)<br>
+              • Peace of mind on your once-in-a-lifetime trek
+            </div>
+            <div class="info-box info-box-red">
+              <div class="info-box-title">Contraindications (Do Not Take If)</div>
+              • Sulfa drug allergy<br>
+              • Kidney disease<br>
+              • Pregnant or breastfeeding<br>
+              • Taking certain blood thinners<br>
+              <strong>Always consult your doctor first!</strong>
+            </div>
+          </div>
+
+          <div class="info-box info-box-amber">
+            <div class="info-box-title">Where to Buy in Kathmandu</div>
+            Diamox is available without prescription at most pharmacies in Thamel, Kathmandu at a fraction of Western prices. Your guide will take you to a trusted pharmacy during your arrival briefing. Bring a note from your doctor if possible. Common brand names: <strong>Acetazolamide, Diamox, Azetamide</strong>.
+          </div>
+
+          <p style="margin-top:1.5rem;font-size:0.88rem;color:var(--stone)"><strong>Note:</strong> Diamox causes increased urination (helpful) and tingling in fingers/toes (harmless). Carbonated drinks may taste flat. Side effects are generally mild and resolve on stopping the medication. It does NOT replace proper acclimatization — it's a supplement to good planning.</p>
+        </div>
+
+        <!-- Insurance -->
+        <div class="section-card" id="insurance">
+          <h2 class="section-card-title">Travel Insurance — Non-Negotiable</h2>
+          <p class="section-card-lead">Travel insurance with helicopter evacuation coverage is <strong>mandatory</strong> for all Peak Pursuit treks above 5,000m. A helicopter rescue from EBC costs $5,000–$15,000+ without insurance. This is not optional.</p>
+
+          <div class="info-box info-box-red" style="margin-bottom:2rem">
+            <div class="info-box-title">Why Helicopter Evac Coverage Matters</div>
+            At 5,000m+ there are no roads. The only way out in an emergency is helicopter. HACE and HAPE can turn fatal within hours. Your insurance must explicitly cover helicopter evacuation above 5,000m (many standard policies exclude this). Some policies require pre-authorization — your guide will handle this.
+          </div>
+
+          <h3 style="font-size:1.05rem;margin-bottom:1rem">Coverage Comparison</h3>
+          <table class="insurance-table">
+            <thead>
+              <tr>
+                <th>Coverage Type</th>
+                <th>Standard Travel</th>
+                <th>Adventure/Trek</th>
+                <th>Expedition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Trip cancellation</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+              <tr><td>Medical expenses</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+              <tr><td>Helicopter evacuation (below 5,000m)</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td></tr>
+              <tr><td>Helicopter evacuation (above 5,000m)</td><td class="cross">✗</td><td class="cross">✗ <em style="color:var(--stone);font-size:0.78rem">(often excluded)</em></td><td class="check">✓</td></tr>
+              <tr><td>High altitude trekking (to 5,500m)</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td></tr>
+              <tr><td>Peak climbing (6,000m+)</td><td class="cross">✗</td><td class="cross">✗</td><td class="check">✓</td></tr>
+              <tr><td>Search & rescue costs</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td></tr>
+            </tbody>
+          </table>
+
+          <div style="margin-top:1.5rem">
+            <div class="section-mini-title">Recommended Insurance Providers</div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem">
+              <div class="info-box">
+                <div class="info-box-title">World Nomads</div>
+                Explorer plan covers trekking to 6,000m with helicopter evac. Popular with adventure travelers.
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Battleface</div>
+                Excellent for high-altitude trekking with clear language about helicopter evacuation coverage.
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Global Rescue</div>
+                Membership-based evacuation service (not insurance, but works alongside it). Used by professionals.
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box info-box-amber" style="margin-top:1rem">
+            <div class="info-box-title">What to Check in Your Policy</div>
+            1. Does it cover helicopter evacuation above 5,000m specifically? 2. What is the maximum altitude covered? 3. Is there a pre-authorization requirement (call before evac)? 4. What's the medical expense limit ($100,000+ recommended)? 5. Does it cover trip cancellation due to AMS?
+          </div>
+        </div>
+
+        <!-- Fitness -->
+        <div class="section-card" id="fitness">
+          <h2 class="section-card-title">Fitness Preparation</h2>
+          <p class="section-card-lead">You don't need to be a marathoner — but you do need a strong base of cardiovascular fitness and leg strength. Start training at least 12 weeks before your trek.</p>
+
+          <div class="altitude-preview" style="margin-bottom:1.5rem">
+            <div class="section-mini-title">Minimum Fitness Benchmark Before Departing</div>
+            <div class="altitude-bar">
+              <div class="altitude-bar-label">Easy hikes (Green ●)</div>
+              <div class="altitude-bar-track"><div class="altitude-bar-fill" style="width:40%"></div></div>
+              <div class="altitude-bar-value">3–4 hrs/day</div>
+            </div>
+            <div class="altitude-bar">
+              <div class="altitude-bar-label">Blue Square ■</div>
+              <div class="altitude-bar-track"><div class="altitude-bar-fill" style="width:55%"></div></div>
+              <div class="altitude-bar-value">5–6 hrs/day</div>
+            </div>
+            <div class="altitude-bar">
+              <div class="altitude-bar-label">EBC / Black Diamond ◆</div>
+              <div class="altitude-bar-track"><div class="altitude-bar-fill" style="width:75%"></div></div>
+              <div class="altitude-bar-value">6–8 hrs/day</div>
+            </div>
+            <div class="altitude-bar">
+              <div class="altitude-bar-label">Peak Climbing ◆◆</div>
+              <div class="altitude-bar-track"><div class="altitude-bar-fill" style="width:100%"></div></div>
+              <div class="altitude-bar-value">8+ hrs/day</div>
+            </div>
+          </div>
+
+          <div class="fitness-plan">
+            <div class="fitness-week">
+              <div class="fitness-week-header" onclick="toggleWeek(this)">
+                <span class="fitness-week-title">Weeks 1–4: Foundation Building</span>
+                <span class="fitness-week-badge">▼ Expand</span>
+              </div>
+              <div class="fitness-week-body">
+                <div class="fitness-item">30-minute brisk walk, 4× per week — build to 60 minutes by week 4</div>
+                <div class="fitness-item">2× strength training: squats, lunges, step-ups, single-leg deadlifts</div>
+                <div class="fitness-item">Core work: planks, mountain climbers (10–15 min/session)</div>
+                <div class="fitness-item">One weekend hike with a loaded pack (start with 5kg, build to 10kg)</div>
+              </div>
+            </div>
+            <div class="fitness-week">
+              <div class="fitness-week-header" onclick="toggleWeek(this)">
+                <span class="fitness-week-title">Weeks 5–8: Endurance Building</span>
+                <span class="fitness-week-badge">▼ Expand</span>
+              </div>
+              <div class="fitness-week-body">
+                <div class="fitness-item">3–4 hour hikes with 500–800m elevation gain, 2× per month</div>
+                <div class="fitness-item">Stair climbing with 10kg pack (skyscrapers, stadium stairs, parking garages)</div>
+                <div class="fitness-item">Yoga or swimming for recovery and flexibility</div>
+                <div class="fitness-item">Add 30-minute moderate cardio (cycling, elliptical) 3× per week</div>
+              </div>
+            </div>
+            <div class="fitness-week">
+              <div class="fitness-week-header" onclick="toggleWeek(this)">
+                <span class="fitness-week-title">Weeks 9–12: Peak Conditioning</span>
+                <span class="fitness-week-badge">▼ Expand</span>
+              </div>
+              <div class="fitness-week-body">
+                <div class="fitness-item">6–8 hour mountain hikes with full pack weight (12–15kg)</div>
+                <div class="fitness-item">Multi-day backpacking trip if possible (best preparation)</div>
+                <div class="fitness-item">Practice trekking pole technique — saves 20% energy on steep terrain</div>
+                <div class="fitness-item">Break in your boots completely — blisters can end a trek</div>
+                <div class="fitness-item">Week 12: TAPER — reduce intensity, prioritize sleep and nutrition</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visa & Permits -->
+        <div class="section-card" id="visa">
+          <h2 class="section-card-title">Nepal Visa & Trekking Permits</h2>
+          <p class="section-card-lead">All international trekkers require a Nepal tourist visa plus two trekking permits for the Sagarmatha (Everest) National Park region.</p>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div class="info-box">
+              <div class="info-box-title">Nepal Tourist Visa</div>
+              Available on arrival at Tribhuvan International Airport (Kathmandu) or via e-visa online.<br><br>
+              <strong>Cost:</strong> 15 days $30 · 30 days $50 · 90 days $125<br>
+              <strong>Process:</strong> ~30 mins at airport. Have passport photos and USD cash ready.
+            </div>
+            <div class="info-box info-box-amber">
+              <div class="info-box-title">TIMS Card</div>
+              Trekkers' Information Management System card — required for all trekkers.<br><br>
+              <strong>Cost:</strong> ~$20 USD<br>
+              <strong>Where:</strong> Nepal Tourism Board, Kathmandu. Your guide arranges this for you.
+            </div>
+            <div class="info-box info-box-green">
+              <div class="info-box-title">Sagarmatha National Park Permit</div>
+              Required for all EBC-region treks. Entry to the national park.<br><br>
+              <strong>Cost:</strong> ~$30 USD (included in your Peak Pursuit package)
+            </div>
+            <div class="info-box">
+              <div class="info-box-title">Khumbu Pasang Lhamu Rural Municipality</div>
+              Local municipality fee recently introduced for all Khumbu trekkers.<br><br>
+              <strong>Cost:</strong> ~$8 USD (included in your package)<br>
+              <strong>Note:</strong> Permits are checked at multiple checkpoints on trail.
+            </div>
+          </div>
+        </div>
+
+        <!-- Kathmandu Arrival -->
+        <div class="section-card" id="kathmandu">
+          <h2 class="section-card-title">Kathmandu Arrival Tips</h2>
+          <p class="section-card-lead">Your adventure starts the moment you land. Here's what to expect in Kathmandu and how to use your pre-trek time wisely.</p>
+
+          <div class="day-card">
+            <div class="day-num">✈️</div>
+            <div>
+              <div class="day-title">At the Airport</div>
+              <div class="day-detail">Your Peak Pursuit guide or driver meets you in the arrivals hall with a sign. Do NOT take unofficial taxi offers. The drive to Thamel is 20–40 minutes. ATMs are available at the airport — withdraw NPR (Nepali Rupees) and USD.</div>
+            </div>
+          </div>
+          <div class="day-card">
+            <div class="day-num">💊</div>
+            <div>
+              <div class="day-title">Day 1 in Kathmandu</div>
+              <div class="day-detail">Gear check with your guide. Visit pharmacy for Diamox if needed. Currency exchange at hotel rate (or Thamel money changers). Brief walk around Thamel — the adventure hub with dozens of gear shops. Early dinner and rest.</div>
+            </div>
+          </div>
+          <div class="day-card">
+            <div class="day-num">🕌</div>
+            <div>
+              <div class="day-title">Optional: Sightseeing Day</div>
+              <div class="day-detail">If you have extra time, visit Pashupatinath Temple, Boudhanath Stupa (the world's largest Buddhist stupa), or Swayambhunath (Monkey Temple). Your guide can arrange a half-day tour. Acclimatize at Kathmandu's 1,400m before ascending to Lukla.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div style="background:linear-gradient(135deg, var(--navy), var(--midnight));border-radius:var(--radius-xl);padding:3rem;text-align:center;color:white">
+          <h3 style="font-size:1.6rem;margin-bottom:0.75rem;color:var(--white)">Ready to Start Your Journey?</h3>
+          <p style="color:rgba(255,255,255,0.7);margin-bottom:2rem">Questions? Your guide is available via WhatsApp to answer any pre-trek concerns.</p>
+          <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+            <a href="book.html" class="btn btn-primary btn-lg">Book Your Trek Now</a>
+            <a href="treks.html" class="btn btn-secondary btn-lg">Browse All Treks</a>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" style="padding:2.5rem 2rem">
+  <div class="container">
+    <div class="footer-bottom" style="border:none;padding:0">
+      <a href="index.html" class="footer-logo" style="font-size:1.3rem">Peak<span>Pursuit</span></a>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap;color:rgba(255,255,255,0.5);font-size:0.85rem">
+        <a href="index.html">Home</a>
+        <a href="treks.html">Treks</a>
+        <a href="gear.html">Gear</a>
+        <a href="book.html">Book</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sidebar highlighting
+  const sections = document.querySelectorAll('.section-card[id]');
+  const links = document.querySelectorAll('.sidebar-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+    links.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#' + current); });
+  });
+
+  // Tab switching
+  function switchTab(id) {
+    document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', ['standard','technical','cultural'][i] === id));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+  }
+
+  // Checkbox toggle
+  function toggleCheck(el) { el.classList.toggle('checked'); }
+
+  // Fitness week accordion
+  function toggleWeek(header) {
+    const body = header.nextElementSibling;
+    body.classList.toggle('open');
+    header.querySelector('.fitness-week-badge').textContent = body.classList.contains('open') ? '▲ Collapse' : '▼ Expand';
+  }
+
+  // Intersection Observer
+  const observer = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && (x.target.classList.add('visible'), observer.unobserve(x.target))), {threshold:0.05});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
