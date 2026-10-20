@@ -333,6 +333,7 @@
       .payment-methods { flex-direction: column; }
     }
   </style>
+  <link rel="stylesheet" href="css/treks.css">
 </head>
 <body>
 
@@ -387,93 +388,8 @@
           <h2 class="step-title">Choose Your Trek</h2>
           <p class="step-subtitle">Select a trek below or <a href="treks.html" style="color:var(--amber)">view full details</a> for each route. All prices per person, guide included.</p>
 
-          <div id="trekOptions">
-            <div class="trek-option selected" onclick="selectTrek(this,'ebc','Everest Base Camp','14 days','5,364m','$1,890','images/hike_3rd_person.jpeg','diff-black','Black Diamond ◆')">
-              <div class="trek-option-radio"></div>
-              <div style="flex:1">
-                <div class="trek-option-name">Everest Base Camp</div>
-                <div class="trek-option-meta">
-                  <span class="difficulty-badge diff-black" style="font-size:0.7rem;padding:0.2rem 0.6rem"><span class="diff-icon">◆</span> Black Diamond</span>
-                  <span>📅 14 Days</span><span>📍 5,364m</span>
-                </div>
-              </div>
-              <div class="trek-option-price">From $1,890</div>
-            </div>
-            <div class="trek-option" onclick="selectTrek(this,'3passes','Three High Passes','20 days','5,535m','$2,490','images/hiking_down_at_sunset.jpeg','diff-double-black','Double Black ◆◆')">
-              <div class="trek-option-radio"></div>
-              <div style="flex:1">
-                <div class="trek-option-name">Three High Passes</div>
-                <div class="trek-option-meta">
-                  <span class="difficulty-badge diff-double-black" style="font-size:0.7rem;padding:0.2rem 0.6rem"><span class="diff-icon">◆◆</span> Double Black</span>
-                  <span>📅 20 Days</span><span>📍 5,535m</span>
-                </div>
-              </div>
-              <div class="trek-option-price">From $2,490</div>
-            </div>
-            <div class="trek-option" onclick="selectTrek(this,'amadablam','Ama Dablam Base Camp','10 days','4,600m','$1,290','images/sunset_3_peaks.jpeg','diff-blue','Blue Square ■')">
-              <div class="trek-option-radio"></div>
-              <div style="flex:1">
-                <div class="trek-option-name">Ama Dablam Base Camp</div>
-                <div class="trek-option-meta">
-                  <span class="difficulty-badge diff-blue" style="font-size:0.7rem;padding:0.2rem 0.6rem"><span class="diff-icon">■</span> Blue Square</span>
-                  <span>📅 10 Days</span><span>📍 4,600m</span>
-                </div>
-              </div>
-              <div class="trek-option-price">From $1,290</div>
-            </div>
-            <div class="trek-option" onclick="selectTrek(this,'gokyo','Gokyo Lakes & Ri','13 days','4,790m','$1,490','images/above_clouds.jpeg','diff-blue','Blue Square ■')">
-              <div class="trek-option-radio"></div>
-              <div style="flex:1">
-                <div class="trek-option-name">Gokyo Lakes & Ri Summit</div>
-                <div class="trek-option-meta">
-                  <span class="difficulty-badge diff-blue" style="font-size:0.7rem;padding:0.2rem 0.6rem"><span class="diff-icon">■</span> Blue Square</span>
-                  <span>📅 13 Days</span><span>📍 4,790m</span>
-                </div>
-              </div>
-              <div class="trek-option-price">From $1,490</div>
-            </div>
-            <div class="trek-option" onclick="selectTrek(this,'lobuche','Lobuche Peak (La Bouche)','18 days','6,119m','$2,890','images/sunset_everest.jpeg','diff-double-black','Double Black ◆◆')">
-              <div class="trek-option-radio"></div>
-              <div style="flex:1">
-                <div class="trek-option-name">Lobuche Peak (La Bouche)</div>
-                <div class="trek-option-meta">
-                  <span class="difficulty-badge diff-double-black" style="font-size:0.7rem;padding:0.2rem 0.6rem"><span class="diff-icon">◆◆</span> Double Black</span>
-                  <span>📅 18 Days</span><span>📍 6,119m</span>
-                </div>
-              </div>
-              <div class="trek-option-price">From $2,890</div>
-            </div>
-            <div class="trek-option" onclick="selectTrek(this,'island','Island Peak (Imja Tse)','20 days','6,189m','$3,190','images/hike_3rd_person.jpeg','diff-double-black','Double Black ◆◆')">
-              <div class="trek-option-radio"></div>
-              <div style="flex:1">
-                <div class="trek-option-name">Island Peak (Imja Tse)</div>
-                <div class="trek-option-meta">
-                  <span class="difficulty-badge diff-double-black" style="font-size:0.7rem;padding:0.2rem 0.6rem"><span class="diff-icon">◆◆</span> Double Black</span>
-                  <span>📅 20 Days</span><span>📍 6,189m</span>
-                </div>
-              </div>
-              <div class="trek-option-price">From $3,190</div>
-            </div>
-            <div class="trek-option" onclick="selectTrek(this,'mera','Mera Peak','18 days','6,476m','$3,490','images/sunset_3_peaks.jpeg','diff-double-black','Double Black ◆◆')">
-              <div class="trek-option-radio"></div>
-              <div style="flex:1">
-                <div class="trek-option-name">Mera Peak</div>
-                <div class="trek-option-meta">
-                  <span class="difficulty-badge diff-double-black" style="font-size:0.7rem;padding:0.2rem 0.6rem"><span class="diff-icon">◆◆</span> Double Black</span>
-                  <span>📅 18 Days</span><span>📍 6,476m</span>
-                </div>
-              </div>
-              <div class="trek-option-price">From $3,490</div>
-            </div>
-            <div class="trek-option" onclick="selectTrek(this,'custom','Custom / Bespoke Trek','Flexible','Custom','Contact Us','images/landing.JPG','','Custom ✦')">
-              <div class="trek-option-radio"></div>
-              <div style="flex:1">
-                <div class="trek-option-name">Bespoke / Custom Trek</div>
-                <div class="trek-option-meta"><span>📅 Flexible</span><span>💬 Contact us for a quote</span></div>
-              </div>
-              <div class="trek-option-price" style="color:var(--stone)">Get Quote</div>
-            </div>
-          </div>
+          <div class="pp-chips" id="trekRegionChips"></div>
+          <div id="trekOptions"></div>
         </div>
         <div style="display:flex;justify-content:flex-end">
           <button class="btn btn-primary btn-lg" onclick="nextStep(2)">
@@ -817,6 +733,16 @@
   </div>
 </div>
 
+<script src="js/data/everest.js"></script>
+<script src="js/data/annapurna.js"></script>
+<script src="js/data/langtang.js"></script>
+<script src="js/data/manaslu.js"></script>
+<script src="js/data/makalu.js"></script>
+<script src="js/data/kangchenjunga.js"></script>
+<script src="js/data/tibet.js"></script>
+<script src="js/data/bhutan.js"></script>
+<script src="js/treks-core.js"></script>
+<script src="js/book-treks.js"></script>
 <script>
   // ── Booking State ──
   const state = {
@@ -986,34 +912,12 @@
   renderCalendar();
   updateSummary();
 
-  // Handle URL params — if a trek is specified, pre-select it and jump straight to calendar (step 2)
+  // Build the trek list from the shared data, then handle ?trek=id —
+  // if a trek is specified, pre-select it and jump straight to the calendar (step 2)
+  PPBook.render();
   const params = new URLSearchParams(window.location.search);
-  if (params.get('trek')) {
-    const trekMap = {
-      'namche':    ['namche',   'Namche Cultural Walk',        '5 days',  '3,440m', '$690',   'images/landing.JPG',                  'diff-green',        'Green Circle ●'],
-      'amadablam': ['amadablam','Ama Dablam Base Camp',        '10 days', '4,600m', '$1,290', 'images/sunset_3_peaks.jpeg',          'diff-blue',         'Blue Square ■'],
-      'gokyo':     ['gokyo',    'Gokyo Lakes',                 '13 days', '4,790m', '$1,490', 'images/above_clouds.jpeg',            'diff-blue',         'Blue Square ■'],
-      'ebc':       ['ebc',      'Everest Base Camp',           '14 days', '5,364m', '$1,890', 'images/hike_3rd_person.jpeg',         'diff-black',        'Black Diamond ◆'],
-      'kalapathar':['kalapathar','Kalapathar Sunrise',         '13 days', '5,545m', '$1,790', 'images/kalapathar.jpeg',              'diff-black',        'Black Diamond ◆'],
-      'renjola':   ['renjola',  'Renjo La Pass',               '15 days', '5,360m', '$1,690', 'images/above_clouds.jpeg',            'diff-black',        'Black Diamond ◆'],
-      'jiri':      ['jiri',     'Jiri to EBC Classic',         '22 days', '5,364m', '$2,290', 'images/hike_3rd_person.jpeg',         'diff-black',        'Black Diamond ◆'],
-      'chhukung':  ['chhukung', 'Chhukung Ri',                 '14 days', '5,550m', '$1,990', 'images/sunset_3_peaks.jpeg',          'diff-black',        'Black Diamond ◆'],
-      '3passes':   ['3passes',  'Three High Passes',           '20 days', '5,535m', '$2,490', 'images/hiking_down_at_sunset.jpeg',   'diff-double-black', 'Double Black ◆◆'],
-      'chola':     ['chola',    'Cho La & EBC',                '16 days', '5,420m', '$2,090', 'images/hiking_down_at_sunset.jpeg',   'diff-double-black', 'Double Black ◆◆'],
-      'lobuche':   ['lobuche',  'Lobuche Peak',                '18 days', '6,119m', '$2,890', 'images/kalapathar.jpeg',              'diff-double-black', 'Double Black ◆◆'],
-      'island':    ['island',   'Island Peak',                 '20 days', '6,189m', '$3,190', 'images/sunset_3_peaks.jpeg',          'diff-double-black', 'Double Black ◆◆'],
-      'mera':      ['mera',     'Mera Peak',                   '18 days', '6,476m', '$3,490', 'images/sunset_3_peaks.jpeg',          'diff-double-black', 'Double Black ◆◆'],
-      'custom':    ['custom',   'Bespoke Expedition',          'Custom',  'Custom', 'TBD',    'images/above_clouds.jpeg',            'diff-double-black', 'Custom'],
-    };
-    const t = trekMap[params.get('trek')];
-    if (t) {
-      const opts = document.querySelectorAll('.trek-option');
-      opts.forEach(o => o.classList.remove('selected'));
-      const match = [...opts].find(o => o.getAttribute('onclick')?.includes(`'${t[0]}'`));
-      if (match) { match.classList.add('selected'); selectTrek(match, ...t); }
-      // Skip the "Choose Trek" step — go straight to the calendar
-      nextStep(2);
-    }
+  if (params.get('trek') && PPBook.preselect(params.get('trek'))) {
+    nextStep(2);
   }
 </script>
 </body>
