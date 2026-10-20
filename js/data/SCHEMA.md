@@ -101,7 +101,8 @@ One entry per calendar day, numbered 1..N with no ranges (an acclimatization day
 }
 ```
 
-* Allowed licences: public domain, CC0, CC BY (any version), CC BY-SA (any version). No NC, ND, "fair use" or unknown licences.
+* Allowed licences: public domain, CC0, CC BY (any version), CC BY-SA (any version), and the Unsplash License (`license: 'Unsplash License'`). No NC, ND, "fair use" or unknown licences.
+* Unsplash photos: `src` is `https://images.unsplash.com/photo-<id>?auto=format&fit=crop&w=1600&q=70`, `credit` is `Photo by <Name> on Unsplash`, `sourceUrl` is the photo page. Prefer landscapes and villages/monasteries over close-ups of identifiable people (Unsplash does not provide model releases).
 * The file page must confirm the photo actually shows what `alt` claims (right peak, right valley, right country).
 * Local images already in the repo (Everest treks only) use `src: 'images/...'` and `credit: null`, `license: null`, `sourceUrl: null`.
 * If no verified photo can be found, use `null` rather than an unverified or wrong-place image.
