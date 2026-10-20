@@ -16,8 +16,43 @@ window.PP_REGIONS['bhutan'] = {
   gettingThere: "You fly from Kathmandu to Paro, Bhutan's main international airport, on Drukair or Bhutan Airlines. The flight takes about an hour and Drukair is reported to fly it daily, with Bhutan Airlines also serving Kathmandu; schedules change by season. Sit on the left side on the way in for the best chance of Himalayan views. Paro approaches are flown by sight only, so cloud or wind can cause delays or diversions: build in a spare day at each end, and carry your printed visa clearance, which airlines ask to see at check-in. Every Bhutan itinerary here counts Day 1 as the arrival day in Paro and the last day as departure from Paro, because the SDF is charged per night.",
   operator: 'partner',
   operatorNote: "Peak Pursuit is a Nepal-based company, and treks in Bhutan cannot be run by us directly: visitors must be accompanied by a licensed Bhutanese guide at all times, and treks are operated by licensed Bhutanese tour operators using their own guides, cooks, horsemen and vehicles. So Peak Pursuit arranges your Bhutan trip together with a licensed Bhutanese operator, who holds the permits and clearances and runs the whole Bhutan portion from the moment you land in Paro. Prices on this site are estimates that include the government's visa fee and SDF, and are confirmed with the Bhutanese operator before you book.",
-  hero: null,
-  gallery: []
+  hero: {
+    src: 'https://images.unsplash.com/photo-1742539327304-4b60d48e14b4?auto=format&fit=crop&w=1600&q=70',
+    alt: 'Paro Taktsang (Tiger\'s Nest) monastery on its cliff, Paro, Bhutan',
+    credit: 'Photo by Sujan Mongar on Unsplash',
+    license: 'Unsplash License',
+    sourceUrl: 'https://unsplash.com/photos/the-tigers-nest-monastery-hangs-on-a-cliff-f9dIq6J_uT0'
+  },
+  gallery: [
+    {
+      src: 'https://images.unsplash.com/photo-1608236475016-1dcc7a260326?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Punakha Dzong beside the river, Punakha, Bhutan',
+      credit: 'Photo by Raimond Klavins on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/brown-and-white-house-near-body-of-water-during-daytime-RIv4CLslgx0'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1584007952771-96d1f3866a6b?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Khang Bum, a snow-covered peak at sunrise in Jigme Dorji National Park, Bhutan',
+      credit: 'Photo by Nils Leonhardt on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/snow-covered-mountain-during-daytime-gf0rnIB_ZpM'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1584003734930-b12779f66351?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Tashichho Dzong and paddy fields, Thimphu, Bhutan',
+      credit: 'Photo by Pema Gyamtsho on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/brown-wooden-house-on-green-grass-field-near-green-mountains-under-white-clouds-during-daytime-QkbIxJhALtk'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1636057423765-c766099ef09d?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Terraced rice paddies and green hills in the Bhutan Himalaya',
+      credit: 'Photo by Meera Parat on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-lush-green-valley-surrounded-by-mountains-qjBmFFVdpU0'
+    }
+  ]
 };
 
 window.PP_TREKS = window.PP_TREKS || [];
@@ -90,8 +125,29 @@ window.PP_TREKS.push(
       "Weather and trail: the route stays on high ridges away from roads, so rain, sleet or early snow can arrive quickly, and some stretches are exposed. The guide decides whether to shorten a day. Leave a spare day in Paro at the end of the trip; Paro flights are flown by sight and are often delayed by cloud or wind.",
       "Evacuation: there are no clinics on the route and rescue depends on ponies, a vehicle at the nearest road, or a helicopter if weather and availability allow. Insurance with helicopter cover is essential. As of October 2026 we found no official notice closing this route, but trail conditions change and the operator confirms them before departure."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Paro Taktsang (Tiger\'s Nest) seen across the mountainside on the Taktsang trail, Paro, Bhutan',
+      credit: 'Photo by Aaron Santelices on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/paro-taktsang-temple-in-bhutan-viewing-mountain-under-blue-and-white-sky-ZdwVvRdel8A'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1743402064050-8732cc0b62fe?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Paro Taktsang (Tiger\'s Nest) monastery perched on a cliff, Paro, Bhutan',
+        credit: 'Photo by Sujan Mongar on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/tigers-nest-monastery-perched-on-a-cliff-jJlhElEQwdI'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1584003734930-b12779f66351?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Tashichho Dzong and paddy fields, Thimphu, Bhutan',
+        credit: 'Photo by Pema Gyamtsho on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/brown-wooden-house-on-green-grass-field-near-green-mountains-under-white-clouds-during-daytime-QkbIxJhALtk'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Fly Kathmandu to Paro", sleepAlt: 2250, activity: 'Arrival', duration: "~1 hr flight, 20 min transfer", distanceKm: null, meals: "Lunch, dinner", stay: "Hotel, Paro",
         description: "The flight along the Himalayan chain is one of the best in Asia on a clear morning, so ask for a left-side window. Your Bhutanese guide meets you at Paro's small airport and you settle into the hotel at about 2,250 m. The rest of the day is easy: a short walk in town, tea, and a trek briefing; bring your printed visa clearance for the flight." },
@@ -197,8 +253,22 @@ window.PP_TREKS.push(
       "Weather: snow can fall on the passes outside midsummer and early or late in the season; the Lingshi day is a built-in reserve and the guide may delay or turn back a crossing. Expect cold nights at Jangothang, Lingshi and Shodu. Yaks and ponies use the trails: step to the uphill side when they pass.",
       "Evacuation: from Jangothang onwards you are at least two days on foot from the nearest road, and rescue depends on ponies, weather-dependent helicopter flights and the operator's contact with the authorities. Insurance with helicopter evacuation cover is essential. As of October 2026 we found no official notice closing this route, but trail conditions change and the operator confirms them before departure."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1608377229419-3b5168b6c3da?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Paro Taktsang (Tiger\'s Nest) monastery, Paro, Bhutan',
+      credit: 'Photo by Raimond Klavins on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/white-and-brown-concrete-house-on-top-of-mountain-during-daytime-Med8BHIsmRU'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1584007952771-96d1f3866a6b?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Khang Bum, a snow-covered peak at sunrise in Jigme Dorji National Park, Bhutan',
+        credit: 'Photo by Nils Leonhardt on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/snow-covered-mountain-during-daytime-gf0rnIB_ZpM'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Fly Kathmandu to Paro", sleepAlt: 2250, activity: 'Arrival', duration: "~1 hr flight, 20 min transfer", distanceKm: null, meals: "Lunch, dinner", stay: "Hotel, Paro",
         description: "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. Spend the afternoon resting and walking gently in town, and bring your printed visa clearance for check-in." },
@@ -311,8 +381,29 @@ window.PP_TREKS.push(
       "Weather and passes: heavy snow or storms can block the passes; the reserve day at Robluthang sits before Shinche La, and the guide may wait, shorten or turn back a crossing. Nights below freezing are normal from Jangothang to Laya. Yaks and ponies use the trail, so step to the uphill side when they pass.",
       "Evacuation: from Jangothang to Laya you are at least two days on foot from the nearest road, and rescue depends on ponies, weather-dependent helicopter flights and the operator's contact with the authorities. Insurance with helicopter evacuation cover is essential. As of October 2026 we found no official notice closing this route, but trail conditions change and a road now reaches Taktsemakha below Laya on some itineraries, so the operator confirms the route and exit options before departure."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1584007952771-96d1f3866a6b?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Khang Bum, a snow-covered peak at sunrise in Jigme Dorji National Park, Bhutan',
+      credit: 'Photo by Nils Leonhardt on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/snow-covered-mountain-during-daytime-gf0rnIB_ZpM'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1608236475016-1dcc7a260326?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Punakha Dzong beside the river, Punakha, Bhutan',
+        credit: 'Photo by Raimond Klavins on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/brown-and-white-house-near-body-of-water-during-daytime-RIv4CLslgx0'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Paro Taktsang (Tiger\'s Nest) seen across the mountainside on the Taktsang trail, Paro, Bhutan',
+        credit: 'Photo by Aaron Santelices on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/paro-taktsang-temple-in-bhutan-viewing-mountain-under-blue-and-white-sky-ZdwVvRdel8A'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Fly Kathmandu to Paro", sleepAlt: 2250, activity: 'Arrival', duration: "~1 hr flight, 20 min transfer", distanceKm: null, meals: "Lunch, dinner", stay: "Hotel, Paro",
         description: "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. Spend the afternoon resting and walking gently in town, and bring your printed visa clearance for check-in." },
@@ -435,8 +526,22 @@ window.PP_TREKS.push(
       "Weather and navigation: the route follows faint trails and exposed ridges where cloud, wind and sleet can reduce visibility quickly, and the last day has several passes. The guide may shorten or alter a day. Snow can close the high ground outside the main seasons.",
       "Evacuation: the highest camps are around a day and a half from the nearest road, and rescue depends on ponies, weather-dependent helicopter flights and the operator's contact with the authorities. Insurance with helicopter evacuation cover is essential. As of October 2026 we found no official notice closing this route, but trail conditions change and the operator confirms them before departure."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1743402064050-8732cc0b62fe?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Paro Taktsang (Tiger\'s Nest) monastery perched on a cliff, Paro, Bhutan',
+      credit: 'Photo by Sujan Mongar on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/tigers-nest-monastery-perched-on-a-cliff-jJlhElEQwdI'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1584003734930-b12779f66351?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Tashichho Dzong and paddy fields, Thimphu, Bhutan',
+        credit: 'Photo by Pema Gyamtsho on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/brown-wooden-house-on-green-grass-field-near-green-mountains-under-white-clouds-during-daytime-QkbIxJhALtk'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Fly Kathmandu to Paro", sleepAlt: 2250, activity: 'Arrival', duration: "~1 hr flight, 20 min transfer", distanceKm: null, meals: "Lunch, dinner", stay: "Hotel, Paro",
         description: "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. Spend the afternoon resting and walking gently in town, and bring your printed visa clearance for check-in." },
@@ -543,7 +648,29 @@ window.PP_TREKS.push(
       "Evacuation: the trek stays close to the Bumthang valley, so descent to the road is possible within hours, but there are no clinics on the trail and the rest depends on the guide, a vehicle and the nearest hospital in Jakar. Insurance with helicopter cover is essential. As of October 2026 we found no official notice closing this route, but conditions change and the operator confirms them before departure."
     ],
     hero: null,
-    gallery: [],
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1729176989657-b2a72fdb7c17?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Courtyard of Punakha Dzong with a large tree, Punakha, Bhutan',
+        credit: 'Photo by Raul Taciu on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-large-building-with-a-tree-in-the-middle-of-it-_nuUz-0RPp8'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1584003734930-b12779f66351?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Tashichho Dzong and paddy fields, Thimphu, Bhutan',
+        credit: 'Photo by Pema Gyamtsho on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/brown-wooden-house-on-green-grass-field-near-green-mountains-under-white-clouds-during-daytime-QkbIxJhALtk'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1742539327304-4b60d48e14b4?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Paro Taktsang (Tiger\'s Nest) monastery on its cliff, Paro, Bhutan',
+        credit: 'Photo by Sujan Mongar on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/the-tigers-nest-monastery-hangs-on-a-cliff-f9dIq6J_uT0'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Fly Kathmandu to Paro", sleepAlt: 2250, activity: 'Arrival', duration: "~1 hr flight, 20 min transfer", distanceKm: null, meals: "Lunch, dinner", stay: "Hotel, Paro",
         description: "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. The afternoon is for rest and a gentle walk in town, and you should bring your printed visa clearance for check-in." },
@@ -651,8 +778,22 @@ window.PP_TREKS.push(
       "Many attempts do not finish: we found no official completion figures, but operators and guides describe a substantial share of starters stopping early, estimates including around half. Reasons include altitude illness, cold, snow-blocked passes, injury and insufficient time. Please do not book tight onward flights, and be prepared to turn back at any point at the guide's decision.",
       "Weather and evacuation: heavy snow can close passes for days, and Lunana is about a week or more on foot from the nearest road. Helicopter evacuation depends on weather and availability, may take days, and has been quoted at USD 10,000 to 20,000 or more, so insurance with helicopter cover (checked to cover trekking above 5,000 m) is essential. As of October 2026 we found no official notice closing the route, but conditions change and the operator confirms them before departure."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1584007952771-96d1f3866a6b?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Khang Bum, a snow-covered peak at sunrise in Jigme Dorji National Park, Bhutan',
+      credit: 'Photo by Nils Leonhardt on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/snow-covered-mountain-during-daytime-gf0rnIB_ZpM'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1608377229419-3b5168b6c3da?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Paro Taktsang (Tiger\'s Nest) monastery, Paro, Bhutan',
+        credit: 'Photo by Raimond Klavins on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/white-and-brown-concrete-house-on-top-of-mountain-during-daytime-Med8BHIsmRU'
+      }
+    ],
     sources: [
       "https://bhutan.travel/adventure-experiences",
       "https://bhutan.travel/announcements",
