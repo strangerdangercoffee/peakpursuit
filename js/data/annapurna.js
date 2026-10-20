@@ -242,7 +242,7 @@ window.PP_TREKS.push(
       "Hotel pick-up in Kathmandu on Day 1 and transport Kathmandu to Pokhara and back",
       "Road transfer Pokhara to Nayapul and Tikhedhunga/Hile back to Pokhara",
       "One night in a twin-share hotel in Pokhara with breakfast",
-      "Teahouse and community-lodge accommodation on the trek, twin or dormitory share",
+      "Teahouse and community-lodge accommodation on the trek, twin share where rooms allow",
       "Breakfast, lunch and dinner with tea or coffee during the trek days",
       "Trekking guide and porter support (one porter for every two trekkers)",
       "Annapurna Conservation Area permit (and TIMS card if it is required)",
@@ -377,6 +377,198 @@ window.PP_TREKS.push(
       "https://www.explore-share.com/trip/annapurna-base-camp-abc-trek-in-10-days/",
       "https://www.hopnepal.com/blog/annapurna-circuit-trek-permit-cost",
       "https://nepalvue.com/nepal-trekking-permits-guide/"
+    ]
+  },
+  {
+    id: "annapurna-circuit",
+    region: "annapurna",
+    title: "Annapurna Circuit over Thorong La",
+    tagline: "The great loop through Manang and over Thorong La (5,416 m) to Muktinath, planned to stay on footpaths where the new roads allow.",
+    difficulty: "black",
+    tags: ["pass", "cultural", "pilgrimage"],
+    days: 14,
+    walkingDays: 10,
+    maxAlt: 5416,
+    maxAltName: "Thorong La",
+    distanceKm: 125,
+    startPoint: "Jagat (by road from Kathmandu via Besisahar)",
+    endPoint: "Jomsom, then by air or road to Pokhara and Kathmandu",
+    minGroupSize: null,
+    price: 1390,
+    priceNote: "Estimated per-person price for a group of two or more sharing twin rooms. Assumes a trekking guide, one porter for every two trekkers, ACAP permit, ground transport Kathmandu to Jagat and Pokhara to Kathmandu, the Jomsom–Pokhara flight (or a jeep if flights are not operating), one hotel night in Pokhara, teahouse rooms and three meals a day on the trail. Nepal visa, travel insurance, Kathmandu hotel nights and personal spending are not included. Price is a placeholder until the owners confirm it.",
+    priceIsEstimate: true,
+    seasonBadge: "Mar–May / Oct–Nov",
+    bestSeasons: "October to mid-November is the most settled window; late March to May is also good but Thorong La can hold snow into April. Avoid December to February, when snow and cold make the pass dangerous, and the monsoon.",
+    accommodation: "Teahouse",
+    operator: "peakpursuit",
+    operatorNote: null,
+    overview: [
+      "The Annapurna Circuit crosses the heart of the range, starting in the green, monsoon-fed Marsyangdi valley and climbing for days through pine, apple orchards and Buddhist villages to the high, dry country around Manang. It then goes over Thorong La, at 5,416 m the high point, and drops into the Kali Gandaki valley and the pilgrimage temple at Muktinath. It is a big step up from Poon Hill or ABC, and the pass day is long, cold and tiring.",
+      "Roads have changed the route. A jeep road now follows much of the Marsyangdi valley as far as the Manang area and most of the Kali Gandaki below Muktinath, but the sections over Thorong La and between Manang and Muktinath are still on foot. We use the road for the long first leg to Jagat and the final leg from Jomsom, and between them we follow footpaths and the NATT-marked alternatives, including the high route through Ghyaru and Ngawal rather than the lower road above Pisang. The road and trail situation changes from season to season, so your guide checks locally and may use a jeep for a short stretch if the path is damaged or covered in dust.",
+      "The schedule is built around acclimatisation: two nights in Manang, a spare night at Yak Kharka that doubles as a weather buffer for the pass, and an overnight at Thorong Phedi rather than a higher night at High Camp. This is a serious high-altitude trek for fit walkers; you need warm clothing, determination and time for the mountain."
+    ],
+    highlights: [
+      "Thorong La (5,416 m), one of the world's highest trekking passes",
+      "The high route through Ghyaru and Ngawal, with views across to Annapurna II and III",
+      "Manang, a Tibetan-influenced village below Gangapurna, with an acclimatisation day",
+      "Muktinath, a temple complex sacred to both Hindus and Buddhists",
+      "A built-in weather reserve day before the pass",
+      "A route planned to stay on footpaths and away from jeep dust where possible"
+    ],
+    permits: [
+      { name: "ACAP entry permit", note: "NPR 3,000 (about USD 22) for foreign visitors, single entry, paid in rupees; we arrange it in Kathmandu or Pokhara, and it is checked at several checkposts, including Dharapani, Chame, Manang and Jomsom." },
+      { name: "TIMS card", note: "Reported as no longer required in the Annapurna region in 2026 by several recent sources, though some operators still quote NPR 2,000; we confirm before you travel and include it if required." },
+      { name: "Local municipal fee", note: "No separate municipal entry fee was reported for this route in 2026 sources; we double-check locally before departure." }
+    ],
+    included: [
+      "Hotel pick-up in Kathmandu on Day 1 and road transport Kathmandu to Jagat and Pokhara to Kathmandu",
+      "Jomsom to Pokhara flight when operating (jeep otherwise) and one night in a twin-share hotel in Pokhara",
+      "Teahouse accommodation on the trek, twin share",
+      "Breakfast, lunch and dinner with tea or coffee during the trek days",
+      "Trekking guide and porter support (one porter for every two trekkers)",
+      "Annapurna Conservation Area permit (and TIMS card if it is required)",
+      "Guide and porter wages, insurance, food and lodging",
+      "A basic first-aid kit carried by the guide",
+      "A built-in reserve day for weather at Thorong La"
+    ],
+    excluded: [
+      "International flights and Nepal visa",
+      "Hotel nights in Kathmandu before and after the trek",
+      "Lunch and dinner in Pokhara and Kathmandu",
+      "Travel and medical insurance with emergency evacuation cover (required)",
+      "Hot showers, battery charging, Wi-Fi and bottled drinks in the lodges",
+      "Tips for guide and porter, and personal gear such as a down jacket and sleeping bag (available to rent)",
+      "Extra nights if a delay such as a cancelled flight or an early pass crossing is not covered by the reserve day"
+    ],
+    fitness: "Strong fitness and previous multi-day trekking at altitude are advisable. You should be able to walk 5–7 hours a day for ten days and manage a pass day of 9–12 hours that starts before dawn. Regular hill-walking, stair training and some cardio work for two months beforehand are a sensible start.",
+    safetyNotes: [
+      "Altitude: sleeping altitudes stay within about 500 m of the night before above 3,000 m, with two nights in Manang and a spare night at Yak Kharka; the Thorong Phedi night is ~4,450 m. Headache, poor sleep and loss of appetite are normal; worsening symptoms mean descent.",
+      "Thorong La is cold, windy and exposed, and snow can close it. We leave before dawn, aim to be on the pass in the morning, carry crampons or spikes if conditions need them and turn back or wait if conditions are poor. The October 2014 blizzard that killed dozens of trekkers is a reminder of how fast the weather can change.",
+      "There are rockfall and landslide zones between Yak Kharka and Thorong Phedi and on the descent to Muktinath, which are worse in warm afternoons and after rain; the guide chooses timing and routes accordingly.",
+      "Evacuation: helicopter in clear weather from Manang or Phedi; the Jomsom flight is weather-dependent, so keep a day of slack and make sure your insurance covers helicopter evacuation above 5,000 m."
+    ],
+    hero: null,
+    gallery: [],
+    itinerary: [
+      { day: 1, title: "Drive from Kathmandu to Jagat", sleepAlt: 1300, activity: "Drive", duration: "8–9 hrs drive", distanceKm: "~190 km", meals: "Breakfast, lunch, dinner", stay: "Lodge, Jagat", description: "We assume you reach Kathmandu the day before, and our team collects you from your hotel in the morning for the long drive to Besisahar, the district town at the start of the Marsyangdi valley. A jeep takes you onward along the rough road to Jagat (about 1,300 m), a stone village above the river. Expect a bumpy ride and take motion-sickness tablets if you need them." },
+      { day: 2, title: "Trek from Jagat to Dharapani", sleepAlt: 1860, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Dharapani", description: "The first walking day follows the Marsyangdi north through terraced fields, rice paddies and waterfalls, crossing the river on several suspension bridges. We use the trails away from the road wherever possible and take a short jeep hop if the path is damaged. You reach Dharapani at about 1,860 m (sources differ by about 100 m), a village at the junction with the Manaslu Circuit." },
+      { day: 3, title: "Trek from Dharapani to Chame", sleepAlt: 2670, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Chame", description: "The valley narrows, the vegetation shifts from broadleaf to pine, and the first big mountains appear: Annapurna II over the end of the valley. You walk a mix of forest trails and short sections beside the road, passing small villages and mani walls. Chame is the district headquarters of Manang at about 2,670 m, with shops, lodges and a good chance to stock up." },
+      { day: 4, title: "Trek from Chame to Lower Pisang", sleepAlt: 3190, activity: "Trek", duration: "5–6 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Lower Pisang", description: "The valley turns dry and open, with apple orchards giving way to pine forest and the huge curved rock wall of Paungda Danda rising above the trail. You walk through Bratang and across the river to Lower Pisang, at about 3,190 m, a village built around a gompa and a small chorten. This is a short climb of about 520 m, so go slowly and drink plenty." },
+      { day: 5, title: "Trek from Lower Pisang to Ngawal via Ghyaru", sleepAlt: 3660, activity: "Trek", duration: "5–6 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Ngawal", description: "We take the high route: a steep climb up through Upper Pisang to Ghyaru (about 3,730 m), a stone village on a ridge with Annapurna II and the Marsyangdi valley below. The trail traverses along the ridge to Ngawal (about 3,660 m), away from the jeep road. It is a tough day, but the views are the reason to choose it." },
+      { day: 6, title: "Trek from Ngawal to Manang via Braga", sleepAlt: 3540, activity: "Trek", duration: "3–4 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Manang", description: "A short descent through juniper forest takes you past the cliff-side monastery at Braga to Manang (about 3,540 m), a large village of flat-roofed houses and prayer wheels under Gangapurna and Annapurna III. You have the afternoon to explore, rest and drink hot ginger tea. Early arrival gives you time to rest before tomorrow." },
+      { day: 7, title: "Acclimatization day in Manang", sleepAlt: 3540, activity: "Acclimatization", duration: "3–5 hrs hike", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Manang", description: "Climb high, sleep low: today you walk up to Gangapurna Lake or to Praken Gompa (about 3,945 m) and return to sleep at Manang. The Himalayan Rescue Association post in Manang usually gives a daily altitude talk in season, which is worth attending. The rest of the day is for rest, laundry and a bakery visit." },
+      { day: 8, title: "Trek from Manang to Yak Kharka", sleepAlt: 4020, activity: "Trek", duration: "4–5 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Yak Kharka", description: "The valley rises through Gunsang to the high pastures of Yak Kharka at about 4,020 m, with a few lodges and grazing yaks. Stop often, breathe deeply and drink plenty. It is a short day on purpose so your body has time to adjust before the pass." },
+      { day: 9, title: "Reserve and acclimatization day at Yak Kharka", sleepAlt: 4020, activity: "Reserve day", duration: "Rest or 2–3 hrs hike", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Yak Kharka", description: "This is the built-in buffer for Thorong La. If the forecast looks good, we use it for acclimatisation, with a gentle walk up the ridge toward Ledar and back to sleep at the same altitude; if it looks bad, we wait for the weather. A second night at about 4,000 m is excellent preparation for the 5,416 m pass." },
+      { day: 10, title: "Trek from Yak Kharka to Thorong Phedi", sleepAlt: 4450, activity: "Trek", duration: "4–5 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Thorong Phedi", description: "The trail passes Ledar and descends to a bridge over the Jarsang Khola before climbing to Thorong Phedi (about 4,450 m, sources range from 4,420 to 4,600 m), a base of a few lodges beneath the pass. Parts of this path are on a steep slope with rockfall risk in warm afternoons, so the guide times the day. Eat well, drink plenty, and go to bed early." },
+      { day: 11, title: "Cross Thorong La (5,416 m) to Muktinath", sleepAlt: 3800, activity: "Pass crossing", duration: "9–11 hrs", distanceKm: "~17 km", meals: "Breakfast, lunch, dinner", stay: "Lodge, Muktinath", description: "Start before dawn with a headtorch for the climb past High Camp, aiming to reach the prayer flags on the pass in the morning, before the wind builds. The climb takes about four to six hours, and there are no shelters up there, so carry water and snacks. The descent to Muktinath (about 3,800 m) is steep and loose and falls more than 1,600 m, and your knees will feel it. Muktinath has hot water, warm rooms and a very welcome dinner." },
+      { day: 12, title: "Visit Muktinath, then trek to Jomsom", sleepAlt: 2720, activity: "Trek", duration: "5–6 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Jomsom", description: "In the morning, visit the temple complex, sacred to both Hindus and Buddhists. The trail then descends past Jharkot and Kagbeni into the wide, windy Kali Gandaki valley, and we follow it (partly by road, with a jeep for the dustiest stretches) to Jomsom at about 2,720 m. The wind often picks up after midday, so we aim to arrive by early afternoon." },
+      { day: 13, title: "Fly or drive from Jomsom to Pokhara", sleepAlt: 820, activity: "Flight", duration: "20–25 min flight (or a full day by jeep)", distanceKm: null, meals: "Breakfast", stay: "Hotel, Pokhara", description: "Fly the short hop down the Kali Gandaki gorge to Pokhara in the morning, when the winds are lowest. Flights are seasonal and weather-dependent, with fog in Pokhara and wind in Jomsom causing frequent delays, so the fallback is a long jeep ride down the valley to Pokhara. The rest of the day is yours to explore Pokhara." },
+      { day: 14, title: "Drive from Pokhara to Kathmandu", sleepAlt: 1350, activity: "Drive", duration: "6–7 hrs drive", distanceKm: "~200 km", meals: "Breakfast", stay: "Kathmandu (trip ends on arrival)", description: "A leisurely morning in Pokhara, then the road back to Kathmandu, where we drop you at your hotel in the afternoon. The ride is long, so keep a book and a snack to hand. This is the last day of the trip; your Kathmandu hotel night is not included." }
+    ],
+    sources: [
+      "https://www.everesttrekkingroutes.com/annapurna-circuit-trail/",
+      "https://www.bestheritagetour.com/blog/is-the-annapurna-circuit-still-worth-doing",
+      "https://nepalalternativetreks.com/trip/annapurna-circuit-with-tilicho-lake-trek/",
+      "https://www.everesttrekkingroutes.com/thorong-la-pass-crossing-experience-and-safety-advice/",
+      "https://www.magicalnepal.com/travel-guide/annapurna/annapurna-circuit-trek-permits/",
+      "https://www.responsibletravel.com/holidays/annapurna-circuit/travel-guide/crossing-the-thorong-la-pass"
+    ]
+  },
+  {
+    id: "annapurna-tilicho-lake",
+    region: "annapurna",
+    title: "Annapurna Circuit with Tilicho Lake",
+    tagline: "The full circuit with a detour to turquoise Tilicho Lake (4,919 m) before the Thorong La crossing, an extra week of high ground and fewer crowds.",
+    difficulty: "black",
+    tags: ["pass", "remote", "pilgrimage"],
+    days: 16,
+    walkingDays: 12,
+    maxAlt: 5416,
+    maxAltName: "Thorong La",
+    distanceKm: 160,
+    startPoint: "Jagat (by road from Kathmandu via Besisahar)",
+    endPoint: "Jomsom, then by air or road to Pokhara and Kathmandu",
+    minGroupSize: null,
+    price: 1690,
+    priceNote: "Estimated per-person price for a group of two or more sharing twin rooms. Assumes a trekking guide, one porter for every two trekkers, ACAP permit, ground transport Kathmandu to Jagat and Pokhara to Kathmandu, the Jomsom–Pokhara flight (or a jeep if flights are not operating), one hotel night in Pokhara, teahouse rooms and three meals a day on the trail. Nepal visa, travel insurance, Kathmandu hotel nights and personal spending are not included. Price is a placeholder until the owners confirm it.",
+    priceIsEstimate: true,
+    seasonBadge: "Mar–May / Oct–Nov",
+    bestSeasons: "October to mid-November is the most settled window, with stable weather and clear skies. April and May are also possible, but the trail to the lake may still hold snow in April. Avoid winter and the monsoon on this route.",
+    accommodation: "Teahouse",
+    operator: "peakpursuit",
+    operatorNote: null,
+    overview: [
+      "This trek follows the same route as the classic Annapurna Circuit as far as Manang, then leaves it for a side valley to Tilicho Lake (4,919 m), a huge turquoise lake in a bowl of glaciers and rock beneath Tilicho Peak. After the lake you rejoin the main trail at Yak Kharka and continue over Thorong La to Muktinath and Jomsom. It adds two extra days of walking above 3,500 m, a night at about 4,150 m and one very long lake day, and it needs a good deal more fitness than the classic route.",
+      "The Khangsar side of the route is quiet and wild: a narrow trail across steep slopes with fewer lodges and fewer trekkers. Tilicho Base Camp sits at about 4,150 m, and the lake is a 7–8 hour round trip from there. Parts of the old trail between Khangsar and the base camp were damaged by landslides, so the path now in use changes with the seasons and your guide chooses the safest line.",
+      "As on the classic Circuit, jeep roads now follow much of the Marsyangdi and Kali Gandaki valleys, but the Tilicho side valley, the Manang–Yak Kharka–Phedi section and Thorong La itself are on foot. We drive to Jagat, walk the valley on footpaths where possible, and include one reserve day at Yak Kharka for the pass. It is a long and demanding trip that rewards patience."
+    ],
+    highlights: [
+      "Tilicho Lake (4,919 m), a giant glacial lake below Tilicho Peak",
+      "The quiet side valley through Khangsar and Tilicho Base Camp",
+      "Thorong La (5,416 m) and the Muktinath pilgrimage temples",
+      "Ghyaru and Ngawal high route above Pisang",
+      "An acclimatisation day in Manang, a climb-high lake day and a reserve day before the pass",
+      "Descent through the Kali Gandaki valley to Jomsom"
+    ],
+    permits: [
+      { name: "ACAP entry permit", note: "NPR 3,000 (about USD 22) for foreign visitors, single entry, paid in rupees; we arrange it in Kathmandu or Pokhara, and it is checked at several checkposts, including Dharapani, Chame, Manang and Jomsom." },
+      { name: "TIMS card", note: "Reported as no longer required in the Annapurna region in 2026 by several recent sources, though some operators still quote NPR 2,000; we confirm before you travel and include it if required." },
+      { name: "Local municipal fee", note: "No separate municipal entry fee or Tilicho Lake permit was reported in 2026 sources; we double-check locally before departure." }
+    ],
+    included: [
+      "Hotel pick-up in Kathmandu on Day 1 and road transport Kathmandu to Jagat and Pokhara to Kathmandu",
+      "Jomsom to Pokhara flight when operating (jeep otherwise) and one night in a twin-share hotel in Pokhara",
+      "Teahouse accommodation on the trek, twin share",
+      "Breakfast, lunch and dinner with tea or coffee during the trek days",
+      "Trekking guide and porter support (one porter for every two trekkers)",
+      "Annapurna Conservation Area permit (and TIMS card if it is required)",
+      "Guide and porter wages, insurance, food and lodging",
+      "A basic first-aid kit carried by the guide",
+      "A built-in reserve day for weather before Thorong La"
+    ],
+    excluded: [
+      "International flights and Nepal visa",
+      "Hotel nights in Kathmandu before and after the trek",
+      "Lunch and dinner in Pokhara and Kathmandu",
+      "Travel and medical insurance with emergency evacuation cover (required)",
+      "Hot showers, battery charging, Wi-Fi and bottled drinks in the lodges",
+      "Tips for guide and porter, and personal gear such as a down jacket and sleeping bag (available to rent)",
+      "Extra nights if a delay such as a cancelled flight or trail damage is not covered by the reserve day"
+    ],
+    fitness: "Very good fitness and previous experience trekking above 4,000 m. You need to manage several 6–9 hour days and an 8-hour lake day at over 4,000 m, plus the long Thorong La day. Train for two to three months with long hill-walks, stairs and a loaded pack.",
+    safetyNotes: [
+      "Altitude: the route sleeps at about 4,150 m near the lake and 4,450 m at Thorong Phedi, with two nights in Manang, two at Tilicho Base Camp and a spare night at Yak Kharka; any worsening headache, nausea or breathlessness means stopping and descending.",
+      "The lake day gains about 770 m in one morning, and winds pick up after midday; we start early and the guide may turn the group back. Parts of the path to Tilicho Base Camp cross loose, steep slopes with rockfall and landslide risk and may change after the monsoon.",
+      "Thorong La is exposed, cold and can close in snow; we leave before dawn and keep a reserve day. There is no road to the base camp or the pass, so evacuation is by helicopter in clear weather, and your insurance must cover helicopter evacuation above 5,000 m.",
+      "The Jomsom flight is seasonal and weather-dependent, so keep spare days in your onward travel plans."
+    ],
+    hero: null,
+    gallery: [],
+    itinerary: [
+      { day: 1, title: "Drive from Kathmandu to Jagat", sleepAlt: 1300, activity: "Drive", duration: "8–9 hrs drive", distanceKm: "~190 km", meals: "Breakfast, lunch, dinner", stay: "Lodge, Jagat", description: "We assume you reach Kathmandu the day before, and our team collects you from your hotel in the morning for the long drive to Besisahar, the district town at the start of the Marsyangdi valley. A jeep takes you onward along the rough road to Jagat (about 1,300 m), a stone village above the river. Expect a bumpy ride and take motion-sickness tablets if you need them." },
+      { day: 2, title: "Trek from Jagat to Dharapani", sleepAlt: 1860, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Dharapani", description: "The first walking day follows the Marsyangdi north through terraced fields and waterfalls, crossing the river on several suspension bridges. We use trails away from the road wherever possible and take a short jeep hop if the path is damaged. You reach Dharapani at about 1,860 m (sources differ by about 100 m)." },
+      { day: 3, title: "Trek from Dharapani to Chame", sleepAlt: 2670, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Chame", description: "The valley narrows, the vegetation shifts from broadleaf to pine, and the first big mountains appear: Annapurna II over the end of the valley. You walk a mix of forest trails and short sections beside the road, passing small villages and mani walls. Chame is the district headquarters of Manang at about 2,670 m, with shops, lodges and a good chance to stock up." },
+      { day: 4, title: "Trek from Chame to Lower Pisang", sleepAlt: 3190, activity: "Trek", duration: "5–6 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Lower Pisang", description: "The valley turns dry and open, with apple orchards giving way to pine forest and the huge curved rock wall of Paungda Danda above the trail. You walk through Bratang and across the river to Lower Pisang, at about 3,190 m, a village built around a gompa. This is a short climb of about 520 m, so go slowly and drink plenty." },
+      { day: 5, title: "Trek from Lower Pisang to Manang via Ghyaru and Ngawal", sleepAlt: 3540, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Manang", description: "We take the high route: a steep climb up through Upper Pisang to Ghyaru (about 3,730 m), then a traverse along the ridge past Ngawal (about 3,660 m) with Annapurna II and III beside you. Past Braga's cliff-side monastery the path descends through juniper to Manang (about 3,540 m). It is a long day on a high trail, so start early and bring lunch." },
+      { day: 6, title: "Acclimatization day in Manang", sleepAlt: 3540, activity: "Acclimatization", duration: "3–5 hrs hike", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Manang", description: "Climb high, sleep low: today you walk up to Gangapurna Lake or to Praken Gompa (about 3,945 m) and return to sleep at Manang. The Himalayan Rescue Association post in Manang usually gives a daily altitude talk in season, which is worth attending. The rest of the day is for rest, laundry and a bakery visit." },
+      { day: 7, title: "Trek from Manang to Khangsar", sleepAlt: 3700, activity: "Trek", duration: "3–4 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Khangsar", description: "You leave the main Circuit trail, cross the Khangsar Khola and climb gently to Khangsar (about 3,700 m), the last village on this side valley, with a small gompa and a few lodges. It is a short day, with time to rest and watch the weather. Beyond here the trail becomes much quieter." },
+      { day: 8, title: "Trek from Khangsar to Tilicho Base Camp", sleepAlt: 4150, activity: "Trek", duration: "5–6 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Tilicho Base Camp", description: "The trail climbs through open, rocky country with few trees and crosses steep slopes, including a section damaged by past landslides where the newer path is used. Take your time on this stretch and keep a good distance from the person ahead, in case of loose stone. Tilicho Base Camp (about 4,150 m) is a small lodge set in a bleak, dramatic basin, so rest and drink well." },
+      { day: 9, title: "Excursion to Tilicho Lake and back to the base camp", sleepAlt: 4150, activity: "Trek", duration: "7–8 hrs round trip", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Tilicho Base Camp", description: "Start early for the long, steady climb to Tilicho Lake (4,919 m) on a rocky path, reaching the shore in about three to four hours. The lake is huge, a frozen or turquoise sheet in a bowl of high peaks, and there is no settlement at the shore. Wind rises quickly, so we start early and head down by early afternoon; sleeping back at the base camp is good acclimatisation." },
+      { day: 10, title: "Trek from Tilicho Base Camp to Yak Kharka", sleepAlt: 4020, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Yak Kharka", description: "You descend, passing the old Khangsar side and through Gumsang, cross a log bridge and rejoin the main Circuit trail at Yak Kharka (about 4,020 m). Which line we use depends on the state of the trail after the season’s weather, and your guide decides on the day. Lodges here are simple; get settled early and rest." },
+      { day: 11, title: "Reserve and rest day at Yak Kharka", sleepAlt: 4020, activity: "Reserve day", duration: "Rest or 2–3 hrs hike", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Yak Kharka", description: "This is the built-in buffer for the pass. If the weather is good, we use it to rest and recover after the lake with an easy walk toward Ledar; if the forecast is poor or someone is unwell, we wait. A second night at about 4,000 m is excellent preparation for Thorong La." },
+      { day: 12, title: "Trek from Yak Kharka to Thorong Phedi", sleepAlt: 4450, activity: "Trek", duration: "4–5 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Thorong Phedi", description: "The trail passes Ledar and descends to a bridge over the Jarsang Khola before climbing to Thorong Phedi (about 4,450 m, sources range from 4,420 to 4,600 m), a few lodges beneath the pass. Part of this path is on a steep slope with rockfall risk in warm afternoons, so the guide times the day. Eat well, drink plenty, and go to bed early." },
+      { day: 13, title: "Cross Thorong La (5,416 m) to Muktinath", sleepAlt: 3800, activity: "Pass crossing", duration: "9–11 hrs", distanceKm: "~17 km", meals: "Breakfast, lunch, dinner", stay: "Lodge, Muktinath", description: "Start before dawn with a headtorch for the climb past High Camp, aiming to reach the prayer flags on the pass in the morning, before the wind builds. The climb takes about four to six hours, and there are no shelters up there, so carry water and snacks. The descent to Muktinath (about 3,800 m) is steep and loose and falls more than 1,600 m, so your knees will feel it. Muktinath has hot water, warm rooms and a very welcome dinner." },
+      { day: 14, title: "Visit Muktinath, then trek to Jomsom", sleepAlt: 2720, activity: "Trek", duration: "5–6 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Jomsom", description: "In the morning, visit the temple complex, sacred to both Hindus and Buddhists. The trail then descends past Jharkot and Kagbeni into the wide, windy Kali Gandaki valley, and we follow it (partly by road, with a jeep for the dustiest stretches) to Jomsom at about 2,720 m. The wind often picks up after midday, so we aim to arrive by early afternoon." },
+      { day: 15, title: "Fly or drive from Jomsom to Pokhara", sleepAlt: 820, activity: "Flight", duration: "20–25 min flight (or a full day by jeep)", distanceKm: null, meals: "Breakfast", stay: "Hotel, Pokhara", description: "Fly the short hop down the Kali Gandaki gorge to Pokhara in the morning, when the winds are lowest. Flights are seasonal and weather-dependent, with fog in Pokhara and wind in Jomsom causing frequent delays, so the fallback is a long jeep ride down the valley to Pokhara. The rest of the day is yours to explore Pokhara." },
+      { day: 16, title: "Drive from Pokhara to Kathmandu", sleepAlt: 1350, activity: "Drive", duration: "6–7 hrs drive", distanceKm: "~200 km", meals: "Breakfast", stay: "Kathmandu (trip ends on arrival)", description: "A leisurely morning in Pokhara, then the road back to Kathmandu, where we drop you at your hotel in the afternoon. The ride is long, so keep a book and a snack to hand. This is the last day of the trip; your Kathmandu hotel night is not included." }
+    ],
+    sources: [
+      "https://nepalalternativetreks.com/trip/annapurna-circuit-with-tilicho-lake-trek/",
+      "https://www.alpineadventureclub.com/tilicho-lake-trek",
+      "https://himalayanhero.com/blog/tilicho-lake-trek/",
+      "https://www.himkalaadventure.com/tilicho-lake-trekking.html",
+      "https://www.bestheritagetour.com/blog/is-the-annapurna-circuit-still-worth-doing",
+      "https://www.magicalnepal.com/travel-guide/annapurna/annapurna-circuit-trek-permits/"
     ]
   }
   /*__END__*/
