@@ -90,7 +90,7 @@ window.PP_TREKS.push(
     hero: null,
     gallery: [],
     itinerary: [
-      { day: 1, title: "Arrive in Lhasa by flight from Kathmandu", sleepAlt: 3650, activity: "Arrival", duration: "1 hr 20 min flight, 1 hr transfer", distanceKm: "~65 km transfer", meals: "Dinner", stay: "Hotel, Lhasa", description: "Fly from Kathmandu over the main Himalayan range to Lhasa's Gonggar airport, then transfer to the city at around 3,650 m. Your Tibetan guide meets you with the paperwork. Spend the afternoon resting, drinking water and doing very little, as the first day at this height is the one that catches people out." },
+      { day: 1, title: "Arrive in Lhasa by flight from Kathmandu", sleepAlt: 3650, activity: "Arrival", duration: "1 hr 20 min flight, 1 hr transfer", distanceKm: "~60 km transfer", meals: "Dinner", stay: "Hotel, Lhasa", description: "Fly from Kathmandu over the main Himalayan range to Lhasa's Gonggar airport, then transfer to the city at around 3,650 m. Your Tibetan guide meets you with the paperwork. Spend the afternoon resting, drinking water and doing very little, as the first day at this height is the one that catches people out." },
       { day: 2, title: "Lhasa: Jokhang and Barkhor on foot", sleepAlt: 3650, activity: "Sightseeing", duration: "3-4 hrs easy walking", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "A slow day around the old city: the Jokhang Temple, the pilgrim circuit of the Barkhor and the surrounding lanes. Keep the pace gentle and stop for tea whenever you like. This is acclimatization time as much as sightseeing." },
       { day: 3, title: "Lhasa: Potala Palace and Drepung", sleepAlt: 3650, activity: "Acclimatization", duration: "4-5 hrs sightseeing", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "Climb the stairs of the Potala Palace (timed tickets, arranged by your guide) and visit Drepung Monastery on the hillside west of the city. The Potala stairs are a good test of how your lungs are coping. You stay a third night at 3,650 m before going higher." },
       { day: 4, title: "Drive Lhasa to Shigatse via Yamdrok Lake", sleepAlt: 3840, activity: "Drive", duration: "7-8 hrs drive with stops", distanceKm: "~350 km", meals: "Breakfast", stay: "Hotel, Shigatse", description: "Leave Lhasa and climb to the Kamba La (about 4,800 m) for the first view of turquoise Yamdrok Lake at roughly 4,440 m, then continue over the Karo La beside a glacier and past Gyantse and its Pelkor Chode monastery complex. You end in Shigatse at about 3,840 m, lower than the passes you crossed, which helps your body." },
@@ -101,7 +101,7 @@ window.PP_TREKS.push(
       { day: 9, title: "Drive Old Tingri to Shigatse", sleepAlt: 3840, activity: "Drive", duration: "7-8 hrs drive", distanceKm: "~350 km", meals: "Breakfast", stay: "Hotel, Shigatse", description: "A long drive back east on the Friendship Highway, crossing the Gyatso La again and dropping nearly 550 m in altitude overall. If time and the route allow, your guide may stop at Sakya Monastery or Lhatse for a break. Dinner and a good sleep at lower altitude close out the high part of the journey." },
       { day: 10, title: "Drive Shigatse to Lhasa", sleepAlt: 3650, activity: "Drive", duration: "5-6 hrs drive", distanceKm: "~280 km", meals: "Breakfast", stay: "Hotel, Lhasa", description: "Follow the Yarlung Tsangpo valley back to Lhasa on the faster road. The afternoon is free for the Barkhor market, souvenir shopping or a hot shower." },
       { day: 11, title: "Lhasa spare day (weather and permit buffer)", sleepAlt: 3650, activity: "Reserve day", duration: "Free day", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "This day is held in reserve for road delays, checkpoint hold-ups or a closure at Everest. If everything runs to schedule, it is a free day for Sera Monastery and its monk debates, or a stroll through Norbulingka Park." },
-      { day: 12, title: "Departure from Lhasa", sleepAlt: null, activity: "Departure", duration: "Transfer and flight", distanceKm: "~65 km transfer", meals: "Breakfast", stay: "Not applicable", description: "Transfer to Lhasa's Gonggar airport for your flight back to Kathmandu, or onward to mainland China. Allow generous time for checkpoint and security procedures. Flight schedules are limited to a few days per week, which is why dates are fixed to the flight." }
+      { day: 12, title: "Departure from Lhasa", sleepAlt: null, activity: "Departure", duration: "Transfer and flight", distanceKm: "~60 km transfer", meals: "Breakfast", stay: "Not applicable", description: "Transfer to Lhasa's Gonggar airport for your flight back to Kathmandu, or onward to mainland China. Allow generous time for checkpoint and security procedures. Flight schedules are limited to a few days per week, which is why dates are fixed to the flight." }
     ],
     sources: [
       "https://windhorsetour.com/tibet-travel-tips/how-to-plan-tibet-everest-base-camp-trip",
@@ -112,6 +112,200 @@ window.PP_TREKS.push(
       "https://www.yowangdu.com/tibet-travel/when-is-tibet-closed-to-foreigners",
       "https://windhorsetour.com/kailash-tour/tibet-lhasa-everest-kailash-kathmandu-overland-tour",
       "https://snowliontours.com/news-notes/mount-everest-base-camp-closed-to-tourist/"
+    ]
+  },
+  {
+    id: "tibet-kailash-kora",
+    region: "tibet",
+    title: "Mount Kailash Kora and Lake Manasarovar",
+    tagline: "Walk the three-day pilgrim circuit around Mount Kailash over the 5,630 m Drolma La, reached by a slow overland journey across western Tibet from Lhasa.",
+    difficulty: "black",
+    tags: ["pilgrimage", "pass", "remote", "cultural"],
+    days: 17,
+    walkingDays: 3,
+    maxAlt: 5630,
+    maxAltName: "Drolma La",
+    distanceKm: 52,
+    startPoint: "Lhasa (arrive by flight from Kathmandu)",
+    endPoint: "Lhasa (depart by flight to Kathmandu)",
+    minGroupSize: 2,
+    price: 3250,
+    priceNote: "Estimate per person for a group of 4 or more sharing twin rooms, for the partner agency's ground costs: Tibet Travel Permit, Kailash/border-area and military permits, guide, vehicle with oxygen, hotels and kora guesthouse beds, entrance fees and breakfasts. A pair costs roughly 20-30% more each. Not included: Kathmandu-Lhasa flights, group visa fee, insurance, most meals, porter or yak hire for the kora, tips. This is a placeholder price until the owners and the partner agency confirm it.",
+    priceIsEstimate: true,
+    seasonBadge: "May–Sep",
+    bestSeasons: "May to September, with the driest, most settled weather often in late May-June and again in September. Heavy snow can close the Drolma La from about October to April, and July-August brings rain and cloud. Saga Dawa (usually May or June) is the busiest pilgrimage period.",
+    accommodation: "Hotel + guesthouse",
+    operator: "partner",
+    operatorNote: "Peak Pursuit is Nepal-based and cannot lawfully run trips inside Tibet by itself. Your Kailash journey is arranged with a licensed Tibetan travel agency that holds the Tibet Travel Permit and the extra border-area and military permits needed for the Kailash region, and that supplies the Tibetan guide, driver and vehicle. Peak Pursuit coordinates preparation, flights and the group visa from Kathmandu. The agency's name and the final price are confirmed at booking.",
+    overview: [
+      "The Kailash kora is a 52 km circuit of the roughly 6,600 m mountain, walked over three days by Tibetan Buddhist, Hindu, Jain and Bon pilgrims (Buddhists and Hindus go clockwise; Bon followers walk the other way). From Darchen at about 4,670 m the trail climbs the west valley to Dirapuk Monastery, crosses the Drolma La at about 5,630 m on the hardest day, and descends to Zutulpuk before an easy final walk back to Darchen. Every metre of the walk is above 4,600 m, which is why this trek is rated black diamond for altitude, not for technical difficulty: the path is clear, but the air has roughly half the oxygen of sea level.",
+      "Reaching the mountain is itself a journey. This itinerary flies from Kathmandu to Lhasa, spends three nights in Lhasa, then drives west for four days via Shigatse, Shegar and Saga, with a night beside Lake Manasarovar and a spare acclimatization day. Plan on a vehicle for most of the 17 days: the walking is concentrated in the three kora days plus short lakeside walks.",
+      "Availability warning for 2026-27: the Kerung (Rasuwagadhi/Gyirong) crossing that normally carries overland Kathmandu-Kailash departures was destroyed in the 26 August 2026 flood and was still closed in October 2026 with no reopening date, and the Kodari/Zhangmu crossing has been reported closed or restricted too. For that reason this trek is built from the Kathmandu-Lhasa flight instead. Chinese authorities had not yet announced Kailash season dates or quotas for 2027 at the last report we found, so treat any departure as provisional until the Tibetan agency confirms it in writing. Some operators also state a maximum age (reported as 70); confirm with the agency."
+    ],
+    highlights: [
+      "The 52 km Kailash kora, walked alongside Tibetan and Indian pilgrims",
+      "Crossing the Drolma La at about 5,630 m, the high point of the pilgrimage",
+      "North face of Kailash from Dirapuk, a short walk from the monastery guesthouse",
+      "Lake Manasarovar, with a full night beside the lake and a rest day for lakeside walks",
+      "Long overland drive across Tibet from Lhasa via Shigatse, Shegar and Saga with big-sky plateau scenery",
+      "Acclimatization built in: three Lhasa nights, a spare day at Manasarovar and a reserve day after the kora"
+    ],
+    permits: [
+      { name: "Tibet Travel Permit (TTP)", note: "Applied for by the licensed Tibetan agency only; usually included in the tour price, 2-4 weeks to issue. Send passport and visa details at least 4-6 weeks ahead." },
+      { name: "China group visa (Kathmandu)", note: "Required for entry from Nepal. Processed in Kathmandu in about 4-5 working days; a visa from your home country is not valid for this entry. US passport holders are not visa-free." },
+      { name: "Aliens' Travel Permit and military/frontier permit (Ngari/Kailash)", note: "Needed for Mount Kailash and Lake Manasarovar and requested by the agency in the original application, often 20+ days before travel. Included in the agency's costs." },
+      { name: "Kailash and Manasarovar site fees", note: "Local entrance and monastery charges paid via the agency; check which are in the price." },
+      { name: "Age and health requirements", note: "Chinese authorities and some operators set a maximum age for Kailash (reported as 70). Ask the agency before booking." }
+    ],
+    included: [
+      "Tibet Travel Permit and Kailash-area permits arranged by the partner agency",
+      "Licensed Tibetan guide and driver for all Tibet days",
+      "Private vehicle with portable oxygen and a basic altitude first-aid kit",
+      "Hotels on twin sharing in Lhasa, Shigatse, Shegar, Saga and Darchen; guesthouse beds at Manasarovar, Dirapuk and Zutulpuk",
+      "Daily breakfast, plus dinners at the kora guesthouses",
+      "Eco-bus ticket from Darchen to the kora trailhead",
+      "Monastery and sightseeing entrance fees listed in the itinerary",
+      "Airport transfers in Lhasa"
+    ],
+    excluded: [
+      "Kathmandu-Lhasa and Lhasa-Kathmandu flights (and Kathmandu hotel nights)",
+      "China group visa fee and processing charges",
+      "Travel insurance covering high-altitude walking to 5,700 m and emergency evacuation (mandatory)",
+      "Most lunches and dinners on city and road days (budget roughly US$15-25 per day)",
+      "Porter or yak hire for the kora (optional, paid locally)",
+      "Tips, single-room supplements, laundry and personal expenses"
+    ],
+    fitness: "You should have walked several consecutive days of 6-9 hours with a daypack, ideally including previous time above 4,000 m. The second kora day is 22-24 km with about 600 m of climbing to 5,630 m, and the nights are at 4,600-5,050 m. Train with long hikes and stair or hill work for at least 8-12 weeks, get a medical check, and discuss acetazolamide with your doctor. A porter or yak for your bag is a sensible option.",
+    safetyNotes: [
+      "Altitude is serious here. All nights from Saga onward are above 4,600 m and the Dirapuk night is about 5,050 m. The plan builds in three Lhasa nights, gains of roughly 300-400 m per night on the drive west, a spare day at Lake Manasarovar, and a night in Darchen before the kora, but the Darchen-Dirapuk-Zutulpuk sequence cannot be shortened. Report headache that does not ease, vomiting, confusion, clumsiness or breathlessness at rest immediately, and descend. Do not stay at altitude to 'see if it passes'.",
+      "This is remote country with very limited medical care. Medical help around Darchen is very basic, properly equipped hospitals are far away in Lhasa, and evacuation by road can take a full day or more. Vehicles carry oxygen, but oxygen on the trail depends on what is carried. Turning back is simple on day 1 and increasingly hard after that, because you are committed to the pass. Insurance that covers emergency evacuation and medical treatment at altitude is mandatory.",
+      "The Drolma La day is long (about 8-10 hours), exposed and cold, with snow possible in any month. Start before dawn, carry layers, goggles and water, and agree a turn-around time with the guide. The final day's shuttle and bad-weather options depend on conditions and road status.",
+      "Tibet permits can be refused or paused at short notice (often around March), and road washouts and checkpoint delays are common in summer. Build flexibility into flights and onward plans."
+    ],
+    hero: null,
+    gallery: [],
+    itinerary: [
+      { day: 1, title: "Arrive in Lhasa by flight from Kathmandu", sleepAlt: 3650, activity: "Arrival", duration: "1 hr 20 min flight, 1 hr transfer", distanceKm: "~60 km transfer", meals: "Dinner", stay: "Hotel, Lhasa", description: "Fly from Kathmandu to Lhasa's Gonggar airport and transfer to the city at about 3,650 m, where your Tibetan guide meets you. Spend the rest of the day resting, drinking water and avoiding alcohol. Hand over passports and permit paperwork if the guide asks." },
+      { day: 2, title: "Lhasa: Jokhang and Barkhor", sleepAlt: 3650, activity: "Sightseeing", duration: "3-4 hrs easy walking", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "A slow morning visiting the Jokhang Temple and walking the Barkhor circuit among pilgrims and prayer-wheel turners. Keep the afternoon free. You are starting the long acclimatization that the Kailash kora depends on." },
+      { day: 3, title: "Lhasa: Potala Palace and Drepung", sleepAlt: 3650, activity: "Acclimatization", duration: "4-5 hrs sightseeing", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "Climb the stairs of the Potala Palace and visit Drepung Monastery. Your third night at 3,650 m is the foundation for everything that follows, so use the day to go easy and check how you are sleeping." },
+      { day: 4, title: "Drive Lhasa to Shigatse", sleepAlt: 3840, activity: "Drive", duration: "7-8 hrs drive with stops", distanceKm: "~350 km", meals: "Breakfast", stay: "Hotel, Shigatse", description: "The road climbs to the Kamba La (about 4,800 m) above Yamdrok Lake, passes the Karo La glacier, and stops at Gyantse's Pelkor Chode monastery before arriving in Shigatse at about 3,840 m. The high points are crossed but you sleep lower than the passes, which helps adaptation." },
+      { day: 5, title: "Drive Shigatse to Shegar over Gyatso La", sleepAlt: 4200, activity: "Drive", duration: "6-7 hrs drive", distanceKm: "~300 km", meals: "Breakfast", stay: "Hotel, Shegar (New Tingri)", description: "Tashilhunpo Monastery in the morning, then west on the Friendship Highway over the Gyatso La (about 5,200 m) to Shegar at roughly 4,150-4,300 m. Heights are reported differently by different sources, so treat it as about 4,200 m. A gain of about 360 m for the night." },
+      { day: 6, title: "Drive Shegar to Saga", sleepAlt: 4610, activity: "Drive", duration: "6-8 hrs drive", distanceKm: null, meals: "Breakfast", stay: "Hotel, Saga", description: "Continue west across high grazing plains and river crossings, with Himalayan peaks on the southern horizon and Peiku Tso lake a possible roadside stop. Saga is a small town at roughly 4,600 m, so expect a basic hotel." },
+      { day: 7, title: "Drive Saga to Lake Manasarovar", sleepAlt: 4590, activity: "Drive", duration: "8 hrs drive", distanceKm: "~410 km", meals: "Breakfast", stay: "Guesthouse, Lake Manasarovar", description: "The longest drive of the trip crosses wide, empty plateau. The first view of Kailash and the lake, at about 4,590 m, comes late in the day. Your guesthouse is simple, and there may be a lakeside walk in the evening light if you have the energy." },
+      { day: 8, title: "Rest day at Lake Manasarovar", sleepAlt: 4590, activity: "Acclimatization", duration: "Easy walks, 2-3 hrs", distanceKm: "~6 km walk", meals: "Breakfast, dinner", stay: "Guesthouse, Lake Manasarovar", description: "A deliberate rest day beside the lake, with easy shoreline walks and a visit to Chiu Monastery if open. Many pilgrims make an offering or bathe at the lake, and your guide can explain the customs. Staying at the same height is what lets your body catch up before the kora." },
+      { day: 9, title: "Drive to Darchen, kora preparation", sleepAlt: 4670, activity: "Drive", duration: "1 hr drive, afternoon walk", distanceKm: "~40 km", meals: "Breakfast", stay: "Hotel, Darchen", description: "A short drive to Darchen (about 4,600-4,700 m), the town at the foot of Kailash where the kora begins and ends. Check permits, repack so that only the essentials go on the kora, and arrange any porter or yak. Take an easy afternoon walk toward the mountain to check how you feel." },
+      { day: 10, title: "Kora day 1: Darchen to Dirapuk", sleepAlt: 5050, activity: "Trek", duration: "5-6 hrs trek", distanceKm: "~13 km", meals: "Breakfast, lunch, dinner", stay: "Guesthouse, Dirapuk", description: "Ride the eco-bus about 7 km to the trailhead at Tarboche, then follow the west valley on a gradual path, passing prayer-flag sites and the monastery at Chuku. Dirapuk sits at about 5,050 m, directly beneath the north face of Kailash, where the mountain is at its closest. Reports of the altitude range from 4,890 to 5,100 m." },
+      { day: 11, title: "Kora day 2: Drolma La to Zutulpuk", sleepAlt: 4800, activity: "Pass crossing", duration: "8-10 hrs trek", distanceKm: "~22 km", meals: "Breakfast, lunch, dinner", stay: "Guesthouse, Zutulpuk", description: "The hardest day: a pre-dawn start, a long ascent to the Drolma La at about 5,630 m, then a steep, rocky descent past Gaurikund lake. The long descent to Zutulpuk (about 4,800 m) is often the part that leaves legs sore, and a porter or yak can make a major difference." },
+      { day: 12, title: "Kora day 3: Zutulpuk to Darchen", sleepAlt: 4670, activity: "Trek", duration: "3-4 hrs trek", distanceKm: "~10 km", meals: "Breakfast, lunch", stay: "Hotel, Darchen", description: "An easier final day following a stream valley out to the plain, with narrow paths above the river early on. A vehicle often covers the last stretch. Reports of the day's distance range from 7 to 12 km." },
+      { day: 13, title: "Reserve and recovery day at Darchen", sleepAlt: 4670, activity: "Reserve day", duration: "Free day", distanceKm: null, meals: "Breakfast", stay: "Hotel, Darchen", description: "A buffer for weather delays on the pass, for permit or road changes, or simply for recovery. If unused, it is a quiet day for laundry, tea and looking at the south face of Kailash from the edge of town." },
+      { day: 14, title: "Drive Darchen to Saga", sleepAlt: 4610, activity: "Drive", duration: "8-9 hrs drive", distanceKm: "~480 km", meals: "Breakfast", stay: "Hotel, Saga", description: "Retrace the road east via Paryang and over the Mayum La, with long views of the Himalaya to the south. It is a long day in the vehicle, so bring snacks and lots of water." },
+      { day: 15, title: "Drive Saga to Shigatse", sleepAlt: 3840, activity: "Drive", duration: "9-10 hrs drive", distanceKm: null, meals: "Breakfast", stay: "Hotel, Shigatse", description: "An early start for the long return east, dropping by roughly 800 m to Shigatse. The extra oxygen is noticeable and most people sleep much better here. Dinner can be a proper restaurant meal." },
+      { day: 16, title: "Drive Shigatse to Lhasa", sleepAlt: 3650, activity: "Drive", duration: "5-6 hrs drive", distanceKm: "~280 km", meals: "Breakfast", stay: "Hotel, Lhasa", description: "Follow the Yarlung Tsangpo valley back to Lhasa on the faster road. The afternoon is free for the Barkhor market, a hot shower and a proper meal." },
+      { day: 17, title: "Departure from Lhasa", sleepAlt: null, activity: "Departure", duration: "Transfer and flight", distanceKm: "~60 km transfer", meals: "Breakfast", stay: "Not applicable", description: "Transfer to Gonggar airport for the flight back to Kathmandu or on to mainland China. Allow generous time for checkpoint and security procedures." }
+    ],
+    sources: [
+      "https://www.tibettravel.org/blog/mount-kailash-travel-advice/",
+      "https://www.chinahighlights.com/tibet/kailash-manasarovar-yatra.htm",
+      "https://windhorsetour.com/kailash-tour/tibet-lhasa-everest-kailash-kathmandu-overland-tour",
+      "https://www.marrontreks.com/mt-kailash-tour-via-lhasa-fly-in-fly-out",
+      "https://www.amazingnepaltrek.com/package/kailash-manasarovar-tour-10-days",
+      "https://theeverestholiday.com/blog/kailash-mansarovar-2027-what-is-confirmed-and-what-is-not",
+      "https://vehiclehiringnepal.com/nepal-tibet-border-conditions/",
+      "https://www.travelofchina.com/can-you-visit-tibet/"
+    ]
+  },
+  {
+    id: "tibet-ganden-samye",
+    region: "tibet",
+    title: "Ganden to Samye Trek",
+    tagline: "Cross two 5,000 m passes on herders' tracks from Ganden Monastery near Lhasa to Samye, Tibet's first monastery, camping among nomad pastures.",
+    difficulty: "black",
+    tags: ["pass", "camping", "cultural", "remote"],
+    days: 12,
+    walkingDays: 5,
+    maxAlt: 5250,
+    maxAltName: "Shug La",
+    distanceKm: 80,
+    startPoint: "Ganden Monastery (by road from Lhasa)",
+    endPoint: "Samye Monastery, then by road to Lhasa",
+    minGroupSize: 2,
+    price: 2450,
+    priceNote: "Estimate per person for a group of 4 or more, covering the partner agency's ground costs: Tibet Travel Permit and trekking permits, guide, driver and vehicle, trekking crew and pack animals, camping gear, hotels and guesthouses, and breakfasts plus all meals on trek. A pair costs roughly 20-30% more each. Not included: Kathmandu-Lhasa flights, group visa fee, insurance, city and road-day meals, tips. Placeholder until the owners and the partner agency confirm it.",
+    priceIsEstimate: true,
+    seasonBadge: "May–Oct",
+    bestSeasons: "Late May to June and September to early October usually give the clearest, most stable weather for the passes. July and August bring afternoon rain and cloud, and snow can close the passes outside the season, so treat April and late October as uncertain.",
+    accommodation: "Hotel + Camping",
+    operator: "partner",
+    operatorNote: "Peak Pursuit is Nepal-based and cannot run trips inside Tibet by itself. This trek is arranged with a licensed Tibetan travel agency that holds the Tibet Travel Permit and trekking permissions, supplies the Tibetan guide, driver, camp crew and pack animals, and operates the whole Tibet portion. Peak Pursuit coordinates your Kathmandu preparation, flights and group visa. The agency's name and final price are confirmed when you book.",
+    overview: [
+      "This is the classic walk out of the Lhasa region: about 80 km from Ganden Monastery, a hillside complex east of Lhasa, over the Shug La (about 5,250 m) and Chitu La (about 5,100-5,200 m), then down through juniper-scented valleys to Samye, believed to be the first Buddhist monastery in Tibet. You camp for four nights, passing nomad tents, yak herds, small lakes and the Ani Pangong nunnery, with long stretches where you will see nobody apart from herders. It is a real trek, with five walking days and a crew carrying your gear, but it is demanding because the passes come on consecutive days and the camps are above 4,500 m.",
+      "Three nights in Lhasa come first, then a night at Ganden, to give your body a chance to adjust before the passes. The walk begins with a kora around Ganden's hillside, drops into the Hepu valley and follows herders' tracks higher each day. Afterward you stay a night in Samye, visit the monastery and its surrounding monuments, and drive back to Lhasa. The trek is not technical, but weather in the high pastures can change quickly, and the Shug La descent is steep with loose rock.",
+      "Availability note: this trek is run by Tibetan agencies in the May-October season and was listed for 2026 departures by several operators, but it needs trekking permission on top of the standard Tibet permit and agencies can change the route if conditions on the passes or permit rules change. Confirm dates and that this specific route is approved with your agency before committing."
+    ],
+    highlights: [
+      "Two passes in two days: the Shug La (about 5,250 m) and the Chitu La (about 5,100-5,200 m)",
+      "Ganden Monastery and its hillside kora, a restored hilltop monastery east of Lhasa",
+      "Camping among nomad herders' tents and small alpine lakes",
+      "Hepu valley and the Ani Pangong nunnery",
+      "Descent through forest and meadow to Samye and the Chimpu hermitage area",
+      "Three days in Lhasa and a night at Ganden before the passes"
+    ],
+    permits: [
+      { name: "Tibet Travel Permit (TTP)", note: "Applied for by the licensed Tibetan agency; usually part of the tour price, 2-4 weeks to issue, so send passport and visa details at least 4 weeks before the Lhasa arrival." },
+      { name: "China group visa (Kathmandu)", note: "Required for entry from Nepal. Processed in Kathmandu in about 4-5 working days; a visa from your home country is not valid for this entry. US passport holders are not visa-free." },
+      { name: "Trekking or travel permits for the Ganden-Samye route", note: "Operators describe an Aliens' Travel Permit and sometimes a military permit for the trek. The agency decides which apply and arranges them." },
+      { name: "Monastery entrance fees", note: "Ganden and Samye charge entry; covered in the agency's price as listed in the itinerary." }
+    ],
+    included: [
+      "Tibet Travel Permit and trekking permissions arranged by the partner agency",
+      "Licensed Tibetan guide and driver, plus trekking crew and pack animals for camp gear",
+      "Tents, mattresses, kitchen tent and toilet tent on trek nights",
+      "Hotels on twin sharing in Lhasa, and a guesthouse in Samye",
+      "Daily breakfast, and all meals during the trek days",
+      "Vehicle with portable oxygen and a basic altitude first-aid kit",
+      "Monastery entrance fees listed in the itinerary",
+      "Airport transfers in Lhasa"
+    ],
+    excluded: [
+      "Kathmandu-Lhasa and Lhasa-Kathmandu flights (and Kathmandu hotel nights)",
+      "China group visa fee and processing charges",
+      "Travel insurance covering trekking to 5,500 m and emergency evacuation (mandatory)",
+      "Lunches and dinners on city and road days (budget roughly US$15-25 per day)",
+      "Sleeping bag rated to about -10 C (can usually be hired; confirm with the agency)",
+      "Tips for guide, driver and trek crew"
+    ],
+    fitness: "You should be comfortable hiking 5-8 hours a day with a daypack on consecutive days and have experience of a multi-day trek, ideally with nights above 4,000 m. The longest days involve about 600 m of climbing to the passes plus a steep, loose descent. Train with long hikes and hill or stair work for 8-10 weeks and speak to a doctor about altitude medication.",
+    safetyNotes: [
+      "Altitude is the main risk. After three nights in Lhasa the first night at Ganden is the biggest single step, a gain of roughly 700-800 m. This is forced by geography and mitigated by easy days; discuss acetazolamide with your doctor. Camps stay between about 4,000 m and 4,700 m, but you cross the Shug La and Chitu La on consecutive days, so any person with worsening symptoms must descend with the guide, not continue.",
+      "This is remote country. There are no clinics along the route, mobile coverage is patchy, and evacuation means a person on a horse or on foot to the nearest road, then a vehicle to Lhasa or Tsetang. Pack animals and crew can bring someone down within a day, but a serious illness could take much longer. Insurance covering evacuation and emergency treatment at altitude is mandatory.",
+      "Weather can change within an hour: rain, hail and snow are possible on the passes in any month. The descent from the Shug La is steep over loose debris, so trekking poles and sturdy boots with ankle support matter. The agency may shorten, reroute or cancel the pass days if conditions are unsafe, and the route's permit status can change.",
+      "Independent trekking is not permitted for foreign visitors: your guide must accompany you at all times."
+    ],
+    hero: null,
+    gallery: [],
+    itinerary: [
+      { day: 1, title: "Arrive in Lhasa by flight from Kathmandu", sleepAlt: 3650, activity: "Arrival", duration: "1 hr 20 min flight, 1 hr transfer", distanceKm: "~60 km transfer", meals: "Dinner", stay: "Hotel, Lhasa", description: "Fly from Kathmandu to Lhasa's Gonggar airport and transfer to the city at about 3,650 m, where your Tibetan guide meets you. Rest, drink plenty of water and avoid alcohol. Your trek crew prepares equipment in the background." },
+      { day: 2, title: "Lhasa: Jokhang and Barkhor", sleepAlt: 3650, activity: "Sightseeing", duration: "3-4 hrs easy walking", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "Explore the Jokhang Temple and the pilgrim circuit around it at a gentle pace. It is the first of your acclimatization days, so stop for tea whenever your breath tells you to." },
+      { day: 3, title: "Lhasa: Potala Palace, Drepung and Sera", sleepAlt: 3650, activity: "Acclimatization", duration: "4-5 hrs sightseeing", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "Climb the Potala Palace stairs and visit Drepung Monastery; Sera Monastery with its afternoon monk debates fits in if you have energy. You spend a third night at 3,650 m before heading up to Ganden." },
+      { day: 4, title: "Drive to Ganden Monastery and kora", sleepAlt: 4400, activity: "Drive", duration: "1 hr 30 min drive, 1-2 hrs walking", distanceKm: "~55 km drive", meals: "Breakfast, lunch, dinner", stay: "Camp or guesthouse, Ganden", description: "Drive east to Ganden, on a hillside at roughly 4,300-4,500 m (reported altitudes differ), and walk the monastery kora circuit above the valley. You spend the night here to test your response to altitude before the passes. The camp crew sets up, and early to bed is the rule." },
+      { day: 5, title: "Trek from Ganden to Yama Do via Hepu", sleepAlt: 4490, activity: "Trek", duration: "5-6 hrs trek", distanceKm: "~17 km", meals: "Breakfast, lunch, dinner", stay: "Camp, Yama Do", description: "Climb out of Ganden over a saddle and descend into the Hepu valley, passing the Ani Pangong nunnery before climbing gently to Yama Do at about 4,490 m. The day is short enough to leave you time to rest. Sleep is lighter at this height for many people." },
+      { day: 6, title: "Trek over Shug La to the Tsotup Chu valley", sleepAlt: 4700, activity: "Pass crossing", duration: "6-7 hrs trek", distanceKm: "~10 km", meals: "Breakfast, lunch, dinner", stay: "Camp, Tsotup Chu valley", description: "A long climb to the Shug La at about 5,250 m (published figures range from 5,250 to 5,256 m), where prayer flags and wide views reward the effort. The descent on the far side is steep over loose scree, so poles help. You camp in the Tsotup Chu valley at roughly 4,700 m, though the exact campsite varies with conditions." },
+      { day: 7, title: "Trek over Chitu La to the herders' camp", sleepAlt: 4650, activity: "Pass crossing", duration: "5-6 hrs trek", distanceKm: "~14 km", meals: "Breakfast, lunch, dinner", stay: "Camp, herders' pastures", description: "Climb to the Chitu La (about 5,100-5,230 m depending on the source), then drop past small turquoise lakes to a camp among herders' tents. The scenery is some of the most remote of the trek." },
+      { day: 8, title: "Trek down toward the Samye valley", sleepAlt: 4000, activity: "Trek", duration: "5-6 hrs trek", distanceKm: "~12 km", meals: "Breakfast, lunch, dinner", stay: "Camp, Samye valley", description: "The altitude drops by about 650 m today through meadows and then juniper and shrub forest, following the stream down toward the Yarlung valley. The oxygen increases noticeably, and you pass the small villages of the Samye side, including one at about 4,000 m. Camp is near villages and fields." },
+      { day: 9, title: "Trek to Samye Monastery", sleepAlt: 3540, activity: "Trek", duration: "3-4 hrs trek", distanceKm: "~8 km", meals: "Breakfast, lunch, dinner", stay: "Guesthouse, Samye", description: "A short final stretch, with an optional one-hour climb to the Yamalung hermitage, and then the first view of Samye in the valley. Check into a guesthouse and enjoy a hot meal. The afternoon is free for the first walk around the monastery." },
+      { day: 10, title: "Samye and drive to Lhasa", sleepAlt: 3650, activity: "Sightseeing", duration: "2 hrs sightseeing, 3-4 hrs drive", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "Explore Samye's main hall and the surrounding chortens and shrines in the morning, then drive back toward Lhasa. If time allows, your guide may stop at Yumbulakang in the Yarlung valley on the way. Dinner, a shower and laundry in Lhasa mark the end of the trek." },
+      { day: 11, title: "Lhasa spare day (weather and permit buffer)", sleepAlt: 3650, activity: "Reserve day", duration: "Free day", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "This day is held in reserve in case a pass day was lost to weather or the group needs recovery time. If not needed, visit Norbulingka or the Tibet Museum, or browse the Barkhor." },
+      { day: 12, title: "Departure from Lhasa", sleepAlt: null, activity: "Departure", duration: "Transfer and flight", distanceKm: "~60 km transfer", meals: "Breakfast", stay: "Not applicable", description: "Transfer to Gonggar airport for the flight back to Kathmandu, or onward to mainland China. Flights from Lhasa to Kathmandu run only a few days a week, so dates are fixed accordingly." }
+    ],
+    sources: [
+      "https://www.uniquetreks.com/trekking-in-tibet/ganden-samye-trek-in-tibet",
+      "https://tibetantrekking.com/tours/ganden-samye-trek/",
+      "https://www.highasiatours.com/?p=6470",
+      "https://www.chinahighlights.com/travelguide/china-hiking/ganden-samye.htm",
+      "https://www.gotonepal.com/print/ganden-to-samye-monastery-trek",
+      "https://www.tibettravel.org/blog/top-tibet-trekking-routes/",
+      "https://www.travelofchina.com/can-you-visit-tibet/",
+      "https://www.chinahighlights.com/tibet/visa-document.htm"
     ]
   }
   /*__END__*/
