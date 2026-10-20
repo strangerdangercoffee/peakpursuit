@@ -13,8 +13,36 @@ window.PP_REGIONS['kangchenjunga'] = {
   gettingThere: 'The reliable way in is a ~45-minute flight from Kathmandu to Bhadrapur in the eastern lowlands, followed by a jeep drive through Phidim and Taplejung to the trailhead at Sekathum (north side) or to Ilam and the Khandembe roadhead (south side). Scheduled flights between Kathmandu and Taplejung’s Suketar airstrip exist, but they have been suspended for months at a time and are often cancelled for weather, so we plan every itinerary around Bhadrapur and treat a Suketar flight as an optional extra when it is running.',
   operator: 'peakpursuit',
   operatorNote: null,
-  hero: null,
-  gallery: []
+  hero: {
+    src: 'https://images.unsplash.com/photo-1627118804546-39ffc11a64ac?auto=format&fit=crop&w=1600&q=70',
+    alt: 'Silhouetted mountains at sunset. The photo page describes Kanchenjunga as the third highest mountain in the world, between India and Nepal',
+    credit: 'Photo by NSG on Unsplash',
+    license: 'Unsplash License',
+    sourceUrl: 'https://unsplash.com/photos/X1fiJchaKF4'
+  },
+  gallery: [
+    {
+      src: 'https://images.unsplash.com/photo-1596973881888-f9cd4ba5370d?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain in low light, titled "Low Light Play at Kanchenjunga"',
+      credit: 'Photo by Farhan Khan on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/3QYkxEqogJ4'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1557871201-d57f1f439b69?auto=format&fit=crop&w=1600&q=70',
+      alt: 'One of the many peaks of Kanchenjunga, the third highest mountain in the world, as seen from the Indian side',
+      credit: 'Photo by Farhan Khan on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/pointed-mountain-filled-with-snow-qwdTktBFrZ0'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1614821454444-23346f0e501f?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain under a blue sky, with the photo page\'s location given as Kanchenjunga',
+      credit: 'Photo by Amit Gupta on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/yJ7FcTIlmjo'
+    }
+  ]
 };
 
 window.PP_TREKS = window.PP_TREKS || [];
@@ -89,8 +117,22 @@ window.PP_TREKS.push(
       "Cold and weather: autumn nights at Lhonak and Pangpema fall well below freezing (around -10°C has been reported outdoors in October), and afternoon cloud and snow can arrive quickly. Bring a proper four-season sleeping bag and warm layers, and expect to turn back from Pangpema if conditions are poor.",
       "Road travel: the drives to and from Sekathum are long and on unpaved, landslide-prone tracks. Keep one or two spare days in Kathmandu before your international flight home."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1557871201-d57f1f439b69?auto=format&fit=crop&w=1600&q=70',
+      alt: 'One of the many peaks of Kanchenjunga, the third highest mountain in the world, as seen from the Indian side',
+      credit: 'Photo by Farhan Khan on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/pointed-mountain-filled-with-snow-qwdTktBFrZ0'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1627119837468-e574973cba3b?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Kanchenjunga, the third highest mountain in the world, which lies between Sikkim, India and Nepal, under a grey sky',
+        credit: 'Photo by NSG on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/8zXJuplRzW4'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Fly Kathmandu to Bhadrapur, drive to Phidim", sleepAlt: 1250, activity: "Flight", duration: "45 min flight + 5–6 hrs drive", distanceKm: null, meals: "Lunch, dinner", stay: "Hotel, Phidim", description: "A short morning flight drops you from the Kathmandu hills to the flat Terai at Bhadrapur, where your jeep is waiting. The road then climbs through tea country and small hill towns to Phidim, a busy district centre where you spend the night in a simple hotel. Use the evening to repack so that your trek bag is porter-ready, and keep a warm layer and your valuables in your daypack." },
       { day: 2, title: "Drive from Phidim to Sekathum via Taplejung", sleepAlt: 1600, activity: "Drive", duration: "8–10 hrs drive", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Sekathum", description: "This is a long day on mountain roads, so you leave early. Past Taplejung (1,820 m) the road becomes a rough jeep track that drops towards the Tamor River and ends at Sekathum, where the trail begins. Road conditions change with the seasons and landslides can add hours, which is why the first night on the trail is a simple lodge rather than a tight schedule." },
@@ -193,8 +235,22 @@ window.PP_TREKS.push(
       "Remoteness and evacuation: Tseram is about four days’ walk from the roadhead. Helicopter evacuation is weather-dependent and expensive, so insurance that includes it is mandatory, and you will have little or no mobile signal for most of the trek.",
       "Cold: nights at Tseram and Ramche are well below freezing in autumn and spring. Bring a warm four-season sleeping bag and enough layers for the early start to Oktang."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1614821454444-23346f0e501f?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain under a blue sky, with the photo page\'s location given as Kanchenjunga',
+      credit: 'Photo by Amit Gupta on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/yJ7FcTIlmjo'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1627119703136-3964f14b7325?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered Kanchenjunga, the third highest mountain in the world, which lies between Sikkim, India and Nepal',
+        credit: 'Photo by NSG on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/C7UJ1Pu_S_I'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Fly Kathmandu to Bhadrapur, drive to Ilam", sleepAlt: 1210, activity: "Flight", duration: "45 min flight + 3–4 hrs drive", distanceKm: null, meals: "Lunch, dinner", stay: "Hotel, Ilam", description: "You fly east to Bhadrapur in the Terai, then climb by jeep to Ilam, a hill town surrounded by tea gardens. After a long journey, walk around the tea slopes, check your gear with your guide and enjoy a proper bed. The days ahead involve camping, so make sure your sleeping bag and warm clothing are ready." },
       { day: 2, title: "Drive from Ilam to the Khandembe roadhead", sleepAlt: 1450, activity: "Drive", duration: "5–7 hrs drive", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Homestay or camp, Khandembe area", description: "A long day on winding hill roads takes you deeper into the foothills to the roadhead near Khandembe. The jeep road is still being extended, so the exact end of the road shifts from year to year and your guide will confirm it before you leave. Tonight is your first taste of simple rural accommodation." },
@@ -297,8 +353,29 @@ window.PP_TREKS.push(
       "Remoteness and evacuation: Selele and Tseram are days from any road, and helicopter evacuation is weather-dependent. Insurance that covers it is mandatory. There is no mobile network beyond Ghunsa.",
       "Cold and camping: nights at Selele, Lhonak, Tseram and Ramche fall well below freezing, and temperatures around -15°C have been reported on this route in autumn. Bring a four-season sleeping bag and enough warm layers to sleep in."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1627119837468-e574973cba3b?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Kanchenjunga, the third highest mountain in the world, which lies between Sikkim, India and Nepal, under a grey sky',
+      credit: 'Photo by NSG on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/8zXJuplRzW4'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1596973881888-f9cd4ba5370d?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered mountain in low light, titled "Low Light Play at Kanchenjunga"',
+        credit: 'Photo by Farhan Khan on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/3QYkxEqogJ4'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1627119703136-3964f14b7325?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered Kanchenjunga, the third highest mountain in the world, which lies between Sikkim, India and Nepal',
+        credit: 'Photo by NSG on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/C7UJ1Pu_S_I'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Fly Kathmandu to Bhadrapur, drive to Phidim", sleepAlt: 1250, activity: "Flight", duration: "45 min flight + 5–6 hrs drive", distanceKm: null, meals: "Lunch, dinner", stay: "Hotel, Phidim", description: "A short morning flight takes you from Kathmandu to the Terai at Bhadrapur, where a jeep takes you north through tea country and small hill towns to Phidim, a district centre where you spend the night. Spend the evening repacking so that your trek bag is ready for porters, and keep a warm layer and valuables in your daypack." },
       { day: 2, title: "Drive from Phidim to Sekathum via Taplejung", sleepAlt: 1600, activity: "Drive", duration: "8–10 hrs drive", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Sekathum", description: "A long day on mountain roads, starting early. Beyond Taplejung (1,820 m) the road turns to a rough jeep track that follows the Tamor River down to Sekathum, where the trail begins. Road conditions change with the seasons and landslides can add hours." },

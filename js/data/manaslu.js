@@ -16,8 +16,36 @@ window.PP_REGIONS['manaslu'] = {
   gettingThere: "From Kathmandu it is a 7-9 hour jeep drive via Dhading Besi and Arughat to Soti Khola and on to Machha Khola, where the walk begins; in the monsoon the road beyond Soti Khola can be impassable. On the circuit you finish in Dharapani and drive down the Marsyangdi valley to Besisahar, then on to Kathmandu. IMPORTANT: floods on 6 September and 11 October 2026 damaged bridges, the road above Arughat and parts of the lower trail; repairs are under way and reports differ, so we confirm the current state with the Gorkha authorities and local lodge owners before every departure.",
   operator: "peakpursuit",
   operatorNote: null,
-  hero: null,
-  gallery: []
+  hero: {
+    src: 'https://images.unsplash.com/photo-1727081243076-de156d350781?auto=format&fit=crop&w=1600&q=70',
+    alt: 'Snow-covered mountain range under a cloudy blue sky, from a trip on the Manaslu Circuit',
+    credit: 'Photo by Achyut on Unsplash',
+    license: 'Unsplash License',
+    sourceUrl: 'https://unsplash.com/photos/a-mountain-range-covered-in-snow-under-a-cloudy-blue-sky-enTpZGoSdek'
+  },
+  gallery: [
+    {
+      src: 'https://images.unsplash.com/photo-1691516347103-d29505e72c4a?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain under blue sky near Samagaun on the Manaslu Circuit, Nepal',
+      credit: 'Photo by Bobby Thapa on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-a-blue-sky-in-the-background-1aQDZrb3SBo'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1727081267987-c77bf3b7bf99?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Small village with mountains in the background on the Manaslu Circuit',
+      credit: 'Photo by Achyut on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-small-village-with-mountains-in-the-background-VReoX--gGvw'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1691516347496-f9ada8248715?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Blue lake surrounded by snow-covered mountains at Birendra Taal, Samagaun, Nepal',
+      credit: 'Photo by Bobby on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-blue-lake-surrounded-by-snow-covered-mountains-rpuVDXLDmUE'
+    }
+  ]
 };
 
 window.PP_TREKS = window.PP_TREKS || [];
@@ -91,8 +119,29 @@ window.PP_TREKS.push(
       "Larkya La: the crossing starts around 4 a.m. and takes 8-10 hours in cold and often strong afternoon wind. Fresh snow, ice or poor visibility can close the pass; the spare day exists for this, and the guide has the final say. If it stays shut we turn back down the valley rather than push on.",
       "Evacuation: there is no road above Machha Khola and no mobile coverage in most villages. Helicopter evacuation needs weather, daylight and funded insurance, and rescue can take hours or days, so the group stays together and decisions are made early."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1691516347103-d29505e72c4a?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain under blue sky near Samagaun on the Manaslu Circuit, Nepal',
+      credit: 'Photo by Bobby Thapa on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-a-blue-sky-in-the-background-1aQDZrb3SBo'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1727081238344-487a943e0c16?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Mountain range with clouds, from a trip on the Manaslu Circuit',
+        credit: 'Photo by Achyut on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-mountain-range-with-clouds-in-the-sky-bTOL6AlDL2A'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1687066111672-59a6656037ac?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Blue lake surrounded by mountains under a cloudy sky on the Manaslu Circuit, Nepal',
+        credit: 'Photo by Raj Malla on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-blue-lake-surrounded-by-mountains-under-a-cloudy-sky-6j21VEEOlvc'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Machha Khola", sleepAlt: 890, activity: "Drive", duration: "8–9 hrs drive", distanceKm: "~160 km", meals: "Breakfast, lunch, dinner", stay: "Teahouse, Machha Khola", description: "Leave Kathmandu in the early morning by private jeep, heading out via Dhading Besi and then taking the rougher road through Arughat and Soti Khola. The last stretch follows the Budhi Gandaki river in a deep gorge and can be dusty or muddy, depending on the season. We arrive in the afternoon to a simple teahouse by the river, and the road is the day's main adventure, so bring snacks, water and something warm for the evening." },
       { day: 2, title: "Trek from Machha Khola to Jagat", sleepAlt: 1400, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Teahouse, Jagat", description: "The trail rises and falls along the east bank of the Budhi Gandaki through bamboo and subtropical forest, with waterfalls, a hot spring at Tatopani and several suspension bridges. Short, steep climbs and sometimes landslide-scarred sections make it more tiring than the distance suggests. Jagat, with its stone-paved lane and the permit checkpoint, is a good place to spend the night." },
@@ -284,8 +333,29 @@ window.PP_TREKS.push(
       "Base camp day: the route is steep and loose moraine and glacial debris with no facilities. We start early, carry food and water for the whole day and agree a turnaround time. If the weather or the group is not right, we turn around, and the day can be swapped with Pungyen Gompa.",
       "Evacuation: there is no road above Machha Khola and mobile coverage is patchy. Helicopter evacuation depends on weather and daylight, so the group stays together and decisions are made early."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1709305943279-b08fbf071710?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain at Manaslu Base Camp, near Samagaun, Nepal',
+      credit: 'Photo by Sunil Tamang on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-in-the-middle-of-the-day-VQeFRGBd0p4'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1751566609738-e1ed580bcb33?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-capped mountain view en route to Pung Gyen Gompa near Samagaun, Manaslu Circuit trek',
+        credit: 'Photo by Geetangey on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/hiker-enjoys-a-scenic-view-of-a-snow-capped-mountain-ySfDe9t_HeE'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1611872736537-f8227460ff9e?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered mountain near a lake at Samagaun, Manaslu region, Nepal',
+        credit: 'Photo by Erik on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/snow-covered-mountain-near-lake-during-daytime-OwJ6Cn_DnHM'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Machha Khola", sleepAlt: 890, activity: "Drive", duration: "8–9 hrs drive", distanceKm: "~160 km", meals: "Breakfast, lunch, dinner", stay: "Teahouse, Machha Khola", description: "Leave Kathmandu early by private jeep, heading out via Dhading Besi and then taking the rougher road through Arughat and Soti Khola alongside the Budhi Gandaki gorge. The road is dusty or muddy depending on the season, and we reach the riverside teahouse in the afternoon. Bring snacks, water and a warm layer for the evening." },
       { day: 2, title: "Trek from Machha Khola to Jagat", sleepAlt: 1400, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Teahouse, Jagat", description: "The trail follows the river through bamboo and subtropical forest, with waterfalls, suspension bridges and a hot spring at Tatopani. Short, steep climbs and landslide sections make it more tiring than it looks. Jagat, with its stone-paved lane and the permit checkpoint, is a good place to spend the night." },
@@ -382,8 +452,29 @@ window.PP_TREKS.push(
       "Larkya La: the crossing starts around 4 a.m. and takes 8-10 hours in cold and often strong afternoon wind. Fresh snow, ice or poor visibility can close the pass; the spare day exists for this, and the guide has the final say. If it stays shut we turn back down the valley rather than push on.",
       "Evacuation: there is no road above Machha Khola and no mobile coverage in most villages. Helicopter evacuation needs weather, daylight and funded insurance, and rescue can take hours or days, so the group stays together and decisions are made early."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1691516347496-f9ada8248715?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Blue lake surrounded by snow-covered mountains at Birendra Taal, Samagaun, Nepal',
+      credit: 'Photo by Bobby on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-blue-lake-surrounded-by-snow-covered-mountains-rpuVDXLDmUE'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1727081267987-c77bf3b7bf99?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Small village with mountains in the background on the Manaslu Circuit',
+        credit: 'Photo by Achyut on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-small-village-with-mountains-in-the-background-VReoX--gGvw'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1687066111672-59a6656037ac?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Blue lake surrounded by mountains under a cloudy sky on the Manaslu Circuit, Nepal',
+        credit: 'Photo by Raj Malla on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-blue-lake-surrounded-by-mountains-under-a-cloudy-sky-6j21VEEOlvc'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Machha Khola", sleepAlt: 890, activity: "Drive", duration: "8–9 hrs drive", distanceKm: "~160 km", meals: "Breakfast, lunch, dinner", stay: "Teahouse, Machha Khola", description: "Leave Kathmandu early by private jeep, heading out via Dhading Besi and then taking the rougher road through Arughat and Soti Khola alongside the Budhi Gandaki gorge. The road is dusty or muddy depending on the season, and we reach the riverside teahouse in the afternoon. Bring snacks, water and a warm layer for the evening." },
       { day: 2, title: "Trek from Machha Khola to Jagat", sleepAlt: 1400, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Teahouse, Jagat", description: "The trail follows the river through bamboo and subtropical forest, with waterfalls, suspension bridges and a hot spring at Tatopani. Short, steep climbs and landslide sections make it more tiring than it looks. Jagat, with its stone-paved lane and the permit checkpoint, is a good place to spend the night." },

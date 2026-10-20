@@ -17,8 +17,36 @@ window.PP_REGIONS['langtang'] = {
   gettingThere: "Most Langtang treks start with a private jeep from Kathmandu to Dhunche or Syabrubesi on the Pasang Lhamu Highway via Trishuli, roughly 6 to 8 hours depending on the road. Helambu and Sundarijal are a short drive (an hour or so) from Kathmandu. After the August 2026 flood, vehicle access to Syabrubesi has been unreliable and lodging there limited; Dhunche has been the more dependable gateway, and a Thulo Syabru start by jeep has also been used. We check the road 48 hours before every departure and will adjust the first and last days if needed.",
   operator: 'peakpursuit',
   operatorNote: null,
-  hero: null,
-  gallery: []
+  hero: {
+    src: 'https://images.unsplash.com/photo-1704266410587-23f883b3d502?auto=format&fit=crop&w=1600&q=70',
+    alt: 'Snow-covered mountain range in Langtang, Nepal',
+    credit: 'Photo by Anmol Adhikari on Unsplash',
+    license: 'Unsplash License',
+    sourceUrl: 'https://unsplash.com/photos/a-view-of-a-mountain-range-with-snow-on-it-6w5HuK4DfyE'
+  },
+  gallery: [
+    {
+      src: 'https://images.unsplash.com/photo-1574930220106-c8d35aa7b452?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow mountain near Kyanjin Gumba in Langtang, Nepal',
+      credit: 'Photo by Michael Briguet on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/snow-mountain-VF9Aq0lBdr0'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1643548947288-fbf86caf414a?auto=format&fit=crop&w=1600&q=70',
+      alt: 'A village among mountains on the way to the Langtang Valley trek',
+      credit: 'Photo by Himalayan Local Guide on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-village-in-the-middle-of-a-mountain-range-xc2GggytytA'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1687797478514-308cf713f7f3?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain above a rocky lake at Gosaikunda, Nepal',
+      credit: 'Photo by madan gc on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-a-lake-surrounded-by-rocks-S_gFkt1ptt0'
+    }
+  ]
 };
 
 window.PP_TREKS = window.PP_TREKS || [];
@@ -90,8 +118,29 @@ window.PP_TREKS.push(
       "Weather and terrain: afternoon cloud and cold winds are normal above 3,500 m, and the Tserko Ri trail is steep, rocky and exposed. We start early, turn back if visibility or ice is poor, and keep an eye out for rockfall and avalanche runouts in the upper valley.",
       "Evacuation: there is no road above Syabrubesi, so serious illness or injury means a helicopter evacuation, which your travel insurance must cover. Mobile signal is patchy above Ghoda Tabela."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1574930220106-c8d35aa7b452?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow mountain near Kyanjin Gumba in Langtang, Nepal',
+      credit: 'Photo by Michael Briguet on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/snow-mountain-VF9Aq0lBdr0'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1643548947288-fbf86caf414a?auto=format&fit=crop&w=1600&q=70',
+        alt: 'A village among mountains on the way to the Langtang Valley trek',
+        credit: 'Photo by Himalayan Local Guide on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-village-in-the-middle-of-a-mountain-range-xc2GggytytA'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1657857051629-dac459639676?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Mountain village in winter, photographed as Kynjen village, Nepal',
+        credit: 'Photo by Samrat Khadka on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-town-in-the-mountains-dbOscbAb6ds'
+      }
+    ],
     itinerary: [
       {
         day: 1,
@@ -288,8 +337,29 @@ window.PP_TREKS.push(
       "Conditions after the August 2026 flood: roads, bridges and Syabrubesi were damaged, while the upper Langtang trail was reported largely intact. We reconfirm road access 48 hours before departure, and the first days may change to a Dhunche or Thulo Syabru start. Further rain can still trigger landslides on the lower trails.",
       "Evacuation: above Syabrubesi and around Gosaikunda the only quick way out is a helicopter, which your travel insurance must cover. Weather can ground helicopters, so descending early is the best safety measure. Mobile signal is patchy in the upper sections."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1687797478514-308cf713f7f3?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain above a rocky lake at Gosaikunda, Nepal',
+      credit: 'Photo by madan gc on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-a-lake-surrounded-by-rocks-S_gFkt1ptt0'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1713670959170-176c7d31b93f?auto=format&fit=crop&w=1600&q=70',
+        alt: 'A lake surrounded by mountains at Gosaikunda, Nepal',
+        credit: 'Photo by Kim Cordenete on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-large-body-of-water-surrounded-by-mountains-dXJOJYfhnDo'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1644166850757-aad2f4616fad?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered mountain with a lake at Gosaikunda, Nepal in winter',
+        credit: 'Photo by Rupesh Dangol on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-a-lake-in-the-middle-t5_FXqxfYTI'
+      }
+    ],
     itinerary: [
       {
         day: 1,
@@ -586,8 +656,29 @@ window.PP_TREKS.push(
       "Terrain and conditions: the path to the lakes is narrow in places with drop-offs. After the August 2026 flood, roads and bridges in the Trishuli corridor were damaged, with Dhunche reachable by light vehicles in recent reports; we confirm road status 48 hours before departure and may change the start or end point.",
       "Evacuation: there is no road above Deurali, so serious illness means a helicopter evacuation (your insurance must cover it) or a long descent on foot. The lodges on the trail are few, and rooms can run out in peak season, so we book ahead and may carry camping gear as a backup."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1713670959170-176c7d31b93f?auto=format&fit=crop&w=1600&q=70',
+      alt: 'A lake surrounded by mountains at Gosaikunda, Nepal',
+      credit: 'Photo by Kim Cordenete on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-large-body-of-water-surrounded-by-mountains-dXJOJYfhnDo'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1687797478514-308cf713f7f3?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered mountain above a rocky lake at Gosaikunda, Nepal',
+        credit: 'Photo by madan gc on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-a-lake-surrounded-by-rocks-S_gFkt1ptt0'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1644166850757-aad2f4616fad?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered mountain with a lake at Gosaikunda, Nepal in winter',
+        credit: 'Photo by Rupesh Dangol on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-a-lake-in-the-middle-t5_FXqxfYTI'
+      }
+    ],
     itinerary: [
       {
         day: 1,
@@ -955,8 +1046,29 @@ window.PP_TREKS.push(
       "Remoteness: there are no villages, lodges or rescue services between Kyanjin Gompa and Tarkeghyang. Mobile signal is often absent on the camping nights, so we plan for a satellite communicator. Helicopter evacuation is possible only in good weather and must be covered by your insurance.",
       "Conditions after the August 2026 flood: roads and bridges around Syabrubesi were damaged, while the upper Langtang trail was reported largely intact. We confirm road access 48 hours before departure and may change the start to Dhunche or Thulo Syabru. Further rain can still trigger landslides on the lower valley."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1643548947288-fbf86caf414a?auto=format&fit=crop&w=1600&q=70',
+      alt: 'A village among mountains on the way to the Langtang Valley trek',
+      credit: 'Photo by Himalayan Local Guide on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-village-in-the-middle-of-a-mountain-range-xc2GggytytA'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1704266410587-23f883b3d502?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered mountain range in Langtang, Nepal',
+        credit: 'Photo by Anmol Adhikari on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-view-of-a-mountain-range-with-snow-on-it-6w5HuK4DfyE'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1574930220106-c8d35aa7b452?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow mountain near Kyanjin Gumba in Langtang, Nepal',
+        credit: 'Photo by Michael Briguet on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/snow-mountain-VF9Aq0lBdr0'
+      }
+    ],
     itinerary: [
       {
         day: 1,

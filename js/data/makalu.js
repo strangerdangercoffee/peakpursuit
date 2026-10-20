@@ -16,7 +16,13 @@ window.PP_REGIONS['makalu'] = {
   gettingThere: "Fly from Kathmandu to Tumlingtar (about 35 minutes; Buddha Air operates a daily service, weather permitting), then take a jeep to Num or Seduwa, the start of the trek. If the flight is cancelled, the fallback is a Kathmandu to Biratnagar flight or a long drive via Itahari, Dhankuta and Khandbari. A Bailey bridge on the Num-Seduwa road across the Arun River collapsed in February 2026, so the road section beyond Num may not be usable; our classic itineraries walk from Num to Seduwa and do not depend on it.",
   operator: 'peakpursuit',
   operatorNote: null,
-  hero: null,
+  hero: {
+    src: 'https://images.unsplash.com/photo-1657376921022-4eca0fe93e1c?auto=format&fit=crop&w=1600&q=70',
+    alt: 'Snow, forest and mountain scenery in Makalu, Nepal',
+    credit: 'Photo by Mohammad Bagher Adib Behrooz on Unsplash',
+    license: 'Unsplash License',
+    sourceUrl: 'https://unsplash.com/photos/a-mountain-with-clouds-qieJaCplxkQ'
+  },
   gallery: []
 };
 
@@ -93,7 +99,13 @@ window.PP_TREKS.push(
       "Terrain and weather: the ridge crossings between Khongma Danda and Dobate can be snowbound in spring and winter, there is rockfall in places along the Barun River, and the monsoon brings landslides and leeches. The reserve day at Dobate exists for this. The Num-Seduwa road bridge across the Arun collapsed in February 2026; we walk this section and do not depend on the road.",
       "Flights: the Tumlingtar flight is cancelled often in poor weather. Keep at least one spare day before your international departure."
     ],
-    hero: null,
+    hero: {
+      src: 'https://images.unsplash.com/photo-1657376921022-4eca0fe93e1c?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow, forest and mountain scenery in Makalu, Nepal',
+      credit: 'Photo by Mohammad Bagher Adib Behrooz on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-mountain-with-clouds-qieJaCplxkQ'
+    },
     gallery: [],
     itinerary: [
       {
@@ -286,7 +298,13 @@ window.PP_TREKS.push(
       "Road and bridge: the Bailey bridge across the Arun between Num and Seduwa collapsed on 28 February 2026 and the road was reported blocked. We check its status before your departure; if it is not usable we switch to walking from Num and add a day.",
       "Weather: ridge crossings can be snowbound, and the single reserve day at Dobate is all the buffer there is. Leave at least two spare days before your international flight in case of flight cancellations."
     ],
-    hero: null,
+    hero: {
+      src: 'https://images.unsplash.com/photo-1657376921022-4eca0fe93e1c?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow, forest and mountain scenery in Makalu, Nepal',
+      credit: 'Photo by Mohammad Bagher Adib Behrooz on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-mountain-with-clouds-qieJaCplxkQ'
+    },
     gallery: [],
     itinerary: [
       {
