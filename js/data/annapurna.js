@@ -15,8 +15,36 @@ window.PP_REGIONS["annapurna"] = {
   gettingThere: "Most of our Annapurna treks begin with the drive or short flight from Kathmandu to Pokhara (about 6–7 hours by road, about 25 minutes by air), then a 1–2 hour road transfer to a trailhead near Nayapul, Kande or Siding. The Circuit and Tilicho routes start from the Marsyangdi valley, reached by a long drive via Besisahar, and end in Jomsom with a flight or jeep ride back to Pokhara.",
   operator: "peakpursuit",
   operatorNote: null,
-  hero: null,
-  gallery: []
+  hero: {
+    src: 'https://images.unsplash.com/photo-1697621535550-1c671d4969c4?auto=format&fit=crop&w=1600&q=70',
+    alt: 'Annapurna peaks and snowy mountains at sunset, Annapurna region, Nepal',
+    credit: 'Photo by Zhenyu Ye on Unsplash',
+    license: 'Unsplash License',
+    sourceUrl: 'https://unsplash.com/photos/a-view-of-a-mountain-range-covered-in-clouds-f2iO0Gmywjw'
+  },
+  gallery: [
+    {
+      src: 'https://images.unsplash.com/photo-1671181366687-47530c4dbe4b?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered Annapurna mountain under a clear blue sky, Nepal',
+      credit: 'Photo by Swarup Sapkota on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-range-with-a-clear-blue-sky-tbRmaPzRdwA'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Houses overlooking a snowy mountain range in the Annapurna region, Nepal',
+      credit: 'Photo by Giuseppe Mondì on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/houses-overlooking-mountain-range-xyE1p1rG04U'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1696833052862-3b3e90829d47?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Annapurna South catching the first sun at sunrise, Annapurna region, Nepal',
+      credit: 'Photo by Embla Voss on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-a-blue-sky-in-the-background-eGBlMp3NBSE'
+    }
+  ]
 };
 
 window.PP_TREKS = window.PP_TREKS || [];
@@ -89,8 +117,29 @@ window.PP_TREKS.push(
       "Stone steps become slippery in rain and frost, particularly on the Ulleri staircase and the descent to Ghandruk; trekking poles help the knees.",
       "Landslides can interrupt the lower trail and the road in the monsoon; in the main seasons the greater risk is a sudden cold front, so your guide checks the forecast each morning. Evacuation is by road from Ghandruk or Nayapul at the low end, and by helicopter from Ghorepani if needed."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-capped peaks of the Annapurna range above a layer of clouds, seen from Poon Hill, Nepal',
+      credit: 'Photo by Daniel Leone on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/snowy-mountain-g30P1zcOzXo'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1665394182713-ec3f09d51749?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Mountain range with clouds below, seen from Poon Hill, Nepal',
+        credit: 'Photo by Falco Negenman on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-mountain-range-with-clouds-below-yluiDjnuGIo'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1578589591337-864142c03335?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Sunrise over Annapurna I and Annapurna South from Ghorepani, Nepal',
+        credit: 'Photo by Jonny James on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/three-mountains-covered-with-snow-3no88nSvK88'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Pokhara", sleepAlt: 820, activity: "Drive", duration: "6–7 hrs drive", distanceKm: "~200 km", meals: "Breakfast", stay: "Hotel, Pokhara", description: "We assume you reach Kathmandu the day before, and our team collects you from your hotel in the morning for the ride west along the Prithvi Highway, following the Trishuli and Marsyangdi rivers. The road is busy, so use the time to meet your guide and sort your kit. You reach Pokhara in the afternoon, with time for a stroll along Phewa Lake and your first mountain skyline. A short flight is available at extra cost if you would rather save the road time." },
       { day: 2, title: "Drive to Nayapul and trek to Tikhedhunga", sleepAlt: 1540, activity: "Trek", duration: "1 hr drive, 3–4 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Teahouse, Tikhedhunga", description: "A morning drive takes you to Nayapul, where you walk to Birethanti, cross a suspension bridge over the Bhurungdi Khola and have your permits checked. The trail follows the river upstream through small farms and tea stops, with waterfalls beside the path in the wetter months. You stop at Tikhedhunga, a quiet village at the foot of the big climb, with an early night and your legs warm for tomorrow." },
@@ -175,8 +224,29 @@ window.PP_TREKS.push(
       "Lodges at Badal Danda and High Camp are basic and cold at night; carry a warm sleeping bag, a down jacket, a hat and gloves.",
       "Rescue is by helicopter from the upper camps in good weather; the walk down to the road at Siding is long, so make sure your insurance covers evacuation to at least 4,500 m."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1571401835393-8c5f35328320?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Tibetan prayer flags at Mardi Himal Base Camp, Nepal',
+      credit: 'Photo by Sanjay Hona on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/assorted-color-buntings-on-mountains-during-daytime-2Q2dpVPY6XU'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1572449849526-0cbf789c86d0?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Machapuchare (Fishtail) seen on the way to Mardi Himal High Camp, Nepal',
+        credit: 'Photo by Payas on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/grey-mountain-under-blue-sky-O5SZB8S8vRc'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1545662618-66de187bbf69?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Flag beside a snow-covered mountain on a trek in Nepal',
+        credit: 'Photo by Samrat Khadka on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/red-flah-near-snow-covered-mountain-during-daytime-VaeXuio0rn0'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Pokhara", sleepAlt: 820, activity: "Drive", duration: "6–7 hrs drive", distanceKm: "~200 km", meals: "Breakfast", stay: "Hotel, Pokhara", description: "We assume you reach Kathmandu the day before, and our team collects you from your hotel in the morning for the drive west along the Prithvi Highway. Break the long ride with a lunch stop by the river and sort your kit with your guide on the way. You reach Pokhara in the afternoon, with time for a gentle stroll along Phewa Lake. A short flight is available at extra cost if you prefer to save the road time." },
       { day: 2, title: "Drive to Kande and trek to Pritam Deurali", sleepAlt: 2100, activity: "Trek", duration: "1–1.5 hrs drive, 4–5 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Pritam Deurali", description: "A short drive takes you to Kande on the Pokhara–Baglung road. From here the path climbs steps and forest paths through Australian Camp and Pothana to Pritam Deurali on the ridge, at about 2,100 m. The forest is cool and the first views of the mountains appear through gaps in the trees. This is an easy first day by design, so take your time and let your legs and lungs settle." },
@@ -265,8 +335,29 @@ window.PP_TREKS.push(
       "The upper lodges are cold, have limited power and no heating in the rooms; bring a warm sleeping bag, a down jacket, gloves and a hat.",
       "This section is a day or two from a road, so a medical problem means helicopter evacuation from the ridge in good weather or a long descent on foot; make sure your insurance covers helicopter evacuation above 4,500 m."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1696576834819-37a40bfd21c6?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Morning view over Ghandruk village in the mountains, Nepal',
+      credit: 'Photo by Santosh 313 on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/an-aerial-view-of-a-village-in-the-mountains-35snt8VSLeA'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1704180724080-c923aa1ee129?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Old village of Ghandruk set among mountains, Nepal',
+        credit: 'Photo by Kushal Poudel on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-village-in-the-middle-of-a-mountain-range-1c1IarFFE8A'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1643549163519-1cfe94f80182?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Mountain range in the distance seen from Poon Hill near Ghorepani, Nepal',
+        credit: 'Photo by Himalayan Local Guide on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-view-of-a-mountain-range-in-the-distance-NHQwyfSp0I0'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Pokhara", sleepAlt: 820, activity: "Drive", duration: "6–7 hrs drive", distanceKm: "~200 km", meals: "Breakfast", stay: "Hotel, Pokhara", description: "We assume you reach Kathmandu the day before, and our team collects you from your hotel in the morning for the drive west along the Prithvi Highway. Use the time to meet your guide and go through your kit list. You reach Pokhara in the afternoon, with time for a walk along Phewa Lake. A short flight is available at extra cost if you prefer to save the road time." },
       { day: 2, title: "Drive to Nayapul and trek to Ghandruk", sleepAlt: 1940, activity: "Trek", duration: "1.5 hrs drive, 2–3 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Teahouse, Ghandruk", description: "A morning drive takes you to the trailhead near Nayapul/Kimche, where the path climbs by stone steps to Ghandruk, one of the biggest Gurung villages in the region. It is a short day and a good chance to explore the village, its stone alleys and its small museum, and to watch the clouds clear from Annapurna South and Machhapuchhre." },
@@ -355,8 +446,29 @@ window.PP_TREKS.push(
       "Stairs and descents are tough on the knees, particularly the climb to Chomrong and the descent to Bamboo; bring trekking poles.",
       "In case of illness, evacuation is by foot or mule to the road at Nayapul, or helicopter from ABC or MBC in clear weather; weather can delay flights for a day or more, so ensure your insurance covers helicopter evacuation."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1738054410156-2fa3631c9436?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Golden sunset light on the Annapurna peaks above base camp, Annapurna Base Camp trek, Nepal',
+      credit: 'Photo by Imam Hossain on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/the-sun-is-setting-on-a-mountain-range-B8xq4hYhyV4'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1621188714130-2172bbad8274?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Machhapuchhre (Fishtail) and snow-covered mountains near Annapurna Base Camp, Nepal',
+        credit: 'Photo by Sibu Khadka on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/snow-covered-mountains-under-blue-sky-during-daytime-0Fbun7Wl9dM'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1507557000908-57f893053f1d?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Clouds and snow-covered mountains on the Annapurna Base Camp route near Ghandruk, Nepal',
+        credit: 'Photo by Rémi Jacquaint on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/mountain-with-clouds-aFLxVggss1E'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Pokhara", sleepAlt: 820, activity: "Drive", duration: "6–7 hrs drive", distanceKm: "~200 km", meals: "Breakfast", stay: "Hotel, Pokhara", description: "We assume you reach Kathmandu the day before, and our team collects you from your hotel in the morning for the drive west along the Prithvi Highway. Use the time to meet your guide and go through your kit list. You reach Pokhara in the afternoon, with time for a walk along Phewa Lake. A short flight is available at extra cost if you prefer to save the road time." },
       { day: 2, title: "Drive to Nayapul and trek to Ghandruk", sleepAlt: 1940, activity: "Trek", duration: "1.5 hrs drive, 2–3 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Teahouse, Ghandruk", description: "A morning drive takes you to the trailhead near Nayapul/Kimche, where the path climbs by stone steps to Ghandruk (about 1,940 m), one of the largest Gurung villages in the region. After a short walk you have the afternoon to see the village, its stone alleys and small museum, and the first mountain views of Annapurna South and Machhapuchhre." },
@@ -447,8 +559,29 @@ window.PP_TREKS.push(
       "There are rockfall and landslide zones between Yak Kharka and Thorong Phedi and on the descent to Muktinath, which are worse in warm afternoons and after rain; the guide chooses timing and routes accordingly.",
       "Evacuation: helicopter in clear weather from Manang or Phedi; the Jomsom flight is weather-dependent, so keep a day of slack and make sure your insurance covers helicopter evacuation above 5,000 m."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1653043506251-05cecdfe9cfd?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered mountain with clouds on the Annapurna Circuit trek, Nepal',
+      credit: 'Photo by Alexis Rodriguez on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/a-snow-covered-mountain-with-clouds-in-the-sky-M3HA9FkK4rs'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1655614831953-515dc1f1d40a?auto=format&fit=crop&w=1600&q=70',
+        alt: 'River valley between Dhikur Pokhari and Upper Pisang on the Annapurna Circuit trek, Manang, Nepal',
+        credit: 'Photo by Glorious Himalaya Trek on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-river-running-through-a-valley-Egdz9vSN8pM'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1756746214471-d04bd3b37136?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Blue roofs of a tea house above misty mountains and a winding river in the Himalayas, Nepal',
+        credit: 'Photo by Lauren Taylor on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/blue-roofs-overlook-misty-mountains-and-a-winding-river-xTQ8M1w_xWg'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Jagat", sleepAlt: 1300, activity: "Drive", duration: "8–9 hrs drive", distanceKm: "~190 km", meals: "Breakfast, lunch, dinner", stay: "Lodge, Jagat", description: "We assume you reach Kathmandu the day before, and our team collects you from your hotel in the morning for the long drive to Besisahar, the district town at the start of the Marsyangdi valley. A jeep takes you onward along the rough road to Jagat (about 1,300 m), a stone village above the river. Expect a bumpy ride and take motion-sickness tablets if you need them." },
       { day: 2, title: "Trek from Jagat to Dharapani", sleepAlt: 1860, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Dharapani", description: "The first walking day follows the Marsyangdi north through terraced fields, rice paddies and waterfalls, crossing the river on several suspension bridges. We use the trails away from the road wherever possible and take a short jeep hop if the path is damaged. You reach Dharapani at about 1,860 m (sources differ by about 100 m), a village at the junction with the Manaslu Circuit." },
@@ -542,8 +675,29 @@ window.PP_TREKS.push(
       "Thorong La is exposed, cold and can close in snow; we leave before dawn and keep a reserve day. There is no road to the base camp or the pass, so evacuation is by helicopter in clear weather, and your insurance must cover helicopter evacuation above 5,000 m.",
       "The Jomsom flight is seasonal and weather-dependent, so keep spare days in your onward travel plans."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1599224093049-80d0fc9fbab2?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Blue lake among mountains at Tilicho Lake, Nepal',
+      credit: 'Photo by Jagat Thapa on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/blue-lake-in-the-middle-of-the-mountains-MdkUViPYCVQ'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1696832631681-b290850e5843?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Annapurna I just before sunrise, seen near Khangsar, Nepal',
+        credit: 'Photo by Embla Voss on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-mountain-covered-in-snow-under-a-purple-sky-yz9P5yuZgqI'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1666159267848-eac7b1100b91?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Snow-covered mountains above the town of Manang, Nepal',
+        credit: 'Photo by ashok acharya on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/a-mountain-with-snow-7oLSIKPEnD0'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Drive from Kathmandu to Jagat", sleepAlt: 1300, activity: "Drive", duration: "8–9 hrs drive", distanceKm: "~190 km", meals: "Breakfast, lunch, dinner", stay: "Lodge, Jagat", description: "We assume you reach Kathmandu the day before, and our team collects you from your hotel in the morning for the long drive to Besisahar, the district town at the start of the Marsyangdi valley. A jeep takes you onward along the rough road to Jagat (about 1,300 m), a stone village above the river. Expect a bumpy ride and take motion-sickness tablets if you need them." },
       { day: 2, title: "Trek from Jagat to Dharapani", sleepAlt: 1860, activity: "Trek", duration: "6–7 hrs trek", distanceKm: null, meals: "Breakfast, lunch, dinner", stay: "Lodge, Dharapani", description: "The first walking day follows the Marsyangdi north through terraced fields and waterfalls, crossing the river on several suspension bridges. We use trails away from the road wherever possible and take a short jeep hop if the path is damaged. You reach Dharapani at about 1,860 m (sources differ by about 100 m)." },
