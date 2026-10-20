@@ -13,8 +13,36 @@ window.PP_REGIONS['tibet'] = {
   gettingThere: "As of October 2026 the overland crossings from Nepal (Kerung/Gyirong, closed since the 26 August 2026 flood, and Kodari/Zhangmu, reported closed or heavily restricted) are not a dependable way in, so every trip here starts with the Kathmandu to Lhasa flight (about 1 hr 20 min, a few flights a week). Day 1 of each itinerary is the arrival day in Lhasa; the Kathmandu nights before the flight, while your group visa is processed, are not counted in the trip days.",
   operator: "partner",
   operatorNote: "Peak Pursuit is a Nepal-based company and cannot legally run trips inside Tibet on its own. We arrange your Tibet trip together with a licensed Tibetan travel agency, which holds the Tibet Travel Permit and other permits, supplies the mandatory Tibetan guide, driver and vehicle, and runs the Tibet portion of the journey. We handle the Kathmandu side, your pre-departure planning and the group visa coordination. The partner agency's name and final prices are confirmed at booking.",
-  hero: null,
-  gallery: []
+  hero: {
+    src: 'https://images.unsplash.com/photo-1468215804491-50dce06d81f8?auto=format&fit=crop&w=1600&q=70',
+    alt: 'Lake and snow mountain at Yamdrok Tso, Tibet, China',
+    credit: 'Photo by wayne_ooone Wang on Unsplash',
+    license: 'Unsplash License',
+    sourceUrl: 'https://unsplash.com/photos/QFOJyx8zMn8'
+  },
+  gallery: [
+    {
+      src: 'https://images.unsplash.com/photo-1741257091145-69d62cdf819a?auto=format&fit=crop&w=1600&q=70',
+      alt: 'The Potala Palace towering above a mountain in Lhasa, Tibet, China',
+      credit: 'Photo by Mauricio Manzato on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/the-potala-palace-towers-above-a-mountain-T1EmuU0819Y'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1598274736084-d7658d380545?auto=format&fit=crop&w=1600&q=70',
+      alt: 'A wetland beside the road in Tibet, China',
+      credit: 'Photo by Leon P on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/y1xrxtWJ0go'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1637319595631-2ee03bd2d930?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Aerial view of a mountain and a body of water in Tibet, China',
+      credit: 'Photo by Yiran Ding on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/an-aerial-view-of-a-mountain-and-a-body-of-water-wXAmyODCf2A'
+    }
+  ]
 };
 
 window.PP_TREKS = window.PP_TREKS || [];
@@ -87,8 +115,22 @@ window.PP_TREKS.push(
       "Weather can turn quickly at 5,000 m, with snow even outside winter and cold nights year-round. Road closures, landslides and checkpoint delays do happen, and the base camp area can be closed at short notice. The itinerary has a spare day in Lhasa, but it cannot absorb several lost days.",
       "Independent travel is not permitted: you must stay with your guide, follow checkpoint instructions and carry your passport and permit paperwork at all times."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1597666864156-2e7ae49fca5a?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered Mount Everest under a blue sky, Tibet, China',
+      credit: 'Photo by Luo Lei on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/snow-covered-mountain-under-blue-sky-during-daytime-iMpTquk3Hhs'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1624787092541-c00c6f60bd44?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Herd of sheep on grass at Mount Everest Base Camp, Shigatse, Tibet, China',
+        credit: 'Photo by Eleanor Ye on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/92ixr_2QYnw'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Arrive in Lhasa by flight from Kathmandu", sleepAlt: 3650, activity: "Arrival", duration: "1 hr 20 min flight, 1 hr transfer", distanceKm: "~60 km transfer", meals: "Dinner", stay: "Hotel, Lhasa", description: "Fly from Kathmandu over the main Himalayan range to Lhasa's Gonggar airport, then transfer to the city at around 3,650 m. Your Tibetan guide meets you with the paperwork. Spend the afternoon resting, drinking water and doing very little, as the first day at this height is the one that catches people out." },
       { day: 2, title: "Lhasa: Jokhang and Barkhor on foot", sleepAlt: 3650, activity: "Sightseeing", duration: "3-4 hrs easy walking", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "A slow day around the old city: the Jokhang Temple, the pilgrim circuit of the Barkhor and the surrounding lanes. Keep the pace gentle and stop for tea whenever you like. This is acclimatization time as much as sightseeing." },
@@ -375,8 +417,22 @@ window.PP_TREKS.push(
       "The Lamna La can have snow or freezing rain in any month, and the Rongbuk valley is cold and windy. Stream crossings can be higher in the summer rainy season. The agency may shorten or cancel the trek if weather, permits or local checkpoints require it, and the reserve day in Lhasa cannot cover a long delay.",
       "Independent trekking is not permitted: your guide must accompany you throughout."
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: 'https://images.unsplash.com/photo-1597666864156-2e7ae49fca5a?auto=format&fit=crop&w=1600&q=70',
+      alt: 'Snow-covered Mount Everest under a blue sky, Tibet, China',
+      credit: 'Photo by Luo Lei on Unsplash',
+      license: 'Unsplash License',
+      sourceUrl: 'https://unsplash.com/photos/snow-covered-mountain-under-blue-sky-during-daytime-iMpTquk3Hhs'
+    },
+    gallery: [
+      {
+        src: 'https://images.unsplash.com/photo-1624787092541-c00c6f60bd44?auto=format&fit=crop&w=1600&q=70',
+        alt: 'Herd of sheep on grass at Mount Everest Base Camp, Shigatse, Tibet, China',
+        credit: 'Photo by Eleanor Ye on Unsplash',
+        license: 'Unsplash License',
+        sourceUrl: 'https://unsplash.com/photos/92ixr_2QYnw'
+      }
+    ],
     itinerary: [
       { day: 1, title: "Arrive in Lhasa by flight from Kathmandu", sleepAlt: 3650, activity: "Arrival", duration: "1 hr 20 min flight, 1 hr transfer", distanceKm: "~60 km transfer", meals: "Dinner", stay: "Hotel, Lhasa", description: "Fly from Kathmandu to Lhasa's Gonggar airport and transfer to the city at about 3,650 m, where your Tibetan guide meets you. Rest, drink plenty of water and avoid alcohol. Your guide checks permits and briefs you on the plan." },
       { day: 2, title: "Lhasa: Jokhang and Barkhor", sleepAlt: 3650, activity: "Sightseeing", duration: "3-4 hrs easy walking", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "Visit the Jokhang Temple and walk the Barkhor circuit at a slow pace among pilgrims. This is acclimatization, so keep the day easy." },
