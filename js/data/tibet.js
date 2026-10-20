@@ -307,6 +307,102 @@ window.PP_TREKS.push(
       "https://www.travelofchina.com/can-you-visit-tibet/",
       "https://www.chinahighlights.com/tibet/visa-document.htm"
     ]
+  },
+  {
+    id: "tibet-tingri-everest-trek",
+    region: "tibet",
+    title: "Tingri to Everest Base Camp Trek (Lamna La)",
+    tagline: "Walk about 70 km from Old Tingri over the 5,150 m Lamna La to Rongbuk Monastery and the north side of Everest, camping in yak-herding valleys.",
+    difficulty: "black",
+    tags: ["pass", "camping", "remote"],
+    days: 15,
+    walkingDays: 5,
+    maxAlt: 5200,
+    maxAltName: "Everest North Base Camp (tourist base camp)",
+    distanceKm: 70,
+    startPoint: "Old Tingri (by road from Lhasa)",
+    endPoint: "Rongbuk Monastery and Everest North Base Camp, then road to Lhasa",
+    minGroupSize: 2,
+    price: 2950,
+    priceNote: "Estimate per person for a group of 4 or more, covering the partner agency's ground costs: Tibet Travel Permit and other permits, guide, driver, vehicle, trekking crew and yaks or horses, camping gear, hotels and the Rongbuk guesthouse, breakfasts and all meals on trek. A pair costs roughly 20-30% more each. Not included: Kathmandu-Lhasa flights, group visa fee, insurance, city and road-day meals, tips. Placeholder until the owners and the partner agency confirm it.",
+    priceIsEstimate: true,
+    seasonBadge: "May–Jun, Sep–Oct",
+    bestSeasons: "May and September-October are the best windows, with late April also possible. July and August bring clouds and rain, and from about November to March the route is generally closed by cold and snow; Tibet is also commonly closed to foreign visitors around March.",
+    accommodation: "Hotel + Camping",
+    operator: "partner",
+    operatorNote: "Peak Pursuit is Nepal-based and cannot run trips inside Tibet by itself. This trek is arranged with a licensed Tibetan travel agency that holds the Tibet Travel Permit and trekking approvals for the Everest area, supplies the Tibetan guide, driver, camp crew and pack animals, and operates the whole Tibet portion. Peak Pursuit coordinates your Kathmandu preparation, flights and group visa. The agency's name and final price are confirmed when you book.",
+    overview: [
+      "This is a real trek to the north side of Everest, in contrast with the drive-up visit in our other Everest itinerary. From Old Tingri (about 4,390 m) you follow the Ra Chu valley for about 70 km over four to five walking days, cross the Lamna La (about 5,150 m, also written Nam La or Namla), descend past herders' camps and the village of Zangpu, and reach Rongbuk Monastery at roughly 5,000 m, then walk on to the tourist base camp at about 5,150-5,200 m. You camp three nights, with yaks or horses carrying the baggage, and spend the last night at the Rongbuk guesthouse.",
+      "We chose this as the fourth Tibet itinerary because it is the one multi-day trek in the region that several independent sources describe with the same passes, the same stages and the same camp areas, and because it gives the Everest journey a proper walking component instead of only a vehicle approach. It is also demanding: the longest day is about 21 km, the nights are at about 4,500-4,800 m, and the pass sits above 5,000 m. Before the walk you spend three nights in Lhasa, then sleep at Shigatse, Shegar and Old Tingri, with a hike day at Tingri, to adjust.",
+      "Availability note: Everest's Tibet side has been interrupted by earthquakes (January 2025), blizzards (October 2025) and routine closures, and trekking approvals can differ from the standard sightseeing permit. We found current operator listings but no official confirmation that this route is approved for foreign trekkers in 2026-27. Confirm with the licensed Tibetan agency, in writing, that the Tingri-Rongbuk walk is approved for your dates before you book."
+    ],
+    highlights: [
+      "A true multi-day walk to Everest's north side: about 70 km on foot from Old Tingri to Rongbuk",
+      "Crossing the Lamna La at about 5,150 m on yak-herding tracks",
+      "Camping in the Ra Chu and Rongbuk valleys, with few other people on the trail",
+      "Rongbuk Monastery and the walk to the tourist base camp",
+      "Cultural stops in Lhasa, Shigatse (Tashilhunpo) and Sakya along the Friendship Highway",
+      "A full acclimatization build-up: three Lhasa nights and a hike day at Old Tingri before trekking"
+    ],
+    permits: [
+      { name: "Tibet Travel Permit (TTP)", note: "Applied for by the licensed Tibetan agency only; usually part of the tour price, 2-4 weeks to issue, so send passport and visa details at least 4 weeks before arriving in Lhasa." },
+      { name: "China group visa (Kathmandu)", note: "Required for entry from Nepal. Processed in Kathmandu in about 4-5 working days; a visa from your home country is not valid for this entry. US passport holders are not visa-free." },
+      { name: "Everest area trekking or travel permits", note: "Operators have described an Aliens' Travel Permit and a military permit for the Everest area, though 2025 reports say the Aliens' Travel Permit was dropped for the base camp area. The agency confirms which apply to a trek and arranges them." },
+      { name: "Eco-bus ticket (if used)", note: "A local shuttle serves the final section from Tashi Dzom to Rongbuk for road visitors; trekkers arrive on foot but may use it for the return. About 120 yuan per person at last report." }
+    ],
+    included: [
+      "Tibet Travel Permit and trekking permissions arranged by the partner agency",
+      "Licensed Tibetan guide and driver, plus trekking crew and yaks or horses for camp gear",
+      "Tents, mattresses, kitchen tent and toilet tent on trek nights",
+      "Hotels on twin sharing in Lhasa, Shigatse, Shegar and Old Tingri, and a guesthouse or tent bed at Rongbuk",
+      "Daily breakfast, and all meals on trek days",
+      "Vehicle with portable oxygen and a basic altitude first-aid kit",
+      "Monastery and sightseeing entrance fees listed in the itinerary",
+      "Airport transfers in Lhasa"
+    ],
+    excluded: [
+      "Kathmandu-Lhasa and Lhasa-Kathmandu flights (and Kathmandu hotel nights)",
+      "China group visa fee and processing charges",
+      "Travel insurance covering high-altitude trekking to 5,500 m and emergency evacuation (mandatory)",
+      "Lunches and dinners on city and road days (budget roughly US$15-25 per day)",
+      "Sleeping bag rated to about -15 C (can usually be hired; confirm with the agency)",
+      "Tips for guide, driver and trek crew"
+    ],
+    fitness: "You should be fit enough for 5-8 hour hiking days back-to-back, including a 21 km day with about 650 m of ascent to a pass above 5,000 m, and you should have experience of camping trips. Previous time above 4,000 m is strongly recommended. Train for at least 8-12 weeks with long hikes and hill work, and talk to your doctor about altitude medication.",
+    safetyNotes: [
+      "Altitude is the main hazard. You build up with three Lhasa nights, then sleep at 3,840 m, about 4,200 m and about 4,390 m before walking, and camp nights are at about 4,500-4,800 m. The final Rongbuk night is at about 5,000 m. Pass day is long and exposed. Report persistent headache, vomiting, confusion, clumsiness or breathlessness at rest right away; the response is to descend, not to push on.",
+      "The route is remote and has no clinics. A person who becomes ill is carried by animal or accompanied on foot to the nearest road, then driven many hours to Shigatse or Lhasa; there is no reliable helicopter rescue to assume. Mandatory insurance must cover emergency evacuation and treatment at altitude.",
+      "The Lamna La can have snow or freezing rain in any month, and the Rongbuk valley is cold and windy. Stream crossings can be higher in the summer rainy season. The agency may shorten or cancel the trek if weather, permits or local checkpoints require it, and the reserve day in Lhasa cannot cover a long delay.",
+      "Independent trekking is not permitted: your guide must accompany you throughout."
+    ],
+    hero: null,
+    gallery: [],
+    itinerary: [
+      { day: 1, title: "Arrive in Lhasa by flight from Kathmandu", sleepAlt: 3650, activity: "Arrival", duration: "1 hr 20 min flight, 1 hr transfer", distanceKm: "~60 km transfer", meals: "Dinner", stay: "Hotel, Lhasa", description: "Fly from Kathmandu to Lhasa's Gonggar airport and transfer to the city at about 3,650 m, where your Tibetan guide meets you. Rest, drink plenty of water and avoid alcohol. Your guide checks permits and briefs you on the plan." },
+      { day: 2, title: "Lhasa: Jokhang and Barkhor", sleepAlt: 3650, activity: "Sightseeing", duration: "3-4 hrs easy walking", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "Visit the Jokhang Temple and walk the Barkhor circuit at a slow pace among pilgrims. This is acclimatization, so keep the day easy." },
+      { day: 3, title: "Lhasa: Potala Palace and Drepung", sleepAlt: 3650, activity: "Acclimatization", duration: "4-5 hrs sightseeing", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "Climb the Potala Palace stairs and visit Drepung Monastery. A third night at 3,650 m is your base for everything higher." },
+      { day: 4, title: "Drive Lhasa to Shigatse via Yamdrok Lake", sleepAlt: 3840, activity: "Drive", duration: "7-8 hrs drive with stops", distanceKm: "~350 km", meals: "Breakfast", stay: "Hotel, Shigatse", description: "Climb the Kamba La (about 4,800 m) for views of Yamdrok Lake, cross the Karo La beside a glacier, and pass Gyantse. You arrive in Shigatse at about 3,840 m, lower than the passes you crossed." },
+      { day: 5, title: "Drive Shigatse to Shegar over Gyatso La", sleepAlt: 4200, activity: "Drive", duration: "6-7 hrs drive", distanceKm: "~300 km", meals: "Breakfast", stay: "Hotel, Shegar (New Tingri)", description: "Visit Tashilhunpo Monastery, then cross the Gyatso La (about 5,200 m) on the Friendship Highway to Shegar. Published altitudes for Shegar range from about 4,150 to 4,300 m, so treat it as roughly 4,200 m." },
+      { day: 6, title: "Hike above Shegar, then drive to Old Tingri", sleepAlt: 4390, activity: "Acclimatization", duration: "2-3 hrs walking, 1 hr 30 min drive", distanceKm: "~4 km walk", meals: "Breakfast", stay: "Guesthouse, Old Tingri", description: "Take a slow walk to the Shegar Dzong ruins, then drive to Old Tingri at about 4,390 m. Check the equipment with the trek crew and your guide before tomorrow's start, and rest early." },
+      { day: 7, title: "Trek from Old Tingri to Lungthang", sleepAlt: 4510, activity: "Trek", duration: "5 hrs trek", distanceKm: "~12 km", meals: "Breakfast, lunch, dinner", stay: "Camp, Lungthang", description: "Leave the Tingri plain and walk up the Ra Chu valley with yaks carrying the gear, passing villages and herders' camps. Camp is at about 4,510 m, a gain of only about 120 m, which makes it a gentle first night." },
+      { day: 8, title: "Trek over Lamna La to the valley camp", sleepAlt: 4790, activity: "Pass crossing", duration: "7-8 hrs trek", distanceKm: "~21 km", meals: "Breakfast, lunch, dinner", stay: "Camp, Lamna valley", description: "The hardest day: a long steady climb to the Lamna La (about 5,150 m), with prayer flags at the top and views toward the Himalayan wall if clear. A descent of about 350 m takes you to a camp near 4,800 m. Start early, because afternoon weather can be harsher." },
+      { day: 9, title: "Trek down the valley past Zangpu", sleepAlt: 4600, activity: "Trek", duration: "6-7 hrs trek", distanceKm: "~20 km", meals: "Breakfast, lunch, dinner", stay: "Camp, Rongbuk valley", description: "A long descent through yak pastures and steep slopes, passing Zangpu village and herders' tents. The day is easy on the lungs but hard on the knees and feet, so poles help. Exact camp positions vary with the crew; the altitude is roughly 4,600 m." },
+      { day: 10, title: "Trek to Rongbuk Monastery", sleepAlt: 5000, activity: "Trek", duration: "5-6 hrs trek", distanceKm: "~11-15 km", meals: "Breakfast, lunch, dinner", stay: "Guesthouse, Rongbuk", description: "Follow the valley toward the north side of Everest and reach Rongbuk Monastery at about 5,000 m, where the mountain finally fills the head of the valley. You sleep here, a gain of about 400 m from the previous camp. Evening is for rest, as the cold bites quickly after sunset." },
+      { day: 11, title: "Walk to Everest base camp, then drive down to Old Tingri", sleepAlt: 4390, activity: "Trek", duration: "2-3 hrs walk, 2 hrs drive", distanceKm: "~8 km walk (approximate)", meals: "Breakfast, lunch", stay: "Guesthouse, Old Tingri", description: "Rise early for the best light and walk from Rongbuk Monastery up the valley to the tourist base camp area at about 5,150-5,200 m. A shuttle can carry you back if needed, and your guide checks local rules. After lunch you drive down to Old Tingri, lower and warmer for sleeping." },
+      { day: 12, title: "Drive Old Tingri to Shigatse", sleepAlt: 3840, activity: "Drive", duration: "7-8 hrs drive", distanceKm: "~350 km", meals: "Breakfast", stay: "Hotel, Shigatse", description: "A long drive east via the Gyatso La, with a stop at Sakya Monastery if time allows. Your hotel is at about 3,840 m, and the thicker air should help you sleep." },
+      { day: 13, title: "Drive Shigatse to Lhasa", sleepAlt: 3650, activity: "Drive", duration: "5-6 hrs drive", distanceKm: "~280 km", meals: "Breakfast", stay: "Hotel, Lhasa", description: "Follow the Yarlung Tsangpo valley back to Lhasa. The afternoon is free for the Barkhor market, laundry and a hot shower." },
+      { day: 14, title: "Lhasa spare day (weather and permit buffer)", sleepAlt: 3650, activity: "Reserve day", duration: "Free day", distanceKm: null, meals: "Breakfast", stay: "Hotel, Lhasa", description: "A buffer for weather or permit delays on the trek, road closures, or illness. If unused, visit Sera Monastery for the afternoon debates, or Norbulingka Park." },
+      { day: 15, title: "Departure from Lhasa", sleepAlt: null, activity: "Departure", duration: "Transfer and flight", distanceKm: "~60 km transfer", meals: "Breakfast", stay: "Not applicable", description: "Transfer to Gonggar airport for your flight to Kathmandu, or onward to mainland China. Flights from Lhasa to Kathmandu run only a few days a week, so dates are fixed accordingly." }
+    ],
+    sources: [
+      "https://www.chinahighlights.com/tibet/mt-everest-trek.htm",
+      "https://www.hikingproject.com/trail/7112367/tingri-to-everest-base-camp-trekking",
+      "https://www.tibettravel.org/blog/top-tibet-trekking-routes/",
+      "https://windhorsetour.com/tibet-travel-tips/how-to-plan-tibet-everest-base-camp-trip",
+      "https://www.travelofchina.com/can-you-visit-tibet/",
+      "https://www.chinahighlights.com/tibet/visa-document.htm",
+      "https://www.yowangdu.com/tibet-travel/when-is-tibet-closed-to-foreigners"
+    ]
   }
   /*__END__*/
 );
