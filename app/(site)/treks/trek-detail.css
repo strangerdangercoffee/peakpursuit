@@ -93,8 +93,10 @@
   position: sticky; top: 0; z-index: 5; background: var(--white);
   padding: 1.25rem 2rem 1rem; border-bottom: 1px solid var(--border-dark);
 }
-.tm-hero { position: relative; height: 360px; background: var(--navy); }
-.tm-hero-img { width: 100%; height: 100%; object-fit: cover; }
+/* Show the whole photo (no cropping): natural aspect ratio, capped at 58vh, letterboxed on navy. */
+.tm-hero { position: relative; display: flex; justify-content: center; background: var(--navy); }
+img.tm-hero-img { display: block; width: 100%; height: auto; max-height: 58vh; object-fit: contain; }
+.tm-hero .pp-ph.tm-hero-img { height: 360px; }
 .tm-credit {
   position: absolute; right: 0.75rem; bottom: 0.6rem; max-width: 85%;
   background: rgba(7,21,38,0.72); color: var(--white);
@@ -220,7 +222,7 @@
   #trekModal.modal-overlay { padding: 0; }
   #trekModal .modal { max-width: 100%; max-height: 100vh; height: 100vh; border-radius: 0; }
   .tm-header { padding: 1rem 1.25rem; }
-  .tm-hero { height: 240px; }
+  .tm-hero .pp-ph.tm-hero-img { height: 240px; }
   .tm-thumbs { padding: 0.75rem 1.25rem 0; }
   .tm-body { padding: 1rem 1.25rem 2rem; }
   .tm-footer { padding: 0.85rem 1.25rem; }
