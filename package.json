@@ -1,11 +1,28 @@
 {
   "name": "peak-pursuit",
-  "version": "1.0.0",
-  "description": "Peak Pursuit — Everest region trekking company website",
+  "version": "2.0.0",
+  "description": "Peak Pursuit — Everest region trekking company website (Next.js)",
+  "private": true,
   "scripts": {
-    "start": "npx serve . --listen 3000 --no-clipboard",
-    "dev": "npx browser-sync start --server --files '**/*.html, css/**/*.css, images/**/*' --port 3000 --open"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "keywords": ["trekking", "nepal", "everest"],
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3"
+  }
 }

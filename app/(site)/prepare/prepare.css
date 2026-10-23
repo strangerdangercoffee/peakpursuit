@@ -1,0 +1,175 @@
+.page-hero {
+  height: 48vh; min-height: 380px;
+  background-image: url('/images/hiking_down_at_sunset.jpeg');
+  background-size: cover; background-position: center 25%;
+  position: relative; display: flex; align-items: flex-end;
+  padding: 0 2rem 4rem;
+}
+.page-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(7,21,38,0.92) 0%, rgba(7,21,38,0.3) 70%, transparent 100%); }
+.page-hero-content { position:relative; z-index:2; color:var(--white); max-width:1200px; margin:0 auto; width:100%; padding-top:72px; }
+
+.prepare-layout { display:grid; grid-template-columns:260px 1fr; gap:3rem; align-items:start; }
+.prepare-sidebar {
+  position:sticky; top:100px;
+  background:var(--white);
+  border-radius:var(--radius-lg);
+  padding:1.5rem;
+  box-shadow:var(--shadow-sm);
+  border:1px solid var(--border-dark);
+}
+.sidebar-title { font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--amber); margin-bottom:1rem; }
+.sidebar-link {
+  display:flex; align-items:center; gap:0.6rem;
+  padding:0.6rem 0.75rem;
+  border-radius:var(--radius-sm);
+  font-size:0.87rem;
+  font-weight:500;
+  color:var(--stone);
+  transition:all var(--transition);
+  cursor:pointer;
+  text-decoration:none;
+}
+.sidebar-link:hover, .sidebar-link.active { background:rgba(232,114,43,0.1); color:var(--amber); }
+.sidebar-link .icon { font-size:1rem; }
+
+.section-card {
+  background:var(--white);
+  border-radius:var(--radius-xl);
+  padding:2.5rem;
+  box-shadow:var(--shadow-sm);
+  margin-bottom:2rem;
+  border:1px solid var(--border-dark);
+  scroll-margin-top:100px;
+}
+.section-card-title {
+  font-size:1.6rem;
+  color:var(--navy);
+  margin-bottom:0.5rem;
+  display:flex; align-items:center; gap:0.75rem;
+}
+.section-card-lead { color:var(--stone); line-height:1.7; margin-bottom:2rem; font-size:0.95rem; }
+
+.ams-scale {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:1.5rem 0;
+}
+.ams-level {
+  border-radius:var(--radius);
+  padding:1.25rem;
+  text-align:center;
+}
+.ams-level-mild { background:#FEF9C3; border:2px solid #EAB308; }
+.ams-level-moderate { background:#FEE2E2; border:2px solid #EF4444; }
+.ams-level-severe { background:#1F2937; color:white; border:2px solid #111827; }
+.ams-icon { font-size:2rem; margin-bottom:0.5rem; display:flex; align-items:center; justify-content:center; }
+.ams-title { font-weight:700; font-size:0.95rem; margin-bottom:0.5rem; }
+.ams-symptoms { font-size:0.8rem; line-height:1.5; }
+
+.diamox-box {
+  background:linear-gradient(135deg, var(--navy), var(--blue-deep));
+  color:var(--white);
+  border-radius:var(--radius-lg);
+  padding:2rem;
+  margin:1.5rem 0;
+}
+.diamox-title { font-size:1.2rem; font-weight:700; margin-bottom:1rem; color:var(--amber-light); }
+.diamox-row { display:flex; gap:1rem; flex-wrap:wrap; }
+.diamox-stat { background:rgba(255,255,255,0.1); border-radius:var(--radius-sm); padding:1rem; flex:1; min-width:140px; }
+.diamox-stat-val { font-weight:700; font-size:1.1rem; color:var(--amber-light); }
+.diamox-stat-key { font-size:0.75rem; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:0.06em; }
+
+.insurance-table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+.insurance-table th { background:var(--navy); color:var(--white); padding:0.75rem 1rem; text-align:left; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.06em; }
+.insurance-table td { padding:0.75rem 1rem; border-bottom:1px solid var(--border-dark); }
+.insurance-table tr:last-child td { border:none; }
+.insurance-table tr:nth-child(even) td { background:var(--cream); }
+.check { color:#059669; font-weight:700; }
+.cross { color:#EF4444; font-weight:700; }
+
+.fitness-plan { display:flex; flex-direction:column; gap:1rem; }
+.fitness-week {
+  border:1px solid var(--border-dark);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.fitness-week-header {
+  background:var(--navy); color:var(--white);
+  padding:0.75rem 1.25rem;
+  display:flex; justify-content:space-between; align-items:center;
+  cursor:pointer;
+}
+.fitness-week-title { font-weight:700; font-size:0.9rem; }
+.fitness-week-badge { font-size:0.75rem; color:var(--amber-light); }
+.fitness-week-body { padding:1.25rem; display:none; }
+.fitness-week-body.open { display:block; }
+.fitness-item { display:flex; gap:0.75rem; padding:0.4rem 0; font-size:0.87rem; align-items:flex-start; }
+.fitness-item::before { content:'✓'; color:var(--amber); font-weight:700; flex-shrink:0; }
+
+.elevation-profile {
+  background:var(--cream);
+  border-radius:var(--radius-lg);
+  padding:2rem;
+  margin:1.5rem 0;
+}
+
+.day-card {
+  background:var(--cream);
+  border-radius:var(--radius);
+  padding:1.25rem;
+  margin-bottom:1rem;
+  border-left:4px solid var(--amber);
+  display:flex; gap:1rem;
+}
+.day-num {
+  width:36px; height:36px; background:var(--amber); color:white;
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:0.82rem; flex-shrink:0;
+}
+.day-title { font-weight:700; margin-bottom:0.2rem; }
+.day-detail { font-size:0.84rem; color:var(--stone); line-height:1.5; }
+
+.gear-item {
+  display:flex; align-items:center; gap:0.75rem;
+  padding:0.5rem;
+  border-radius:var(--radius-sm);
+  font-size:0.88rem;
+  transition:background var(--transition);
+}
+.gear-item:hover { background:var(--cream); }
+.gear-check {
+  width:20px; height:20px;
+  border:2px solid var(--blue-sky);
+  border-radius:4px;
+  flex-shrink:0;
+  cursor:pointer;
+  transition:all var(--transition);
+}
+.gear-check.checked {
+  background:var(--blue-sky);
+  border-color:var(--blue-sky);
+}
+.gear-check.checked::after {
+  content:'✓'; color:white; font-size:0.7rem;
+  display:flex; align-items:center; justify-content:center;
+  height:100%; font-weight:700;
+}
+.gear-cat-title {
+  font-size:0.8rem; font-weight:700; text-transform:uppercase;
+  letter-spacing:0.1em; color:var(--amber);
+  padding:0.5rem 0.5rem 0;
+  margin-top:0.5rem;
+}
+.gear-rental-tag {
+  margin-left:auto;
+  font-size:0.7rem; font-weight:600;
+  color:var(--amber-deep);
+  background:rgba(232,114,43,0.12);
+  padding:0.15rem 0.5rem;
+  border-radius:100px;
+  white-space:nowrap;
+}
+
+@media (max-width:768px) {
+  .prepare-layout { grid-template-columns:1fr; }
+  .prepare-sidebar { position:static; }
+  .ams-scale { grid-template-columns:1fr; }
+}

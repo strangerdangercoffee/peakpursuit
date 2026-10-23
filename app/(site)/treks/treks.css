@@ -1,0 +1,146 @@
+.page-hero {
+  height: 55vh; min-height: 400px;
+  background-image: url('/images/above_clouds.jpeg');
+  background-size: cover;
+  background-position: center 35%;
+  position: relative;
+  display: flex; align-items: flex-end;
+  padding: 0 2rem 4rem;
+}
+.page-hero::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(7,21,38,0.92) 0%, rgba(7,21,38,0.3) 70%, transparent 100%);
+}
+.page-hero-content {
+  position: relative; z-index: 2;
+  color: var(--white);
+  max-width: 1200px; margin: 0 auto; width: 100%;
+  padding-top: 72px;
+}
+.difficulty-legend {
+  display: flex; flex-wrap: wrap; gap: 1.5rem;
+  padding: 2rem;
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  margin-bottom: 3rem;
+  border: 1px solid var(--border-dark);
+}
+.legend-item { display: flex; align-items: center; gap: 0.75rem; }
+.legend-icon { font-size: 1.5rem; }
+.legend-text { font-size: 0.88rem; }
+.legend-label { font-weight: 700; }
+.legend-desc { color: var(--stone); }
+
+.trek-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem; }
+.trek-full-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex; flex-direction: column;
+  border: 1px solid var(--border-dark);
+}
+.trek-full-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); }
+.trek-img-wrap { position: relative; height: 240px; overflow: hidden; }
+.trek-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.trek-full-card:hover .trek-img-wrap img { transform: scale(1.06); }
+.trek-img-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(7,21,38,0.7) 0%, transparent 60%);
+}
+.trek-img-badges {
+  position: absolute; top: 1rem; left: 1rem; right: 1rem;
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+.trek-price-badge {
+  background: var(--amber);
+  color: var(--white);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700; font-size: 0.9rem;
+}
+.trek-season-badge {
+  background: rgba(7,21,38,0.7);
+  backdrop-filter: blur(4px);
+  color: var(--white);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.trek-body { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
+.trek-title-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.6rem; }
+.trek-title { font-size: 1.3rem; color: var(--navy); }
+.trek-elevation {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--amber);
+  white-space: nowrap;
+}
+.trek-tagline { font-size: 0.88rem; color: var(--stone); line-height: 1.6; margin-bottom: 1.25rem; flex: 1; }
+.trek-specs {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem; margin-bottom: 1.25rem;
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+.trek-spec { text-align: center; }
+.trek-spec-val { font-weight: 700; font-size: 0.95rem; color: var(--navy); }
+.trek-spec-key { font-size: 0.72rem; color: var(--stone); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+.trek-highlights { margin-bottom: 1.25rem; }
+.trek-highlight { font-size: 0.82rem; color: var(--stone-dark); display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.2rem 0; }
+.trek-highlight::before { content: '→'; color: var(--amber); flex-shrink: 0; font-weight: 700; }
+.trek-actions { display: flex; gap: 0.75rem; }
+
+/* Detail Modal */
+.trek-modal-img { width: 100%; height: 280px; object-fit: cover; }
+.trek-modal-body { padding: 0 2rem 2rem; }
+.trek-detail-specs {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+.trek-detail-spec { text-align: center; }
+.trek-detail-spec-val { font-weight: 700; font-size: 1.05rem; color: var(--navy); }
+.trek-detail-spec-key { font-size: 0.75rem; color: var(--stone); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+.section-mini-title {
+  font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--amber); margin-bottom: 0.75rem;
+}
+
+.filter-bar {
+  display: flex; gap: 0.75rem; flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 72px;
+  z-index: 100;
+}
+.filter-label { font-size: 0.82rem; font-weight: 700; color: var(--stone); align-self: center; white-space: nowrap; }
+.filter-chip {
+  padding: 0.45rem 1rem;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 2px solid var(--border-dark);
+  background: var(--white);
+  color: var(--stone);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.filter-chip.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.filter-chip:hover:not(.active) { border-color: var(--stone); color: var(--stone-dark); }
+
+@media (max-width: 768px) {
+  .trek-detail-specs { grid-template-columns: repeat(2, 1fr); }
+  .trek-grid { grid-template-columns: 1fr; }
+}
