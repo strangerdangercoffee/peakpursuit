@@ -1,9 +1,12 @@
 "use client";
 
 import "./book.css";
+import "../treks/trek-detail.css";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useMemo, useState } from "react";
+import type { Trek as CatalogueTrek } from "@/data/treks/types";
+import { DIFFICULTY, altLabel, getTrek, placeholderUri, priceLabel, regionGroups, trekImageSrc } from "@/lib/treks";
 
 // ── Types ──
 interface Trek {
@@ -14,20 +17,6 @@ interface Trek {
   price: number;
   img: string;
   diff: string;
-}
-
-interface TrekOption {
-  id: string;
-  name: string;
-  optionName: string;
-  days: string;
-  alt: string;
-  price: string;
-  img: string;
-  diffClass: string;
-  diffLabel: string;
-  diff: string;
-  blackBadge?: boolean; // when option has no difficulty badge / custom price color
 }
 
 interface GearItem {
@@ -49,49 +38,26 @@ const MONTHS = [
 const bookedDates = ["2026-05-15", "2026-05-22", "2026-06-01", "2026-06-14"];
 const popularDates = ["2026-05-10", "2026-05-17", "2026-10-01", "2026-10-15", "2026-11-01"];
 
-// Trek options shown on Step 1
-const TREK_OPTIONS: TrekOption[] = [
-  {
-    id: "ebc", name: "Everest Base Camp", optionName: "Everest Base Camp",
-    days: "14 days", alt: "5,364m", price: "$1,890", img: "/images/hike_3rd_person.jpeg",
-    diffClass: "diff-black", diffLabel: "Black Diamond", diff: "Black Diamond ◆",
-  },
-  {
-    id: "3passes", name: "Three High Passes", optionName: "Three High Passes",
-    days: "20 days", alt: "5,535m", price: "$2,490", img: "/images/hiking_down_at_sunset.jpeg",
-    diffClass: "diff-double-black", diffLabel: "Double Black", diff: "Double Black ◆◆",
-  },
-  {
-    id: "amadablam", name: "Ama Dablam Base Camp", optionName: "Ama Dablam Base Camp",
-    days: "10 days", alt: "4,600m", price: "$1,290", img: "/images/sunset_3_peaks.jpeg",
-    diffClass: "diff-blue", diffLabel: "Blue Square", diff: "Blue Square ■",
-  },
-  {
-    id: "gokyo", name: "Gokyo Lakes & Ri", optionName: "Gokyo Lakes & Ri Summit",
-    days: "13 days", alt: "4,790m", price: "$1,490", img: "/images/above_clouds.jpeg",
-    diffClass: "diff-blue", diffLabel: "Blue Square", diff: "Blue Square ■",
-  },
-  {
-    id: "lobuche", name: "Lobuche Peak (La Bouche)", optionName: "Lobuche Peak (La Bouche)",
-    days: "18 days", alt: "6,119m", price: "$2,890", img: "/images/sunset_everest.jpeg",
-    diffClass: "diff-double-black", diffLabel: "Double Black", diff: "Double Black ◆◆",
-  },
-  {
-    id: "island", name: "Island Peak (Imja Tse)", optionName: "Island Peak (Imja Tse)",
-    days: "20 days", alt: "6,189m", price: "$3,190", img: "/images/hike_3rd_person.jpeg",
-    diffClass: "diff-double-black", diffLabel: "Double Black", diff: "Double Black ◆◆",
-  },
-  {
-    id: "mera", name: "Mera Peak", optionName: "Mera Peak",
-    days: "18 days", alt: "6,476m", price: "$3,490", img: "/images/sunset_3_peaks.jpeg",
-    diffClass: "diff-double-black", diffLabel: "Double Black", diff: "Double Black ◆◆",
-  },
-  {
-    id: "custom", name: "Custom / Bespoke Trek", optionName: "Bespoke / Custom Trek",
-    days: "Flexible", alt: "Custom", price: "Contact Us", img: "/images/landing.JPG",
-    diffClass: "", diffLabel: "", diff: "Custom ✦", blackBadge: true,
-  },
-];
+// Trek catalogue shown on Step 1 (shared with the Treks page: data/treks)
+const REGION_GROUPS = regionGroups();
+const TREK_COUNT = REGION_GROUPS.reduce((n, g) => n + g.treks.length, 0);
+
+function toBookingTrek(t: CatalogueTrek): Trek {
+  return {
+    id: t.id,
+    name: t.title,
+    days: `${t.days} days`,
+    alt: altLabel(t.maxAlt),
+    price: t.price,
+    img: trekImageSrc(t),
+    diff: DIFFICULTY[t.difficulty].text,
+  };
+}
+
+const CUSTOM_TREK: Trek = {
+  id: "custom", name: "Custom / Bespoke Trek", days: "Flexible", alt: "Custom",
+  price: 0, img: "/images/landing.JPG", diff: "Custom ✦",
+};
 
 // Gear catalogue
 const GEAR_ITEMS: GearItem[] = [
@@ -119,28 +85,15 @@ const GEAR_NAMES: Record<string, string> = {
   "harness": "Climbing Harness",
 };
 
-// Map used for the ?trek= deep-link (mirrors the legacy trekMap)
-const TREK_MAP: Record<string, Trek> = {
-  namche: { id: "namche", name: "Namche Cultural Walk", days: "5 days", alt: "3,440m", price: 690, img: "/images/landing.JPG", diff: "Green Circle ●" },
-  amadablam: { id: "amadablam", name: "Ama Dablam Base Camp", days: "10 days", alt: "4,600m", price: 1290, img: "/images/sunset_3_peaks.jpeg", diff: "Blue Square ■" },
-  gokyo: { id: "gokyo", name: "Gokyo Lakes", days: "13 days", alt: "4,790m", price: 1490, img: "/images/above_clouds.jpeg", diff: "Blue Square ■" },
-  ebc: { id: "ebc", name: "Everest Base Camp", days: "14 days", alt: "5,364m", price: 1890, img: "/images/hike_3rd_person.jpeg", diff: "Black Diamond ◆" },
-  kalapathar: { id: "kalapathar", name: "Kalapathar Sunrise", days: "13 days", alt: "5,545m", price: 1790, img: "/images/kalapathar.jpeg", diff: "Black Diamond ◆" },
-  renjola: { id: "renjola", name: "Renjo La Pass", days: "15 days", alt: "5,360m", price: 1690, img: "/images/above_clouds.jpeg", diff: "Black Diamond ◆" },
-  jiri: { id: "jiri", name: "Jiri to EBC Classic", days: "22 days", alt: "5,364m", price: 2290, img: "/images/hike_3rd_person.jpeg", diff: "Black Diamond ◆" },
-  chhukung: { id: "chhukung", name: "Chhukung Ri", days: "14 days", alt: "5,550m", price: 1990, img: "/images/sunset_3_peaks.jpeg", diff: "Black Diamond ◆" },
-  "3passes": { id: "3passes", name: "Three High Passes", days: "20 days", alt: "5,535m", price: 2490, img: "/images/hiking_down_at_sunset.jpeg", diff: "Double Black ◆◆" },
-  chola: { id: "chola", name: "Cho La & EBC", days: "16 days", alt: "5,420m", price: 2090, img: "/images/hiking_down_at_sunset.jpeg", diff: "Double Black ◆◆" },
-  lobuche: { id: "lobuche", name: "Lobuche Peak", days: "18 days", alt: "6,119m", price: 2890, img: "/images/kalapathar.jpeg", diff: "Double Black ◆◆" },
-  island: { id: "island", name: "Island Peak", days: "20 days", alt: "6,189m", price: 3190, img: "/images/sunset_3_peaks.jpeg", diff: "Double Black ◆◆" },
-  mera: { id: "mera", name: "Mera Peak", days: "18 days", alt: "6,476m", price: 3490, img: "/images/sunset_3_peaks.jpeg", diff: "Double Black ◆◆" },
-  custom: { id: "custom", name: "Bespoke Expedition", days: "Custom", alt: "Custom", price: 0, img: "/images/above_clouds.jpeg", diff: "Custom" },
-};
+// Resolve a trek id (?trek= deep-link or picker) to booking details.
+function resolveTrek(id: string | null): Trek | null {
+  if (!id) return null;
+  if (id === "custom") return CUSTOM_TREK;
+  const t = getTrek(id);
+  return t ? toBookingTrek(t) : null;
+}
 
-const DEFAULT_TREK: Trek = {
-  id: "ebc", name: "Everest Base Camp", days: "14 days", alt: "5,364m",
-  price: 1890, img: "/images/hike_3rd_person.jpeg", diff: "Black Diamond ◆",
-};
+const DEFAULT_TREK: Trek = toBookingTrek(getTrek("ebc")!);
 
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -161,8 +114,9 @@ function BookInner() {
   const preTrek = sp.get("trek");
 
   // Initial trek + initial step derived from the deep-link
-  const initialTrek: Trek = preTrek && TREK_MAP[preTrek] ? TREK_MAP[preTrek] : DEFAULT_TREK;
-  const initialStep = preTrek && TREK_MAP[preTrek] ? 2 : 1;
+  const preResolved = resolveTrek(preTrek);
+  const initialTrek: Trek = preResolved ?? DEFAULT_TREK;
+  const initialStep = preResolved ? 2 : 1;
 
   // ── Booking state ──
   const [trek, setTrek] = useState<Trek>(initialTrek);
@@ -170,6 +124,7 @@ function BookInner() {
   const [groupSize, setGroupSize] = useState(2);
   const [selectedGear, setSelectedGear] = useState<string[]>([]);
   const [currentStep, setCurrentStep] = useState<number>(initialStep);
+  const [trekRegion, setTrekRegion] = useState<string>("all");
 
   // Calendar position
   const [calYear, setCalYear] = useState(2026);
@@ -256,9 +211,8 @@ function BookInner() {
   }, [calYear, calMonth, date, today]);
 
   // ── Handlers ──
-  function selectTrekOption(o: TrekOption) {
-    const priceNum = parseInt(o.price.replace(/\D/g, ""), 10) || 0;
-    setTrek({ id: o.id, name: o.name, days: o.days, alt: o.alt, price: priceNum, img: o.img, diff: o.diff });
+  function selectTrekOption(t: Trek) {
+    setTrek(t);
   }
 
   function selectDate(dateStr: string) {
@@ -388,42 +342,88 @@ function BookInner() {
                 for each route. All prices per person, guide included.
               </p>
 
+              <div className="pp-chips" id="trekRegionChips">
+                <button type="button" className={`pp-chip${trekRegion === "all" ? " active" : ""}`} data-region="all" onClick={() => setTrekRegion("all")}>
+                  All regions ({TREK_COUNT})
+                </button>
+                {REGION_GROUPS.map((g) => (
+                  <button
+                    type="button"
+                    key={g.id}
+                    className={`pp-chip${trekRegion === g.id ? " active" : ""}`}
+                    data-region={g.id}
+                    onClick={() => setTrekRegion(g.id)}
+                  >
+                    {g.info.name} ({g.treks.length})
+                  </button>
+                ))}
+              </div>
+
               <div id="trekOptions">
-                {TREK_OPTIONS.map((o) => (
+                {REGION_GROUPS.filter((g) => trekRegion === "all" || g.id === trekRegion).flatMap((g) =>
+                  g.treks.map((t) => {
+                    const d = DIFFICULTY[t.difficulty];
+                    const pick = () => selectTrekOption(toBookingTrek(t));
+                    return (
+                      <div
+                        key={t.id}
+                        data-trek={t.id}
+                        className={`trek-option${trek.id === t.id ? " selected" : ""}`}
+                        role="button"
+                        tabIndex={0}
+                        onClick={pick}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            pick();
+                          }
+                        }}
+                      >
+                        <div className="trek-option-radio" />
+                        <div style={{ flex: 1 }}>
+                          <div className="trek-option-region">{g.info.name}</div>
+                          <div className="trek-option-name">{t.title}</div>
+                          <div className="trek-option-meta">
+                            <span className={`difficulty-badge ${d.cls}`} style={{ fontSize: "0.7rem", padding: "0.2rem 0.6rem" }}>
+                              <span className="diff-icon">{d.icon}</span> {d.label}
+                            </span>
+                            <span>📅 {t.days} Days</span>
+                            <span>📍 {altLabel(t.maxAlt)}</span>
+                          </div>
+                          {t.operator === "partner" && (
+                            <div className="trek-option-note">Run together with a licensed local partner</div>
+                          )}
+                        </div>
+                        <div className="trek-option-price">From {priceLabel(t)}</div>
+                      </div>
+                    );
+                  })
+                )}
+                {trekRegion === "all" && (
                   <div
-                    key={o.id}
-                    className={`trek-option${trek.id === o.id ? " selected" : ""}`}
-                    onClick={() => selectTrekOption(o)}
+                    data-trek="custom"
+                    className={`trek-option${trek.id === "custom" ? " selected" : ""}`}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => selectTrekOption(CUSTOM_TREK)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        selectTrekOption(CUSTOM_TREK);
+                      }
+                    }}
                   >
                     <div className="trek-option-radio" />
                     <div style={{ flex: 1 }}>
-                      <div className="trek-option-name">{o.optionName}</div>
+                      <div className="trek-option-name">Bespoke / Custom Trek</div>
                       <div className="trek-option-meta">
-                        {o.diffClass ? (
-                          <span className={`difficulty-badge ${o.diffClass}`} style={{ fontSize: "0.7rem", padding: "0.2rem 0.6rem" }}>
-                            <span className="diff-icon">{o.diff.replace(/[^◆■●]/g, "").trim() || "◆"}</span> {o.diffLabel}
-                          </span>
-                        ) : null}
-                        {o.id === "custom" ? (
-                          <>
-                            <span>📅 Flexible</span>
-                            <span>💬 Contact us for a quote</span>
-                          </>
-                        ) : (
-                          <>
-                            <span>📅 {o.days.replace(" days", " Days")}</span>
-                            <span>📍 {o.alt}</span>
-                          </>
-                        )}
+                        <span>📅 Flexible</span>
+                        <span>💬 Contact us for a quote</span>
                       </div>
                     </div>
-                    {o.id === "custom" ? (
-                      <div className="trek-option-price" style={{ color: "var(--stone)" }}>Get Quote</div>
-                    ) : (
-                      <div className="trek-option-price">From {o.price}</div>
-                    )}
+                    <div className="trek-option-price" style={{ color: "var(--stone)" }}>Get Quote</div>
                   </div>
-                ))}
+                )}
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
@@ -764,7 +764,20 @@ function BookInner() {
         {/* Booking Summary Sidebar */}
         <div className="booking-sidebar">
           <div className="summary-card">
-            <img src={trek.img} alt="Trek" className="summary-img" id="summaryImg" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={trek.img}
+              alt="Trek"
+              className="summary-img"
+              id="summaryImg"
+              onError={(e) => {
+                const el = e.currentTarget;
+                if (!el.dataset.fallback) {
+                  el.dataset.fallback = "1";
+                  el.src = placeholderUri(trek.name);
+                }
+              }}
+            />
             <div className="summary-body">
               <div className="summary-trek-name" id="summaryTrekName">{trek.name}</div>
               <div className="summary-row">

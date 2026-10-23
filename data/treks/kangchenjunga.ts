@@ -1,0 +1,1017 @@
+// Generated from the original region data file; edit freely.
+import type { Region, Trek } from "./types";
+
+export const region: Region = {
+  "id": "kangchenjunga",
+  "name": "Kangchenjunga",
+  "country": "Nepal",
+  "tagline": "Far-east Nepal’s quiet giant: rhododendron forest, yak pastures and two base camps beneath the world’s third-highest mountain.",
+  "intro": [
+    "Kangchenjunga (8,586 m) is the third-highest mountain on Earth, a five-summited massif on the Nepal–India border that is often translated as the “five treasures of the great snow”. The Nepali side lies in Taplejung district, inside the Kangchenjunga Conservation Area, which was set up in 1997 and covers roughly 2,000 square kilometres, running from subtropical valleys at about 1,200 m to the summit itself. Two trails lead to its feet: the northern route follows the Ghunsa valley to Pangpema (~5,140 m), and the southern route climbs the Simbuwa valley to the Yalung side and Oktang (~4,730 m). Linking them means crossing a chain of high passes between Ghunsa and Tseram.",
+    "This is one of the least-trodden major trekking regions in Nepal. The conservation area is managed by local communities through their own council, and the villages you pass through are home mainly to Limbu, Sherpa, Bhote and Rai families, with Buddhist gompas, prayer-flag ridges and yak herding becoming more visible the higher you climb. The forests shelter snow leopard, red panda and musk deer, though you will be far more likely to see Himalayan monal and blood pheasant on the trail. Lodges are simple, there is no mobile signal beyond Ghunsa, and some of the highest stops are little more than stone huts or camps, which is exactly why people come."
+  ],
+  "bestSeasons": "Late September to November and March to May give the most stable weather and the clearest views. Monsoon trails (June–August) are wet and landslide-prone, and in deep winter heavy snow closes the Sele La and many lodges above Ghunsa shut for the season.",
+  "permitsSummary": "You need a Kangchenjunga Restricted Area Permit (US$20 per person per week for the first four weeks), a Kangchenjunga Conservation Area permit (NPR 2,000, about US$15), and a licensed guide for the whole route. Both permits are arranged through a registered agency, so we handle them for you.",
+  "gettingThere": "The reliable way in is a ~45-minute flight from Kathmandu to Bhadrapur in the eastern lowlands, followed by a jeep drive through Phidim and Taplejung to the trailhead at Sekathum (north side) or to Ilam and the Khandembe roadhead (south side). Scheduled flights between Kathmandu and Taplejung’s Suketar airstrip exist, but they have been suspended for months at a time and are often cancelled for weather, so we plan every itinerary around Bhadrapur and treat a Suketar flight as an optional extra when it is running.",
+  "operator": "peakpursuit",
+  "operatorNote": null,
+  "hero": {
+    "src": "https://images.unsplash.com/photo-1627118804546-39ffc11a64ac?auto=format&fit=crop&w=1600&q=70",
+    "alt": "Silhouetted mountains at sunset. The photo page describes Kanchenjunga as the third highest mountain in the world, between India and Nepal",
+    "credit": "Photo by NSG on Unsplash",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/X1fiJchaKF4"
+  },
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1596973881888-f9cd4ba5370d?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Snow-covered mountain in low light, titled \"Low Light Play at Kanchenjunga\"",
+      "credit": "Photo by Farhan Khan on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/3QYkxEqogJ4"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1557871201-d57f1f439b69?auto=format&fit=crop&w=1600&q=70",
+      "alt": "One of the many peaks of Kanchenjunga, the third highest mountain in the world, as seen from the Indian side",
+      "credit": "Photo by Farhan Khan on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/pointed-mountain-filled-with-snow-qwdTktBFrZ0"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1614821454444-23346f0e501f?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Snow-covered mountain under a blue sky, with the photo page's location given as Kanchenjunga",
+      "credit": "Photo by Amit Gupta on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/yJ7FcTIlmjo"
+    }
+  ]
+};
+
+export const treks: Trek[] = [
+  {
+    "id": "kangchenjunga-north-base-camp",
+    "region": "kangchenjunga",
+    "title": "Kangchenjunga North Base Camp (Pangpema)",
+    "tagline": "Follow the Ghunsa valley to Pangpema (~5,140 m) and stand beneath the north face of the world’s third-highest mountain, on an unhurried 17-day plan with two acclimatization days.",
+    "difficulty": "black",
+    "tags": [
+      "remote",
+      "cultural"
+    ],
+    "days": 17,
+    "walkingDays": 10,
+    "maxAlt": 5143,
+    "maxAltName": "Pangpema (Kangchenjunga North Base Camp)",
+    "distanceKm": 125,
+    "startPoint": "Sekathum, Taplejung (by jeep from Bhadrapur)",
+    "endPoint": "Sekathum, then jeep to Bhadrapur and flight to Kathmandu",
+    "minGroupSize": null,
+    "price": 2490,
+    "priceNote": "Per person, based on two trekkers sharing guide, porter and jeep costs. Includes the Restricted Area Permit and Conservation Area permit, Kathmandu–Bhadrapur–Kathmandu flights, all road transport, a licensed guide, porter support, twin-share lodges and all meals on the trail. Estimate only: a single traveller or a larger group will be quoted separately, and the final price is confirmed at booking.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Mar–May / Oct–Nov",
+    "bestSeasons": "Mid-October to November and April to May are the most dependable windows. Avoid the monsoon (landslides, slippery trails) and deep winter, when snow blocks the upper valley and lodges above Ghunsa close.",
+    "accommodation": "Hotel + Teahouse",
+    "operator": "peakpursuit",
+    "operatorNote": null,
+    "overview": [
+      "This is the classic way to meet Kangchenjunga: a walk up the Ghunsa valley from the subtropical foothills to Pangpema, the north base camp at about 5,140 m. You pass through forest, Buddhist villages and yak pastures, with Jannu (7,710 m) appearing ahead long before the main massif does, and you finish at a high meadow facing Kangchenjunga’s north face. Pangpema has no lodges, so it is reached as a long day trip from Lhonak, where you sleep at about 4,790 m.",
+      "It is a demanding trek because it is remote rather than technical. There are no passes to cross and no ropes or crampons, but the valley is long, the lodges are simple, and the upper stages sit well above 4,000 m. We have built in short days at Gyabla, Phale and Ghunsa, a full acclimatization day at Ghunsa and again at Kambachen, and a spare day on the way down so that weather or a slow day does not force anyone to rush.",
+      "The trek suits fit walkers who are comfortable with long days on rough trails and want a quiet alternative to the Everest and Annapurna trails. You will walk about 10 days, mostly 4 to 8 hours at a time, and spend the nights in family-run lodges that get steadily more basic with height. Expect cold nights, plain dal bhat and a lot of space."
+    ],
+    "highlights": [
+      "Pangpema (~5,140 m): the north base camp, directly below Kangchenjunga’s north face",
+      "Kambachen and the Jannu viewpoint, with the huge north face of Jannu (7,710 m) in front of you",
+      "Ghunsa, the main village of the upper valley, with its gompa and prayer flags",
+      "Subtropical forest turning to fir, rhododendron and juniper as you climb the Ghunsa Khola",
+      "A quieter trail than the main Everest and Annapurna routes",
+      "Built-in acclimatization days and a spare day on the descent"
+    ],
+    "permits": [
+      {
+        "name": "Kangchenjunga Restricted Area Permit",
+        "note": "US$20 per person per week for the first four weeks (a little more per week after that). Issued through a registered agency by the Department of Immigration; you pay for about two weeks inside the zone, roughly US$40. Included in the price."
+      },
+      {
+        "name": "Kangchenjunga Conservation Area permit",
+        "note": "NPR 2,000 per person (about US$15), single entry, no time limit. Checked at the conservation area checkpoints. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "Compulsory for the whole route. The old rule of at least two trekkers per permit was lifted in March 2026, so single travellers can now apply through an agency, but we confirm the current position with the authorities at booking."
+      },
+      {
+        "name": "TIMS card",
+        "note": "Several 2026 guides say the restricted area permit replaces TIMS here, while others still list it. We will confirm and obtain it for you if it is required."
+      }
+    ],
+    "included": [
+      "Kathmandu–Bhadrapur–Kathmandu domestic flights, including taxes",
+      "Private jeep transport Bhadrapur–Phidim–Sekathum and back",
+      "Kangchenjunga Restricted Area Permit and Conservation Area permit (and TIMS if required)",
+      "Licensed trekking guide for the whole trip, with the guide’s wages, insurance, food and lodging",
+      "Porter support (one porter for every two trekkers), with wages and insurance",
+      "Twin-share hotel in Phidim, twin-share lodges on the trail and a Kathmandu hotel on the night you return",
+      "All meals on the trek and on road-travel days, with tea or coffee at meals",
+      "Airport transfers in Kathmandu and a farewell dinner on your return",
+      "Government taxes and service charges"
+    ],
+    "excluded": [
+      "International flights to and from Kathmandu",
+      "Nepal tourist visa fee",
+      "Travel and medical insurance, which must cover emergency helicopter evacuation above 5,000 m",
+      "Extra hotel nights in Kathmandu before departure or if you return late",
+      "Bottled drinks, alcohol, hot showers, battery charging, laundry and phone calls",
+      "Personal gear such as boots, sleeping bag and down jacket",
+      "Tips for your guide and porters",
+      "Extra costs from delays outside our control, such as landslides, extra nights or chartered helicopters"
+    ],
+    "fitness": "You should be able to walk 6 to 8 hours on consecutive days with a daypack, including a long 1,300 m descent. Start training 8 to 12 weeks ahead with hill walking, stair work with a loaded pack and a few back-to-back long days. No technical skills are needed, but previous trekking above 3,500 m is a real advantage because sleeping altitudes here stay above 4,000 m for four nights.",
+    "safetyNotes": [
+      "Altitude: the lodge spacing forces two larger sleeping steps than the usual 500 m a day guideline, Ghunsa to Kambachen (~600 m) and Kambachen to Lhonak (~740 m). Each follows a dedicated acclimatization day with a climb-high hike and a night back at the lower village. Headache, nausea, poor sleep that worsens or unusual breathlessness mean you stop going up, and the guide will descend with you if symptoms persist.",
+      "Remoteness and evacuation: there is no road above Sekathum, and the walk from Lhonak back to the roadhead takes about three long days. Helicopter evacuation depends on weather and is paid for by your insurer, so cover that includes it is mandatory. There is no mobile network beyond Ghunsa.",
+      "Cold and weather: autumn nights at Lhonak and Pangpema fall well below freezing (around -10°C has been reported outdoors in October), and afternoon cloud and snow can arrive quickly. Bring a proper four-season sleeping bag and warm layers, and expect to turn back from Pangpema if conditions are poor.",
+      "Road travel: the drives to and from Sekathum are long and on unpaved, landslide-prone tracks. Keep one or two spare days in Kathmandu before your international flight home."
+    ],
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1557871201-d57f1f439b69?auto=format&fit=crop&w=1600&q=70",
+      "alt": "One of the many peaks of Kanchenjunga, the third highest mountain in the world, as seen from the Indian side",
+      "credit": "Photo by Farhan Khan on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/pointed-mountain-filled-with-snow-qwdTktBFrZ0"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1627119837468-e574973cba3b?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Kanchenjunga, the third highest mountain in the world, which lies between Sikkim, India and Nepal, under a grey sky",
+        "credit": "Photo by NSG on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/8zXJuplRzW4"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Bhadrapur, drive to Phidim",
+        "sleepAlt": 1250,
+        "activity": "Flight",
+        "duration": "45 min flight + 5–6 hrs drive",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Phidim",
+        "description": "A short morning flight drops you from the Kathmandu hills to the flat Terai at Bhadrapur, where your jeep is waiting. The road then climbs through tea country and small hill towns to Phidim, a busy district centre where you spend the night in a simple hotel. Use the evening to repack so that your trek bag is porter-ready, and keep a warm layer and your valuables in your daypack."
+      },
+      {
+        "day": 2,
+        "title": "Drive from Phidim to Sekathum via Taplejung",
+        "sleepAlt": 1600,
+        "activity": "Drive",
+        "duration": "8–10 hrs drive",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Sekathum",
+        "description": "This is a long day on mountain roads, so you leave early. Past Taplejung (1,820 m) the road becomes a rough jeep track that drops towards the Tamor River and ends at Sekathum, where the trail begins. Road conditions change with the seasons and landslides can add hours, which is why the first night on the trail is a simple lodge rather than a tight schedule."
+      },
+      {
+        "day": 3,
+        "title": "Trek from Sekathum to Amjilosa",
+        "sleepAlt": 2500,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Amjilosa",
+        "description": "You enter the conservation area and follow the Ghunsa Khola upstream, crossing the river on suspension bridges and climbing steadily through warm, humid forest. It is the biggest climb of the early days, roughly 900 m in total, so walk slowly and keep drinking. Amjilosa is a small collection of lodges perched above the river."
+      },
+      {
+        "day": 4,
+        "title": "Trek from Amjilosa to Gyabla",
+        "sleepAlt": 2750,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~8 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Gyabla",
+        "description": "A shorter day through cooler forest of rhododendron and mixed broadleaf trees, passing the settlement of Thyanyani before the trail climbs to Gyabla (also written Kyapra). The valley narrows and the river grows louder. Arrive early, wash and rest, because the next two days are planned as short climbs to keep the altitude gain gentle."
+      },
+      {
+        "day": 5,
+        "title": "Trek from Gyabla to Phale",
+        "sleepAlt": 3240,
+        "activity": "Trek",
+        "duration": "~4 hrs trek",
+        "distanceKm": "~5 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Phale",
+        "description": "Your first night above 3,000 m comes after only about 500 m of climbing, which is deliberate. The trail follows the river through fir and rhododendron, and prayer flags and mani walls begin to appear as Tibetan Buddhist culture becomes more visible. Take the afternoon easy and drink plenty of tea."
+      },
+      {
+        "day": 6,
+        "title": "Trek from Phale to Ghunsa",
+        "sleepAlt": 3430,
+        "activity": "Trek",
+        "duration": "3–4 hrs trek",
+        "distanceKm": "~5 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Ghunsa",
+        "description": "A short morning walk brings you to Ghunsa, the main village of the upper valley, with several lodges, a gompa and the last chance for any phone signal. Published altitudes for Ghunsa range from about 3,400 to 3,600 m, so we treat it as roughly 3,430 m and plan conservatively. Spend the afternoon resting, ready for tomorrow’s acclimatization hike."
+      },
+      {
+        "day": 7,
+        "title": "Acclimatization day at Ghunsa",
+        "sleepAlt": 3430,
+        "activity": "Acclimatization",
+        "duration": "4–5 hrs hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Ghunsa",
+        "description": "Climb high, sleep low: you hike about 450 to 550 m up the ridge above the village to roughly 3,900–4,000 m, enjoy the views along the valley, and come back down to sleep at Ghunsa. You can also visit the village gompa on the way back. Go slowly and use this day to listen to your body and drink well."
+      },
+      {
+        "day": 8,
+        "title": "Trek from Ghunsa to Kambachen",
+        "sleepAlt": 4050,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~11 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Kambachen",
+        "description": "The valley opens out as the forest thins into juniper and yak pasture, with lunch usually taken near Rambuk Kharka at about 3,720 m. Kambachen, a settlement of stone houses beneath Jannu’s great wall, sits at roughly 4,050 m, and this is the first of the two larger sleeping steps on the route. Walk at a pace where you can still talk, and go to bed early."
+      },
+      {
+        "day": 9,
+        "title": "Acclimatization day at Kambachen",
+        "sleepAlt": 4050,
+        "activity": "Acclimatization",
+        "duration": "4–5 hrs hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Kambachen",
+        "description": "A day trip towards the Jannu viewpoint, at roughly 4,450 m, gives you a climb-high hike before returning to sleep at Kambachen. The views of Jannu’s north face are the reward. Rest well this afternoon, because tomorrow takes you to the highest overnight stop on the route."
+      },
+      {
+        "day": 10,
+        "title": "Trek from Kambachen to Lhonak",
+        "sleepAlt": 4790,
+        "activity": "Trek",
+        "duration": "4–6 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Lhonak",
+        "description": "The path crosses the moraine and passes Ramtang (about 4,350 m) with its small monastery, then climbs onto the stony shelf of Lhonak beside the glacier. The air is thin and the landscape is bare rock, ice and sky. Lhonak has only a few simple stone lodges, and nights here are very cold, so layer up early."
+      },
+      {
+        "day": 11,
+        "title": "Hike from Lhonak to Pangpema and back",
+        "sleepAlt": 4790,
+        "activity": "Trek",
+        "duration": "7–9 hrs round trip",
+        "distanceKm": "~14 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Lhonak",
+        "description": "Leave at first light and follow the glacier’s moraine for 2 to 3 hours to Pangpema (~5,140 m), a high meadow facing Kangchenjunga’s north face and the glacier that descends from it. There are no lodges here, so you spend an hour or two absorbing the view and return to Lhonak to sleep, which keeps your sleeping altitude lower. Your guide will turn the group back early if weather or symptoms demand it."
+      },
+      {
+        "day": 12,
+        "title": "Trek from Lhonak to Ghunsa",
+        "sleepAlt": 3430,
+        "activity": "Trek",
+        "duration": "7–8 hrs trek",
+        "distanceKm": "~22 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Ghunsa",
+        "description": "A long, satisfying descent of roughly 1,350 m retraces your steps through Kambachen, the juniper pastures and finally back into forest. The air thickens, appetites return and legs start to ache. Stop for tea at Kambachen and keep your poles for the final stretch."
+      },
+      {
+        "day": 13,
+        "title": "Reserve day at Ghunsa",
+        "sleepAlt": 3430,
+        "activity": "Reserve day",
+        "duration": "Rest or flexible",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Ghunsa",
+        "description": "This is a built-in spare day. If bad weather or a slow day at altitude has cost time, it is absorbed here without shortening anything else. If everything has gone to plan, you rest, wash, visit the gompa and enjoy a low-key day in the village."
+      },
+      {
+        "day": 14,
+        "title": "Trek from Ghunsa to Amjilosa",
+        "sleepAlt": 2500,
+        "activity": "Trek",
+        "duration": "7–8 hrs trek",
+        "distanceKm": "~19 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Amjilosa",
+        "description": "You descend through Phale and Gyabla, usually stopping for lunch at Gyabla, and drop nearly 1,000 m into warmer, greener air. It is a long day on tired knees, but the trail is mostly downhill and familiar. Arrive at Amjilosa with time to rinse off the dust and enjoy the first real warmth in a week."
+      },
+      {
+        "day": 15,
+        "title": "Trek from Amjilosa to Sekathum",
+        "sleepAlt": 1600,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Sekathum",
+        "description": "The final walking day follows the river down to the roadhead, past terraced fields and bridges you crossed on the way up. Afternoon is for relaxing and, if you wish, sharing a thank-you with the porters and guide. Your jeep will be waiting in the morning."
+      },
+      {
+        "day": 16,
+        "title": "Drive from Sekathum to Phidim",
+        "sleepAlt": 1250,
+        "activity": "Drive",
+        "duration": "8–10 hrs drive",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Phidim",
+        "description": "A long jeep ride back along the same road via Taplejung, with plenty of views over the valleys you have just left. Road delays are common, so there is no tight schedule: you simply aim to reach Phidim for the night. A hot shower and a proper bed feel exceptional after the trail."
+      },
+      {
+        "day": 17,
+        "title": "Drive to Bhadrapur, fly to Kathmandu",
+        "sleepAlt": 1400,
+        "activity": "Flight",
+        "duration": "5–6 hrs drive + 45 min flight",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, farewell dinner",
+        "stay": "Hotel, Kathmandu",
+        "description": "The last drive takes you down to the Terai and the airport at Bhadrapur for the afternoon flight to Kathmandu. We recommend leaving a day or two before your international departure in case of flight delays. In the evening, celebrate with a farewell dinner."
+      }
+    ],
+    "sources": [
+      "https://nepalalternativetreks.com/trip/kanchenjunga-north-base-camp-trek/",
+      "https://www.thirdrockadventures.com/trip/kanchenjunga-north-base-camp-trek",
+      "https://mosaicadventure.com/trip/kanchenjunga-north-base-camp-trek/",
+      "https://www.arunexpedition.com/package/explore-kanchenjunga",
+      "https://kimkim.com/c/kanchenjunga-double-base-camp-trek-24-days",
+      "https://mountainsoftravelphotos.com/Kangchenjunga/01%20Nepal/index.html",
+      "https://dnpwc.gov.np/media/publication/KCA_2019.pdf",
+      "https://www.swotahtravel.com/blogs/kanchenjunga-permit-2026-solo-trekking",
+      "https://accessnepaltour.com/restricted-area-permit-nepal-update/"
+    ]
+  },
+  {
+    "id": "kangchenjunga-south-base-camp",
+    "region": "kangchenjunga",
+    "title": "Kangchenjunga South Base Camp (Oktang)",
+    "tagline": "Walk in from Ilam through Yamphudin and the Torontan forests to Tseram, then spend a day on the Yalung glacier moraine at Oktang (~4,730 m) in front of Kangchenjunga’s south side.",
+    "difficulty": "black",
+    "tags": [
+      "remote",
+      "camping"
+    ],
+    "days": 16,
+    "walkingDays": 11,
+    "maxAlt": 4730,
+    "maxAltName": "Oktang (Kangchenjunga South Base Camp viewpoint)",
+    "distanceKm": null,
+    "startPoint": "Khandembe roadhead, east of Ilam (by jeep from Bhadrapur)",
+    "endPoint": "Khandembe roadhead, then jeep to Ilam, Bhadrapur and Kathmandu",
+    "minGroupSize": null,
+    "price": 2390,
+    "priceNote": "Per person, based on two trekkers sharing guide, porter, camping crew and jeep costs. Includes the Restricted Area Permit and Conservation Area permit, Kathmandu–Bhadrapur–Kathmandu flights, all road transport, a licensed guide, porter support, lodges and tented camps with all meals on the trail. Estimate only: a single traveller or a larger group will be quoted separately, and the final price is confirmed at booking.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Mar–May / Oct–Nov",
+    "bestSeasons": "Mid-October to November and April to May. The Yalung side is cold, with temperatures near -15°C reported at Ramche in autumn, and the monsoon brings landslides to the lower trail, so avoid June to September and mid-winter.",
+    "accommodation": "Teahouse + Camping",
+    "operator": "peakpursuit",
+    "operatorNote": null,
+    "overview": [
+      "The southern approach to Kangchenjunga starts in a different world from the north. You leave the tea gardens around Ilam, walk through Rai and Limbu villages, and climb through damp, moss-draped forest on the way to Torontan and Tseram. Above Tseram the trees stop, and you reach Oktang (~4,730 m) on the moraine of the Yalung glacier, with Kangchenjunga’s south side in front of you and peaks such as Kabru and Rathong around you. Because the base camp is a day trip from Tseram, you keep your sleeping altitude at about 3,870 m.",
+      "The southern trek is shorter than the north but the logistics are tougher. The roadhead near Khandembe, the lower villages and the Omje Khola camp are simple, and above Torontan the lodges are basic. We use a mix of lodges and our own tents, split the long climb from Torontan to Tseram into two days, and plan a rest day at Tseram, the Oktang day, and a spare day afterwards.",
+      "It suits fit walkers who prefer forest and a quieter valley to wide-open high country, and who are happy with plain food and simple camps. If you want to do both sides in one go, the full circuit links this route with Pangpema over the high passes."
+    ],
+    "highlights": [
+      "Oktang (~4,730 m): the viewpoint at the foot of Kangchenjunga’s south side on the Yalung moraine",
+      "Ramche, beside a small lake, with the Yalung glacier curving away ahead of you",
+      "Tseram, the last settlement before the high country, set among rhododendron and juniper",
+      "Moss-draped Torontan forest and the Lasiya Bhanjyang and Dhupi Bhanjyang ridges",
+      "Rai, Limbu and Sherpa villages at Khebang and Yamphudin",
+      "A rest day, a spare day and a split climb that protect your acclimatization"
+    ],
+    "permits": [
+      {
+        "name": "Kangchenjunga Restricted Area Permit",
+        "note": "US$20 per person per week for the first four weeks (a little more per week after that). Issued through a registered agency by the Department of Immigration; you pay for about two weeks inside the zone, roughly US$40. Included in the price."
+      },
+      {
+        "name": "Kangchenjunga Conservation Area permit",
+        "note": "NPR 2,000 per person (about US$15), single entry, no time limit. Checked at conservation area checkpoints. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "Compulsory for the whole route. The old rule of at least two trekkers per permit was lifted in March 2026, so single travellers can now apply through an agency, but we confirm the current position with the authorities at booking."
+      },
+      {
+        "name": "TIMS card",
+        "note": "Several 2026 guides say the restricted area permit replaces TIMS here, while others still list it. We will confirm and obtain it for you if it is required."
+      }
+    ],
+    "included": [
+      "Kathmandu–Bhadrapur–Kathmandu domestic flights, including taxes",
+      "Private jeep transport Bhadrapur–Ilam–Khandembe roadhead and back",
+      "Kangchenjunga Restricted Area Permit and Conservation Area permit (and TIMS if required)",
+      "Licensed trekking guide for the whole trip, with the guide’s wages, insurance, food and lodging",
+      "Porter support (one porter for every two trekkers), with wages and insurance",
+      "Camping crew, tents, mattresses and cooking equipment for the camp nights",
+      "Twin-share hotel in Ilam, lodges and homestays where available, and a Kathmandu hotel on the night you return",
+      "All meals on the trek and on road-travel days, with tea or coffee at meals",
+      "Airport transfers in Kathmandu and a farewell dinner on your return",
+      "Government taxes and service charges"
+    ],
+    "excluded": [
+      "International flights to and from Kathmandu",
+      "Nepal tourist visa fee",
+      "Travel and medical insurance, which must cover emergency helicopter evacuation above 5,000 m",
+      "Extra hotel nights in Kathmandu before departure or if you return late",
+      "Bottled drinks, alcohol, hot showers, battery charging, laundry and phone calls",
+      "Personal gear such as boots, sleeping bag and down jacket",
+      "Tips for your guide, porters and camp crew",
+      "Extra costs from delays outside our control, such as landslides, extra nights or chartered helicopters"
+    ],
+    "fitness": "You should be comfortable walking 6 to 8 hours a day for several days in a row, with plenty of up and down: the days between Yamphudin and Torontan combine climbs of 800 to 900 m with descents of over 1,000 m. Train for 8 to 12 weeks with hill walking, stair work with a pack and some long back-to-back days. No technical skills are needed, but previous experience above 3,500 m is useful. You must also be happy sleeping in a tent on at least three nights.",
+    "safetyNotes": [
+      "Altitude: the climb from Torontan (~3,000 m) to Tseram (~3,870 m) is normally done in one day, which is more than 800 m of sleeping gain, so we split it with a night at a camp at roughly 3,400 m. You then spend a full day at Tseram before going to Oktang, and you return to Tseram to sleep. If you develop symptoms that do not improve with rest, we stop and go down.",
+      "Landslides and trail conditions: the lower stages between Yamphudin and Torontan cross steep, landslide-prone slopes, especially after rain. Your guide may delay, detour or turn back, and the roadhead can move as the jeep road is extended or damaged, so the first and last days are subject to change.",
+      "Remoteness and evacuation: Tseram is about four days’ walk from the roadhead. Helicopter evacuation is weather-dependent and expensive, so insurance that includes it is mandatory, and you will have little or no mobile signal for most of the trek.",
+      "Cold: nights at Tseram and Ramche are well below freezing in autumn and spring. Bring a warm four-season sleeping bag and enough layers for the early start to Oktang."
+    ],
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1614821454444-23346f0e501f?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Snow-covered mountain under a blue sky, with the photo page's location given as Kanchenjunga",
+      "credit": "Photo by Amit Gupta on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/yJ7FcTIlmjo"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1627119703136-3964f14b7325?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Snow-covered Kanchenjunga, the third highest mountain in the world, which lies between Sikkim, India and Nepal",
+        "credit": "Photo by NSG on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/C7UJ1Pu_S_I"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Bhadrapur, drive to Ilam",
+        "sleepAlt": 1210,
+        "activity": "Flight",
+        "duration": "45 min flight + 3–4 hrs drive",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Ilam",
+        "description": "You fly east to Bhadrapur in the Terai, then climb by jeep to Ilam, a hill town surrounded by tea gardens. After a long journey, walk around the tea slopes, check your gear with your guide and enjoy a proper bed. The days ahead involve camping, so make sure your sleeping bag and warm clothing are ready."
+      },
+      {
+        "day": 2,
+        "title": "Drive from Ilam to the Khandembe roadhead",
+        "sleepAlt": 1450,
+        "activity": "Drive",
+        "duration": "5–7 hrs drive",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Homestay or camp, Khandembe area",
+        "description": "A long day on winding hill roads takes you deeper into the foothills to the roadhead near Khandembe. The jeep road is still being extended, so the exact end of the road shifts from year to year and your guide will confirm it before you leave. Tonight is your first taste of simple rural accommodation."
+      },
+      {
+        "day": 3,
+        "title": "Trek from the roadhead to Khebang",
+        "sleepAlt": 1900,
+        "activity": "Trek",
+        "duration": "4–6 hrs trek",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Homestay, Khebang",
+        "description": "You start on foot, climbing through terraced fields and small villages to Khebang, where lodging is usually a homestay or a simple lodge. The length of the walk depends on how far the jeep can get that season. Altitudes quoted for Khebang range from about 1,700 to 1,900 m, so we use the higher figure."
+      },
+      {
+        "day": 4,
+        "title": "Trek from Khebang to Yamphudin",
+        "sleepAlt": 2080,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Yamphudin",
+        "description": "Today’s trail rises and falls across forested ridges and side valleys to Yamphudin, the last large village before the wilderness. Expect a permit check here, and you may see local Rai and Limbu families farming the surrounding hillsides. Published altitudes for Yamphudin range from about 1,700 to 2,100 m, so we plan conservatively around 2,080 m."
+      },
+      {
+        "day": 5,
+        "title": "Trek from Yamphudin to Omje Khola",
+        "sleepAlt": 2400,
+        "activity": "Trek",
+        "duration": "6–7 hrs trek",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camp, Omje Khola",
+        "description": "After crossing the river, you climb steeply to the Lasiya Bhanjyang ridge (about 3,300–3,400 m) and then descend through forest to a riverside camp. Part of the route crosses a landslide area that looks worse from a distance than it is underfoot. The water at camp comes straight from the glacier and is much colder than at Yamphudin."
+      },
+      {
+        "day": 6,
+        "title": "Trek from Omje Khola to Torontan",
+        "sleepAlt": 2995,
+        "activity": "Trek",
+        "duration": "4–6 hrs trek",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Torontan",
+        "description": "The trail climbs to a forested ridge at around 3,200 m and then drops through dense, moss-covered forest to Torontan (also spelled Tortong or Torongdin). Rain is common in these forests, so waterproofs matter. Torontan has a handful of simple lodges and is your last settlement before the climb to Tseram."
+      },
+      {
+        "day": 7,
+        "title": "Trek from Torontan to the forest camp",
+        "sleepAlt": 3400,
+        "activity": "Trek",
+        "duration": "3–4 hrs trek",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camp, forest clearing",
+        "description": "To avoid the usual single-day climb of almost 900 m, we shorten today and spend the night at a tented camp at roughly 3,400 m, in a clearing chosen by your guide. The trail follows the river and begins to leave the larger trees. You will arrive early with the afternoon to rest, and the camp crew look after you."
+      },
+      {
+        "day": 8,
+        "title": "Trek from the forest camp to Tseram",
+        "sleepAlt": 3870,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Tseram",
+        "description": "The path leaves the forest and enters a more open valley, with higher snow peaks coming closer. Tseram (also written Cheram) sits at about 3,870 m, although some older sources give a lower figure, so we plan with the higher number. Drink plenty, eat well and go to bed early."
+      },
+      {
+        "day": 9,
+        "title": "Acclimatization day at Tseram",
+        "sleepAlt": 3870,
+        "activity": "Acclimatization",
+        "duration": "3–4 hrs hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Tseram",
+        "description": "A rest day with a short climb-high hike up the valley towards Ramche to around 4,200 m, returning to Tseram to sleep. The idea is to give your body a day to adjust before Oktang and to stay low enough to sleep well. Check gear, wash laundry in the sun, and drink tea."
+      },
+      {
+        "day": 10,
+        "title": "Day trek from Tseram to Oktang and back",
+        "sleepAlt": 3870,
+        "activity": "Trek",
+        "duration": "8–10 hrs round trip",
+        "distanceKm": "~14 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Tseram",
+        "description": "Start before dawn and follow the Yalung valley to Ramche (~4,580 m), then continue along the moraine to Oktang (about 4,730 m), the viewpoint at the foot of Kangchenjunga’s south side. Published heights for Oktang range from about 4,610 to 4,780 m depending on the reference point. You return to Tseram to sleep, which means a long day but a lower night."
+      },
+      {
+        "day": 11,
+        "title": "Reserve day at Tseram",
+        "sleepAlt": 3870,
+        "activity": "Reserve day",
+        "duration": "Rest or flexible",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Tseram",
+        "description": "A spare day for bad weather, a delayed Oktang day or tired legs. If you do not need it, rest, read and enjoy the quiet valley. It also acts as a buffer for any slip in the road at the end of the trek."
+      },
+      {
+        "day": 12,
+        "title": "Trek from Tseram to Torontan",
+        "sleepAlt": 2995,
+        "activity": "Trek",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~13 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Torontan",
+        "description": "A long descent of almost 900 m retraces your route through rhododendron and then the damp forest below. Your knees will thank you for poles. Torontan feels warm and green after the cold nights at Tseram."
+      },
+      {
+        "day": 13,
+        "title": "Trek from Torontan to Yamphudin",
+        "sleepAlt": 2080,
+        "activity": "Trek",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~13 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Yamphudin",
+        "description": "The way back drops to the Omje Khola, climbs again over Lasiya Bhanjyang (about 3,300 m) and then descends over Dhupi Bhanjyang (around 2,600 m) to Yamphudin. It is a demanding day, with climbing and descending in both directions, and landslide zones that your guide will assess before you cross."
+      },
+      {
+        "day": 14,
+        "title": "Trek from Yamphudin to Khebang",
+        "sleepAlt": 1900,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Homestay, Khebang",
+        "description": "A gentler day through warmer, lower terrain, with terraced fields and warmer forest replacing the high country. Khebang gives you a last mountain village night before the road."
+      },
+      {
+        "day": 15,
+        "title": "Trek to the roadhead, drive to Ilam",
+        "sleepAlt": 1210,
+        "activity": "Trek",
+        "duration": "3–5 hrs trek + 5–7 hrs drive",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Ilam",
+        "description": "A final walk brings you to the roadhead, where a jeep takes you back along the winding hill road to Ilam. Watch for tea gardens glowing in the afternoon light as you descend. A hot shower at the hotel is the reward."
+      },
+      {
+        "day": 16,
+        "title": "Drive to Bhadrapur, fly to Kathmandu",
+        "sleepAlt": 1400,
+        "activity": "Flight",
+        "duration": "3–4 hrs drive + 45 min flight",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, farewell dinner",
+        "stay": "Hotel, Kathmandu",
+        "description": "The last morning takes you down to the Terai and the airport at Bhadrapur for the flight to Kathmandu. We recommend leaving a day or two before your international departure in case of delays. In the evening, celebrate with a farewell dinner."
+      }
+    ],
+    "sources": [
+      "https://worldexpeditions.com/Nepal/Trekking-Walking/Kanchenjunga-Trek-to-South-Base-Camp",
+      "https://www.trekking-in-nepal.net/en/nepal/trip-182-kanchenjunga-base-camp-trek",
+      "https://www.himalayas-trekking-pictures.com/kangchenjunga5.htm",
+      "https://www.himalayas-trekking-pictures.com/kangchenjunga6.htm",
+      "https://www.gotonepal.com/print/kanchenjunga-south-base-camp-trek",
+      "https://www.tourradar.com/t/110132",
+      "https://www.bestheritagetour.com/blog/kanchenjunga-circuit-trek-guide-2027",
+      "https://dnpwc.gov.np/media/publication/KCA_2019.pdf",
+      "https://www.swotahtravel.com/blogs/kanchenjunga-permit-2026-solo-trekking",
+      "https://accessnepaltour.com/restricted-area-permit-nepal-update/"
+    ]
+  },
+  {
+    "id": "kangchenjunga-circuit",
+    "region": "kangchenjunga",
+    "title": "Complete Kangchenjunga Circuit (North and South Base Camps)",
+    "tagline": "Link Pangpema and Oktang in one 22-day walk: the Ghunsa valley, a chain of high passes between Selele and Tseram, and the Yalung side, ending in the forests of Yamphudin.",
+    "difficulty": "black",
+    "tags": [
+      "pass",
+      "remote",
+      "camping",
+      "cultural"
+    ],
+    "days": 22,
+    "walkingDays": 15,
+    "maxAlt": 5143,
+    "maxAltName": "Pangpema (Kangchenjunga North Base Camp)",
+    "distanceKm": 190,
+    "startPoint": "Sekathum, Taplejung (by jeep from Bhadrapur)",
+    "endPoint": "Khandembe roadhead, then jeep to Ilam, Bhadrapur and Kathmandu",
+    "minGroupSize": null,
+    "price": 3390,
+    "priceNote": "Per person, based on two trekkers sharing guide, porter, camping crew and jeep costs. Includes the Restricted Area Permit (about three weeks inside the zone, roughly US$60) and Conservation Area permit, Kathmandu–Bhadrapur–Kathmandu flights, all road transport, a licensed guide, porter support, lodges and tented camps with all meals on the trail. Estimate only: a single traveller or a larger group will be quoted separately, and the final price is confirmed at booking.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Mar–May / Oct–Nov",
+    "bestSeasons": "Mid-October to November and April to May. The passes between Selele and Tseram need dry weather: late-season snow in spring and early snow in November can close them, and heavy winter snow shuts them completely.",
+    "accommodation": "Teahouse + Camping",
+    "operator": "peakpursuit",
+    "operatorNote": null,
+    "overview": [
+      "This is the complete Kangchenjunga trek. You start in the north, follow the Ghunsa valley up to Pangpema (~5,140 m), return to Ghunsa and then turn south over a chain of passes: Sele La (~4,290 m), Sinion La, Mirgin La and Sinelapche La, the last of which tops out at around 4,650 m. After a night at Tseram you continue to Oktang (~4,730 m), the southern base camp viewpoint, and finish by walking out through Torontan and Yamphudin to the roadhead near Khandembe.",
+      "The circuit is not technical, but it is long, remote and cold. There are no crampons or ropes, yet you will spend five nights above 4,000 m, cross passes on a long day in the cold, and spend a night at the Selele camp. The itinerary includes short days, two acclimatization days, a rest day at Ghunsa and a spare day at Tseram to buffer the pass crossing.",
+      "It suits strong, experienced walkers who want the whole mountain rather than one side of it, and who are happy with basic food, simple lodges and tented nights. Compared with the Everest region you will see few trekkers, and in some stages you may see none."
+    ],
+    "highlights": [
+      "Both base camps in one trip: Pangpema (~5,140 m) on the north and Oktang (~4,730 m) on the south",
+      "The pass chain from Selele to Tseram, with views of Makalu, Jannu, Kabru and Rathong on clear days",
+      "A rest day and acclimatization days that follow the climb-high, sleep-low pattern",
+      "Moss-draped Torontan forest and the Lasiya Bhanjyang and Dhupi Bhanjyang ridges on the way out",
+      "Villages of Rai, Limbu, Sherpa and Bhote families, from Khebang to Ghunsa",
+      "A spare day at Tseram, built in for weather and pass delays"
+    ],
+    "permits": [
+      {
+        "name": "Kangchenjunga Restricted Area Permit",
+        "note": "US$20 per person per week for the first four weeks. Issued through a registered agency by the Department of Immigration; the circuit spends about three weeks inside the zone, roughly US$60. Included in the price."
+      },
+      {
+        "name": "Kangchenjunga Conservation Area permit",
+        "note": "NPR 2,000 per person (about US$15), single entry, no time limit. Checked at conservation area checkpoints. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "Compulsory for the whole route. The old rule of at least two trekkers per permit was lifted in March 2026, so single travellers can now apply through an agency, but we confirm the current position with the authorities at booking."
+      },
+      {
+        "name": "TIMS card",
+        "note": "Several 2026 guides say the restricted area permit replaces TIMS here, while others still list it. We will confirm and obtain it for you if it is required."
+      }
+    ],
+    "included": [
+      "Kathmandu–Bhadrapur–Kathmandu domestic flights, including taxes",
+      "Private jeep transport Bhadrapur–Phidim–Sekathum and Khandembe–Ilam–Bhadrapur",
+      "Kangchenjunga Restricted Area Permit and Conservation Area permit (and TIMS if required)",
+      "Licensed trekking guide for the whole trip, with the guide’s wages, insurance, food and lodging",
+      "Porter support (one porter for every two trekkers), with wages and insurance",
+      "Camping crew, tents, mattresses and cooking equipment for the camp nights",
+      "Twin-share hotels in Phidim and Ilam, lodges and homestays where available, and a Kathmandu hotel on the night you return",
+      "All meals on the trek and on road-travel days, with tea or coffee at meals",
+      "Airport transfers in Kathmandu and a farewell dinner on your return",
+      "Government taxes and service charges"
+    ],
+    "excluded": [
+      "International flights to and from Kathmandu",
+      "Nepal tourist visa fee",
+      "Travel and medical insurance, which must cover emergency helicopter evacuation above 5,000 m",
+      "Extra hotel nights in Kathmandu before departure or if you return late",
+      "Bottled drinks, alcohol, hot showers, battery charging, laundry and phone calls",
+      "Personal gear such as boots, sleeping bag, down jacket and gaiters",
+      "Tips for your guide, porters and camp crew",
+      "Extra costs from delays outside our control, such as landslides, extra nights or chartered helicopters"
+    ],
+    "fitness": "This is the most demanding trek in the region, because of its length and remoteness rather than technical difficulty. You need to walk 6 to 9 hours on consecutive days, including a pass day of 8 to 9 hours, and recover well from long descents of more than 1,000 m. Start training 12 weeks or more ahead with hill walking, stair work with a loaded pack and some back-to-back long days, and ideally build up with a previous trek above 4,000 m. We rate it black rather than double black because nothing on the route is technical or glaciated, but it is the hardest of our Kangchenjunga treks.",
+    "safetyNotes": [
+      "Altitude: you sleep above 4,000 m on five nights. The step from Ghunsa to Kambachen (~600 m) and from Kambachen to Lhonak (~740 m) is larger than the usual 500 m a day guideline because there are no stops between, so each follows an acclimatization day with a climb-high hike. Any symptom that does not improve with rest means no further ascent, and descent if it persists.",
+      "Passes and weather: published heights for Sinion La, Mirgin La and Sinelapche La differ by as much as 200 m between sources, but all are above 4,400 m and the pass day is 8 to 9 hours long. Snow, wind or low cloud can make it unsafe. If the passes are closed, the fallback is to descend the Ghunsa valley to Sekathum, which means missing the south side, and the spare day at Tseram absorbs a one-day delay at most.",
+      "Remoteness and evacuation: Selele and Tseram are days from any road, and helicopter evacuation is weather-dependent. Insurance that covers it is mandatory. There is no mobile network beyond Ghunsa.",
+      "Cold and camping: nights at Selele, Lhonak, Tseram and Ramche fall well below freezing, and temperatures around -15°C have been reported on this route in autumn. Bring a four-season sleeping bag and enough warm layers to sleep in."
+    ],
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1627119837468-e574973cba3b?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Kanchenjunga, the third highest mountain in the world, which lies between Sikkim, India and Nepal, under a grey sky",
+      "credit": "Photo by NSG on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/8zXJuplRzW4"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1596973881888-f9cd4ba5370d?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Snow-covered mountain in low light, titled \"Low Light Play at Kanchenjunga\"",
+        "credit": "Photo by Farhan Khan on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/3QYkxEqogJ4"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1627119703136-3964f14b7325?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Snow-covered Kanchenjunga, the third highest mountain in the world, which lies between Sikkim, India and Nepal",
+        "credit": "Photo by NSG on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/C7UJ1Pu_S_I"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Bhadrapur, drive to Phidim",
+        "sleepAlt": 1250,
+        "activity": "Flight",
+        "duration": "45 min flight + 5–6 hrs drive",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Phidim",
+        "description": "A short morning flight takes you from Kathmandu to the Terai at Bhadrapur, where a jeep takes you north through tea country and small hill towns to Phidim, a district centre where you spend the night. Spend the evening repacking so that your trek bag is ready for porters, and keep a warm layer and valuables in your daypack."
+      },
+      {
+        "day": 2,
+        "title": "Drive from Phidim to Sekathum via Taplejung",
+        "sleepAlt": 1600,
+        "activity": "Drive",
+        "duration": "8–10 hrs drive",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Sekathum",
+        "description": "A long day on mountain roads, starting early. Beyond Taplejung (1,820 m) the road turns to a rough jeep track that follows the Tamor River down to Sekathum, where the trail begins. Road conditions change with the seasons and landslides can add hours."
+      },
+      {
+        "day": 3,
+        "title": "Trek from Sekathum to Amjilosa",
+        "sleepAlt": 2500,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Amjilosa",
+        "description": "You enter the conservation area and follow the Ghunsa Khola upstream, crossing suspension bridges and climbing steadily through warm, humid forest. The total ascent is roughly 900 m, so walk slowly and drink plenty. Amjilosa is a small cluster of lodges high above the river."
+      },
+      {
+        "day": 4,
+        "title": "Trek from Amjilosa to Gyabla",
+        "sleepAlt": 2750,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~8 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Gyabla",
+        "description": "A shorter day through cooler forest, passing the settlement of Thyanyani before the final climb to Gyabla (also Kyapra). The valley narrows and the river grows louder. Arrive early to rest, because the next two days are short on purpose."
+      },
+      {
+        "day": 5,
+        "title": "Trek from Gyabla to Phale",
+        "sleepAlt": 3240,
+        "activity": "Trek",
+        "duration": "~4 hrs trek",
+        "distanceKm": "~5 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Phale",
+        "description": "You sleep above 3,000 m for the first time after climbing only about 500 m. The trail follows the river through fir and rhododendron, and prayer flags and mani walls start to appear. Keep the afternoon easy and drink plenty."
+      },
+      {
+        "day": 6,
+        "title": "Trek from Phale to Ghunsa",
+        "sleepAlt": 3430,
+        "activity": "Trek",
+        "duration": "3–4 hrs trek",
+        "distanceKm": "~5 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Ghunsa",
+        "description": "A short walk to Ghunsa, the main village of the upper valley, with several lodges and a gompa. Published altitudes for Ghunsa range from about 3,400 to 3,600 m, so we plan around 3,430 m. Rest this afternoon."
+      },
+      {
+        "day": 7,
+        "title": "Acclimatization day at Ghunsa",
+        "sleepAlt": 3430,
+        "activity": "Acclimatization",
+        "duration": "4–5 hrs hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Ghunsa",
+        "description": "Climb high, sleep low: hike 450 to 550 m up the ridge above Ghunsa to roughly 3,900–4,000 m, then come back down to sleep. Visit the gompa on your return. Use the day to check how your body is adapting."
+      },
+      {
+        "day": 8,
+        "title": "Trek from Ghunsa to Kambachen",
+        "sleepAlt": 4050,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~11 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Kambachen",
+        "description": "The valley opens out and forest gives way to juniper and yak pasture, with lunch usually near Rambuk Kharka (~3,720 m). Kambachen sits at roughly 4,050 m beneath the north face of Jannu (7,710 m). This is the first of two larger sleeping steps, so walk slowly and go to bed early."
+      },
+      {
+        "day": 9,
+        "title": "Acclimatization day at Kambachen",
+        "sleepAlt": 4050,
+        "activity": "Acclimatization",
+        "duration": "4–5 hrs hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Kambachen",
+        "description": "Hike towards the Jannu viewpoint at roughly 4,450 m, then return to sleep at Kambachen. The views of Jannu’s huge north face are the reward. Rest well this afternoon, since tomorrow takes you to the highest overnight stay on the route."
+      },
+      {
+        "day": 10,
+        "title": "Trek from Kambachen to Lhonak",
+        "sleepAlt": 4790,
+        "activity": "Trek",
+        "duration": "4–6 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Lhonak",
+        "description": "The path crosses the moraine and passes Ramtang (about 4,350 m) with its small monastery, then climbs onto the stony shelf of Lhonak beside the glacier. The landscape is bare rock, ice and sky. Lhonak has only a few simple stone lodges, and nights are very cold."
+      },
+      {
+        "day": 11,
+        "title": "Hike from Lhonak to Pangpema and back",
+        "sleepAlt": 4790,
+        "activity": "Trek",
+        "duration": "7–9 hrs round trip",
+        "distanceKm": "~14 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Lhonak",
+        "description": "Leave at first light and follow the glacier’s moraine to Pangpema (~5,140 m), a high meadow facing the north face of Kangchenjunga and the glacier that descends from it. There are no lodges at Pangpema, so after an hour or two at the top you return to Lhonak to sleep. Your guide will turn back early if the weather or symptoms demand it."
+      },
+      {
+        "day": 12,
+        "title": "Trek from Lhonak to Ghunsa",
+        "sleepAlt": 3430,
+        "activity": "Trek",
+        "duration": "7–8 hrs trek",
+        "distanceKm": "~22 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Ghunsa",
+        "description": "A long, satisfying descent of roughly 1,350 m retraces your steps through Kambachen and the juniper pastures and finally back into forest. The air thickens, appetites return and legs start to ache. Keep your poles for the final stretch."
+      },
+      {
+        "day": 13,
+        "title": "Rest day at Ghunsa",
+        "sleepAlt": 3430,
+        "activity": "Rest",
+        "duration": "Rest day",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Ghunsa",
+        "description": "A planned rest before the pass section. Wash, dry gear, repack for the camp at Selele and check your clothes and boots with your guide. Your guide will also check the weather forecast and conditions on the passes before you commit to crossing them."
+      },
+      {
+        "day": 14,
+        "title": "Trek from Ghunsa to Selele",
+        "sleepAlt": 4200,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~13 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camp or basic lodge, Selele",
+        "description": "A steep climb of roughly 800 m leads from Ghunsa to the Selele camp below the Sele La (~4,290 m). Published heights for the camp range from about 4,100 to 4,290 m, and we plan with 4,200 m. Although this is a big sleeping step on paper, you slept at 4,790 m three nights earlier, and the camp is one of the coldest on the circuit, so layer up."
+      },
+      {
+        "day": 15,
+        "title": "Cross Sinion La, Mirgin La and Sinelapche La to Tseram",
+        "sleepAlt": 3870,
+        "activity": "Pass crossing",
+        "duration": "8–9 hrs trek",
+        "distanceKm": "~12 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Tseram",
+        "description": "The longest day of the circuit crosses three further passes in a row: Sinion La (~4,440 m), Mirgin La (~4,480 m) and Sinelapche La (~4,650 m), though published heights differ by up to 200 m. The terrain is boulder-strewn and the weather often cold and damp, but on a clear day there are views to Makalu, Jannu, Kabru and Rathong. From Sinelapche La the trail drops nearly 1,000 m to Tseram (also Cheram), and the last hour or two feels endless."
+      },
+      {
+        "day": 16,
+        "title": "Day trek from Tseram to Oktang and back",
+        "sleepAlt": 3870,
+        "activity": "Trek",
+        "duration": "8–10 hrs round trip",
+        "distanceKm": "~14 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Tseram",
+        "description": "Start before dawn and follow the Yalung valley to Ramche (~4,580 m), then continue along the moraine to Oktang (about 4,730 m), the viewpoint at the foot of Kangchenjunga’s south side. Published heights for Oktang vary from about 4,610 to 4,780 m. You return to Tseram to sleep, which keeps the night lower."
+      },
+      {
+        "day": 17,
+        "title": "Reserve day at Tseram",
+        "sleepAlt": 3870,
+        "activity": "Reserve day",
+        "duration": "Rest or flexible",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Tseram",
+        "description": "A spare day for delays, bad weather on the passes or tired legs. If you do not need it, rest, read and enjoy the quiet valley. It also acts as a buffer for any slip in the road at the end of the trek."
+      },
+      {
+        "day": 18,
+        "title": "Trek from Tseram to Torontan",
+        "sleepAlt": 2995,
+        "activity": "Trek",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~13 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Torontan",
+        "description": "A long descent of almost 900 m takes you through rhododendron and then into the damp, mossy forest below. Poles help. Torontan (also Tortong) feels warm and green after the cold nights above."
+      },
+      {
+        "day": 19,
+        "title": "Trek from Torontan to Yamphudin",
+        "sleepAlt": 2080,
+        "activity": "Trek",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~13 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Lodge, Yamphudin",
+        "description": "The trail drops to the Omje Khola, climbs over Lasiya Bhanjyang (about 3,300 m) and then descends over Dhupi Bhanjyang (around 2,600 m) to Yamphudin. It is a demanding day with climbing and descending in both directions, and landslide zones that your guide will assess before you cross."
+      },
+      {
+        "day": 20,
+        "title": "Trek from Yamphudin to Khebang",
+        "sleepAlt": 1900,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Homestay, Khebang",
+        "description": "A gentler day through warmer, lower terrain, with terraced fields and warmer forest replacing the high country. Khebang gives you a last mountain village night before the road."
+      },
+      {
+        "day": 21,
+        "title": "Trek to the roadhead, drive to Ilam",
+        "sleepAlt": 1210,
+        "activity": "Trek",
+        "duration": "3–5 hrs trek + 5–7 hrs drive",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Ilam",
+        "description": "A final walk brings you to the roadhead near Khandembe, where a jeep takes you back along the winding hill road to Ilam. The exact roadhead changes with the state of the road, and your guide will confirm it. A hot shower and a proper bed at Ilam are the reward."
+      },
+      {
+        "day": 22,
+        "title": "Drive to Bhadrapur, fly to Kathmandu",
+        "sleepAlt": 1400,
+        "activity": "Flight",
+        "duration": "3–4 hrs drive + 45 min flight",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, farewell dinner",
+        "stay": "Hotel, Kathmandu",
+        "description": "The last morning takes you down to the Terai and the airport at Bhadrapur for the flight to Kathmandu. We recommend leaving a day or two before your international departure in case of delays. In the evening, celebrate with a farewell dinner."
+      }
+    ],
+    "sources": [
+      "https://nepalnirvanatrails.com/kanchenjunga-circuit-trek",
+      "https://www.trekking-in-nepal.net/en/trip/kanchenjunga-circuit-trek",
+      "https://www.placesnepal.com/blog/kanchenjunga-trek-altitude",
+      "https://www.placesnepal.com/blog/kanchenjunga-trek-map",
+      "https://jontynz.com/2023/04/03/kanchenjunga-circuit-ghunsa-to-tseram/",
+      "https://kimkim.com/c/kanchenjunga-double-base-camp-trek-24-days",
+      "https://www.arunexpedition.com/package/explore-kanchenjunga",
+      "https://www.bestheritagetour.com/blog/kanchenjunga-circuit-trek-guide-2027",
+      "https://mountainsoftravelphotos.com/Kangchenjunga/01%20Nepal/index.html",
+      "https://dnpwc.gov.np/media/publication/KCA_2019.pdf",
+      "https://www.swotahtravel.com/blogs/kanchenjunga-permit-2026-solo-trekking",
+      "https://accessnepaltour.com/restricted-area-permit-nepal-update/",
+      "https://ekantipur.com/business/2026/09/28/en/flight-at-suketar-airport-after-four-months-18-36.html"
+    ]
+  }
+];

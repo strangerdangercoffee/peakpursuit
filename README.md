@@ -1,6 +1,6 @@
 # Peak Pursuit
 
-Everest-region trekking company website, built with **Next.js 14 (App Router)**, **TypeScript**, and **Tailwind CSS**.
+Himalayan trekking company website (Nepal, Tibet, Bhutan), built with **Next.js 14 (App Router)**, **TypeScript**, and **Tailwind CSS**.
 
 This is a rewrite of the original static multi-page HTML site. Structure and functionality are preserved; styling now runs through the Tailwind pipeline (design tokens live in the Tailwind theme, shared component classes in `app/globals.css`). All data and interactions are in-memory and client-side, matching the original.
 
@@ -30,6 +30,9 @@ app/
   admin/page.tsx        Guide portal (/admin) — own layout, no site chrome
 components/
   Nav.tsx, Footer.tsx, RevealObserver.tsx
+  trek/                 Trek detail modal (accordion itinerary), photo, altitude chart
+data/treks/             Trek catalogue: one file per region (types.ts has the schema, index.ts the order)
+lib/treks.ts            Catalogue helpers (difficulty, lookups, formatting)
 public/images/          Site imagery
 legacy/                 Original static HTML (kept for reference)
 ```

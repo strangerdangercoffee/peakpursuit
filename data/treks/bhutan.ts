@@ -1,0 +1,1905 @@
+// Generated from the original region data file; edit freely.
+import type { Region, Trek } from "./types";
+
+export const region: Region = {
+  "id": "bhutan",
+  "name": "Bhutan",
+  "country": "Bhutan",
+  "tagline": "A small Himalayan kingdom of dzongs, rhododendron ridges and yak-herder trails, where trekking is slow, quiet and carefully managed.",
+  "intro": [
+    "Bhutan lies between Tibet and India, and in a country roughly the size of Switzerland the land climbs from warm river valleys to peaks above 7,000 m that nobody is allowed to climb. Gangkhar Puensum and Jomolhari are treated as sacred, and Bhutan does not permit mountaineering on its high summits, so the mountains you walk beneath stay untouched. Trails follow old routes between valleys and yak pastures: you pass through oak and fir forest, then rhododendron, then open ridges strung with prayer flags and dotted with lakes.",
+    "Culture and walking are hard to separate here. Most treks start or finish beside a dzong or a lhakhang (temple), nights are spent at camps run by a Bhutanese cook and horsemen, and the high villages, such as Laya, Lingshi and Thanza, keep their own dress, language and herding life. Visitor numbers are deliberately kept low and the government charges a daily fee to do it, so trails are quiet even in the best weeks. Travel is slower and more structured than in Nepal: you walk with a Bhutanese guide, camp rather than stay in teahouses, and move at a pace set by the altitude."
+  ],
+  "bestSeasons": "Mid-September to mid-November has the clearest skies and is the main window for the high routes; the Snowman Trek is best from mid-September through October. Late March to early June suits low and mid-altitude treks, with rhododendrons in bloom, but high passes can hold snow into May. The summer monsoon (roughly late June to August) is wet and the high routes are not recommended; winter is cold with snowbound passes.",
+  "permitsSummary": "Visitors other than Indian, Bangladeshi and Maldivian nationals need a Bhutan visa (USD 40, applied for online and normally cleared within about five working days) and must pay the Sustainable Development Fee (SDF) of USD 100 per adult per night (children 6-11: USD 50; under 6: free), both paid when the visa is applied for. The USD 100 rate is a halved rate that the government has set for stays up to 31 August 2027 (the standard SDF is USD 200 and the government has said it may end the discount afterwards). There is no trekking permit you apply for yourself: a licensed Bhutanese guide is compulsory, and the operator arranges any protected-area and route clearances.",
+  "gettingThere": "You fly from Kathmandu to Paro, Bhutan's main international airport, on Drukair or Bhutan Airlines. The flight takes about an hour and Drukair is reported to fly it daily, with Bhutan Airlines also serving Kathmandu; schedules change by season. Sit on the left side on the way in for the best chance of Himalayan views. Paro approaches are flown by sight only, so cloud or wind can cause delays or diversions: build in a spare day at each end, and carry your printed visa clearance, which airlines ask to see at check-in. Every Bhutan itinerary here counts Day 1 as the arrival day in Paro and the last day as departure from Paro, because the SDF is charged per night.",
+  "operator": "partner",
+  "operatorNote": "Peak Pursuit is a Nepal-based company, and treks in Bhutan cannot be run by us directly: visitors must be accompanied by a licensed Bhutanese guide at all times, and treks are operated by licensed Bhutanese tour operators using their own guides, cooks, horsemen and vehicles. So Peak Pursuit arranges your Bhutan trip together with a licensed Bhutanese operator, who holds the permits and clearances and runs the whole Bhutan portion from the moment you land in Paro. Prices on this site are estimates that include the government's visa fee and SDF, and are confirmed with the Bhutanese operator before you book.",
+  "hero": {
+    "src": "https://images.unsplash.com/photo-1742539327304-4b60d48e14b4?auto=format&fit=crop&w=1600&q=70",
+    "alt": "Paro Taktsang (Tiger's Nest) monastery on its cliff, Paro, Bhutan",
+    "credit": "Photo by Sujan Mongar on Unsplash",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/the-tigers-nest-monastery-hangs-on-a-cliff-f9dIq6J_uT0"
+  },
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1608236475016-1dcc7a260326?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Punakha Dzong beside the river, Punakha, Bhutan",
+      "credit": "Photo by Raimond Klavins on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/brown-and-white-house-near-body-of-water-during-daytime-RIv4CLslgx0"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1584007952771-96d1f3866a6b?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Khang Bum, a snow-covered peak at sunrise in Jigme Dorji National Park, Bhutan",
+      "credit": "Photo by Nils Leonhardt on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/snow-covered-mountain-during-daytime-gf0rnIB_ZpM"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1584003734930-b12779f66351?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Tashichho Dzong and paddy fields, Thimphu, Bhutan",
+      "credit": "Photo by Pema Gyamtsho on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/brown-wooden-house-on-green-grass-field-near-green-mountains-under-white-clouds-during-daytime-QkbIxJhALtk"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1636057423765-c766099ef09d?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Terraced rice paddies and green hills in the Bhutan Himalaya",
+      "credit": "Photo by Meera Parat on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/a-lush-green-valley-surrounded-by-mountains-qjBmFFVdpU0"
+    }
+  ]
+};
+
+export const treks: Trek[] = [
+  {
+    "id": "bhutan-druk-path",
+    "region": "bhutan",
+    "title": "Druk Path Trek",
+    "tagline": "Bhutan's classic ridge walk from Paro to Thimphu: rhododendron forest, alpine lakes at 4,000 m and a hilltop monastery, with Tiger's Nest and Haa to settle your lungs first.",
+    "difficulty": "blue",
+    "tags": [
+      "cultural",
+      "camping"
+    ],
+    "days": 11,
+    "walkingDays": 6,
+    "maxAlt": 4200,
+    "maxAltName": "Phume La (~4,200 m)",
+    "distanceKm": 50,
+    "startPoint": "Above Ta Dzong, Paro (short drive from town)",
+    "endPoint": "Motithang, Thimphu (on foot from Phajoding)",
+    "minGroupSize": null,
+    "price": 3800,
+    "priceNote": "From about USD 3,800 per person for a group of 4 or more sharing; smaller groups and solo travellers cost more per person. Includes the USD 40 Bhutan visa fee and the Sustainable Development Fee (SDF) of USD 100 per adult per night for 10 nights (USD 1,000), plus hotels, camping crew, vehicles and meals. Kathmandu-Paro flights are not included. The USD 100 SDF rate is only set until 31 August 2027; if you travel after that and the standard USD 200 rate returns, add USD 100 per night (USD 1,000 for this trip). Estimate only, to be confirmed with the Bhutanese operator.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Mar–Jun / Sep–Nov",
+    "bestSeasons": "Late March to early June (rhododendrons peak in April and May) and mid-September to mid-November, when skies are clearest. In winter the high camps are very cold and the ridge can hold snow; in the monsoon the trail is muddy and views are lost.",
+    "accommodation": "Hotel + Camping",
+    "operator": "partner",
+    "operatorNote": "This trek is run on the ground by a licensed Bhutanese operator, because Bhutan only allows licensed Bhutanese operators and guides to lead treks. Peak Pursuit arranges the trip with that operator, who holds the permits and provides the Bhutanese guide, cook, horsemen, ponies, hotels and vehicles from your arrival in Paro to your departure.",
+    "overview": [
+      "The Druk Path follows an old ridge route that links Paro and Thimphu, the two valleys that hold most of Bhutan's best-known monasteries and dzongs. You spend four nights in tents between about 3,450 m and 4,100 m, wandering along a high spine of oak, fir and rhododendron forest, passing yak herders' pastures and a string of quiet lakes, and finish by dropping to Phajoding monastery and down into Thimphu on foot. Daily distances are short (roughly 7 to 11 km), so it is a walk about altitude and scenery rather than endurance.",
+      "It is the right first Bhutan trek for a reasonably fit walker with no high-altitude experience, and a good warm-up for anyone planning something bigger such as Jomolhari. We have built the start carefully: two nights in Paro with the Tiger's Nest hike, then a night in the Haa valley after crossing Chele La at about 3,990 m, before the first camp at about 3,450 m. The first climb to Jele Dzong is the steepest day, and the high camp at Simkotra Tsho is cold, so a good sleeping bag matters more here than strong legs.",
+      "Days are on the long side of unhurried: breakfast in camp, five hours or so of walking with a lunch stop, and afternoons at camp with tea. The itinerary also ends with a night in Thimphu and a spare day in Paro, which doubles as a buffer if flights are delayed by weather."
+    ],
+    "highlights": [
+      "Ridge walking among rhododendron forest, with views to Jomolhari from Jele Dzong on clear days",
+      "Four nights camping beside alpine lakes, including Jimilang Tsho, known for its large trout, and Simkotra Tsho at about 4,100 m",
+      "Phume La (~4,200 m), the high point of the route",
+      "Phajoding, a mountainside monastery and meditation retreat above Thimphu",
+      "Hike to Paro Taktsang (Tiger's Nest) at about 3,120 m and a night in the Haa valley for staged acclimatization",
+      "Short, manageable walking days: a good introduction to trekking in Bhutan"
+    ],
+    "permits": [
+      {
+        "name": "Bhutan visa",
+        "note": "USD 40 per person, applied for online through the official portal and cleared before you fly (usually within about five working days). Your passport must be valid for at least six months. Included in the price."
+      },
+      {
+        "name": "Sustainable Development Fee (SDF)",
+        "note": "USD 100 per adult per night at the current halved rate (USD 50 for children 6-11, free under 6), paid with the visa application. The rate is set until 31 August 2027. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "A licensed Bhutanese guide must accompany you at all times; independent trekking is not allowed. Provided by the Bhutanese operator."
+      },
+      {
+        "name": "Park and route clearances",
+        "note": "Any protected-area or route clearance needed for the ridge is obtained by the operator; you do not apply for it yourself."
+      },
+      {
+        "name": "Monument entry (Paro Taktsang and others)",
+        "note": "Entry fees on the programme are arranged by the guide; Taktsang currently charges adult foreign visitors an entry fee (about Nu 1,000, confirm with the operator)."
+      }
+    ],
+    "included": [
+      "Bhutan visa fee (USD 40) and the Sustainable Development Fee for all 10 nights",
+      "Licensed Bhutanese guide, cook, camp helpers and horsemen with pack ponies for the trek",
+      "Hotels on twin-share rooms in Paro, Haa and Thimphu, and tented camping on the trek (tents, sleeping mats, dining and toilet tent)",
+      "All meals from lunch on Day 1 to breakfast on Day 11, plus tea and snacks on the trail",
+      "Private vehicle and driver for the Haa excursion, trek start, Thimphu and Paro transfers",
+      "Airport pick-up and drop-off at Paro",
+      "Entry fees to monuments visited on the programme and the Taktsang hike",
+      "Group first-aid kit carried by the guide"
+    ],
+    "excluded": [
+      "Flights between Kathmandu and Paro (Drukair or Bhutan Airlines) and any Nepal hotel nights",
+      "Travel and medical insurance with helicopter evacuation cover (required)",
+      "Sleeping bag (rated comfortable to about -5 C) and personal clothing and trekking gear",
+      "Tips for the guide, cook, crew and driver (customary; the operator will advise amounts)",
+      "Drinks other than tea and boiled water, laundry, souvenirs and personal expenses",
+      "Extra nights caused by flight delays or early finishes: the SDF applies for every night in Bhutan",
+      "Any increase in the SDF after 31 August 2027"
+    ],
+    "fitness": "Comfortable walking 5 to 7 hours a day on uneven ground with a light daypack, and climbing about 900 m on the first trek day. Regular hill walking or hiking for two to three months beforehand is usually enough. No previous high-altitude experience is needed, but you should be happy sleeping at about 4,000 m.",
+    "safetyNotes": [
+      "Altitude: the first camp is about 750 m above the Haa night and you reach about 4,100 m at Simkotra Tsho. Walk slowly, drink plenty, tell your guide about headaches or nausea straight away, and expect to descend if symptoms worsen. Nights at the lakes are below freezing even in spring and autumn.",
+      "Weather and trail: the route stays on high ridges away from roads, so rain, sleet or early snow can arrive quickly, and some stretches are exposed. The guide decides whether to shorten a day. Leave a spare day in Paro at the end of the trip; Paro flights are flown by sight and are often delayed by cloud or wind.",
+      "Evacuation: there are no clinics on the route and rescue depends on ponies, a vehicle at the nearest road, or a helicopter if weather and availability allow. Insurance with helicopter cover is essential. As of October 2026 we found no official notice closing this route, but trail conditions change and the operator confirms them before departure."
+    ],
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Paro Taktsang (Tiger's Nest) seen across the mountainside on the Taktsang trail, Paro, Bhutan",
+      "credit": "Photo by Aaron Santelices on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/paro-taktsang-temple-in-bhutan-viewing-mountain-under-blue-and-white-sky-ZdwVvRdel8A"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1743402064050-8732cc0b62fe?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Paro Taktsang (Tiger's Nest) monastery perched on a cliff, Paro, Bhutan",
+        "credit": "Photo by Sujan Mongar on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/tigers-nest-monastery-perched-on-a-cliff-jJlhElEQwdI"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1584003734930-b12779f66351?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Tashichho Dzong and paddy fields, Thimphu, Bhutan",
+        "credit": "Photo by Pema Gyamtsho on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/brown-wooden-house-on-green-grass-field-near-green-mountains-under-white-clouds-during-daytime-QkbIxJhALtk"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Paro",
+        "sleepAlt": 2250,
+        "activity": "Arrival",
+        "duration": "~1 hr flight, 20 min transfer",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "The flight along the Himalayan chain is one of the best in Asia on a clear morning, so ask for a left-side window. Your Bhutanese guide meets you at Paro's small airport and you settle into the hotel at about 2,250 m. The rest of the day is easy: a short walk in town, tea, and a trek briefing; bring your printed visa clearance for the flight."
+      },
+      {
+        "day": 2,
+        "title": "Tiger's Nest (Paro Taktsang) hike",
+        "sleepAlt": 2250,
+        "activity": "Acclimatization",
+        "duration": "5–6 hrs hike",
+        "distanceKm": "~6.5 km round trip",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "A steady climb of roughly 900 m through blue pine forest brings you to Taktsang, the cliff-hugging monastery at about 3,120 m where, according to tradition, Guru Rinpoche meditated in the 8th century. Go slowly, stop at the cafeteria viewpoint, and keep your voice low inside the temples; photos are not allowed inside. You come back down to sleep at 2,250 m, the first step of 'climb high, sleep low'."
+      },
+      {
+        "day": 3,
+        "title": "Over Chele La to the Haa valley",
+        "sleepAlt": 2700,
+        "activity": "Sightseeing",
+        "duration": "2–2.5 hrs drive each way, short walks",
+        "distanceKm": "~61 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel or homestay, Haa",
+        "description": "The road climbs from Paro to Chele La, at about 3,990 m one of Bhutan's highest motorable passes, where you can stroll among prayer flags for a taste of thin air. Then you descend into the Haa valley and visit Lhakhang Karpo and Lhakhang Nagpo, the White and Black temples, traditionally counted among the 108 temples built by the Tibetan king Songtsen Gampo. Sleeping in Haa at about 2,700 m is a useful step before the first camp."
+      },
+      {
+        "day": 4,
+        "title": "Haa to Paro, then trek to Jele Dzong camp",
+        "sleepAlt": 3450,
+        "activity": "Trek",
+        "duration": "~2.5 hrs drive + 4–5 hrs trek",
+        "distanceKm": "~7 km trek",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jele Dzong",
+        "description": "After the drive back over Chele La and lunch in Paro, you start walking from the roadhead above Ta Dzong at about 2,600 m. The trail climbs steadily through blue pine, oak and then rhododendron forest, about 900 m in all, to a meadow camp below Jele Dzong at roughly 3,450 m. This is the biggest jump in sleeping altitude on the trek, so go at a pace where you can still talk, and put on warm layers as soon as you stop."
+      },
+      {
+        "day": 5,
+        "title": "Trek from Jele Dzong to Jangchulakha",
+        "sleepAlt": 3770,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jangchulakha",
+        "description": "A short climb in the morning takes you to Jele Dzong, a small hilltop fortress-temple and, on clear days, a viewpoint with views across to Jomolhari and the Paro valley. Then the path rolls along the ridge through rhododendron and dwarf bamboo, with yak pastures opening out towards Jangchulakha at about 3,770 m. Reported altitudes for this camp vary between sources by a couple of hundred metres, so treat the figure as approximate."
+      },
+      {
+        "day": 6,
+        "title": "Trek from Jangchulakha to Jimilang Tsho",
+        "sleepAlt": 3870,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~11 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jimilang Tsho",
+        "description": "The route continues along the ridge, climbing and dipping across open slopes with views to the west over Paro and, in clear weather, to the high peaks of the north. You arrive at Jimilang Tsho, a lake with large trout, at about 3,870 m. Camp is quiet and cold; the guide will want you in your tent early with a hot water bottle."
+      },
+      {
+        "day": 7,
+        "title": "Trek from Jimilang Tsho to Simkotra Tsho",
+        "sleepAlt": 4100,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Simkotra Tsho",
+        "description": "You climb gradually along the ridge, passing small lakes such as Janye Tsho and the summer camps of yak herders, to Simkotra Tsho at about 4,100 m, the highest camp. The walking is short, so the main task is looking after yourself: drink, layer up, and note how you feel. Nights here are the coldest of the trek; take a sleeping bag that is warm enough."
+      },
+      {
+        "day": 8,
+        "title": "Over Phume La to Phajoding",
+        "sleepAlt": 3750,
+        "activity": "Trek",
+        "duration": "3–4 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Phajoding",
+        "description": "A last climb takes you over Phume La at about 4,200 m, the highest point of the route and a good place for prayer-flag photos. The trail then descends across hillside to Phajoding, a monastery and meditation retreat perched above Thimphu, where you camp at about 3,750 m. Phajoding is a working religious site, so wait for your guide's lead before entering any temple."
+      },
+      {
+        "day": 9,
+        "title": "Descend from Phajoding to Thimphu",
+        "sleepAlt": 2320,
+        "activity": "Trek",
+        "duration": "~3 hrs descent, then sightseeing",
+        "distanceKm": "~5 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Thimphu",
+        "description": "A steep, forested descent of roughly 1,100 m leads to Motithang on the edge of Thimphu, where your vehicle meets you; poles help your knees. After a hot shower and lunch you visit sites such as the National Memorial Chorten and the Buddha Dordenma statue, and walk past Tashichho Dzong, the seat of government. In Thimphu, dress modestly and walk clockwise around chortens."
+      },
+      {
+        "day": 10,
+        "title": "Thimphu to Paro, dzong visit and spare day",
+        "sleepAlt": 2250,
+        "activity": "Sightseeing",
+        "duration": "1–1.5 hrs drive, free time",
+        "distanceKm": "~55 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "A morning drive returns you to Paro, where you can visit Rinpung Dzong and walk across its covered wooden bridge, or browse the town for souvenirs. This day also acts as your weather buffer: if cloud or wind has disrupted flights, or you wish to see Drukgyel Dzong's ruins, the time is here. A farewell dinner with the crew is a good moment to say thanks."
+      },
+      {
+        "day": 11,
+        "title": "Departure from Paro",
+        "sleepAlt": null,
+        "activity": "Departure",
+        "duration": "Transfer to airport, ~20 min",
+        "distanceKm": null,
+        "meals": "Breakfast",
+        "stay": "Departure",
+        "description": "Your guide and driver take you to Paro airport for the flight to Kathmandu or your onward connection. Allow plenty of time for check-in, as Bhutan's airport is small and flights can run to the weather. If you want a view of the Himalaya on the way out, sit on the right side of the plane."
+      }
+    ],
+    "sources": [
+      "https://bhutan.travel/adventure-experiences",
+      "https://bhutan.travel/announcements",
+      "https://bhutan.travel/faqs",
+      "https://bhutan.travel/visa",
+      "https://www.exodustravels.com/us/trips/bhutan-holidays/walking/bhutan-druk-path-trek/tbc",
+      "https://www.acethehimalaya.com/druk-path/",
+      "https://www.bhutanhomestay.com/?p=5509",
+      "https://littlebhutan.com/travel-guide/druk-path-trek/",
+      "https://en.wikipedia.org/wiki/Paro_Taktsang",
+      "https://en.wikipedia.org/wiki/Chelela_Pass"
+    ]
+  },
+  {
+    "id": "bhutan-jomolhari",
+    "region": "bhutan",
+    "title": "Jomolhari Base Camp Trek",
+    "tagline": "Follow the Paro river to Jangothang beneath 7,300 m Jomolhari, then cross Nyile La and Yale La to the high pastures of Lingshi and walk out to Thimphu.",
+    "difficulty": "black",
+    "tags": [
+      "pass",
+      "camping"
+    ],
+    "days": 14,
+    "walkingDays": 8,
+    "maxAlt": 4900,
+    "maxAltName": "Yale La (~4,900 m)",
+    "distanceKm": 120,
+    "startPoint": "Drukgyel Dzong, Paro (by road)",
+    "endPoint": "Dodena, near Thimphu (road head)",
+    "minGroupSize": null,
+    "price": 5000,
+    "priceNote": "From about USD 5,000 per person for a group of 4 or more sharing; smaller groups and solo travellers cost more per person. Includes the USD 40 Bhutan visa fee and the Sustainable Development Fee (SDF) of USD 100 per adult per night for 13 nights (USD 1,300), plus hotels, camping crew, ponies, vehicles and meals. Kathmandu-Paro flights are not included. The USD 100 SDF rate is only set until 31 August 2027; if you travel after that and the standard USD 200 rate returns, add USD 100 per night (USD 1,300 for this trip). Estimate only, to be confirmed with the Bhutanese operator.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Apr–May / Sep–Nov",
+    "bestSeasons": "Mid-September to mid-November gives the steadiest weather and clearest views of Jomolhari. Spring (mid-April to May) is also good, with rhododendrons in the lower valley, but the passes can still hold snow early in the season. Winter snow closes the high passes and the monsoon makes the route wet.",
+    "accommodation": "Hotel + Camping",
+    "operator": "partner",
+    "operatorNote": "This trek is run on the ground by a licensed Bhutanese operator, because Bhutan only allows licensed Bhutanese operators and guides to lead treks. Peak Pursuit arranges the trip with that operator, who holds the park clearances and provides the Bhutanese guide, cook, horsemen, ponies, hotels and vehicles from your arrival in Paro to your departure.",
+    "overview": [
+      "The Jomolhari trek is Bhutan's best-known mid-length route. It starts below the ruins of Drukgyel Dzong, follows the Paro river up a forested valley to Jangothang at about 4,040 m, where Jomolhari (about 7,300 m) and Jichu Drake rise right above the camp, then crosses two high passes, Nyile La and Yale La, on the way to Lingshi and a long walk down to Thimphu. About 120 km on foot, it passes through blue pine, rhododendron and alpine pasture, then rolling highland where blue sheep and, if you are lucky, takin are seen.",
+      "It is a demanding, rewarding trek, not a stroll: there are two passes at roughly 4,700 to 4,900 m, a couple of long days of seven to nine hours, and camps above 4,000 m for five nights. We have therefore split the first approach into shorter stages with an extra night at Thongo Zampa, added a full acclimatization day at Jangothang, and put a rest-and-reserve day at Lingshi between the two passes. A good fitness base and warm kit are essential, but no technical skills are needed.",
+      "If a shorter trip suits you better, the base-camp section alone, walking up to Jangothang and returning down the valley, can be arranged, as can routes that loop back to Paro; ask us and we will check what the Bhutanese operator can offer. The itinerary below is the full Paro-to-Thimphu crossing."
+    ],
+    "highlights": [
+      "Jangothang camp beneath Jomolhari (~7,300 m) and Jichu Drake, with a full acclimatization day",
+      "Two high passes, Nyile La and Yale La, each at roughly 4,700 to 4,900 m",
+      "Lingshi, a high herding settlement with its fortress-like dzong, and a built-in rest day",
+      "Blue sheep, yaks, marmots and big alpine views on the highland sections",
+      "Jigme Dorji National Park: forest, wide valleys and high pastures",
+      "Optional culture days in Paro and Thimphu at both ends, plus the Tiger's Nest hike"
+    ],
+    "permits": [
+      {
+        "name": "Bhutan visa",
+        "note": "USD 40 per person, applied for online through the official portal and cleared before you fly (usually within about five working days). Your passport must be valid for at least six months. Included in the price."
+      },
+      {
+        "name": "Sustainable Development Fee (SDF)",
+        "note": "USD 100 per adult per night at the current halved rate (USD 50 for children 6-11, free under 6), paid with the visa application. The rate is set until 31 August 2027. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "A licensed Bhutanese guide must accompany you at all times; independent trekking is not allowed. Provided by the Bhutanese operator."
+      },
+      {
+        "name": "Jigme Dorji National Park clearance",
+        "note": "The route runs through Jigme Dorji National Park; park entry and any clearance are arranged by the operator and included. Ask the operator to confirm this in writing."
+      },
+      {
+        "name": "Monument entry (Paro Taktsang and others)",
+        "note": "Entry fees on the programme are arranged by the guide; Taktsang currently charges adult foreign visitors an entry fee (about Nu 1,000, confirm with the operator)."
+      }
+    ],
+    "included": [
+      "Bhutan visa fee (USD 40) and the Sustainable Development Fee for all 13 nights",
+      "Licensed Bhutanese guide, cook, camp helpers and horsemen with pack ponies or yaks for the whole trek",
+      "Hotels on twin-share rooms in Paro and Thimphu, and tented camping on the trek (tents, sleeping mats, dining, kitchen and toilet tents)",
+      "All meals from lunch on Day 1 to breakfast on Day 14, plus tea and snacks on the trail",
+      "Private vehicle and driver for all road transfers, including the road-head to Thimphu",
+      "Airport pick-up and drop-off at Paro",
+      "Park clearance, monument entry fees on the programme and the Taktsang hike",
+      "Group first-aid kit carried by the guide"
+    ],
+    "excluded": [
+      "Flights between Kathmandu and Paro (Drukair or Bhutan Airlines) and any Nepal hotel nights",
+      "Travel and medical insurance with helicopter evacuation cover (required)",
+      "Sleeping bag (rated comfortable to about -10 C for the high camps) and personal clothing and trekking gear",
+      "Tips for the guide, cook, crew and driver (customary; the operator will advise amounts)",
+      "Drinks other than tea and boiled water, laundry, souvenirs and personal expenses",
+      "Extra nights caused by weather delays or flight changes: the SDF applies for every night in Bhutan",
+      "Any increase in the SDF after 31 August 2027"
+    ],
+    "fitness": "You should be comfortable walking 6 to 9 hours on consecutive days, with climbs of 700 to 900 m, carrying a light daypack. Several months of regular hiking with weight, plus some cardio work, is a sensible preparation. Previous nights at 3,500 m or higher are very helpful but not essential.",
+    "safetyNotes": [
+      "Altitude: you sleep above 4,000 m for five nights and cross passes at roughly 4,700 to 4,900 m. The route adds a night at Thongo Zampa and an acclimatization day at Jangothang to help, but altitude sickness can affect anyone. Report headache, nausea or poor sleep to your guide early, walk slowly, drink well, and accept a descent if told to. Speak to your doctor about acetazolamide before you leave.",
+      "Weather: snow can fall on the passes outside midsummer and early or late in the season; the Lingshi day is a built-in reserve and the guide may delay or turn back a crossing. Expect cold nights at Jangothang, Lingshi and Shodu. Yaks and ponies use the trails: step to the uphill side when they pass.",
+      "Evacuation: from Jangothang onwards you are at least two days on foot from the nearest road, and rescue depends on ponies, weather-dependent helicopter flights and the operator's contact with the authorities. Insurance with helicopter evacuation cover is essential. As of October 2026 we found no official notice closing this route, but trail conditions change and the operator confirms them before departure."
+    ],
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1608377229419-3b5168b6c3da?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Paro Taktsang (Tiger's Nest) monastery, Paro, Bhutan",
+      "credit": "Photo by Raimond Klavins on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/white-and-brown-concrete-house-on-top-of-mountain-during-daytime-Med8BHIsmRU"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1584007952771-96d1f3866a6b?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Khang Bum, a snow-covered peak at sunrise in Jigme Dorji National Park, Bhutan",
+        "credit": "Photo by Nils Leonhardt on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/snow-covered-mountain-during-daytime-gf0rnIB_ZpM"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Paro",
+        "sleepAlt": 2250,
+        "activity": "Arrival",
+        "duration": "~1 hr flight, 20 min transfer",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. Spend the afternoon resting and walking gently in town, and bring your printed visa clearance for check-in."
+      },
+      {
+        "day": 2,
+        "title": "Tiger's Nest (Paro Taktsang) hike",
+        "sleepAlt": 2250,
+        "activity": "Acclimatization",
+        "duration": "5–6 hrs hike",
+        "distanceKm": "~6.5 km round trip",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "A steady climb of about 900 m through pine forest takes you to the cliffside monastery of Taktsang at about 3,120 m, a pilgrimage place linked to Guru Rinpoche. Photos are not allowed inside the temples, and you should follow your guide's lead on offerings and walking clockwise. Coming back down to sleep at 2,250 m is a good first acclimatization step."
+      },
+      {
+        "day": 3,
+        "title": "Trek from Drukgyel Dzong to Shana",
+        "sleepAlt": 2870,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~15 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Shana",
+        "description": "A short drive takes you to the ruins of Drukgyel Dzong (about 2,580 m), a fortress built in the 17th century to mark a victory over Tibetan armies and destroyed by fire in 1951. The path follows the Paro river upstream through rice terraces and then forest, with several suspension-bridge crossings and a first sense of the valley narrowing. You camp at Shana, about 2,870 m, beside the river."
+      },
+      {
+        "day": 4,
+        "title": "Trek from Shana to Thongo Zampa",
+        "sleepAlt": 3250,
+        "activity": "Trek",
+        "duration": "~4 hrs trek",
+        "distanceKm": "~11 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Thongo Zampa",
+        "description": "A steady day in the forest, with the river on your left and waterfalls pouring off cliffs, brings you to Thongo Zampa at about 3,250 m. This is deliberately shorter than the standard route, splitting what is often one long climb and keeping each sleeping step to a few hundred metres. Use the afternoon to rest, and wash and dry things while the sun is out."
+      },
+      {
+        "day": 5,
+        "title": "Trek from Thongo Zampa to Soi Thangthangka",
+        "sleepAlt": 3600,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Soi Thangthangka",
+        "description": "The valley opens and the trees thin out as you climb above the forest into a wide meadow valley, with a first mountain view of the higher ranges. Soi Thangthangka, at about 3,600 m (guidebooks give figures between about 3,575 and 3,750 m), is a flat grassy camp where yaks graze in the evening. Expect colder nights from here, so layer up as the sun drops."
+      },
+      {
+        "day": 6,
+        "title": "Trek from Soi Thangthangka to Jangothang",
+        "sleepAlt": 4040,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jangothang",
+        "description": "The path leaves the last trees behind, climbs gradually through yak pasture and crosses side streams, and then Jomolhari appears, filling the head of the valley. You camp at Jangothang, the Jomolhari base camp at about 4,040 m, beneath Jomolhari and Jichu Drake, in one of the most dramatic camp settings in the Himalaya. Many people feel the altitude here, so rest, drink warm drinks and eat even if your appetite is low."
+      },
+      {
+        "day": 7,
+        "title": "Acclimatization day at Jangothang",
+        "sleepAlt": 4040,
+        "activity": "Acclimatization",
+        "duration": "2–4 hrs optional hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jangothang",
+        "description": "A rest day at 4,040 m with an optional hike up the valley towards the Tsho Phu lakes or onto the slopes above camp, gaining a few hundred metres before coming back to sleep low. If you feel unwell, rest at camp rather than hike, and tell your guide. Wandering to a ridge for sunset views of Jomolhari is the best use of the afternoon."
+      },
+      {
+        "day": 8,
+        "title": "Cross Nyile La to Lingshi",
+        "sleepAlt": 4010,
+        "activity": "Pass crossing",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~18 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Lingshi",
+        "description": "You climb steadily away from the valley to Nyile La, reported by operators at between about 4,700 and 4,890 m, a wind-blown pass hung with prayer flags and looking back at Jomolhari. The descent into the Lingshi basin crosses open slopes where blue sheep are often seen. Camp is on grass below the hill-top dzong of Lingshi at about 4,010 m; this is a long day, so leave early and keep a steady pace."
+      },
+      {
+        "day": 9,
+        "title": "Rest and reserve day in Lingshi",
+        "sleepAlt": 4010,
+        "activity": "Reserve day",
+        "duration": "Rest day, optional short walks",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Lingshi",
+        "description": "A spare day before the second pass. If the weather has been good, spend it resting, washing and walking up to Lingshi Dzong, the fortress on the ridge above the village, or meeting the herding families who live in the basin. If the passes have snowed or someone is unwell, this is the day that absorbs the delay, so please do not plan to leave Bhutan earlier than the date set."
+      },
+      {
+        "day": 10,
+        "title": "Cross Yale La to Shodu",
+        "sleepAlt": 4100,
+        "activity": "Pass crossing",
+        "duration": "7–9 hrs trek",
+        "distanceKm": "~20 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Shodu",
+        "description": "The hardest day of the trek: a long climb out of the Lingshi basin to Yale La, at roughly 4,820 to 4,950 m depending on the source and the high point of the route, followed by a descent into the Thimphu river's headwaters. The views, when the weather allows, span the Himalaya of the north, and you pass lakes and pasture where herders and their yaks spend the summer. Camp at Shodu is at about 4,100 m; a very early start and plenty of snacks make the day easier."
+      },
+      {
+        "day": 11,
+        "title": "Trek from Shodu to Barshong",
+        "sleepAlt": 3650,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~16 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Barshong",
+        "description": "A gentler day descending beside the headwaters of the Thimphu river, through spruce and rhododendron forest and meadows with a feeling of coming down into tree-line country again. Barshong camp at about 3,650 m sits near the ruins of Barshong Dzong, one of several old fortresses on this route. The thicker air makes sleep much easier."
+      },
+      {
+        "day": 12,
+        "title": "Trek from Barshong to Dodena, then drive to Thimphu",
+        "sleepAlt": 2320,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek, ~2 hrs drive",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Thimphu",
+        "description": "The last day follows the Thimphu river downhill through forest, passing the small camp at Dolam Kencho before reaching the road head at Dodena at about 2,600 m. Your driver meets you for the two-hour drive to Thimphu and a hotel with a hot shower. In the evening, a walk through the capital's centre is a good way to stretch your legs."
+      },
+      {
+        "day": 13,
+        "title": "Thimphu sightseeing, drive to Paro",
+        "sleepAlt": 2250,
+        "activity": "Sightseeing",
+        "duration": "~1–1.5 hrs drive, sightseeing",
+        "distanceKm": "~55 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "Visit sites in Thimphu such as the National Memorial Chorten and the Buddha Dordenma statue above the valley before the drive back to Paro. In Paro, Rinpung Dzong and its wooden cantilever bridge make a good late-afternoon visit. This day sits in front of your departure so that late flights or weather do not cost you your connection."
+      },
+      {
+        "day": 14,
+        "title": "Departure from Paro",
+        "sleepAlt": null,
+        "activity": "Departure",
+        "duration": "Transfer to airport, ~20 min",
+        "distanceKm": null,
+        "meals": "Breakfast",
+        "stay": "Departure",
+        "description": "Transfer to Paro airport for your flight to Kathmandu. Allow generous time for check-in, as the airport is small and flights run to the weather. Right-hand windows have the best chance of Himalayan views on the way out."
+      }
+    ],
+    "sources": [
+      "https://bhutan.travel/adventure-experiences",
+      "https://bhutan.travel/announcements",
+      "https://bhutan.travel/faqs",
+      "https://bhutan.travel/visa",
+      "https://www.travelstride.com/trips/worldexpeditions-jomolhari-base-camp-trek",
+      "https://trulybhutan.com/itinerary/jomolhari-trek/",
+      "https://www.yanatravel.com/tour-programs/trekking-adventures/jhomolhari-trek-1/",
+      "https://drukasia.com/bhutan-tours/festival/jomolhari-trek-11-day",
+      "https://www.thirdrockadventures.com/blog/jomolhari-trek-in-bhutan-route-map-difficulty-altitude-advice",
+      "https://www.acethehimalaya.com/trip/laya-ghasa-trek"
+    ]
+  },
+  {
+    "id": "bhutan-laya-gasa",
+    "region": "bhutan",
+    "title": "Laya Gasa Trek",
+    "tagline": "Bhutan's great high-country walk: from Jomolhari's base camp over four passes to the Layap village of Laya, then down through forest to the hot springs of Gasa.",
+    "difficulty": "black",
+    "tags": [
+      "pass",
+      "remote",
+      "camping",
+      "cultural"
+    ],
+    "days": 20,
+    "walkingDays": 12,
+    "maxAlt": 5000,
+    "maxAltName": "Shinche La (~5,000 m)",
+    "distanceKm": 160,
+    "startPoint": "Drukgyel Dzong, Paro (by road)",
+    "endPoint": "Gasa (by road to Punakha)",
+    "minGroupSize": null,
+    "price": 7600,
+    "priceNote": "From about USD 7,600 per person for a group of 4 or more sharing; smaller groups and solo travellers cost more per person. Includes the USD 40 Bhutan visa fee and the Sustainable Development Fee (SDF) of USD 100 per adult per night for 19 nights (USD 1,900), plus hotels, camping crew, ponies, vehicles and meals. Kathmandu-Paro flights are not included. The USD 100 SDF rate is only set until 31 August 2027; if you travel after that and the standard USD 200 rate returns, add USD 100 per night (USD 1,900 for this trip). Estimate only, to be confirmed with the Bhutanese operator.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Apr–Jun / Sep–Nov",
+    "bestSeasons": "Mid-September to early November has the clearest weather and is the safest window for the high passes. Late April to early June is also used, with flowers on the lower stages, but the passes can hold snow until May and the monsoon begins in late June. Winter and summer are not recommended.",
+    "accommodation": "Hotel + Camping",
+    "operator": "partner",
+    "operatorNote": "This trek is run on the ground by a licensed Bhutanese operator, because Bhutan only allows licensed Bhutanese operators and guides to lead treks. Peak Pursuit arranges the trip with that operator, who holds the park clearances and provides the Bhutanese guide, cook, horsemen, yaks and ponies, hotels and vehicles from your arrival in Paro to your departure.",
+    "overview": [
+      "The Laya Gasa trek links the Paro valley with the remote Laya district in the far north and ends at the hot springs of Gasa. For about 160 km you walk under Jomolhari to Jangothang, cross Nyile La, then follow a high route through Lingshi, Chebisa, Shomuthang and Robluthang, over four passes, the highest being Shinche La at about 5,000 m, to reach Laya. After a rest day in the village you descend through forest, past Koina and over Bari La to Gasa. It is the usual preparation for the Snowman Trek, and one of the best ways to see Bhutan's remote highland life.",
+      "Laya is the main reason to come. The Layaps are yak herders with their own style of dress, black yak-hair clothing, and conical bamboo hats on the women, and a way of life shaped by the altitude and summer pastures. Please ask before taking portraits, and be especially careful around homes and fields. The trek also crosses blue sheep country, rhododendron forest and glacial valleys, with mountains such as Gangchenta (Great Tiger Mountain) visible near Laya on clear days.",
+      "This is a serious trek: nine nights are above 4,000 m, four passes need big days of 6 to 8 hours, and there is no quick way out. We have built in proper acclimatization at Jangothang, a split approach with an extra night at Thongo Zampa, a weather reserve day at Robluthang before the highest pass, and a rest day in Laya. Previous high-altitude walking is strongly recommended."
+    ],
+    "highlights": [
+      "Jangothang under Jomolhari (~7,300 m), with a full acclimatization day",
+      "Four high passes in sequence: Nyile La, Gombu La, Jare La and Shinche La (~5,000 m)",
+      "Laya, among Bhutan's highest villages, with the Layap people and their conical bamboo hats",
+      "Lingshi, its dzong and its high pastures, plus a rest day before the passes",
+      "Blue sheep, yak herds and glacial valleys under Gangchenta and the northern peaks",
+      "A long descent through forest to Gasa, ending with a soak in the Gasa hot springs",
+      "Paro, Punakha and Thimphu culture at either end, including the Tiger's Nest hike"
+    ],
+    "permits": [
+      {
+        "name": "Bhutan visa",
+        "note": "USD 40 per person, applied for online through the official portal and cleared before you fly (usually within about five working days). Your passport must be valid for at least six months. Included in the price."
+      },
+      {
+        "name": "Sustainable Development Fee (SDF)",
+        "note": "USD 100 per adult per night at the current halved rate (USD 50 for children 6-11, free under 6), paid with the visa application. The rate is set until 31 August 2027. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "A licensed Bhutanese guide must accompany you at all times; independent trekking is not allowed. Provided by the Bhutanese operator."
+      },
+      {
+        "name": "Jigme Dorji National Park clearance",
+        "note": "The route runs through Jigme Dorji National Park, including the Laya and Gasa area; park entry and any clearance are arranged by the operator. Ask the operator to confirm this in writing."
+      },
+      {
+        "name": "Monument entry (Paro Taktsang and others)",
+        "note": "Entry fees on the programme are arranged by the guide; Taktsang currently charges adult foreign visitors an entry fee (about Nu 1,000, confirm with the operator)."
+      }
+    ],
+    "included": [
+      "Bhutan visa fee (USD 40) and the Sustainable Development Fee for all 19 nights",
+      "Licensed Bhutanese guide, cook, camp helpers and horsemen with pack ponies and yaks for the whole trek",
+      "Hotels on twin-share rooms in Paro and Punakha, and tented camping on the trek (tents, sleeping mats, dining, kitchen and toilet tents)",
+      "All meals from lunch on Day 1 to breakfast on Day 20, plus tea and snacks on the trail",
+      "Private vehicle and driver for all road transfers, including Gasa to Punakha and Punakha to Paro",
+      "Airport pick-up and drop-off at Paro",
+      "Park clearance, monument entry fees on the programme and the Taktsang hike",
+      "Group first-aid kit carried by the guide"
+    ],
+    "excluded": [
+      "Flights between Kathmandu and Paro (Drukair or Bhutan Airlines) and any Nepal hotel nights",
+      "Travel and medical insurance with helicopter evacuation cover (required)",
+      "Sleeping bag (rated comfortable to about -10 C for the high camps) and personal clothing and trekking gear",
+      "Tips for the guide, cook, crew and driver (customary; the operator will advise amounts)",
+      "Drinks other than tea and boiled water, laundry, souvenirs and personal expenses",
+      "Extra nights caused by weather delays or flight changes: the SDF applies for every night in Bhutan",
+      "Any increase in the SDF after 31 August 2027"
+    ],
+    "fitness": "You need to be able to walk 6 to 8 hours a day for 12 trekking days, with several climbs of 700 to 900 m at altitude. Strong hiking fitness, previous experience above 3,500 m (ideally a pass above 4,500 m), and cold-weather camping experience are strongly recommended. Train for at least three to four months with loaded hill walks and cardio.",
+    "safetyNotes": [
+      "Altitude: you sleep above 4,000 m for nine nights and cross four passes between about 4,440 and 5,000 m. The first approach is split into short stages and there is an acclimatization day at Jangothang, but altitude sickness can affect anyone, including fit people. Report symptoms early, accept a descent if the guide asks, and discuss acetazolamide with your doctor before you leave.",
+      "Weather and passes: heavy snow or storms can block the passes; the reserve day at Robluthang sits before Shinche La, and the guide may wait, shorten or turn back a crossing. Nights below freezing are normal from Jangothang to Laya. Yaks and ponies use the trail, so step to the uphill side when they pass.",
+      "Evacuation: from Jangothang to Laya you are at least two days on foot from the nearest road, and rescue depends on ponies, weather-dependent helicopter flights and the operator's contact with the authorities. Insurance with helicopter evacuation cover is essential. As of October 2026 we found no official notice closing this route, but trail conditions change and a road now reaches Taktsemakha below Laya on some itineraries, so the operator confirms the route and exit options before departure."
+    ],
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1584007952771-96d1f3866a6b?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Khang Bum, a snow-covered peak at sunrise in Jigme Dorji National Park, Bhutan",
+      "credit": "Photo by Nils Leonhardt on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/snow-covered-mountain-during-daytime-gf0rnIB_ZpM"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1608236475016-1dcc7a260326?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Punakha Dzong beside the river, Punakha, Bhutan",
+        "credit": "Photo by Raimond Klavins on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/brown-and-white-house-near-body-of-water-during-daytime-RIv4CLslgx0"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Paro Taktsang (Tiger's Nest) seen across the mountainside on the Taktsang trail, Paro, Bhutan",
+        "credit": "Photo by Aaron Santelices on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/paro-taktsang-temple-in-bhutan-viewing-mountain-under-blue-and-white-sky-ZdwVvRdel8A"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Paro",
+        "sleepAlt": 2250,
+        "activity": "Arrival",
+        "duration": "~1 hr flight, 20 min transfer",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. Spend the afternoon resting and walking gently in town, and bring your printed visa clearance for check-in."
+      },
+      {
+        "day": 2,
+        "title": "Tiger's Nest (Paro Taktsang) hike",
+        "sleepAlt": 2250,
+        "activity": "Acclimatization",
+        "duration": "5–6 hrs hike",
+        "distanceKm": "~6.5 km round trip",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "A steady climb of about 900 m through pine forest takes you to the cliffside monastery of Taktsang at about 3,120 m, a pilgrimage place linked to Guru Rinpoche. Photos are not allowed inside the temples, and you should follow your guide's lead on offerings and walking clockwise. Coming back down to sleep at 2,250 m is a good first acclimatization step."
+      },
+      {
+        "day": 3,
+        "title": "Trek from Drukgyel Dzong to Shana",
+        "sleepAlt": 2870,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~15 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Shana",
+        "description": "A short drive takes you to the ruins of Drukgyel Dzong (about 2,580 m), a fortress built in the 17th century to mark a victory over Tibetan armies and destroyed by fire in 1951. The path follows the Paro river upstream through rice terraces and then forest, with suspension-bridge crossings. You camp at Shana, about 2,870 m, beside the river."
+      },
+      {
+        "day": 4,
+        "title": "Trek from Shana to Thongo Zampa",
+        "sleepAlt": 3250,
+        "activity": "Trek",
+        "duration": "~4 hrs trek",
+        "distanceKm": "~11 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Thongo Zampa",
+        "description": "A steady day in the forest, with the river alongside and waterfalls dropping from the cliffs, brings you to Thongo Zampa at about 3,250 m. This is deliberately shorter than the standard route, splitting what is often one long climb and keeping each sleeping step to a few hundred metres. Use the afternoon to rest and keep warm as the sun leaves the valley."
+      },
+      {
+        "day": 5,
+        "title": "Trek from Thongo Zampa to Soi Thangthangka",
+        "sleepAlt": 3600,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Soi Thangthangka",
+        "description": "The valley opens and the forest thins as you climb into a wide meadow valley. Soi Thangthangka, at about 3,600 m (guidebooks give figures between about 3,575 and 3,750 m), is a grassy camp where yaks graze. Expect colder nights from here, so layer up as the sun drops."
+      },
+      {
+        "day": 6,
+        "title": "Trek from Soi Thangthangka to Jangothang",
+        "sleepAlt": 4040,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jangothang",
+        "description": "The path leaves the last trees behind and climbs gradually through yak pasture, and then Jomolhari comes into view at the head of the valley. You camp at Jangothang at about 4,040 m, beneath Jomolhari and Jichu Drake. Many people feel the altitude here, so rest, drink warm drinks and eat even if your appetite is low."
+      },
+      {
+        "day": 7,
+        "title": "Acclimatization day at Jangothang",
+        "sleepAlt": 4040,
+        "activity": "Acclimatization",
+        "duration": "2–4 hrs optional hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jangothang",
+        "description": "A rest day at 4,040 m with an optional hike up the valley towards the Tsho Phu lakes or onto the slopes above camp, gaining a few hundred metres before coming back to sleep low. If you feel unwell, rest at camp rather than hike, and tell your guide. A short walk to a ridge for sunset views of Jomolhari is the best use of the afternoon."
+      },
+      {
+        "day": 8,
+        "title": "Cross Nyile La to Lingshi",
+        "sleepAlt": 4010,
+        "activity": "Pass crossing",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~18 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Lingshi",
+        "description": "You climb steadily from the valley to Nyile La, reported by operators between about 4,700 and 4,890 m, a wind-blown pass hung with prayer flags and looking back to Jomolhari. The descent into the Lingshi basin crosses open slopes where blue sheep are often seen. Camp is on grass below Lingshi's hill-top dzong at about 4,010 m; this is a long day, so leave early."
+      },
+      {
+        "day": 9,
+        "title": "Trek from Lingshi to Chebisa",
+        "sleepAlt": 3880,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Chebisa",
+        "description": "A shorter, gentler day that leaves time to visit Lingshi Dzong before you go. The trail contours across the hillside into the village of Chebisa at about 3,880 m, where stone houses stand beside a waterfall and fields. The easy walking is a chance to dry gear and rest your legs before the next three passes."
+      },
+      {
+        "day": 10,
+        "title": "Cross Gombu La to Shomuthang",
+        "sleepAlt": 4200,
+        "activity": "Pass crossing",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Shomuthang",
+        "description": "From Chebisa you climb through rhododendron to Gombu La, at about 4,440 m (sources give 4,410 to 4,500), then drop and climb again across open ground where blue sheep graze. Shomuthang camp, at about 4,200 m, is in a high valley with cold nights. Walk slowly and take time to rest on the long ascent."
+      },
+      {
+        "day": 11,
+        "title": "Cross Jare La to Robluthang",
+        "sleepAlt": 4160,
+        "activity": "Pass crossing",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~18 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Robluthang",
+        "description": "A long climb leads to Jare La, at about 4,750 m, which on clear days gives a distant view of the high Himalaya. The descent is steep in places before the valley flattens at Robluthang, about 4,160 m, beside a river meadow. You will probably see yaks and herders' tents here."
+      },
+      {
+        "day": 12,
+        "title": "Reserve day at Robluthang",
+        "sleepAlt": 4160,
+        "activity": "Reserve day",
+        "duration": "Rest day",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Robluthang",
+        "description": "A built-in reserve before the highest pass of the trek. If the forecast is good it becomes a rest day for sleeping, washing and drying kit; if snow or wind threaten Shinche La, it is the day we wait. Please do not plan to leave Bhutan earlier than the date set."
+      },
+      {
+        "day": 13,
+        "title": "Cross Shinche La to Limithang",
+        "sleepAlt": 4140,
+        "activity": "Pass crossing",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~19 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Limithang",
+        "description": "The highest pass of the trek: Shinche La, at about 5,000 m (reported between 4,900 and 5,005 m), with prayer flags and views of the northern peaks if the weather holds. Start early; the climb is long and the wind can be bitter. You descend to Limithang, about 4,140 m, where the valley begins to turn towards Laya."
+      },
+      {
+        "day": 14,
+        "title": "Trek from Limithang to Laya",
+        "sleepAlt": 3800,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Laya",
+        "description": "A short, downhill walk takes you to Laya, at about 3,800 m, in the shadow of Gangchenta. Layap women wear conical bamboo hats and men and women wear black yak-hair clothing, which will be an unmistakable sign that you have arrived. Camp is on the edge of the village; ask your guide before taking portraits."
+      },
+      {
+        "day": 15,
+        "title": "Rest day in Laya",
+        "sleepAlt": 3800,
+        "activity": "Rest",
+        "duration": "Rest day, optional village walks",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Laya",
+        "description": "A day to rest, wash clothes and explore the village with your guide, visiting the temple or the school if open, and learning about yak herding and the cordyceps harvest that supports many families. Laya is also the site of an annual highland festival in the autumn, with dates that vary. Walk the paths quietly and keep to marked routes through fields."
+      },
+      {
+        "day": 16,
+        "title": "Trek from Laya to Koina",
+        "sleepAlt": 3050,
+        "activity": "Trek",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~19 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Koina",
+        "description": "The route leaves Laya and descends the valley of the Mo Chhu through rhododendron, then conifer forest, losing over 1,000 m to Koina at about 3,050 m. The air thickens and nights are warmer. Your knees will notice the downhill, so poles are useful. Some operators now meet trekkers by vehicle at Taktsemakha (about 3,150 m, a few hours below Laya) instead of walking on to Koina, so ask which plan applies."
+      },
+      {
+        "day": 17,
+        "title": "Over Bari La to Gasa",
+        "sleepAlt": 2240,
+        "activity": "Trek",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~14 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping or guesthouse, Gasa",
+        "description": "One more climb of about 700 m takes you over Bari La (~3,740 m), through moss-hung forest, before a long descent to Gasa at about 2,240 m, where a hilltop dzong overlooks the valley. The trek ends here, and the warm, thick air is a pleasant change after days in the cold. Celebrate with the crew tonight."
+      },
+      {
+        "day": 18,
+        "title": "Gasa hot springs, drive to Punakha",
+        "sleepAlt": 1250,
+        "activity": "Drive",
+        "duration": "~3 hrs drive plus hot-spring visit",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Punakha",
+        "description": "Soak in the Gasa Tshachu hot springs, a natural spring used for generations for health, then drive south to Punakha. In the afternoon visit Punakha Dzong, built in 1637 at the meeting of two rivers, and, if time allows, walk to Chimi Lhakhang, associated with the saint Drukpa Kunley. Punakha is warm, at about 1,250 m, and after the highlands the sultry air feels like another country."
+      },
+      {
+        "day": 19,
+        "title": "Punakha to Paro over Dochu La",
+        "sleepAlt": 2250,
+        "activity": "Drive",
+        "duration": "~4–5 hrs drive with stops",
+        "distanceKm": "~125 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "The road climbs to Dochu La, at about 3,100 m, with its 108 memorial chortens and, on a clear day, a view of the eastern Himalaya. You continue through Thimphu to Paro. Spend the evening at the hotel and pack for your flight."
+      },
+      {
+        "day": 20,
+        "title": "Departure from Paro",
+        "sleepAlt": null,
+        "activity": "Departure",
+        "duration": "Transfer to airport, ~20 min",
+        "distanceKm": null,
+        "meals": "Breakfast",
+        "stay": "Departure",
+        "description": "Transfer to Paro airport for your flight to Kathmandu. Allow generous time for check-in, as the airport is small and flights run to the weather. Right-hand windows have the best chance of Himalayan views on the way out."
+      }
+    ],
+    "sources": [
+      "https://bhutan.travel/adventure-experiences",
+      "https://bhutan.travel/announcements",
+      "https://bhutan.travel/faqs",
+      "https://bhutan.travel/visa",
+      "https://trulybhutan.com/itinerary/laya-gasa-trek/",
+      "https://www.bhutantravelbureau.com/?p=2498",
+      "https://www.acethehimalaya.com/trip/laya-ghasa-trek",
+      "https://www.travelstride.com/trips/world-expedition-bhutan-high-trails-via-laya-18-days",
+      "https://bestbhutan.com/blog/bhutan-complete-trekking-guide"
+    ]
+  },
+  {
+    "id": "bhutan-dagala-thousand-lakes",
+    "region": "bhutan",
+    "title": "Dagala Thousand Lakes Trek",
+    "tagline": "A quiet ridge-and-lake trek in the Dagala range above Thimphu, with camps at a string of alpine lakes, long views to the high Himalaya and almost no other walkers.",
+    "difficulty": "blue",
+    "tags": [
+      "camping",
+      "remote"
+    ],
+    "days": 12,
+    "walkingDays": 6,
+    "maxAlt": 4520,
+    "maxAltName": "Ridge saddle above Dala Tsho (~4,520 m)",
+    "distanceKm": 40,
+    "startPoint": "Genekha, above Thimphu (by road)",
+    "endPoint": "Chamgang, Thimphu valley (by road)",
+    "minGroupSize": null,
+    "price": 4200,
+    "priceNote": "From about USD 4,200 per person for a group of 4 or more sharing; smaller groups and solo travellers cost more per person. Includes the USD 40 Bhutan visa fee and the Sustainable Development Fee (SDF) of USD 100 per adult per night for 11 nights (USD 1,100), plus hotels, camping crew, ponies, vehicles and meals. Kathmandu-Paro flights are not included. The USD 100 SDF rate is only set until 31 August 2027; if you travel after that and the standard USD 200 rate returns, add USD 100 per night (USD 1,100 for this trip). Estimate only, to be confirmed with the Bhutanese operator.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Apr–Jun / Sep–Nov",
+    "bestSeasons": "Mid-September to mid-November has the clearest views, and April to early June brings rhododendrons on the lower slopes and wildflowers on the high pasture, with the monsoon starting in late June. In winter the herders leave their summer huts and the high lakes freeze, so this trek is not offered in cold months.",
+    "accommodation": "Hotel + Camping",
+    "operator": "partner",
+    "operatorNote": "This trek is run on the ground by a licensed Bhutanese operator, because Bhutan only allows licensed Bhutanese operators and guides to lead treks. Peak Pursuit arranges the trip with that operator, who provides the Bhutanese guide, cook, horsemen, ponies, hotels and vehicles from your arrival in Paro to your departure, and handles any route clearance.",
+    "overview": [
+      "The Dagala range lies just south-west of Thimphu, yet it feels a world away from the capital. This trek follows rhododendron slopes and open ridges between yak herders' summer camps and chains of small lakes, including Utsho Tsho, Reli Tsho and Jama Tsho in the Labatama valley and the larger Dala Tsho, with long views to the high Himalaya on clear days. The name Thousand Lakes is a figure of speech, but the tarns really are numerous, and several lie within easy reach of the Labatama camp.",
+      "The standard route climbs from Gur to Labatama in a single big day, a rise of roughly 1,000 m in sleeping altitude, which is more than we consider sensible. We therefore split it with two nights at the camps along the way and add a rest day at Labatama, plus a night at the trailhead, so each step is a few hundred metres. The cost is a longer trip (12 days), in exchange for a safer and more comfortable pace. The reward is a trek of about 40 km that few visitors ever walk, with camps at about 4,000 to 4,300 m.",
+      "The walking is on faint trails and open ridges, so your guide's navigation matters, and the final day is long: seven to eight hours with several passes, followed by a descent to the road. It suits keen walkers who want a quieter route than Druk Path or Jomolhari and are comfortable sleeping at 4,000 m and above."
+    ],
+    "highlights": [
+      "Camp at Utsho Tsho in the Labatama valley, ringed by small lakes and cliffs",
+      "A rest day at about 4,280 m to explore nearby lakes or climb Jomo with views toward Kanchenjunga and Jomolhari on a clear day",
+      "Ridge walking over a saddle at about 4,520 m above Dala Tsho",
+      "Rhododendron and juniper forests, yak herders' camps and few other trekkers",
+      "Talakha monastery and a long descent into the Thimphu valley",
+      "A staged approach that keeps each sleeping step modest, with Tiger's Nest and Thimphu at either end"
+    ],
+    "permits": [
+      {
+        "name": "Bhutan visa",
+        "note": "USD 40 per person, applied for online through the official portal and cleared before you fly (usually within about five working days). Your passport must be valid for at least six months. Included in the price."
+      },
+      {
+        "name": "Sustainable Development Fee (SDF)",
+        "note": "USD 100 per adult per night at the current halved rate (USD 50 for children 6-11, free under 6), paid with the visa application. The rate is set until 31 August 2027. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "A licensed Bhutanese guide must accompany you at all times; independent trekking is not allowed. Provided by the Bhutanese operator."
+      },
+      {
+        "name": "Route clearance",
+        "note": "Any route or protected-area clearance needed for the Dagala range is obtained by the operator; you do not apply for it yourself. Ask the operator to confirm the position in writing."
+      },
+      {
+        "name": "Monument entry (Paro Taktsang and others)",
+        "note": "Entry fees on the programme are arranged by the guide; Taktsang currently charges adult foreign visitors an entry fee (about Nu 1,000, confirm with the operator)."
+      }
+    ],
+    "included": [
+      "Bhutan visa fee (USD 40) and the Sustainable Development Fee for all 11 nights",
+      "Licensed Bhutanese guide, cook, camp helpers and horsemen with pack ponies or yaks for the whole trek",
+      "Hotels on twin-share rooms in Paro and Thimphu, and tented camping on the trek and at the trailhead (tents, sleeping mats, dining, kitchen and toilet tents)",
+      "All meals from lunch on Day 1 to breakfast on Day 12, plus tea and snacks on the trail",
+      "Private vehicle and driver for all road transfers, including to and from the trailhead",
+      "Airport pick-up and drop-off at Paro",
+      "Monument entry fees on the programme and the Taktsang hike",
+      "Group first-aid kit carried by the guide"
+    ],
+    "excluded": [
+      "Flights between Kathmandu and Paro (Drukair or Bhutan Airlines) and any Nepal hotel nights",
+      "Travel and medical insurance with helicopter evacuation cover (required)",
+      "Sleeping bag (rated comfortable to about -10 C for the high camps) and personal clothing and trekking gear",
+      "Tips for the guide, cook, crew and driver (customary; the operator will advise amounts)",
+      "Drinks other than tea and boiled water, laundry, souvenirs and personal expenses",
+      "Extra nights caused by weather delays or flight changes: the SDF applies for every night in Bhutan",
+      "Any increase in the SDF after 31 August 2027"
+    ],
+    "fitness": "You need to be able to walk 4 to 8 hours a day on rough, sometimes pathless ground, with climbs of 500 to 900 m and one long final day. Regular hill walking for three months beforehand is a good base, and previous nights at 3,500 m or more help. The staged plan reduces, but does not remove, the altitude risk.",
+    "safetyNotes": [
+      "Altitude: all camps from Gibze Kebze onward are above 3,600 m and the Labatama camp is about 4,280 m. The usual one-day jump from Gur to Labatama, roughly 1,000 m of sleeping altitude, is the main risk on this trek, which is why we split it and add a rest day. Report headache, nausea or poor sleep to the guide early, and be ready to descend. Speak to your doctor about acetazolamide before you leave.",
+      "Weather and navigation: the route follows faint trails and exposed ridges where cloud, wind and sleet can reduce visibility quickly, and the last day has several passes. The guide may shorten or alter a day. Snow can close the high ground outside the main seasons.",
+      "Evacuation: the highest camps are around a day and a half from the nearest road, and rescue depends on ponies, weather-dependent helicopter flights and the operator's contact with the authorities. Insurance with helicopter evacuation cover is essential. As of October 2026 we found no official notice closing this route, but trail conditions change and the operator confirms them before departure."
+    ],
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1743402064050-8732cc0b62fe?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Paro Taktsang (Tiger's Nest) monastery perched on a cliff, Paro, Bhutan",
+      "credit": "Photo by Sujan Mongar on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/tigers-nest-monastery-perched-on-a-cliff-jJlhElEQwdI"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1584003734930-b12779f66351?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Tashichho Dzong and paddy fields, Thimphu, Bhutan",
+        "credit": "Photo by Pema Gyamtsho on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/brown-wooden-house-on-green-grass-field-near-green-mountains-under-white-clouds-during-daytime-QkbIxJhALtk"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Paro",
+        "sleepAlt": 2250,
+        "activity": "Arrival",
+        "duration": "~1 hr flight, 20 min transfer",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. Spend the afternoon resting and walking gently in town, and bring your printed visa clearance for check-in."
+      },
+      {
+        "day": 2,
+        "title": "Tiger's Nest (Paro Taktsang) hike",
+        "sleepAlt": 2250,
+        "activity": "Acclimatization",
+        "duration": "5–6 hrs hike",
+        "distanceKm": "~6.5 km round trip",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "A steady climb of about 900 m through pine forest takes you to the cliffside monastery of Taktsang at about 3,120 m, a pilgrimage place linked to Guru Rinpoche. Photos are not allowed inside the temples, and you should follow your guide's lead on offerings and walking clockwise. Coming back down to sleep at 2,250 m is a good first acclimatization step."
+      },
+      {
+        "day": 3,
+        "title": "Drive Paro to Thimphu and on to Genekha",
+        "sleepAlt": 2820,
+        "activity": "Drive",
+        "duration": "~1.5 hrs drive to Thimphu, ~1 hr to Genekha",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Genekha trailhead",
+        "description": "Drive the valley road to Thimphu, with time for a short sightseeing stop and lunch in town, then continue about an hour to Genekha, the village at the trailhead at about 2,800 m. Camp here rather than carrying on, so that tomorrow's climb to Gur starts from a higher sleeping altitude than Thimphu's. Your crew sets up camp, and this is a good evening to finalise your packing."
+      },
+      {
+        "day": 4,
+        "title": "Trek from Genekha to Gur",
+        "sleepAlt": 3290,
+        "activity": "Trek",
+        "duration": "3–4 hrs trek",
+        "distanceKm": "~6 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Gur",
+        "description": "The path crosses the river on a bridge and climbs through oak and then birch and bamboo forest to a rock platform with a view over the valley, and over a ridge at about 3,330 m before descending to the meadow at Gur. Camp at Gur is at about 3,290 m (some sources say 3,350 m). This is the first real step up in altitude, so take your time."
+      },
+      {
+        "day": 5,
+        "title": "Trek from Gur to Gibze Kebze",
+        "sleepAlt": 3700,
+        "activity": "Trek",
+        "duration": "2–3 hrs trek",
+        "distanceKm": "~4 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Gibze Kebze",
+        "description": "A short day climbing about 400 m through the last trees into the alpine zone, to a high pasture at Gibze Kebze (about 3,700 m). This camp is not used on the shortest schedules, but it is exactly what makes the following days gentler on the body. Take the afternoon slowly, drink plenty and enjoy views across the Dagala range."
+      },
+      {
+        "day": 6,
+        "title": "Cross Pagalabsta La to Wataching",
+        "sleepAlt": 4100,
+        "activity": "Trek",
+        "duration": "3–4 hrs trek",
+        "distanceKm": "~4 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Wataching",
+        "description": "You cross rhododendron-covered hillsides to Pagalabsta La, at about 4,170 m, then drop slightly to a herders' stone hut at Wataching at about 4,100 m, where you camp. On a clear day you can see Himalayan ranges over the Dagala ridge. The short day leaves time to rest and acclimatize before Labatama."
+      },
+      {
+        "day": 7,
+        "title": "Trek from Wataching to Labatama",
+        "sleepAlt": 4280,
+        "activity": "Trek",
+        "duration": "3–5 hrs trek",
+        "distanceKm": "~4 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Labatama",
+        "description": "A few ridges lead into the broad Labatama valley, with herders' huts, to a camp below cliffs beside Utsho Tsho at about 4,280 m (operators quote 4,250 to 4,300 m). The lake is known for its golden trout. The camp is high, cold and wind-prone, so put on warm layers as soon as you arrive."
+      },
+      {
+        "day": 8,
+        "title": "Rest and acclimatization day at Labatama",
+        "sleepAlt": 4280,
+        "activity": "Acclimatization",
+        "duration": "Rest day, optional hikes of 2–4 hrs",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Labatama",
+        "description": "A day to spend around the lakes: walk to nearby tarns such as Reli Tsho, Hen Tsho and Jama Tsho, or climb towards the Jomo ridge at about 4,500 m for views that can include Kanchenjunga and Jomolhari on a clear day. Local people ask that visitors stop at the lower summit out of respect, so follow your guide's lead. Always return to camp to sleep."
+      },
+      {
+        "day": 9,
+        "title": "Trek from Labatama to Panka",
+        "sleepAlt": 4000,
+        "activity": "Trek",
+        "duration": "5–7 hrs trek",
+        "distanceKm": "~8 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Panka",
+        "description": "The route climbs the western flank of Dala Tsho to a saddle at about 4,520 m, the highest point of the main route, then descends past yak herders' huts and the Doccha river to Panka, at about 4,000 m. Panka lies in an enclosed meadow below its own lake. It is a tiring, high day, so keep a slow rhythm."
+      },
+      {
+        "day": 10,
+        "title": "Trek from Panka to Chamgang, drive to Thimphu",
+        "sleepAlt": 2320,
+        "activity": "Trek",
+        "duration": "6–8 hrs trek, ~1 hr drive",
+        "distanceKm": "~14 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Thimphu",
+        "description": "A long final day crosses several ridges and passes, the last being Tale La at about 4,180 m, then drops steeply past Talakha monastery (about 3,080 m) to the road at Chamgang. Your vehicle takes you to Thimphu, where a hot shower and a good dinner are waiting. The downhill is hard on knees; poles help."
+      },
+      {
+        "day": 11,
+        "title": "Thimphu sightseeing, drive to Paro",
+        "sleepAlt": 2250,
+        "activity": "Sightseeing",
+        "duration": "~1–1.5 hrs drive, sightseeing",
+        "distanceKm": "~55 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "Visit sites in Thimphu such as the National Memorial Chorten and the Buddha Dordenma statue above the valley, then drive back to Paro for a last evening. Rinpung Dzong and its wooden bridge make a good late-afternoon walk. This extra night in Paro is a buffer for weather and flight changes."
+      },
+      {
+        "day": 12,
+        "title": "Departure from Paro",
+        "sleepAlt": null,
+        "activity": "Departure",
+        "duration": "Transfer to airport, ~20 min",
+        "distanceKm": null,
+        "meals": "Breakfast",
+        "stay": "Departure",
+        "description": "Transfer to Paro airport for your flight to Kathmandu. Allow generous time for check-in, as the airport is small and flights run to the weather. Right-hand windows have the best chance of Himalayan views on the way out."
+      }
+    ],
+    "sources": [
+      "https://bhutan.travel/announcements",
+      "https://bhutan.travel/faqs",
+      "https://bhutan.travel/visa",
+      "https://www.bhutantravelbureau.com/?p=2496",
+      "https://www.thirdrockadventures.com/trip/dagala-thousand-lakes-trek-8-days",
+      "https://walkopedia.net/best-world-walks/Bhutan/Dagala-Trek",
+      "https://bhutanxplore.com/packages/trekking/dagala-thousand-lake-trek/",
+      "https://www.windhorsetours.com/dagala-trek-bhutan/"
+    ]
+  },
+  {
+    "id": "bhutan-bumthang-owl",
+    "region": "bhutan",
+    "title": "Bumthang Owl Trek",
+    "tagline": "A short, gentle forest trek in Bhutan's spiritual heartland: three days between Bumthang's temples, with a ridge camp facing Gangkhar Puensum and a drive through the kingdom's central valleys.",
+    "difficulty": "green",
+    "tags": [
+      "cultural",
+      "camping"
+    ],
+    "days": 12,
+    "walkingDays": 3,
+    "maxAlt": 3870,
+    "maxAltName": "Kitiphu ridge camp (~3,870 m)",
+    "distanceKm": 20,
+    "startPoint": "Menchugang, near Dhur village, Bumthang (by road from Jakar)",
+    "endPoint": "Tharpaling, then Jakar (by road)",
+    "minGroupSize": null,
+    "price": 4400,
+    "priceNote": "From about USD 4,400 per person for a group of 4 or more sharing; smaller groups and solo travellers cost more per person. Includes the USD 40 Bhutan visa fee and the Sustainable Development Fee (SDF) of USD 100 per adult per night for 11 nights (USD 1,100), plus hotels, camping crew, vehicles, meals and the Bumthang-Paro domestic flight (if the flight does not operate, the road back replaces it and the price is adjusted). Kathmandu-Paro flights are not included. The USD 100 SDF rate is only set until 31 August 2027; if you travel after that and the standard USD 200 rate returns, add USD 100 per night (USD 1,100 for this trip). Estimate only, to be confirmed with the Bhutanese operator.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Apr–Jun / Sep–Nov",
+    "bestSeasons": "Late April to early June, when the rhododendron forest on the ridge is in bloom, and mid-September to mid-November for clear skies. November and December can also work for cultural travel, but nights at the ridge camp are very cold. The monsoon makes the trail slippery and hides the views.",
+    "accommodation": "Hotel + Camping",
+    "operator": "partner",
+    "operatorNote": "This trek is run on the ground by a licensed Bhutanese operator, because Bhutan only allows licensed Bhutanese operators and guides to lead treks. Peak Pursuit arranges the trip with that operator, who provides the Bhutanese guide, cook, camp crew, hotels, vehicles and domestic flight booking from your arrival in Paro to your departure.",
+    "overview": [
+      "Bumthang is the cultural heart of Bhutan: a cluster of broad valleys with ancient temples, farmhouses, and the legacy of the saint Pema Lingpa. The Owl Trek is a three-day walk through the forests above the Chokhor valley, from Menchugang near Dhur village through blue pine, hemlock and juniper to a camp at Schonath (called Schemata in some sources), then over Drangela pass to a ridge camp on Kitiphu with views towards Gangkhar Puensum, the world's highest unclimbed mountain. The final day passes the hillside monasteries of Zambhalha, Choedrak and Tharpaling before reaching Jakar Dzong.",
+      "The trek is short, about 20 km in total, and the altitude is modest, topping out at about 3,870 m, so it suits families, first-time trekkers and anyone who prefers temples to passes. The day count is long because getting to Bumthang takes time: you cross Dochu La and Pele La by road, with Punakha Dzong and Trongsa Dzong along the way, and the Bumthang valley is worth a day on its own before you trek. We fly back to Paro, a 35-minute domestic flight that saves a long drive.",
+      "Nothing about the walking is technical, but this is a camping trek with a night at 3,450 m and another at 3,870 m, so nights are cold, and you must be prepared for rain. A good level of ordinary walking fitness is enough."
+    ],
+    "highlights": [
+      "Temple-filled Bumthang valley: Jambay, Kurjey and Tamshing lhakhangs, Jakar Dzong and the Burning Lake (Membartsho)",
+      "Forest walking through blue pine, hemlock, juniper and rhododendron on the Owl Trek",
+      "Ridge camp at Kitiphu with views towards Gangkhar Puensum",
+      "Hillside monasteries of Zambhalha, Choedrak and Tharpaling on the descent",
+      "A drive across Dochu La and Pele La with Punakha and Trongsa Dzongs",
+      "Short walking days and low altitude: a gentle introduction to trekking in Bhutan"
+    ],
+    "permits": [
+      {
+        "name": "Bhutan visa",
+        "note": "USD 40 per person, applied for online through the official portal and cleared before you fly (usually within about five working days). Your passport must be valid for at least six months. Included in the price."
+      },
+      {
+        "name": "Sustainable Development Fee (SDF)",
+        "note": "USD 100 per adult per night at the current halved rate (USD 50 for children 6-11, free under 6), paid with the visa application. The rate is set until 31 August 2027. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "A licensed Bhutanese guide must accompany you at all times; independent trekking is not allowed. Provided by the Bhutanese operator."
+      },
+      {
+        "name": "Route and park clearance",
+        "note": "Any route or protected-area clearance needed in the Bumthang hills is obtained by the operator; you do not apply for it yourself. Ask the operator to confirm the position in writing."
+      },
+      {
+        "name": "Monument entry (Paro Taktsang and others)",
+        "note": "Entry fees on the programme are arranged by the guide; Taktsang currently charges adult foreign visitors an entry fee (about Nu 1,000, confirm with the operator)."
+      }
+    ],
+    "included": [
+      "Bhutan visa fee (USD 40) and the Sustainable Development Fee for all 11 nights",
+      "Licensed Bhutanese guide, cook and camp helpers for the whole trip, with baggage ponies on the trek",
+      "Hotels on twin-share rooms in Paro, Thimphu, Punakha, Trongsa and Bumthang, and two nights of tented camping on the trek",
+      "All meals from lunch on Day 1 to breakfast on Day 12, plus tea and snacks on the trail",
+      "Private vehicle and driver for all road transfers across the country",
+      "Domestic flight from Bumthang to Paro (subject to schedule; otherwise replaced by road transfer)",
+      "Airport pick-up and drop-off at Paro",
+      "Monument entry fees on the programme and the Taktsang hike"
+    ],
+    "excluded": [
+      "Flights between Kathmandu and Paro (Drukair or Bhutan Airlines) and any Nepal hotel nights",
+      "Travel and medical insurance with helicopter evacuation cover (required)",
+      "Sleeping bag (rated comfortable to about -5 C) and personal clothing and trekking gear",
+      "Tips for the guide, cook, crew and driver (customary; the operator will advise amounts)",
+      "Drinks other than tea and boiled water, laundry, souvenirs and personal expenses",
+      "Extra nights caused by weather delays or flight changes: the SDF applies for every night in Bhutan",
+      "Any increase in the SDF after 31 August 2027"
+    ],
+    "fitness": "Ordinary walking fitness: 3 to 6 hours a day on forest trails, with a climb of roughly 500 to 900 m on the first two days. Regular walks for a month or two beforehand are enough. No altitude experience is needed, but you must be comfortable on long road days.",
+    "safetyNotes": [
+      "Altitude: the trek stays below 3,900 m, but the camps at 3,450 m and 3,870 m are higher than any hotel on the tour. The route goes from Jakar (about 2,650 m) to the first camp in a single day, so walk slowly, drink water, and tell the guide about any headache or nausea. Nights on the ridge are cold.",
+      "Weather and trail: rain, mud and leeches are likely in summer, and snow can come in winter and early spring. The guide may alter the stages. Bhutan's roads are narrow and winding, and landslides can close them in the monsoon; leave a spare day before your departure flight.",
+      "Evacuation: the trek stays close to the Bumthang valley, so descent to the road is possible within hours, but there are no clinics on the trail and the rest depends on the guide, a vehicle and the nearest hospital in Jakar. Insurance with helicopter cover is essential. As of October 2026 we found no official notice closing this route, but conditions change and the operator confirms them before departure."
+    ],
+    "hero": null,
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1729176989657-b2a72fdb7c17?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Courtyard of Punakha Dzong with a large tree, Punakha, Bhutan",
+        "credit": "Photo by Raul Taciu on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/a-large-building-with-a-tree-in-the-middle-of-it-_nuUz-0RPp8"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1584003734930-b12779f66351?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Tashichho Dzong and paddy fields, Thimphu, Bhutan",
+        "credit": "Photo by Pema Gyamtsho on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/brown-wooden-house-on-green-grass-field-near-green-mountains-under-white-clouds-during-daytime-QkbIxJhALtk"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1742539327304-4b60d48e14b4?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Paro Taktsang (Tiger's Nest) monastery on its cliff, Paro, Bhutan",
+        "credit": "Photo by Sujan Mongar on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/the-tigers-nest-monastery-hangs-on-a-cliff-f9dIq6J_uT0"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Paro",
+        "sleepAlt": 2250,
+        "activity": "Arrival",
+        "duration": "~1 hr flight, 20 min transfer",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. The afternoon is for rest and a gentle walk in town, and you should bring your printed visa clearance for check-in."
+      },
+      {
+        "day": 2,
+        "title": "Tiger's Nest (Paro Taktsang) hike",
+        "sleepAlt": 2250,
+        "activity": "Acclimatization",
+        "duration": "5–6 hrs hike",
+        "distanceKm": "~6.5 km round trip",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "A steady climb of about 900 m through pine forest takes you to the cliffside monastery of Taktsang at about 3,120 m, a pilgrimage place linked to Guru Rinpoche. Photos are not allowed inside the temples, and you should follow your guide's lead on offerings and walking clockwise. Coming back down to sleep at 2,250 m is a good first acclimatization step."
+      },
+      {
+        "day": 3,
+        "title": "Paro to Thimphu",
+        "sleepAlt": 2320,
+        "activity": "Sightseeing",
+        "duration": "~1–1.5 hrs drive, sightseeing",
+        "distanceKm": "~55 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Thimphu",
+        "description": "Visit Rinpung Dzong in Paro before driving to Thimphu, the capital, at about 2,320 m. In the city you can see the National Memorial Chorten, the Buddha Dordenma statue above the valley and the exterior of Tashichho Dzong, the seat of government. Dress modestly, remove shoes and hats before entering temples, and walk clockwise around chortens."
+      },
+      {
+        "day": 4,
+        "title": "Thimphu to Punakha over Dochu La",
+        "sleepAlt": 1250,
+        "activity": "Drive",
+        "duration": "~3–4 hrs drive with stops",
+        "distanceKm": "~72 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Punakha",
+        "description": "The road climbs to Dochu La, at about 3,100 m, where 108 memorial chortens stand on a ridge that offers views of the eastern Himalaya in clear weather. You then drop to the warm valley of Punakha (about 1,250 m) to visit Punakha Dzong, built in 1637 where two rivers meet, and, if time allows, Chimi Lhakhang in its nearby fields. The contrast between the cool pass and the warm valley is striking."
+      },
+      {
+        "day": 5,
+        "title": "Punakha to Trongsa over Pele La",
+        "sleepAlt": 2170,
+        "activity": "Drive",
+        "duration": "~5–6 hrs drive with stops",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Trongsa",
+        "description": "A long day on winding roads: you cross Pele La at about 3,420 m and then pass into central Bhutan, arriving at Trongsa (about 2,170 m). Trongsa Dzong, the ancestral seat of Bhutan's royal family, clings to a spur above the gorge, and the watchtower above it is now a museum. Carsickness tablets are worth packing."
+      },
+      {
+        "day": 6,
+        "title": "Trongsa to Jakar in Bumthang",
+        "sleepAlt": 2650,
+        "activity": "Drive",
+        "duration": "~3 hrs drive",
+        "distanceKm": "~68 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Jakar",
+        "description": "The road climbs through forest into the Bumthang valleys, reaching Jakar (the town is variously quoted at 2,470 to 2,800 m; we use about 2,650 m). Jakar Dzong stands on a ridge above the town, and the afternoon is free for a gentle walk and a first look at the valley. Sleeping here for two nights helps your body before the trek."
+      },
+      {
+        "day": 7,
+        "title": "Bumthang temples and valley walk",
+        "sleepAlt": 2650,
+        "activity": "Sightseeing",
+        "duration": "Full day, easy walks",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Jakar",
+        "description": "Visit Jambay Lhakhang, Kurjey Lhakhang and Tamshing Lhakhang, three of the valley's key temples, and Membartsho, the Burning Lake, where Pema Lingpa is said to have found sacred treasures. Allow your guide time to explain what you are seeing, and remember that photography inside is usually prohibited. This is also your acclimatization day before the trek."
+      },
+      {
+        "day": 8,
+        "title": "Trek from Menchugang to Schonath",
+        "sleepAlt": 3450,
+        "activity": "Trek",
+        "duration": "3–4 hrs trek plus short drive",
+        "distanceKm": "~8 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Schonath",
+        "description": "A short drive takes you to Menchugang, near Dhur village (about 2,900 m). The trail passes Dhur's farmhouses and a water-driven flour mill, then climbs through blue pine and finally hemlock and juniper forest to Schonath, also spelled Schemata, at about 3,450 m. The climb from Jakar is about 800 m of sleeping altitude, so walk slowly."
+      },
+      {
+        "day": 9,
+        "title": "Over Drangela to Kitiphu ridge",
+        "sleepAlt": 3870,
+        "activity": "Trek",
+        "duration": "3–4 hrs trek",
+        "distanceKm": "~8 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Kitiphu ridge",
+        "description": "You climb through old fir, spruce and hemlock, with rhododendron and bamboo, to Drangela pass at about 3,600 m, and then along the ridge to the Kitiphu camp at about 3,870 m. On a clear evening the view extends towards Gangkhar Puensum, the world's highest unclimbed mountain, a sacred peak that is off-limits to climbers. The camp is cold at night."
+      },
+      {
+        "day": 10,
+        "title": "Descend via Tharpaling to Jakar",
+        "sleepAlt": 2650,
+        "activity": "Trek",
+        "duration": "2–4 hrs trek, then drive",
+        "distanceKm": "~4 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Jakar",
+        "description": "The path descends past the hillside monasteries of Zambhalha, Choedrak and Tharpaling, the last founded by the scholar Longchen Rabjam, and along the Kikila ridge towards Jakar Dzong. Your vehicle meets you for the drive to your hotel. Take the time to sit quietly at Tharpaling; monks may be at prayer, and visitors should not talk loudly."
+      },
+      {
+        "day": 11,
+        "title": "Fly Bumthang to Paro",
+        "sleepAlt": 2250,
+        "activity": "Flight",
+        "duration": "~35 min flight, afternoon sightseeing",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "Take the domestic flight from Bumthang to Paro, about 35 minutes, subject to Drukair's schedule and weather. The operator will confirm days in advance; if the flight does not run, the alternative is a long road journey back via Trongsa and Punakha, which changes the plan. Spend the afternoon in Paro, with Rinpung Dzong or the old ruins of Drukgyel Dzong as options."
+      },
+      {
+        "day": 12,
+        "title": "Departure from Paro",
+        "sleepAlt": null,
+        "activity": "Departure",
+        "duration": "Transfer to airport, ~20 min",
+        "distanceKm": null,
+        "meals": "Breakfast",
+        "stay": "Departure",
+        "description": "Transfer to Paro airport for your flight to Kathmandu. Allow generous time for check-in, as the airport is small and flights run to the weather. Right-hand windows have the best chance of Himalayan views on the way out."
+      }
+    ],
+    "sources": [
+      "https://bhutan.travel/announcements",
+      "https://bhutan.travel/faqs",
+      "https://bhutan.travel/visa",
+      "https://bhutanpelyabtours.com/bumthang-owl-trek/",
+      "https://trulybhutan.com/itinerary/bumthang-owl-trek/",
+      "https://www.himalayanwonders.com/bhutan/bumthang-owl-trek.html",
+      "https://en.wikipedia.org/wiki/Jakar",
+      "https://www.bookmytour.bt/destinations/trongsa"
+    ]
+  },
+  {
+    "id": "bhutan-snowman",
+    "region": "bhutan",
+    "title": "Snowman Trek",
+    "tagline": "Bhutan's legendary 350 km traverse of the Laya and Lunana highlands: eleven high passes, camps close to 5,000 m and two weeks without a road. Many attempts do not reach the end.",
+    "difficulty": "double",
+    "tags": [
+      "pass",
+      "remote",
+      "camping"
+    ],
+    "days": 33,
+    "walkingDays": 23,
+    "maxAlt": 5320,
+    "maxAltName": "Rinchen Zoe La (~5,320 m)",
+    "distanceKm": 350,
+    "startPoint": "Drukgyel Dzong, Paro (by road)",
+    "endPoint": "Nikka Chhu road head near Sephu (then by road to Thimphu)",
+    "minGroupSize": null,
+    "price": 12500,
+    "priceNote": "From about USD 12,500 per person for a group of 4 or more sharing; smaller groups and solo travellers cost more per person. Includes the USD 40 Bhutan visa fee and the Sustainable Development Fee (SDF) of USD 100 per adult per night for 32 nights (USD 3,200), plus hotels, a large camping crew with ponies and yaks, vehicles and meals. Kathmandu-Paro flights, helicopter evacuation and extra days caused by weather are not included. The USD 100 SDF rate is only set until 31 August 2027, and the best Snowman window (mid-September to October) falls just after that date, so check the rate before you book an autumn 2027 departure: if the standard USD 200 rate returns, add USD 100 per night (USD 3,200 for this trip). Estimate only, to be confirmed with the Bhutanese operator.",
+    "priceIsEstimate": true,
+    "seasonBadge": "Mid Sep–Oct",
+    "bestSeasons": "Mid-September to the end of October is the main window: the passes are usually clear of heavy snow and the post-monsoon skies are at their steadiest. A second, less reliable window exists in late May and June, but snow and early monsoon cloud are real risks. The Snowman is not recommended in winter, early spring or midsummer.",
+    "accommodation": "Hotel + Camping",
+    "operator": "partner",
+    "operatorNote": "This trek is run on the ground by a licensed Bhutanese operator, because Bhutan only allows licensed Bhutanese operators and guides to lead treks. Peak Pursuit arranges the trip with that operator, who holds the park clearances (the route enters Jigme Dorji and Wangchuck Centennial National Parks) and provides the Bhutanese guide, cook, large crew, yaks and ponies, hotels and vehicles from your arrival in Paro to your departure.",
+    "overview": [
+      "The Snowman Trek is the longest and hardest trek in Bhutan, and by common agreement one of the hardest in the Himalaya. It runs roughly 350 km from the Paro valley to the road at Nikka Chhu near Sephu, passing under Jomolhari, through Lingshi, Laya and the high Lunana district, crossing eleven passes between about 4,400 and 5,320 m, and spending many nights above 4,500 m. Once you leave Laya there is no road, no shop and no quick exit for about two weeks. The reward is a journey through high-valley settlements, yak pastures, glacial lakes and ridgelines that very few people ever see.",
+      "This is also a trek that many people start and do not finish. There are no official completion statistics that we could find; published estimates vary, and one operator's trekking guide suggests that around half of attempts end early, usually because of altitude sickness, cold, or passes blocked by snow, and sometimes injury or a tight schedule. We cannot promise you will complete it. What we can do is give the body the best chance: a staged approach with acclimatization days, a reserve day before every cluster of high passes, rest days at Laya and Thanza, and the earliest sensible turn-back points. It is best treated as a second or third high-altitude trek, ideally after the Laya Gasa or Jomolhari trek.",
+      "The itinerary below is 33 days from arrival in Paro to departure, using the usual exit by road at Nikka Chhu near Sephu. It is longer than many published schedules because it adds acclimatization, a reserve day and a buffer. The shorter versions around 24 to 28 days exist, but they trade safety margin for speed."
+    ],
+    "highlights": [
+      "Eleven high passes, with Rinchen Zoe La (~5,320 m) as the crux",
+      "Jangothang beneath Jomolhari (~7,300 m), then Lingshi and the high route to Laya",
+      "Laya, among Bhutan's highest villages, with its Layap people",
+      "The remote Lunana district: Woche, Lhedi and Thanza villages and glacial lakes watched for outburst floods",
+      "Camps close to 5,000 m at Tshochena and Jichu Dramo, beneath snow peaks",
+      "Five rest, acclimatization and reserve days so that weather and altitude are managed, not fought",
+      "The best long-distance trek in Bhutan, with culture days in Paro and Thimphu at both ends"
+    ],
+    "permits": [
+      {
+        "name": "Bhutan visa",
+        "note": "USD 40 per person, applied for online through the official portal and cleared before you fly (usually within about five working days). Your passport must be valid for at least six months. Included in the price."
+      },
+      {
+        "name": "Sustainable Development Fee (SDF)",
+        "note": "USD 100 per adult per night at the current halved rate (USD 50 for children 6-11, free under 6), paid with the visa application. The rate is set until 31 August 2027, and a 32-night stay makes any change expensive. Included in the price."
+      },
+      {
+        "name": "Licensed guide",
+        "note": "A licensed Bhutanese guide must accompany you at all times; independent trekking is not allowed. Provided by the Bhutanese operator."
+      },
+      {
+        "name": "National park clearances",
+        "note": "The route crosses Jigme Dorji National Park (Jomolhari, Lingshi, Laya) and Wangchuck Centennial National Park (Lunana). The operator obtains the clearances; ask them to confirm in writing and note that the Gangkhar Puensum area needs special clearance, which this route does not use."
+      },
+      {
+        "name": "Monument entry (Paro Taktsang and others)",
+        "note": "Entry fees on the programme are arranged by the guide; Taktsang currently charges adult foreign visitors an entry fee (about Nu 1,000, confirm with the operator)."
+      }
+    ],
+    "included": [
+      "Bhutan visa fee (USD 40) and the Sustainable Development Fee for all 32 nights",
+      "Licensed Bhutanese guide, cook, camp helpers and horsemen with enough pack ponies and yaks for the whole trek",
+      "Hotels on twin-share rooms in Paro and Thimphu, and tented camping on the trek (tents, sleeping mats, dining, kitchen and toilet tents)",
+      "All meals from lunch on Day 1 to breakfast on Day 33, plus tea and snacks on the trail",
+      "Private vehicle and driver for all road transfers, including the long drive from Nikka Chhu to Thimphu",
+      "Airport pick-up and drop-off at Paro",
+      "Park clearances, monument entry fees on the programme and the Taktsang hike",
+      "Group first-aid kit carried by the guide"
+    ],
+    "excluded": [
+      "Flights between Kathmandu and Paro (Drukair or Bhutan Airlines) and any Nepal hotel nights",
+      "Travel and medical insurance with helicopter evacuation cover (required; evacuation from Lunana has been quoted at USD 10,000 to 20,000 or more)",
+      "Helicopter evacuation, hospital and any other emergency costs",
+      "Sleeping bag (rated comfortable to about -15 C for the highest camps), down jacket, and other personal clothing and trekking gear",
+      "Tips for the guide, cook, crew and driver (customary; the operator will advise amounts)",
+      "Drinks other than tea and boiled water, laundry, souvenirs and personal expenses",
+      "Extra nights caused by weather delays or flight changes: the SDF and crew costs apply for every extra night in Bhutan",
+      "Any increase in the SDF after 31 August 2027"
+    ],
+    "fitness": "Very high. You should have already completed a multi-day trek crossing at least one pass above 4,500 m, be comfortable walking 6 to 9 hours a day for weeks on consecutive days, and have experience of cold camping. Allow 4 to 6 months of loaded hill walking and cardio, and do the Laya Gasa trek first if you can. Mental resilience and willingness to turn back matter as much as fitness.",
+    "safetyNotes": [
+      "Altitude: you sleep above 4,000 m on most nights, above 4,900 m at Narithang and Tshochena and at about 5,050 m at Jichu Dramo, and cross passes up to about 5,320 m. Acclimatization days at Jangothang, Rodophu, Thanza and a reserve at Danji help, but altitude sickness (including its dangerous forms) can affect anyone and is the leading reason attempts end. Report symptoms at once, expect to descend if told to, and discuss acetazolamide with your doctor.",
+      "Many attempts do not finish: we found no official completion figures, but operators and guides describe a substantial share of starters stopping early, estimates including around half. Reasons include altitude illness, cold, snow-blocked passes, injury and insufficient time. Please do not book tight onward flights, and be prepared to turn back at any point at the guide's decision.",
+      "Weather and evacuation: heavy snow can close passes for days, and Lunana is about a week or more on foot from the nearest road. Helicopter evacuation depends on weather and availability, may take days, and has been quoted at USD 10,000 to 20,000 or more, so insurance with helicopter cover (checked to cover trekking above 5,000 m) is essential. As of October 2026 we found no official notice closing the route, but conditions change and the operator confirms them before departure."
+    ],
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1584007952771-96d1f3866a6b?auto=format&fit=crop&w=1600&q=70",
+      "alt": "Khang Bum, a snow-covered peak at sunrise in Jigme Dorji National Park, Bhutan",
+      "credit": "Photo by Nils Leonhardt on Unsplash",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/snow-covered-mountain-during-daytime-gf0rnIB_ZpM"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1608377229419-3b5168b6c3da?auto=format&fit=crop&w=1600&q=70",
+        "alt": "Paro Taktsang (Tiger's Nest) monastery, Paro, Bhutan",
+        "credit": "Photo by Raimond Klavins on Unsplash",
+        "license": "Unsplash License",
+        "sourceUrl": "https://unsplash.com/photos/white-and-brown-concrete-house-on-top-of-mountain-during-daytime-Med8BHIsmRU"
+      }
+    ],
+    "sources": [
+      "https://bhutan.travel/adventure-experiences",
+      "https://bhutan.travel/announcements",
+      "https://bhutan.travel/faqs",
+      "https://bhutan.travel/visa",
+      "https://www.trekking-in-bhutan.com/snowman-trek/",
+      "https://foundbht.com/trekking-in-bhutan/snowman-trek",
+      "https://tourbhutan.travel/trip/snowman-trek/",
+      "https://www.mountainiq.com/guides/trekking-in-bhutan/routes/snowman-trek/",
+      "https://en.wikipedia.org/wiki/Snowman_Trek",
+      "https://bestbhutan.com/blog/bhutan-complete-trekking-guide"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Fly Kathmandu to Paro",
+        "sleepAlt": 2250,
+        "activity": "Arrival",
+        "duration": "~1 hr flight, 20 min transfer",
+        "distanceKm": null,
+        "meals": "Lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "The flight from Kathmandu runs along the Himalayan chain, with views of Everest and Kanchenjunga on a clear morning; sit on the left. Your Bhutanese guide meets you at Paro airport and takes you to the hotel at about 2,250 m. The guide will go through your gear and the plan for the next month, so use the afternoon to rest and bring your printed visa clearance for check-in."
+      },
+      {
+        "day": 2,
+        "title": "Tiger's Nest (Paro Taktsang) hike",
+        "sleepAlt": 2250,
+        "activity": "Acclimatization",
+        "duration": "5–6 hrs hike",
+        "distanceKm": "~6.5 km round trip",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "A steady climb of about 900 m through pine forest takes you to the cliffside monastery of Taktsang at about 3,120 m, a pilgrimage place linked to Guru Rinpoche. This is also a fitness check: if the climb feels very hard, discuss with your guide before committing to the Snowman. Photos are not allowed inside the temples, and you should follow your guide's lead on offerings and walking clockwise."
+      },
+      {
+        "day": 3,
+        "title": "Trek from Drukgyel Dzong to Shana",
+        "sleepAlt": 2870,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~15 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Shana",
+        "description": "A short drive takes you to the ruins of Drukgyel Dzong (about 2,580 m), a fortress built in the 17th century to mark a victory over Tibetan armies and destroyed by fire in 1951. The path follows the Paro river upstream through rice terraces and forest, with suspension-bridge crossings. You camp at Shana, about 2,870 m, beside the river."
+      },
+      {
+        "day": 4,
+        "title": "Trek from Shana to Thongo Zampa",
+        "sleepAlt": 3250,
+        "activity": "Trek",
+        "duration": "~4 hrs trek",
+        "distanceKm": "~11 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Thongo Zampa",
+        "description": "A steady day in forest beside the river brings you to Thongo Zampa at about 3,250 m. It is deliberately shorter than the usual stage so that you gain only a few hundred metres of sleeping altitude. Use the afternoon to rest, check your boots and get used to the routine of camp life."
+      },
+      {
+        "day": 5,
+        "title": "Trek from Thongo Zampa to Soi Thangthangka",
+        "sleepAlt": 3600,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Soi Thangthangka",
+        "description": "The valley widens and the forest thins as you climb to a grassy camp at about 3,600 m (guidebooks quote 3,575 to 3,750 m). Yaks graze nearby and the nights get colder. Drink plenty and watch your appetite and sleep: they are your first early-warning signs."
+      },
+      {
+        "day": 6,
+        "title": "Trek from Soi Thangthangka to Jangothang",
+        "sleepAlt": 4040,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jangothang",
+        "description": "Above the last trees the trail follows the river through yak pasture, and Jomolhari rises at the head of the valley. You camp at Jangothang, about 4,040 m, one of the best campsites in Bhutan. Many people sleep poorly on the first night at this height, so tell your guide how you feel."
+      },
+      {
+        "day": 7,
+        "title": "Acclimatization day at Jangothang",
+        "sleepAlt": 4040,
+        "activity": "Acclimatization",
+        "duration": "2–4 hrs optional hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jangothang",
+        "description": "An easy hike towards the Tsho Phu lakes or onto the slopes above camp gains a few hundred metres before you return to sleep at 4,040 m. Most people feel the altitude here, so this day also shows you how you cope. Rest, eat well and drink warm fluids."
+      },
+      {
+        "day": 8,
+        "title": "Cross Nyile La to Lingshi",
+        "sleepAlt": 4010,
+        "activity": "Pass crossing",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~18 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Lingshi",
+        "description": "The first pass of the Snowman: Nyile La, reported by operators at about 4,700 to 4,890 m, with prayer flags and a long look back at Jomolhari. The descent into the Lingshi basin crosses open slopes where blue sheep are often seen. Camp at about 4,010 m, below the hill-top dzong of Lingshi."
+      },
+      {
+        "day": 9,
+        "title": "Trek from Lingshi to Chebisa",
+        "sleepAlt": 3880,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Chebisa",
+        "description": "A shorter day contouring across hillsides to Chebisa, at about 3,880 m, where stone houses stand beside fields and a waterfall. You can visit Lingshi Dzong before leaving. Use the easier walking to dry gear and rest your legs."
+      },
+      {
+        "day": 10,
+        "title": "Cross Gombu La to Shomuthang",
+        "sleepAlt": 4200,
+        "activity": "Pass crossing",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Shomuthang",
+        "description": "A climb through rhododendron leads to Gombu La (about 4,440 to 4,500 m), then the route rolls across open ridges and dips to Shomuthang, about 4,200 m. This is a long day at altitude with cold nights. Keep eating and drinking, even when you feel off."
+      },
+      {
+        "day": 11,
+        "title": "Cross Jare La to Robluthang",
+        "sleepAlt": 4160,
+        "activity": "Pass crossing",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~18 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Robluthang",
+        "description": "A long climb to Jare La (about 4,700 to 4,785 m) gives distant views of the high Himalaya on a clear day. You then descend to Robluthang, about 4,160 m, beside a river meadow. Herders' tents and yaks are common here."
+      },
+      {
+        "day": 12,
+        "title": "Cross Shinche La to Limithang",
+        "sleepAlt": 4140,
+        "activity": "Pass crossing",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~19 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Limithang",
+        "description": "Shinche La (about 5,000 m, quoted 4,900 to 5,005 m) is the first pass on the trek that reaches 5,000 m. Start early, because the climb is long and the wind can be bitter. You descend to Limithang, about 4,140 m, where the valley begins to turn towards Laya."
+      },
+      {
+        "day": 13,
+        "title": "Trek from Limithang to Laya",
+        "sleepAlt": 3800,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Laya",
+        "description": "A short downhill walk leads to Laya, at about 3,800 m, in the shadow of Gangchenta. The Layaps wear black yak-hair clothing, and the women wear conical bamboo hats. Camp is on the edge of the village; ask your guide before taking portraits."
+      },
+      {
+        "day": 14,
+        "title": "Rest day in Laya",
+        "sleepAlt": 3800,
+        "activity": "Rest",
+        "duration": "Rest day, optional village walks",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Laya",
+        "description": "Rest, wash, and decide honestly whether you are ready for the remote section: after Laya there is no road and no easy way out. The guide may arrange a basic health check if the village health post is open. Walk through the village with your guide, and learn how yak herding and the seasonal cordyceps harvest support families here."
+      },
+      {
+        "day": 15,
+        "title": "Trek from Laya to Rodophu",
+        "sleepAlt": 4200,
+        "activity": "Trek",
+        "duration": "7–8 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Rodophu",
+        "description": "The route leaves Laya and heads north up a long river valley, climbing through rhododendron and juniper to Rodophu, at about 4,200 m (sources quote 4,160 to 4,350 m). The settlements fall behind and the sense of remoteness grows. It is a long day, so start early."
+      },
+      {
+        "day": 16,
+        "title": "Acclimatization day at Rodophu",
+        "sleepAlt": 4200,
+        "activity": "Acclimatization",
+        "duration": "Rest day, optional 2–3 hr hike",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Rodophu",
+        "description": "A deliberate pause before the first camp near 4,900 m. If you feel well, climb a few hundred metres above camp on a slow walk and come back to sleep low. If you feel unwell, rest, and do not be surprised if your guide advises you to return to Laya."
+      },
+      {
+        "day": 17,
+        "title": "Cross Tsemo La to Narithang",
+        "sleepAlt": 4900,
+        "activity": "Pass crossing",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~16 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Narithang",
+        "description": "A big step up: you climb over Tsemo La (about 4,905 to 4,915 m) to the exposed camp at Narithang, about 4,900 m. The sleeping gain from Rodophu is about 700 m, the largest on the trek, which is why the acclimatization day came first. Camp is cold and windy; get your down jacket on immediately and stay hydrated."
+      },
+      {
+        "day": 18,
+        "title": "Cross Gangla Karchung La to Tarina",
+        "sleepAlt": 3950,
+        "activity": "Pass crossing",
+        "duration": "7–9 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Tarina",
+        "description": "A long, hard day over the Karakachu or Gangla Karchung La (quoted between about 5,020 and 5,120 m), with scree, possible snow and views towards the snow peaks of the north. The descent of well over 1,000 m to Tarina, at about 3,950 m, is steep, and you reach thicker air with a camp near forest. Poles help the knees, and a headlamp is useful if the day runs late."
+      },
+      {
+        "day": 19,
+        "title": "Trek from Tarina to Woche",
+        "sleepAlt": 3900,
+        "activity": "Trek",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~16 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Woche",
+        "description": "An easier day following the river down through forest and meadow to Woche, a village at about 3,900 m (sources quote 3,800 to 4,160 m), the first of the Lunana settlements. People here live largely by herding yaks, and visitors are rare. Greet people politely and ask before taking photos."
+      },
+      {
+        "day": 20,
+        "title": "Cross Keche La to Lhedi",
+        "sleepAlt": 3700,
+        "activity": "Pass crossing",
+        "duration": "5–7 hrs trek",
+        "distanceKm": "~15 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Lhedi",
+        "description": "From Woche the trail climbs gradually to Keche La (about 4,480 to 4,666 m, around 4,650 m on most itineraries), then drops to the village of Lhedi at about 3,700 m. There are good views across the valleys of Lunana, and the day is moderate by Snowman standards. Take the chance to rest, wash and dry gear."
+      },
+      {
+        "day": 21,
+        "title": "Trek from Lhedi to Thanza",
+        "sleepAlt": 4100,
+        "activity": "Trek",
+        "duration": "5–7 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Thanza",
+        "description": "The valley widens and you walk through high meadow towards Thanza, the main village of Lunana, at about 4,100 m. The glacial valley and snow peaks around it are impressive, and there are lakes near here that scientists monitor for outburst floods. Camp at the edge of the village and take the evening gently."
+      },
+      {
+        "day": 22,
+        "title": "Rest day in Thanza",
+        "sleepAlt": 4100,
+        "activity": "Rest",
+        "duration": "Rest day, optional short walks",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Thanza",
+        "description": "A scheduled rest at Thanza, which is also the last chance to rest in a village before the highest section. Wander with your guide, learn how local families live, and decide honestly about your health and strength; this is the sensible point to say you want to stop. Re-pack, wash and eat as much as you can."
+      },
+      {
+        "day": 23,
+        "title": "Trek from Thanza to Danji",
+        "sleepAlt": 4540,
+        "activity": "Trek",
+        "duration": "4–5 hrs trek",
+        "distanceKm": "~7 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Danji",
+        "description": "A short climb of about 450 m up a glacial valley to Danji, at about 4,540 m (some operators give lower figures). The shorter day leaves the afternoon for rest before the cluster of high passes. Look at the sky: the guide will assess whether the weather window is holding."
+      },
+      {
+        "day": 24,
+        "title": "Reserve day at Danji",
+        "sleepAlt": 4540,
+        "activity": "Reserve day",
+        "duration": "Rest day",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Danji",
+        "description": "A built-in buffer before the three highest passes. If the forecast is poor, snow lies on the Jaze La approach, or someone needs more time, we wait here; otherwise it is a rest day. Please do not plan to leave Bhutan earlier than the date set, because this is the day most likely to be used."
+      },
+      {
+        "day": 25,
+        "title": "Cross Jaze La to Tshochena",
+        "sleepAlt": 4960,
+        "activity": "Pass crossing",
+        "duration": "5–8 hrs trek",
+        "distanceKm": "~10 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Tshochena",
+        "description": "You climb to Jaze La, at about 5,150 m (sources quote 5,050 to 5,200 m), then descend to the lake camp of Tshochena, about 4,960 m. Distances on this stage vary widely between sources, so trust the guide's timing. The night is cold, and sleep may be poor; stay warm, drink and tell the guide how you feel."
+      },
+      {
+        "day": 26,
+        "title": "Cross Loju La to Jichu Dramo",
+        "sleepAlt": 5050,
+        "activity": "Pass crossing",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~15 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Jichu Dramo",
+        "description": "Over Loju La (about 5,140 to 5,170 m) and across high, rocky ground to Jichu Dramo, at about 5,050 m, the highest camp of the trek. You are well above 5,000 m and every effort is slower. If anyone shows symptoms of serious altitude illness, the plan is immediate descent."
+      },
+      {
+        "day": 27,
+        "title": "Cross Rinchen Zoe La to Chukarpo",
+        "sleepAlt": 4400,
+        "activity": "Pass crossing",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~17 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Chukarpo",
+        "description": "The crux: Rinchen Zoe La, the highest pass of the Snowman at about 5,320 m (quoted 5,320 to 5,350 m), with views of surrounding peaks if the weather is clear. A long descent of about 900 m takes you to the camp at Chukarpo, about 4,400 m, where the air feels richer. You will probably be tired, so hot tea and early rest are the priority."
+      },
+      {
+        "day": 28,
+        "title": "Trek from Chukarpo to Tampetsho",
+        "sleepAlt": 4330,
+        "activity": "Trek",
+        "duration": "6–8 hrs trek",
+        "distanceKm": "~16 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Tampetsho",
+        "description": "A long descent along a valley and across moraine and meadow to the lake at Tampe Tsho, about 4,330 m. The passes are behind you, but this is still a hard day and the terrain can be rough. Camp by the lake, and rest for the last climbs."
+      },
+      {
+        "day": 29,
+        "title": "Cross Tampe La to Maurothang",
+        "sleepAlt": 3650,
+        "activity": "Pass crossing",
+        "duration": "5–6 hrs trek",
+        "distanceKm": "~18 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Maurothang",
+        "description": "The final pass, Tampe La at about 4,650 m (quoted 4,600 to 4,665 m), is the last high point of the trek. From there you descend into the forest, reaching camp at Maurothang at about 3,650 m. The change in vegetation and air thickness feels like a different country after the high camps."
+      },
+      {
+        "day": 30,
+        "title": "Trek from Maurothang to Nikka Chhu (Sephu)",
+        "sleepAlt": 2630,
+        "activity": "Trek",
+        "duration": "6–7 hrs trek",
+        "distanceKm": "~22 km",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Camping, Nikka Chhu road head",
+        "description": "A long, steady descent of about 1,000 m through forest leads to the road at Nikka Chhu, near the village of Sephu, at about 2,630 m. You have walked about 350 km across Bhutan's northern highlands. Say a proper thank you to the crew, who have carried everything and cooked every meal for a month."
+      },
+      {
+        "day": 31,
+        "title": "Drive from Nikka Chhu to Thimphu",
+        "sleepAlt": 2320,
+        "activity": "Drive",
+        "duration": "Long drive, allow 5–7 hrs",
+        "distanceKm": null,
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Thimphu",
+        "description": "A long day on winding roads takes you back to Thimphu and a hotel, a hot shower and a real bed. Road conditions vary, so the guide gives an estimated arrival time on the day. Expect to be tired; the evening is for rest, a good dinner and perhaps a stroll through town."
+      },
+      {
+        "day": 32,
+        "title": "Thimphu to Paro",
+        "sleepAlt": 2250,
+        "activity": "Sightseeing",
+        "duration": "~1–1.5 hrs drive, sightseeing",
+        "distanceKm": "~55 km by road",
+        "meals": "Breakfast, lunch, dinner",
+        "stay": "Hotel, Paro",
+        "description": "Visit sites in Thimphu such as the National Memorial Chorten and the Buddha Dordenma statue, then drive to Paro. The extra night in Paro is a buffer for flights, as well as a chance to celebrate with your guide. Buy souvenirs and gifts, and ask your guide any remaining questions about what you have seen."
+      },
+      {
+        "day": 33,
+        "title": "Departure from Paro",
+        "sleepAlt": null,
+        "activity": "Departure",
+        "duration": "Transfer to airport, ~20 min",
+        "distanceKm": null,
+        "meals": "Breakfast",
+        "stay": "Departure",
+        "description": "Transfer to Paro airport for your flight to Kathmandu. Allow generous time for check-in, as the airport is small and flights run to the weather. Right-hand windows have the best chance of Himalayan views on the way out."
+      }
+    ]
+  }
+];
